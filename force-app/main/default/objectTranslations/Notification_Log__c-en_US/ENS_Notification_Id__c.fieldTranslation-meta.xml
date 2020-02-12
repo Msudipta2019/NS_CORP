@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- NS ENS gateway auto generated number for each Notification Log. --></help>
+    <label><!-- ENS Notification Id --></label>
+    <name>ENS_Notification_Id__c</name>
+</CustomFieldTranslation>

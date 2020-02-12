@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Lead Path - ID Opportunities</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Company</fieldNames>
+        <fieldNames>AnnualRevenue</fieldNames>
+        <fieldNames>NS_Volume_by_Rail__c</fieldNames>
+        <fieldNames>LeadSource</fieldNames>
+        <info>&lt;p&gt;Ensure all lead details have been captured and lead is ready to convert.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Selecting this Lead status will open the conversion window for Contact, Opportunity and Account.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Complete</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>NS_Commodity__c</fieldNames>
+        <fieldNames>NS_Volume_by_Rail__c</fieldNames>
+        <fieldNames>Industry</fieldNames>
+        <fieldNames>NumberOfEmployees</fieldNames>
+        <fieldNames>NS_Transportation_Authority_Number__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt;Ask about current transportation methods and how NS can assist with their needs.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt;Customer discovery—learn about the company, their locations, and potential business.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt;Document interaction with Lead.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Contacted</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Company</fieldNames>
+        <fieldNames>Name</fieldNames>
+        <fieldNames>Description</fieldNames>
+        <fieldNames>LeadSource</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Capture possible contact information (business card), documenting method of contact and/or Campaign.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Confirm existing contact doesn’t exist.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Make contact and follow up with the Lead as soon as possible.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Company</fieldNames>
+        <fieldNames>NS_Current_Transport_Method__c</fieldNames>
+        <fieldNames>Description</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt;Work with prospective customer to nurture relationship in order to recommend potential solution.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt;Sufficient information has been gathered to make a qualified decision to Convert or mark Unqualified.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Nurturing</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Unqualified_Reason__c</fieldNames>
+        <fieldNames>Description</fieldNames>
+        <fieldNames>LeadSource</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt;This Lead has not qualified for further review. &lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt;Document the reason for disqualification.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Unqualified</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>NS_ID_Lead</recordTypeName>
+</PathAssistant>

@@ -1,0 +1,10 @@
+.THIS .btntxt{
+    font-weight:normal;
+    text-align:center;
+}
+
+.THIS .btntxt:hover {
+    background-color: #b58010;
+    color:#ffffff;
+    text-align:center;
+}

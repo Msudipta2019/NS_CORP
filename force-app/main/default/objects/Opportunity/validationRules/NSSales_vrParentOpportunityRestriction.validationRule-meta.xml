@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_vrParentOpportunityRestriction</fullName>
+    <active>true</active>
+    <description>It restricts user to associate a subordinate opportunity to the Parent Opportunity field</description>
+    <errorConditionFormula>AND(NOT(ISBLANK( NSSales_Parent_Opportunity__c )), RecordType.DeveloperName =&#39;NS_ID&#39;,Id  =  NSSales_Parent_Opportunity__r.NSSales_Parent_Opportunity__r.Id)</errorConditionFormula>
+    <errorDisplayField>NSSales_Parent_Opportunity__c</errorDisplayField>
+    <errorMessage>The Parent opportunity you selected is already a subordinate of this Opportunity.</errorMessage>
+</ValidationRule>

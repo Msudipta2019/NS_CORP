@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_IneditableAssignedTo</fullName>
+    <active>false</active>
+    <description>When ever the case status changed to closed, need to select the closed reason</description>
+    <errorConditionFormula>IF( 
+NOT($Profile.Name=&#39;System Administrator&#39;)&amp;&amp; 
+ISPICKVAL(Status,&#39;NS_Closed&#39;)&amp;&amp; 
+ISCHANGED(NS_AssignedTo__c )&amp;&amp;PRIORVALUE(NS_RecordTypeName__c) &lt;&gt; &#39;Email-to-Case&#39;, 
+true,false 
+)</errorConditionFormula>
+    <errorDisplayField>NS_AssignedTo__c</errorDisplayField>
+    <errorMessage>The Assigned To field cannot be modified when the Case is in Closed status. Please update the Status to Working prior to changing the Assigned To field.</errorMessage>
+</ValidationRule>

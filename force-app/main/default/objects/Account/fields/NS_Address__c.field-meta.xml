@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Address__c</fullName>
+    <description>It populates this address field based on the record type.</description>
+    <externalId>false</externalId>
+    <formula>IF(OR( RecordType.DeveloperName = &quot;NS_OnlineCustomerCorporate&quot;,RecordType.DeveloperName = &quot;NS_FieldLocation&quot;), 
+ NS_PhysicalAddressDetails__c ,IF(RecordType.DeveloperName = &quot;NS_OnlineCustomerBusiness&quot;,  NS_BillingAddressDetails__c , IF(RecordType.DeveloperName = &quot;NS_3PL&quot;,  NS_MailingAddressDetails__c , IF(OR(RecordType.DeveloperName = &quot;NS_OnlineCustomerService&quot;,RecordType.DeveloperName = &quot;NS_OfflineCustomer&quot;,RecordType.DeveloperName = &quot;NS_OtherRailRoad&quot;,RecordType.DeveloperName = &quot;NS_OtherCompany&quot;,RecordType.DeveloperName = &quot;NS_DrayCarrier&quot;,RecordType.DeveloperName = &quot;NS_Port&quot;), NS_ShippingAddressDetails__c , &#39;&#39;))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Address</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

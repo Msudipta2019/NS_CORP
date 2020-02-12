@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_CaseClosureInfoRequired</fullName>
+    <active>true</active>
+    <description>This rule ensures that Case Resolution (External) is populated when changing the Status of a Case to “Closed”.</description>
+    <errorConditionFormula>IF(
+AND(ISBLANK(NS_ExternalCaseNotes__c),
+NOT(
+ISPICKVAL(NS_InteractionReason__c,&#39;Systems Admin&#39;)||
+ISPICKVAL(NS_InteractionReason__c,&#39;CSAO Communication&#39;)||
+ISPICKVAL(NS_InteractionReason__c,&#39;Dimensional/Locomotive&#39;)||
+ISPICKVAL(NS_InteractionReason__c,&#39;Holiday Polling&#39;)||
+ISPICKVAL(NS_InteractionReason__c,&#39;Intermodal&#39;)||
+ISPICKVAL(NS_InteractionReason__c,&#39;Pipeline Management&#39;)||
+ISPICKVAL(NS_InteractionReason__c,&#39;Classification Issues&#39;)||
+And(ISPICKVAL(NS_InteractionReason__c,&#39;RIT&#39;),
+OR(ISPICKVAL(NS_Type__c,&#39;Device Issue&#39;),
+ISPICKVAL(NS_Type__c,&#39;Training&#39;),
+ISPICKVAL(NS_Type__c,&#39;Not Qualified&#39;)))||
+ISPICKVAL(NS_InteractionReason__c,&#39;3PL Tracing&#39;)),
+ISPICKVAL(Status,&#39;NS_Closed&#39;), 
+ISCHANGED(Status),  
+RecordType.Name!=&#39;NS Internal&#39;,
+RecordType.Name!=&#39;Feedback Case&#39;,
+NS_Created_using_Quick_Case__c &lt;&gt; True),true,false)</errorConditionFormula>
+    <errorDisplayField>NS_ExternalCaseNotes__c</errorDisplayField>
+    <errorMessage>Please complete the Case Resolution (External) field prior to closing the Case. This information may be seen by customers when sending emails from templates.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Temperature_Reefer_Controlled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Sales - IM request to  check if the car is refrigerated</description>
+    <externalId>false</externalId>
+    <label>Temperature Controlled / Reefer</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

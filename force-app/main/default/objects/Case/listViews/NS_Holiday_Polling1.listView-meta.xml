@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Holiday_Polling1</fullName>
+    <columns>NS_Unread_Email_Indicator__c</columns>
+    <columns>NS_StatusIndicator__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NS_Controlling_Station__c</columns>
+    <columns>NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>NS_AssignedTo__c</columns>
+    <columns>NS_SystemSortID__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NS_InteractionReason__c</field>
+        <operation>equals</operation>
+        <value>Holiday Polling</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>NS_Closed,Closed,NS_Cancelled,Cancelled</value>
+    </filters>
+    <label>Holiday Polling</label>
+    <sharedTo>
+        <group>All_Queue_Access</group>
+        <group>NS_Northern_Region_East_NRE</group>
+        <group>NS_Northern_Region_East_NRE_Managers</group>
+        <group>NS_Northern_Region_West_NRW</group>
+        <group>NS_Northern_Region_West_NRW_Managers</group>
+        <group>NS_OSS_Support</group>
+        <group>NS_Southern_Region_East_SRE</group>
+        <group>NS_Southern_Region_East_SRE_Managers</group>
+        <group>NS_Southern_Region_West_SRW</group>
+        <group>NS_Southern_Region_West_SRW_Managers</group>
+    </sharedTo>
+</ListView>

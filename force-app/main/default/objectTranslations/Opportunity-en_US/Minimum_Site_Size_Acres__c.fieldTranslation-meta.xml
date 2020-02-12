@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Minimum Site Size (Acres) --></label>
+    <name>Minimum_Site_Size_Acres__c</name>
+</CustomFieldTranslation>

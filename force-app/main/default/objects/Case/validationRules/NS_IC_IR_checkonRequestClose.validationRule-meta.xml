@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_IC_IR_checkonRequestClose</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+ISPICKVAL(Status ,&quot;NS_Closed&quot;),
+RecordType.Name!=&#39;Feedback Case&#39;,
+ParentId!=null,
+NOT(ISPICKVAL(Parent.Status,&#39;NS_Closed&#39;)), 
+ISBLANK(TEXT(NS_InteractionCategory__c)),
+ISBLANK(TEXT(NS_InteractionReason__c)) 
+)</errorConditionFormula>
+    <errorMessage>Please fill the Interaction Category, Interaction Reason, Interaction Type field prior to closing the Case.</errorMessage>
+</ValidationRule>

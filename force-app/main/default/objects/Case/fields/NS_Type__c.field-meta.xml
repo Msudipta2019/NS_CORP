@@ -1,0 +1,1290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Interaction Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>NS_InteractionReason__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Freight Bill</fullName>
+                <default>false</default>
+                <label>Freight Bill</label>
+            </value>
+            <value>
+                <fullName>Premium Payment</fullName>
+                <default>false</default>
+                <label>Premium Payment</label>
+            </value>
+            <value>
+                <fullName>Order not Used</fullName>
+                <default>false</default>
+                <label>Order not Used</label>
+            </value>
+            <value>
+                <fullName>Adverse Loading</fullName>
+                <default>false</default>
+                <label>Adverse Loading</label>
+            </value>
+            <value>
+                <fullName>Misc. Billing</fullName>
+                <default>false</default>
+                <label>Misc. Billing</label>
+            </value>
+            <value>
+                <fullName>Demurrage/Storage</fullName>
+                <default>false</default>
+                <label>Demurrage/Storage</label>
+            </value>
+            <value>
+                <fullName>Detention</fullName>
+                <default>false</default>
+                <label>Detention</label>
+            </value>
+            <value>
+                <fullName>Stop in Route</fullName>
+                <default>false</default>
+                <label>Stop in Route</label>
+            </value>
+            <value>
+                <fullName>Empty Disposition</fullName>
+                <default>false</default>
+                <label>Empty Disposition</label>
+            </value>
+            <value>
+                <fullName>Preventative Maintenance</fullName>
+                <default>false</default>
+                <label>Preventative Maintenance</label>
+            </value>
+            <value>
+                <fullName>Empty Railcar</fullName>
+                <default>false</default>
+                <label>Empty Railcar</label>
+            </value>
+            <value>
+                <fullName>Loaded Railcar</fullName>
+                <default>false</default>
+                <label>Loaded Railcar</label>
+            </value>
+            <value>
+                <fullName>Unit Train</fullName>
+                <default>false</default>
+                <label>Unit Train</label>
+            </value>
+            <value>
+                <fullName>Locomotive</fullName>
+                <default>false</default>
+                <label>Locomotive</label>
+            </value>
+            <value>
+                <fullName>Passenger Cars</fullName>
+                <default>false</default>
+                <label>Passenger Cars</label>
+            </value>
+            <value>
+                <fullName>MPR</fullName>
+                <default>false</default>
+                <label>MPR</label>
+            </value>
+            <value>
+                <fullName>Pool Adjustment</fullName>
+                <default>false</default>
+                <label>Pool Adjustment</label>
+            </value>
+            <value>
+                <fullName>Program Work</fullName>
+                <default>false</default>
+                <label>Program Work</label>
+            </value>
+            <value>
+                <fullName>Storage</fullName>
+                <default>false</default>
+                <label>Storage</label>
+            </value>
+            <value>
+                <fullName>Sold</fullName>
+                <default>false</default>
+                <label>Sold</label>
+            </value>
+            <value>
+                <fullName>Scrap</fullName>
+                <default>false</default>
+                <label>Scrap</label>
+            </value>
+            <value>
+                <fullName>TTX</fullName>
+                <default>false</default>
+                <label>TTX</label>
+            </value>
+            <value>
+                <fullName>Car Supply</fullName>
+                <default>false</default>
+                <label>Car Supply</label>
+            </value>
+            <value>
+                <fullName>Commitment</fullName>
+                <default>false</default>
+                <label>Commitment</label>
+            </value>
+            <value>
+                <fullName>Routing</fullName>
+                <default>false</default>
+                <label>Routing</label>
+            </value>
+            <value>
+                <fullName>Line of Road Work</fullName>
+                <default>false</default>
+                <label>Line of Road Work</label>
+            </value>
+            <value>
+                <fullName>Train Reporting Issue</fullName>
+                <default>false</default>
+                <label>Train Reporting Issue</label>
+            </value>
+            <value>
+                <fullName>Work Planning</fullName>
+                <default>false</default>
+                <label>Work Planning</label>
+            </value>
+            <value>
+                <fullName>Yard Inventory Update</fullName>
+                <default>false</default>
+                <label>Yard Inventory Update</label>
+            </value>
+            <value>
+                <fullName>Fuel</fullName>
+                <default>false</default>
+                <label>Fuel</label>
+            </value>
+            <value>
+                <fullName>Inspection</fullName>
+                <default>false</default>
+                <label>Inspection</label>
+            </value>
+            <value>
+                <fullName>Repair</fullName>
+                <default>false</default>
+                <label>Repair</label>
+            </value>
+            <value>
+                <fullName>Shutdown</fullName>
+                <default>false</default>
+                <label>Shutdown</label>
+            </value>
+            <value>
+                <fullName>Hold/No Bill</fullName>
+                <default>false</default>
+                <label>Hold/No Bill</label>
+            </value>
+            <value>
+                <fullName>Waybill Research</fullName>
+                <default>false</default>
+                <label>Waybill Research</label>
+            </value>
+            <value>
+                <fullName>Dealership</fullName>
+                <default>false</default>
+                <label>Dealership</label>
+            </value>
+            <value>
+                <fullName>3PL</fullName>
+                <default>false</default>
+                <label>3PL</label>
+            </value>
+            <value>
+                <fullName>Fleet Quality</fullName>
+                <default>false</default>
+                <label>Fleet Quality</label>
+            </value>
+            <value>
+                <fullName>Mechanical Inspection</fullName>
+                <default>false</default>
+                <label>Mechanical Inspection</label>
+            </value>
+            <value>
+                <fullName>Wrong Car Type</fullName>
+                <default>false</default>
+                <label>Wrong Car Type</label>
+            </value>
+            <value>
+                <fullName>Target</fullName>
+                <default>false</default>
+                <label>Target</label>
+            </value>
+            <value>
+                <fullName>Device Issue</fullName>
+                <default>false</default>
+                <label>Device Issue</label>
+            </value>
+            <value>
+                <fullName>No Device Available</fullName>
+                <default>false</default>
+                <label>No Device Available</label>
+            </value>
+            <value>
+                <fullName>Not Qualified</fullName>
+                <default>false</default>
+                <label>Not Qualified</label>
+            </value>
+            <value>
+                <fullName>Route Maintenance</fullName>
+                <default>false</default>
+                <label>Route Maintenance</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>Local Service ETA</fullName>
+                <default>false</default>
+                <label>Local Service ETA</label>
+            </value>
+            <value>
+                <fullName>Local Service Request</fullName>
+                <default>false</default>
+                <label>Local Service Request</label>
+            </value>
+            <value>
+                <fullName>Missed Switch</fullName>
+                <default>false</default>
+                <label>Missed Switch</label>
+            </value>
+            <value>
+                <fullName>Inventory Accuracy</fullName>
+                <default>false</default>
+                <label>Inventory Accuracy</label>
+            </value>
+            <value>
+                <fullName>Pull/Place Errors</fullName>
+                <default>false</default>
+                <label>Pull/Place Errors</label>
+            </value>
+            <value>
+                <fullName>Damage Prevention Hold</fullName>
+                <default>false</default>
+                <label>Damage Prevention Hold</label>
+            </value>
+            <value>
+                <fullName>Overload</fullName>
+                <default>false</default>
+                <label>Overload</label>
+            </value>
+            <value>
+                <fullName>Imbalance</fullName>
+                <default>false</default>
+                <label>Imbalance</label>
+            </value>
+            <value>
+                <fullName>Load Moving as Empty</fullName>
+                <default>false</default>
+                <label>Load Moving as Empty</label>
+            </value>
+            <value>
+                <fullName>Transload</fullName>
+                <default>false</default>
+                <label>Transload</label>
+            </value>
+            <value>
+                <fullName>Reject</fullName>
+                <default>false</default>
+                <label>Reject</label>
+            </value>
+            <value>
+                <fullName>Request for 418</fullName>
+                <default>false</default>
+                <label>Request for 418</label>
+            </value>
+            <value>
+                <fullName>EDI Request</fullName>
+                <default>false</default>
+                <label>EDI Request</label>
+            </value>
+            <value>
+                <fullName>Interchange Concerns</fullName>
+                <default>false</default>
+                <label>Interchange Concerns</label>
+            </value>
+            <value>
+                <fullName>Expedite Request</fullName>
+                <default>false</default>
+                <label>Expedite Request</label>
+            </value>
+            <value>
+                <fullName>Special Train</fullName>
+                <default>false</default>
+                <label>Special Train</label>
+            </value>
+            <value>
+                <fullName>Special Switch</fullName>
+                <default>false</default>
+                <label>Special Switch</label>
+            </value>
+            <value>
+                <fullName>Freight Claims</fullName>
+                <default>false</default>
+                <label>Freight Claims</label>
+            </value>
+            <value>
+                <fullName>LSS</fullName>
+                <default>false</default>
+                <label>LSS</label>
+            </value>
+            <value>
+                <fullName>Proposal</fullName>
+                <default>false</default>
+                <label>Proposal</label>
+            </value>
+            <value>
+                <fullName>Live-Loads</fullName>
+                <default>false</default>
+                <label>Live-Loads</label>
+            </value>
+            <value>
+                <fullName>Passenger Car</fullName>
+                <default>false</default>
+                <label>Passenger Car</label>
+            </value>
+            <value>
+                <fullName>TYES</fullName>
+                <default>false</default>
+                <label>TYES</label>
+            </value>
+            <value>
+                <fullName>Inventory Management</fullName>
+                <default>false</default>
+                <label>Inventory Management</label>
+            </value>
+            <value>
+                <fullName>Equipment/Computer Issue</fullName>
+                <default>false</default>
+                <label>Equipment/Computer Issue</label>
+            </value>
+            <value>
+                <fullName>Clean Sheet</fullName>
+                <default>false</default>
+                <label>Clean Sheet</label>
+            </value>
+            <value>
+                <fullName>Mobile Device</fullName>
+                <default>false</default>
+                <label>Mobile Device</label>
+            </value>
+            <value>
+                <fullName>Scanner</fullName>
+                <default>false</default>
+                <label>Scanner</label>
+            </value>
+            <value>
+                <fullName>Radio</fullName>
+                <default>false</default>
+                <label>Radio</label>
+            </value>
+            <value>
+                <fullName>ConnectNS</fullName>
+                <default>false</default>
+                <label>ConnectNS</label>
+            </value>
+            <value>
+                <fullName>TBAS</fullName>
+                <default>false</default>
+                <label>TBAS</label>
+            </value>
+            <value>
+                <fullName>Report/Query</fullName>
+                <default>false</default>
+                <label>Report/Query</label>
+            </value>
+            <value>
+                <fullName>SharePoint</fullName>
+                <default>false</default>
+                <label>SharePoint</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Headset</fullName>
+                <default>false</default>
+                <label>Headset</label>
+            </value>
+            <value>
+                <fullName>Cleanout/Pre Trip</fullName>
+                <default>false</default>
+                <label>Cleanout/Pre Trip</label>
+            </value>
+            <value>
+                <fullName>Bad Order</fullName>
+                <default>false</default>
+                <label>Bad Order</label>
+            </value>
+            <value>
+                <fullName>Customer Bad Order</fullName>
+                <default>false</default>
+                <label>Customer Bad Order</label>
+            </value>
+            <value>
+                <fullName>OT5</fullName>
+                <default>false</default>
+                <label>OT5</label>
+            </value>
+            <value>
+                <fullName>VIN Storage</fullName>
+                <default>false</default>
+                <label>VIN Storage</label>
+            </value>
+            <value>
+                <fullName>System Permissions</fullName>
+                <default>false</default>
+                <label>System Permissions</label>
+            </value>
+            <value>
+                <fullName>Customer Pipeline</fullName>
+                <default>false</default>
+                <label>Customer Pipeline</label>
+            </value>
+            <value>
+                <fullName>Car Hire Relief</fullName>
+                <default>false</default>
+                <label>Car Hire Relief</label>
+            </value>
+            <value>
+                <fullName>TEAMS</fullName>
+                <default>false</default>
+                <label>TEAMS</label>
+            </value>
+            <value>
+                <fullName>EDI Administrator</fullName>
+                <default>false</default>
+                <label>EDI Administrator</label>
+            </value>
+            <value>
+                <fullName>Waybill Inquiry</fullName>
+                <default>false</default>
+                <label>Waybill Inquiry</label>
+            </value>
+            <value>
+                <fullName>Misc Billing</fullName>
+                <default>false</default>
+                <label>Misc Billing</label>
+            </value>
+            <value>
+                <fullName>ETA</fullName>
+                <default>false</default>
+                <label>ETA</label>
+            </value>
+            <value>
+                <fullName>ETG</fullName>
+                <default>false</default>
+                <label>ETG</label>
+            </value>
+            <value>
+                <fullName>ETD</fullName>
+                <default>false</default>
+                <label>ETD</label>
+            </value>
+            <value>
+                <fullName>Current Location</fullName>
+                <default>false</default>
+                <label>Current Location</label>
+            </value>
+            <value>
+                <fullName>Lot Location</fullName>
+                <default>false</default>
+                <label>Lot Location</label>
+            </value>
+            <value>
+                <fullName>Misroute</fullName>
+                <default>false</default>
+                <label>Misroute</label>
+            </value>
+            <value>
+                <fullName>Service Disruption</fullName>
+                <default>false</default>
+                <label>Service Disruption</label>
+            </value>
+            <value>
+                <fullName>Government Agency</fullName>
+                <default>false</default>
+                <label>Government Agency</label>
+            </value>
+            <value>
+                <fullName>Hazardous</fullName>
+                <default>false</default>
+                <label>Hazardous</label>
+            </value>
+            <value>
+                <fullName>Damage/Loadshift</fullName>
+                <default>false</default>
+                <label>Damage/Loadshift</label>
+            </value>
+            <value>
+                <fullName>Shipment Delay</fullName>
+                <default>false</default>
+                <label>Shipment Delay</label>
+            </value>
+            <value>
+                <fullName>EC Help</fullName>
+                <default>false</default>
+                <label>EC Help</label>
+            </value>
+            <value>
+                <fullName>Equipment Control</fullName>
+                <default>false</default>
+                <label>Equipment Control</label>
+            </value>
+            <value>
+                <fullName>Marketing/Sales</fullName>
+                <default>false</default>
+                <label>Marketing/Sales</label>
+            </value>
+            <value>
+                <fullName>Customer Operations</fullName>
+                <default>false</default>
+                <label>Customer Operations</label>
+            </value>
+            <value>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+                <label>Transportation</label>
+            </value>
+            <value>
+                <fullName>Intermodal Operations</fullName>
+                <default>false</default>
+                <label>Intermodal Operations</label>
+            </value>
+            <value>
+                <fullName>Revenue Accounting</fullName>
+                <default>false</default>
+                <label>Revenue Accounting</label>
+            </value>
+            <value>
+                <fullName>Foreign Road Inquiry</fullName>
+                <default>false</default>
+                <label>Foreign Road Inquiry</label>
+            </value>
+            <value>
+                <fullName>Port Inquiry</fullName>
+                <default>false</default>
+                <label>Port Inquiry</label>
+            </value>
+            <value>
+                <fullName>AccessNS Support</fullName>
+                <default>false</default>
+                <label>AccessNS Support</label>
+            </value>
+            <value>
+                <fullName>ExpressNS Support</fullName>
+                <default>false</default>
+                <label>ExpressNS Support</label>
+            </value>
+            <value>
+                <fullName>Terminal Info</fullName>
+                <default>false</default>
+                <label>Terminal Info</label>
+            </value>
+            <value>
+                <fullName>Rail-Owned Container Reservations</fullName>
+                <default>false</default>
+                <label>Rail-Owned Container Reservations</label>
+            </value>
+            <value>
+                <fullName>CY Reservations</fullName>
+                <default>false</default>
+                <label>CY Reservations</label>
+            </value>
+            <value>
+                <fullName>Chassis</fullName>
+                <default>false</default>
+                <label>Chassis</label>
+            </value>
+            <value>
+                <fullName>Online Payment Application</fullName>
+                <default>false</default>
+                <label>Online Payment Application</label>
+            </value>
+            <value>
+                <fullName>Last Free Day</fullName>
+                <default>false</default>
+                <label>Last Free Day</label>
+            </value>
+            <value>
+                <fullName>Charge Inquiry</fullName>
+                <default>false</default>
+                <label>Charge Inquiry</label>
+            </value>
+            <value>
+                <fullName>Storage Rules Inquiry</fullName>
+                <default>false</default>
+                <label>Storage Rules Inquiry</label>
+            </value>
+            <value>
+                <fullName>Guarantee</fullName>
+                <default>false</default>
+                <label>Guarantee</label>
+            </value>
+            <value>
+                <fullName>Lift/Payment Request</fullName>
+                <default>false</default>
+                <label>Lift/Payment Request</label>
+            </value>
+            <value>
+                <fullName>Lease Turnback</fullName>
+                <default>false</default>
+                <label>Lease Turnback</label>
+            </value>
+            <value>
+                <fullName>Service Window Change</fullName>
+                <default>false</default>
+                <label>Service Window Change</label>
+            </value>
+            <value>
+                <fullName>Customer Feedback</fullName>
+                <default>false</default>
+                <label>Customer Feedback</label>
+            </value>
+            <value>
+                <fullName>Void/Cancel Billing</fullName>
+                <default>false</default>
+                <label>Void/Cancel Billing</label>
+            </value>
+            <value>
+                <fullName>Confirm/Update Billing</fullName>
+                <default>false</default>
+                <label>Confirm/Update Billing</label>
+            </value>
+            <value>
+                <fullName>Hotlist Departure</fullName>
+                <default>false</default>
+                <label>Hotlist Departure</label>
+            </value>
+            <value>
+                <fullName>Prioritize Grounding</fullName>
+                <default>false</default>
+                <label>Prioritize Grounding</label>
+            </value>
+            <value>
+                <fullName>Holds</fullName>
+                <default>false</default>
+                <label>Holds</label>
+            </value>
+            <value>
+                <fullName>UIIA</fullName>
+                <default>false</default>
+                <label>UIIA</label>
+            </value>
+            <value>
+                <fullName>Gate Receipt</fullName>
+                <default>false</default>
+                <label>Gate Receipt</label>
+            </value>
+            <value>
+                <fullName>Private Container</fullName>
+                <default>false</default>
+                <label>Private Container</label>
+            </value>
+            <value>
+                <fullName>Private Chassis</fullName>
+                <default>false</default>
+                <label>Private Chassis</label>
+            </value>
+            <value>
+                <fullName>Embargo/OT5</fullName>
+                <default>false</default>
+                <label>Embargo/OT5</label>
+            </value>
+            <value>
+                <fullName>AccessNS/TRAX - System Defect</fullName>
+                <default>false</default>
+                <label>AccessNS/TRAX - System Defect</label>
+            </value>
+            <value>
+                <fullName>AccessNS/TRAX - Training</fullName>
+                <default>false</default>
+                <label>AccessNS/TRAX - Training</label>
+            </value>
+            <value>
+                <fullName>AccessNS/TRAX - General Feedback</fullName>
+                <default>false</default>
+                <label>AccessNS/TRAX - General Feedback</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Waybilling Issue</controllingFieldValue>
+            <valueName>Empty Disposition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waybilling Issue</controllingFieldValue>
+            <valueName>Hold/No Bill</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waybilling Issue</controllingFieldValue>
+            <valueName>Waybill Research</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Line of Road Work</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Train Reporting Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Work Planning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Yard Inventory Update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pipeline Management</controllingFieldValue>
+            <valueName>Commitment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pipeline Management</controllingFieldValue>
+            <valueName>Routing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pipeline Management</controllingFieldValue>
+            <valueName>Customer Pipeline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pipeline Management</controllingFieldValue>
+            <valueName>Embargo/OT5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Refrigerated Equipment</controllingFieldValue>
+            <valueName>Fuel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Refrigerated Equipment</controllingFieldValue>
+            <valueName>Inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Refrigerated Equipment</controllingFieldValue>
+            <valueName>Repair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Refrigerated Equipment</controllingFieldValue>
+            <controllingFieldValue>Shipment Exception</controllingFieldValue>
+            <valueName>Shutdown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demurrage/Misc Bill/Freight Bill</controllingFieldValue>
+            <valueName>Freight Bill</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demurrage/Misc Bill/Freight Bill</controllingFieldValue>
+            <valueName>Premium Payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demurrage/Misc Bill/Freight Bill</controllingFieldValue>
+            <valueName>Order not Used</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demurrage/Misc Bill/Freight Bill</controllingFieldValue>
+            <valueName>Adverse Loading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demurrage/Misc Bill/Freight Bill</controllingFieldValue>
+            <valueName>Misc. Billing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demurrage/Misc Bill/Freight Bill</controllingFieldValue>
+            <valueName>Demurrage/Storage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demurrage/Misc Bill/Freight Bill</controllingFieldValue>
+            <valueName>Detention</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demurrage/Misc Bill/Freight Bill</controllingFieldValue>
+            <valueName>Stop in Route</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demurrage/Misc Bill/Freight Bill</controllingFieldValue>
+            <valueName>VIN Storage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data Quality</controllingFieldValue>
+            <valueName>EDI Administrator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RIT</controllingFieldValue>
+            <valueName>Device Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RIT</controllingFieldValue>
+            <valueName>No Device Available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RIT</controllingFieldValue>
+            <valueName>Not Qualified</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RIT</controllingFieldValue>
+            <valueName>Route Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RIT</controllingFieldValue>
+            <valueName>Training</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Local Service Inquiry</controllingFieldValue>
+            <valueName>Local Service ETA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Local Service Inquiry</controllingFieldValue>
+            <valueName>Local Service Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Local Service Inquiry</controllingFieldValue>
+            <valueName>Missed Switch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Local Service Inquiry</controllingFieldValue>
+            <valueName>Inventory Accuracy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Local Service Inquiry</controllingFieldValue>
+            <valueName>Pull/Place Errors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Local Service Inquiry</controllingFieldValue>
+            <valueName>Service Window Change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Load Issues</controllingFieldValue>
+            <valueName>Damage Prevention Hold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Load Issues</controllingFieldValue>
+            <valueName>Overload</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Load Issues</controllingFieldValue>
+            <valueName>Imbalance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Load Issues</controllingFieldValue>
+            <valueName>Load Moving as Empty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Load Issues</controllingFieldValue>
+            <valueName>Transload</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Load Issues</controllingFieldValue>
+            <valueName>Reject</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foreign Line Inquiry</controllingFieldValue>
+            <valueName>Request for 418</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foreign Line Inquiry</controllingFieldValue>
+            <valueName>EDI Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foreign Line Inquiry</controllingFieldValue>
+            <valueName>Interchange Concerns</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Expedite/Special Train</controllingFieldValue>
+            <valueName>Expedite Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Expedite/Special Train</controllingFieldValue>
+            <valueName>Special Train</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Expedite/Special Train</controllingFieldValue>
+            <valueName>Special Switch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freight Claims &amp; LSS</controllingFieldValue>
+            <valueName>Freight Claims</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freight Claims &amp; LSS</controllingFieldValue>
+            <valueName>LSS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dimensional/Locomotive</controllingFieldValue>
+            <valueName>Locomotive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dimensional/Locomotive</controllingFieldValue>
+            <valueName>Proposal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dimensional/Locomotive</controllingFieldValue>
+            <valueName>Live-Loads</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dimensional/Locomotive</controllingFieldValue>
+            <valueName>Passenger Car</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delays</controllingFieldValue>
+            <valueName>Empty Railcar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delays</controllingFieldValue>
+            <valueName>Loaded Railcar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delays</controllingFieldValue>
+            <valueName>Unit Train</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Allocation</controllingFieldValue>
+            <valueName>MPR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Allocation</controllingFieldValue>
+            <valueName>Pool Adjustment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Allocation</controllingFieldValue>
+            <valueName>Program Work</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Allocation</controllingFieldValue>
+            <valueName>Storage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Allocation</controllingFieldValue>
+            <valueName>Sold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Allocation</controllingFieldValue>
+            <valueName>Scrap</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Allocation</controllingFieldValue>
+            <valueName>TTX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Allocation</controllingFieldValue>
+            <valueName>Car Supply</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Allocation</controllingFieldValue>
+            <valueName>Target</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Allocation</controllingFieldValue>
+            <valueName>OT5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Allocation</controllingFieldValue>
+            <valueName>Car Hire Relief</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Allocation</controllingFieldValue>
+            <valueName>Lease Turnback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection/Bad Order/Empty Rejects</controllingFieldValue>
+            <valueName>Preventative Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection/Bad Order/Empty Rejects</controllingFieldValue>
+            <controllingFieldValue>Rejects</controllingFieldValue>
+            <valueName>Fleet Quality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection/Bad Order/Empty Rejects</controllingFieldValue>
+            <controllingFieldValue>Rejects</controllingFieldValue>
+            <valueName>Mechanical Inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection/Bad Order/Empty Rejects</controllingFieldValue>
+            <controllingFieldValue>Rejects</controllingFieldValue>
+            <valueName>Wrong Car Type</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection/Bad Order/Empty Rejects</controllingFieldValue>
+            <valueName>Cleanout/Pre Trip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection/Bad Order/Empty Rejects</controllingFieldValue>
+            <valueName>Bad Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inspection/Bad Order/Empty Rejects</controllingFieldValue>
+            <valueName>Customer Bad Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Support</controllingFieldValue>
+            <valueName>TYES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Support</controllingFieldValue>
+            <valueName>Inventory Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Support</controllingFieldValue>
+            <valueName>Equipment/Computer Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Support</controllingFieldValue>
+            <valueName>Clean Sheet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Support</controllingFieldValue>
+            <valueName>Mobile Device</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Support</controllingFieldValue>
+            <valueName>Scanner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Support</controllingFieldValue>
+            <valueName>Radio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Support</controllingFieldValue>
+            <valueName>ConnectNS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Support</controllingFieldValue>
+            <valueName>TBAS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Support</controllingFieldValue>
+            <valueName>Report/Query</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Support</controllingFieldValue>
+            <valueName>SharePoint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Support</controllingFieldValue>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <controllingFieldValue>General Inquiry</controllingFieldValue>
+            <controllingFieldValue>Interline Partner</controllingFieldValue>
+            <controllingFieldValue>Shipment Exception</controllingFieldValue>
+            <controllingFieldValue>IM Tracing</controllingFieldValue>
+            <controllingFieldValue>Internal Function</controllingFieldValue>
+            <controllingFieldValue>Equipment</controllingFieldValue>
+            <controllingFieldValue>Storage</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Support</controllingFieldValue>
+            <valueName>Headset</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Support</controllingFieldValue>
+            <valueName>System Permissions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Support</controllingFieldValue>
+            <valueName>TEAMS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Support</controllingFieldValue>
+            <valueName>AccessNS/TRAX - System Defect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Support</controllingFieldValue>
+            <valueName>AccessNS/TRAX - Training</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Support</controllingFieldValue>
+            <valueName>AccessNS/TRAX - General Feedback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <valueName>Waybill Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <valueName>Misc Billing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <valueName>Lift/Payment Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <valueName>Void/Cancel Billing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <valueName>Confirm/Update Billing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Inquiry</controllingFieldValue>
+            <valueName>AccessNS Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Inquiry</controllingFieldValue>
+            <valueName>ExpressNS Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Inquiry</controllingFieldValue>
+            <valueName>Terminal Info</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Inquiry</controllingFieldValue>
+            <valueName>Customer Feedback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Inquiry</controllingFieldValue>
+            <valueName>UIIA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Inquiry</controllingFieldValue>
+            <valueName>Gate Receipt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interline Partner</controllingFieldValue>
+            <valueName>Foreign Road Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interline Partner</controllingFieldValue>
+            <valueName>Port Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipment Exception</controllingFieldValue>
+            <valueName>Misroute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipment Exception</controllingFieldValue>
+            <valueName>Service Disruption</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipment Exception</controllingFieldValue>
+            <valueName>Government Agency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipment Exception</controllingFieldValue>
+            <valueName>Hazardous</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipment Exception</controllingFieldValue>
+            <valueName>Damage/Loadshift</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipment Exception</controllingFieldValue>
+            <valueName>Shipment Delay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipment Exception</controllingFieldValue>
+            <valueName>Hotlist Departure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipment Exception</controllingFieldValue>
+            <valueName>Prioritize Grounding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipment Exception</controllingFieldValue>
+            <valueName>Holds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IM Tracing</controllingFieldValue>
+            <valueName>ETA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IM Tracing</controllingFieldValue>
+            <valueName>ETG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IM Tracing</controllingFieldValue>
+            <valueName>ETD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IM Tracing</controllingFieldValue>
+            <valueName>Current Location</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IM Tracing</controllingFieldValue>
+            <valueName>Lot Location</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Function</controllingFieldValue>
+            <valueName>EC Help</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Function</controllingFieldValue>
+            <valueName>Equipment Control</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Function</controllingFieldValue>
+            <valueName>Marketing/Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Function</controllingFieldValue>
+            <valueName>Customer Operations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Function</controllingFieldValue>
+            <valueName>Transportation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Function</controllingFieldValue>
+            <valueName>Intermodal Operations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Function</controllingFieldValue>
+            <valueName>Revenue Accounting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment</controllingFieldValue>
+            <valueName>Rail-Owned Container Reservations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment</controllingFieldValue>
+            <valueName>CY Reservations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment</controllingFieldValue>
+            <valueName>Private Container</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment</controllingFieldValue>
+            <valueName>Private Chassis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Storage</controllingFieldValue>
+            <valueName>Online Payment Application</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Storage</controllingFieldValue>
+            <valueName>Last Free Day</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Storage</controllingFieldValue>
+            <valueName>Charge Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Storage</controllingFieldValue>
+            <valueName>Storage Rules Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Storage</controllingFieldValue>
+            <valueName>Guarantee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tracing</controllingFieldValue>
+            <valueName>Dealership</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tracing</controllingFieldValue>
+            <valueName>3PL</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

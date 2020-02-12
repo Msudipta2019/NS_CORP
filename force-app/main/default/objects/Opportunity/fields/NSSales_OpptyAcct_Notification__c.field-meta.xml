@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_OpptyAcct_Notification__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>oppty created to an account that does not have market mgr assignment</description>
+    <externalId>false</externalId>
+    <label>OpptyAcct Alert</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Rate Bureau Type --></label>
+    <name>NS_Rate_Bureau_Type__c</name>
+    <picklistValues>
+        <masterLabel>NS</masterLabel>
+        <translation><!-- NS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSCQ</masterLabel>
+        <translation><!-- NSCQ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSPQ</masterLabel>
+        <translation><!-- NSPQ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSQ</masterLabel>
+        <translation><!-- NSQ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSRQ</masterLabel>
+        <translation><!-- NSRQ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSSC</masterLabel>
+        <translation><!-- NSSC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSSM</masterLabel>
+        <translation><!-- NSSM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSSQ</masterLabel>
+        <translation><!-- NSSQ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

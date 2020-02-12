@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_Open_Auto_Intermodal_Requests</fullName>
+    <columns>NAME</columns>
+    <columns>NSSales_Related_Opportunity__c</columns>
+    <columns>NSSales_Need_by_Date__c</columns>
+    <columns>NSSales_Origination_Department__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NSSales_Status__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>NSSales_Approval_Type__c</field>
+        <operation>equals</operation>
+        <value>Auto/Intermodal</value>
+    </filters>
+    <label>Open Auto/Intermodal Requests</label>
+</ListView>

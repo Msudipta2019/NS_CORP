@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_InactiveContactNameNotEditable</fullName>
+    <active>true</active>
+    <description>Contact Name of Inactive Contact cannot be edited.</description>
+    <errorConditionFormula>AND( 
+RecordType.DeveloperName =&#39;NS_ReadOnlyInactiveContact&#39;, 
+OR(
+$Profile.Name = &#39;OSS Rep&#39;,
+$Profile.Name = &#39;OSS Manager&#39;,
+$Profile.Name = &#39;OSS Support&#39;,
+$Profile.Name = &#39;OSS Manager Sales and Service&#39;
+),
+NOT(ISNEW()), 
+OR(
+ISCHANGED(FirstName),
+ISCHANGED( LastName ),
+ISCHANGED( Salutation )
+)
+)</errorConditionFormula>
+    <errorMessage>Inactive Contact name cannot be edited.</errorMessage>
+</ValidationRule>

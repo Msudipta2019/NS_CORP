@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_vrPrefixSuffix_609_1</fullName>
+    <active>false</active>
+    <description>This validation rule is used for selecting prefix and suffix picklist field.User cant select both prefix and suffix at a time as well as user cant select blank picklist value.</description>
+    <errorConditionFormula>OR(
+AND(ISPICKVAL(NSSales_609_1_Suffix__c, &quot;&quot;),
+ISPICKVAL(NSSales_609_1_Prefix__c, &quot;&quot;),
+$RecordType.DeveloperName = &quot;NSSales_609_1&quot;,
+Id != null),
+AND(
+NOT(ISBLANK(TEXT(NSSales_609_1_Prefix__c))),
+NOT(ISBLANK(TEXT(NSSales_609_1_Suffix__c))),
+$RecordType.DeveloperName = &quot;NSSales_609_1&quot;,
+Id != null)
+)</errorConditionFormula>
+    <errorMessage>Please select either Prefix or Suffix in order to save the Opportunity. You cannot select both at the same time.</errorMessage>
+</ValidationRule>

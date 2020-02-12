@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT" description="used to fire loading of which account create form to load" >
+	<aura:attribute name="ConsoleSite" type="String"/>
+
+</aura:event>

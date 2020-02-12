@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Won_Reason__c</fullName>
+    <description>Reason the opportunity was won</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select reason for how Opportunity was won</inlineHelpText>
+    <label>Won Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alternative Product</fullName>
+                <default>false</default>
+                <label>Alternative Product</label>
+            </value>
+            <value>
+                <fullName>Alternative Service</fullName>
+                <default>false</default>
+                <label>Alternative Service</label>
+            </value>
+            <value>
+                <fullName>Bid Award</fullName>
+                <default>false</default>
+                <label>Bid Award</label>
+            </value>
+            <value>
+                <fullName>Billing Type</fullName>
+                <default>false</default>
+                <label>Billing Type</label>
+            </value>
+            <value>
+                <fullName>Business or plant closure/bankruptcy</fullName>
+                <default>false</default>
+                <label>Business or Plant Closure/Bankruptcy</label>
+            </value>
+            <value>
+                <fullName>Competitor Capacity (i.e. truck capacity)</fullName>
+                <default>false</default>
+                <label>Competitor Capacity (i.e. Truck Capacity)</label>
+            </value>
+            <value>
+                <fullName>Competitor Customer Service</fullName>
+                <default>false</default>
+                <label>Competitor Customer Service</label>
+            </value>
+            <value>
+                <fullName>Competitor Service Change (new or cancelled service)</fullName>
+                <default>false</default>
+                <label>Competitor Service Change (New or Cancelled Service)</label>
+            </value>
+            <value>
+                <fullName>Equipment</fullName>
+                <default>false</default>
+                <label>Equipment</label>
+            </value>
+            <value>
+                <fullName>Extreme Weather Event</fullName>
+                <default>false</default>
+                <label>Extreme Weather Event</label>
+            </value>
+            <value>
+                <fullName>Location Inaccessible</fullName>
+                <default>false</default>
+                <label>Location Inaccessible</label>
+            </value>
+            <value>
+                <fullName>Market Conditions</fullName>
+                <default>false</default>
+                <label>Market Conditions</label>
+            </value>
+            <value>
+                <fullName>New Business</fullName>
+                <default>false</default>
+                <label>New Business</label>
+            </value>
+            <value>
+                <fullName>NPO</fullName>
+                <default>false</default>
+                <label>NPO</label>
+            </value>
+            <value>
+                <fullName>NS Customer Service</fullName>
+                <default>false</default>
+                <label>NS Customer Service</label>
+            </value>
+            <value>
+                <fullName>NS Equipment Capacity/Quality</fullName>
+                <default>false</default>
+                <label>NS Equipment Capacity/Quality</label>
+            </value>
+            <value>
+                <fullName>NS New or Cancelled Service</fullName>
+                <default>false</default>
+                <label>NS New or Cancelled Service</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Plant Closure</fullName>
+                <default>false</default>
+                <label>Plant Closure</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <label>Service</label>
+            </value>
+            <value>
+                <fullName>Terms and Conditions</fullName>
+                <default>false</default>
+                <label>Terms and Conditions</label>
+            </value>
+            <value>
+                <fullName>Weather - Seasonality</fullName>
+                <default>false</default>
+                <label>Weather - Seasonality</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

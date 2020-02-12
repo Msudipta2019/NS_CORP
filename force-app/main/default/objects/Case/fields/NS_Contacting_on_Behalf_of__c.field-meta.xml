@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Contacting_on_Behalf_of__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Contacting on Behalf of</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+        <filterItems>
+            <field>Account.RecordType.Name</field>
+            <operation>contains</operation>
+            <value>Offline</value>
+        </filterItems>
+        <filterItems>
+            <field>Account.RecordType.Name</field>
+            <operation>contains</operation>
+            <value>Service</value>
+        </filterItems>
+        <filterItems>
+            <field>Account.RecordType.Name</field>
+            <operation>contains</operation>
+            <value>Business</value>
+        </filterItems>
+        <filterItems>
+            <field>Account.RecordType.Name</field>
+            <operation>contains</operation>
+            <value>Corporate</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>3PL Cases</relationshipLabel>
+    <relationshipName>Cases</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

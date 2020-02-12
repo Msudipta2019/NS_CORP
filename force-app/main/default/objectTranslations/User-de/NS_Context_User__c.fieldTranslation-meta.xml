@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- To identify any users that are created as Context Users --></help>
+    <label><!-- Context User --></label>
+    <name>NS_Context_User__c</name>
+</CustomFieldTranslation>

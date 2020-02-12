@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_RACFUser_IDRequiredFieldsInterType</fullName>
+    <active>false</active>
+    <description>Built as part of Phase 1 enhancement</description>
+    <errorConditionFormula>AND( ISBLANK( NS_RACFUserID__c ),
+RecordType.Name!=&#39;NS Internal&#39;,
+ISPICKVAL(NS_InteractionReason__c,&#39;RIT&#39;), 
+OR( ISPICKVAL(NS_Type__c,&#39;Not Qualified&#39;), ISPICKVAL(NS_Type__c, &#39;Training&#39;)), 
+ISPICKVAL(Status,&#39;NS_Closed&#39;) )</errorConditionFormula>
+    <errorMessage>Please provide RACF/User ID prior to closing the Case.</errorMessage>
+</ValidationRule>

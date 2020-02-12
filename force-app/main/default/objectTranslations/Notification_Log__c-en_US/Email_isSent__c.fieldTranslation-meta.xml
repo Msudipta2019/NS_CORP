@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Checked if email was successfully sent to subscriber. --></help>
+    <label><!-- Email isSent --></label>
+    <name>Email_isSent__c</name>
+</CustomFieldTranslation>

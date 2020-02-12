@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Line_of_Business_BU__c</fullName>
+    <description>displayed alphabetically</description>
+    <externalId>false</externalId>
+    <label>Line of Business_BU</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>NS_Minor_Group_BU__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Anthracite</fullName>
+                <default>false</default>
+                <label>Anthracite</label>
+            </value>
+            <value>
+                <fullName>Coke</fullName>
+                <default>false</default>
+                <label>Coke</label>
+            </value>
+            <value>
+                <fullName>Domestic Met</fullName>
+                <default>false</default>
+                <label>Domestic Met</label>
+            </value>
+            <value>
+                <fullName>Export Met</fullName>
+                <default>false</default>
+                <label>Export Met</label>
+            </value>
+            <value>
+                <fullName>Export Steam</fullName>
+                <default>false</default>
+                <label>Export Steam</label>
+            </value>
+            <value>
+                <fullName>Hub</fullName>
+                <default>false</default>
+                <label>Hub</label>
+            </value>
+            <value>
+                <fullName>Hunt</fullName>
+                <default>false</default>
+                <label>Hunt</label>
+            </value>
+            <value>
+                <fullName>IMC</fullName>
+                <default>false</default>
+                <label>IMC</label>
+            </value>
+            <value>
+                <fullName>LTL</fullName>
+                <default>false</default>
+                <label>LTL</label>
+            </value>
+            <value>
+                <fullName>Petcoke</fullName>
+                <default>false</default>
+                <label>Petcoke</label>
+            </value>
+            <value>
+                <fullName>Truckload</fullName>
+                <default>false</default>
+                <label>Truckload</label>
+            </value>
+            <value>
+                <fullName>UPS</fullName>
+                <default>false</default>
+                <label>UPS</label>
+            </value>
+            <value>
+                <fullName>Utility North</fullName>
+                <default>false</default>
+                <label>Utility North</label>
+            </value>
+            <value>
+                <fullName>Utility South</fullName>
+                <default>false</default>
+                <label>Utility South</label>
+            </value>
+            <value>
+                <fullName>Iron Ore</fullName>
+                <default>false</default>
+                <label>Iron Ore</label>
+            </value>
+            <value>
+                <fullName>International</fullName>
+                <default>false</default>
+                <label>International</label>
+            </value>
+            <value>
+                <fullName>Triple Crown</fullName>
+                <default>false</default>
+                <label>Triple Crown</label>
+            </value>
+            <value>
+                <fullName>Unassigned</fullName>
+                <default>false</default>
+                <label>Unassigned</label>
+            </value>
+            <value>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+                <label>Industrial</label>
+            </value>
+            <value>
+                <fullName>Other Non/Met</fullName>
+                <default>false</default>
+                <label>Other Non/Met</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>Anthracite (870)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Anthracite (870)</label>
+            </value>
+            <value>
+                <fullName>Coke (850)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Coke (850)</label>
+            </value>
+            <value>
+                <fullName>Domestic Met (830)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Domestic Met (830)</label>
+            </value>
+            <value>
+                <fullName>Export Met (810)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Export Met (810)</label>
+            </value>
+            <value>
+                <fullName>Export Steam (820)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Export Steam (820)</label>
+            </value>
+            <value>
+                <fullName>Hub (714)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hub (714)</label>
+            </value>
+            <value>
+                <fullName>Hunt (715)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hunt (715)</label>
+            </value>
+            <value>
+                <fullName>ID Export Steam           </fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ID Export Steam           </label>
+            </value>
+            <value>
+                <fullName>IMC (701)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>IMC (701)</label>
+            </value>
+            <value>
+                <fullName>Industrial (840)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Industrial (840)</label>
+            </value>
+            <value>
+                <fullName>Iron Ore              </fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Iron Ore              </label>
+            </value>
+            <value>
+                <fullName>LTL (708)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LTL (708)</label>
+            </value>
+            <value>
+                <fullName>Other Non/Met            </fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other Non/Met            </label>
+            </value>
+            <value>
+                <fullName>Petcoke (880)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Petcoke (880)</label>
+            </value>
+            <value>
+                <fullName>Truckload (703)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Truckload (703)</label>
+            </value>
+            <value>
+                <fullName>UPS (711)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UPS (711)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Anthracite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Petcoke</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Industrial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Domestic</controllingFieldValue>
+            <valueName>Hub</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Domestic</controllingFieldValue>
+            <valueName>Hunt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Domestic</controllingFieldValue>
+            <valueName>IMC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Domestic</controllingFieldValue>
+            <valueName>Truckload</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Premium</controllingFieldValue>
+            <valueName>LTL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Premium</controllingFieldValue>
+            <valueName>UPS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>International</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Triple Crown</controllingFieldValue>
+            <valueName>Triple Crown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unassigned</controllingFieldValue>
+            <valueName>Unassigned</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility Coal</controllingFieldValue>
+            <valueName>Utility North</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility Coal</controllingFieldValue>
+            <valueName>Utility South</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Export Coal</controllingFieldValue>
+            <valueName>Export Met</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Export Coal</controllingFieldValue>
+            <valueName>Export Steam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Domestic Met Coal</controllingFieldValue>
+            <valueName>Coke</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Domestic Met Coal</controllingFieldValue>
+            <valueName>Domestic Met</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Domestic Met Coal</controllingFieldValue>
+            <valueName>Iron Ore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other Non/Met</controllingFieldValue>
+            <valueName>Other Non/Met</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

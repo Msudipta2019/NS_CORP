@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_ContactRequired</fullName>
+    <active>true</active>
+    <description>Requires one of the following(work phone or mobile or other phone or email)  to be populated before saving a Contact record</description>
+    <errorConditionFormula>AND(RecordType.DeveloperName=&#39;NS_GeneralContact&#39;, ISBLANK( Email ) , ISBLANK( MobilePhone ) , ISBLANK(Phone),ISBLANK(OtherPhone), ISBLANK(HomePhone),!NSSales_Lead_Created__c )</errorConditionFormula>
+    <errorMessage>Please enter either Work Phone, Mobile Phone, Other Phone 1, Other Phone 2 or Email.</errorMessage>
+</ValidationRule>

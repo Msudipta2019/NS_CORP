@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Sales_Automotive</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>NSSales_ACCompactLayout</compactLayoutAssignment>
+    <description>Account classification for Automotive Business Unit</description>
+    <label>Automotive</label>
+    <picklistValues>
+        <picklist>NSSales_Business_Group__c</picklist>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NS_Account_Type_BU__c</picklist>
+        <values>
+            <fullName>Beneficial Cargo Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broker%2F3PL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drayage Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Economic Development Ally</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering Consultant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Port</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Railroad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receiver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipper%2FReceiver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Selector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>State or Local EDC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NS_Business_Group_BU__c</picklist>
+        <values>
+            <fullName>Merchandise</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NS_Line_of_Business_BU__c</picklist>
+        <values>
+            <fullName>Coke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Domestic Met</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Export Met</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Export Steam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hunt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LTL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Petcoke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Triple Crown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Truckload</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unassigned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility North</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility South</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NS_Major_Group_BU__c</picklist>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NS_Minor_Group_BU__c</picklist>
+        <values>
+            <fullName>Vehicle Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicles - Artbilev</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicles - Bilevel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicles - Trilevel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NS_Sub_Business_Group_BU__c</picklist>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

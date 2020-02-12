@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_609_1_status__c</fullName>
+    <description>Created as part of Req#3332</description>
+    <externalId>false</externalId>
+    <label>609.1 Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Under Review</fullName>
+                <default>false</default>
+                <label>Under Review</label>
+            </value>
+            <value>
+                <fullName>Retained - Strategic Asset</fullName>
+                <default>false</default>
+                <label>Retained - Strategic Asset</label>
+            </value>
+            <value>
+                <fullName>Retained - Turnout Maintenance Fee Paid</fullName>
+                <default>false</default>
+                <label>Retained - Turnout Maintenance Fee Paid</label>
+            </value>
+            <value>
+                <fullName>Retained - New Business Opportunity</fullName>
+                <default>false</default>
+                <label>Retained - New Business Opportunity</label>
+            </value>
+            <value>
+                <fullName>Retained - Not Applicable for 609.1 Review</fullName>
+                <default>false</default>
+                <label>Retained - Not Applicable for 609.1 Review</label>
+            </value>
+            <value>
+                <fullName>Approved for Removal</fullName>
+                <default>false</default>
+                <label>Approved for Removal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

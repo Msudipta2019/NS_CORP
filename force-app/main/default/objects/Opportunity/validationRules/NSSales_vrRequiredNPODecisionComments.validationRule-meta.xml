@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_vrRequiredNPODecisionComments</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISBLANK(TEXT(NSSales_NPO_Final_Decision__c)))
+&amp;&amp;
+ISBLANK( NSSales_NPO_Decision_Comments__c )</errorConditionFormula>
+    <errorDisplayField>NSSales_NPO_Decision_Comments__c</errorDisplayField>
+    <errorMessage>Please fill up the NPO Decision Comments field.</errorMessage>
+</ValidationRule>

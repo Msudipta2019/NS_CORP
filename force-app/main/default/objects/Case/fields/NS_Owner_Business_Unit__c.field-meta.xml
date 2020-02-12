@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Owner_Business_Unit__c</fullName>
+    <externalId>false</externalId>
+    <label>Owner Business Unit</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Equipment Planning</fullName>
+                <default>false</default>
+                <label>Equipment Planning</label>
+            </value>
+            <value>
+                <fullName>OSS</fullName>
+                <default>false</default>
+                <label>OS/CS</label>
+            </value>
+            <value>
+                <fullName>Coal</fullName>
+                <default>false</default>
+                <label>Coal</label>
+            </value>
+            <value>
+                <fullName>Intermodal</fullName>
+                <default>false</default>
+                <label>Intermodal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

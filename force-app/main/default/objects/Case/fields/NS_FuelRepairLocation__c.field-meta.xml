@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_FuelRepairLocation__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Field created as part of Phase 1 enhancement.</description>
+    <externalId>false</externalId>
+    <label>Fuel/Repair Location</label>
+    <referenceTo>NS_ServiceStations__c</referenceTo>
+    <relationshipLabel>Cases (Fuel/Repair Location)</relationshipLabel>
+    <relationshipName>Cases3</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

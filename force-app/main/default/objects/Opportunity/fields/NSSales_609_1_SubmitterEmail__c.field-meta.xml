@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_609_1_SubmitterEmail__c</fullName>
+    <description>Created as part of 609.1 Switch Removal Approval Process</description>
+    <externalId>false</externalId>
+    <label>609.1 Submitter Email</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

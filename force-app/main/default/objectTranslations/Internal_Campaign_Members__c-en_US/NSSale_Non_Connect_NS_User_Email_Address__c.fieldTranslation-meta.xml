@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Non-Connect NS User Email Address --></label>
+    <name>NSSale_Non_Connect_NS_User_Email_Address__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>eaENS_ETAChange</fullName>
+        <description>ENS ETA Change</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Notification_Email_Address__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>connectns.nsuat+uat.noreply@gmail.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Notification_Templates/etENS_ETAChange</template>
+    </alerts>
+    <alerts>
+        <fullName>eaENS_LSAdvisory</fullName>
+        <description>ENS Local Service Advisory</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Notification_Email_Address__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>connectns.nsuat+uat.noreply@gmail.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Notification_Templates/etENS_LocalServiceAdvisory</template>
+    </alerts>
+    <alerts>
+        <fullName>eaENS_LSPlanned</fullName>
+        <description>ENS Local Service Planned</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Notification_Email_Address__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>connectns.nsuat+uat.noreply@gmail.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Notification_Templates/etENS_LocalServicePlanned</template>
+    </alerts>
+    <alerts>
+        <fullName>eaENS_LSTransit</fullName>
+        <description>ENS Local Service In-Transit</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Notification_Email_Address__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>connectns.nsuat+uat.noreply@gmail.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Notification_Templates/etENS_LocalServiceInTransit</template>
+    </alerts>
+    <alerts>
+        <fullName>eaENS_NoWaybill</fullName>
+        <description>ENS No Waybill</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Notification_Email_Address__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>connectns.nsuat+uat.noreply@gmail.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Notification_Templates/etENS_NoWaybill</template>
+    </alerts>
+    <alerts>
+        <fullName>eaENS_OLResolved</fullName>
+        <description>ENS OL Resolved</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Notification_Email_Address__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>connectns.nsuat+uat.noreply@gmail.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Notification_Templates/etENS_OLResolved</template>
+    </alerts>
+    <alerts>
+        <fullName>eaENS_Overload</fullName>
+        <description>ENS Overload</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Notification_Email_Address__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>connectns.nsuat+uat.noreply@gmail.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Notification_Templates/etENS_Overload</template>
+    </alerts>
+</Workflow>

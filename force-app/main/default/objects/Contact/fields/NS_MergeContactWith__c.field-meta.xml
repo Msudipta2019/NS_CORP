@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_MergeContactWith__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Contact with which to merge the current Contact</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Contact with which to merge the current Contact</inlineHelpText>
+    <label>Merge Contact With</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Contact.NS_ContactStatus__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Contacts</relationshipLabel>
+    <relationshipName>Contacts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

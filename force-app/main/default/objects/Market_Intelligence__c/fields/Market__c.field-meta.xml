@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Multi-pick; Use Detail to refine Market.</inlineHelpText>
+    <label>Market</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ag &amp; Consumer</fullName>
+                <default>false</default>
+                <label>Ag &amp; Consumer</label>
+            </value>
+            <value>
+                <fullName>Auto</fullName>
+                <default>false</default>
+                <label>Auto</label>
+            </value>
+            <value>
+                <fullName>Chem</fullName>
+                <default>false</default>
+                <label>Chem</label>
+            </value>
+            <value>
+                <fullName>Coal</fullName>
+                <default>false</default>
+                <label>Coal</label>
+            </value>
+            <value>
+                <fullName>IM Dom</fullName>
+                <default>false</default>
+                <label>IM Dom</label>
+            </value>
+            <value>
+                <fullName>IM Intl</fullName>
+                <default>false</default>
+                <label>IM Intl</label>
+            </value>
+            <value>
+                <fullName>MetCon</fullName>
+                <default>false</default>
+                <label>MetCon</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

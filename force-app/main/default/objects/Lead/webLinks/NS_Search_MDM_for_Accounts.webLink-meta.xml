@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Search_MDM_for_Accounts</fullName>
+    <availability>online</availability>
+    <description>Button to take the user to MDM system to search for the Account</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Search MDM for Accounts</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>http://www.nscorp.com/content/nscorp/en.html</url>
+</WebLink>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_vrNoChangeInReadOnlyRecordType</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(RecordType.DeveloperName = &quot;Read_Only&quot;, OR(ISCHANGED( StageName ) ,  ISCHANGED( CloseDate ) ,  ISCHANGED( NS_Originating_Department__c ), ISCHANGED(Name) ))</errorConditionFormula>
+    <errorMessage>Record is in approval process, no changes allowed</errorMessage>
+</ValidationRule>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Users needs to select a queue as primary queue only if they are already present in that Queue --></help>
+    <label><!-- Primary Queue --></label>
+    <name>NS_Primary_Queue__c</name>
+    <picklistValues>
+        <masterLabel>Automotive - Bad Order</masterLabel>
+        <translation><!-- Automotive - Bad Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Automotive - Empties</masterLabel>
+        <translation><!-- Automotive - Empties --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Automotive - Loads</masterLabel>
+        <translation><!-- Automotive - Loads --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Automotive - Parts</masterLabel>
+        <translation><!-- Automotive - Parts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Unit</masterLabel>
+        <translation><!-- Business Unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLPS</masterLabel>
+        <translation><!-- CLPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CS - AgFP Base</masterLabel>
+        <translation><!-- CS - AgFP Base --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CS - AgFP Core</masterLabel>
+        <translation><!-- CS - AgFP Core --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CS - AgFP Strategic</masterLabel>
+        <translation><!-- CS - AgFP Strategic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CS - Chem Base</masterLabel>
+        <translation><!-- CS - Chem Base --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CS - Chem Core</masterLabel>
+        <translation><!-- CS - Chem Core --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CS - Chem Strategic</masterLabel>
+        <translation><!-- CS - Chem Strategic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CS - MetCon Base</masterLabel>
+        <translation><!-- CS - MetCon Base --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CS - MetCon Core</masterLabel>
+        <translation><!-- CS - MetCon Core --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CS - MetCon Strategic</masterLabel>
+        <translation><!-- CS - MetCon Strategic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CS Help Desk</masterLabel>
+        <translation><!-- CS Help Desk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clearances</masterLabel>
+        <translation><!-- Clearances --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coal - Met/Ex</masterLabel>
+        <translation><!-- Coal - Met/Ex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coal - Utility</masterLabel>
+        <translation><!-- Coal - Utility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Quality (DQ)</masterLabel>
+        <translation><!-- Data Quality (DQ) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E - Commerce IT</masterLabel>
+        <translation><!-- E - Commerce IT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EP - Auto Parts Boxcars</masterLabel>
+        <translation><!-- EP - Auto Parts Boxcars --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EP - Boxcars</masterLabel>
+        <translation><!-- EP - Boxcars --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EP - Fleet Quality</masterLabel>
+        <translation><!-- EP - Fleet Quality --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EP - Hoppers</masterLabel>
+        <translation><!-- EP - Hoppers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EP - Metals</masterLabel>
+        <translation><!-- EP - Metals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EP - Private Cars</masterLabel>
+        <translation><!-- EP - Private Cars --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Freight Claims</masterLabel>
+        <translation><!-- Freight Claims --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intermodal - Customer Service</masterLabel>
+        <translation><!-- Intermodal - Customer Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intermodal - Customer Service Manager</masterLabel>
+        <translation><!-- Intermodal - Customer Service Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intermodal - Domestic</masterLabel>
+        <translation><!-- Intermodal - Domestic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intermodal - International</masterLabel>
+        <translation><!-- Intermodal - International --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intermodal - JB Hunt</masterLabel>
+        <translation><!-- Intermodal - JB Hunt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intermodal - Premium</masterLabel>
+        <translation><!-- Intermodal - Premium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intermodal - Terminal Support</masterLabel>
+        <translation><!-- Intermodal - Terminal Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intermodal - Truckload</masterLabel>
+        <translation><!-- Intermodal - Truckload --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loading &amp; Securement Solutions (LSS)</masterLabel>
+        <translation><!-- Loading &amp; Securement Solutions (LSS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OS Ancillary Services</masterLabel>
+        <translation><!-- OS Ancillary Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OS Central</masterLabel>
+        <translation><!-- OS Central --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OS Central Manager</masterLabel>
+        <translation><!-- OS Central Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OS Eastern</masterLabel>
+        <translation><!-- OS Eastern --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OS Northern</masterLabel>
+        <translation><!-- OS Northern --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OS Northern Manager</masterLabel>
+        <translation><!-- OS Northern Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OS Southern</masterLabel>
+        <translation><!-- OS Southern --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OS Southern Manager</masterLabel>
+        <translation><!-- OS Southern Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSS Administrative</masterLabel>
+        <translation><!-- OSS Administrative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSS East</masterLabel>
+        <translation><!-- OSS East --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSS East Manager</masterLabel>
+        <translation><!-- OSS East Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSS Leadership</masterLabel>
+        <translation><!-- OSS Leadership --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSS North</masterLabel>
+        <translation><!-- OSS North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSS South</masterLabel>
+        <translation><!-- OSS South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSS West</masterLabel>
+        <translation><!-- OSS West --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special Services</masterLabel>
+        <translation><!-- Special Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>eCommerce</masterLabel>
+        <translation><!-- eCommerce --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

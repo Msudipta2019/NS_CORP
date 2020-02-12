@@ -1,0 +1,6 @@
+<aura:component controller="NS_TerminalAccountUpdate" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+	<aura:attribute name="open_Modal" type="boolean" default="false"/>
+    <div class="col-md-4 text-center" align="center">
+        <ui:button class="btn btn-default" press="{!c.importTerminal}">Import Terminal Account</ui:button>
+    </div>
+</aura:component>

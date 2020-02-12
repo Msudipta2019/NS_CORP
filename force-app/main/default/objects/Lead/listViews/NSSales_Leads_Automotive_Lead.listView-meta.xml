@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_Leads_Automotive_Lead</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <filterScope>Queue</filterScope>
+    <label>Automotive Leads Queue</label>
+    <queue>NSSales_Leads_Automotive</queue>
+    <sharedTo>
+        <role>Sales_Automotive_Leadership</role>
+        <role>Sales_Automotive_Manager</role>
+        <role>Sales_Coal_Leadership</role>
+        <role>Sales_Coal_Manager</role>
+        <role>Sales_Industrial_Development_Leadership</role>
+        <role>Sales_Industrial_Development_Manager</role>
+        <role>Sales_Industrial_Product_Leadership</role>
+        <role>Sales_Industrial_Product_Manager</role>
+        <role>Sales_Intermodal_Leadership</role>
+        <role>Sales_Intermodal_Manager</role>
+        <role>Sales_Marketing_Research_Forecasting_User</role>
+    </sharedTo>
+</ListView>

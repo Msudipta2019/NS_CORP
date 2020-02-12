@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Orig_Location__c</fullName>
+    <description>Origin City, Origin State</description>
+    <externalId>false</externalId>
+    <formula>NSSales_OriginCity__c &amp; &quot;,&quot; &amp; NSSales_OriginState__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Origin City, Origin State</inlineHelpText>
+    <label>Origin</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

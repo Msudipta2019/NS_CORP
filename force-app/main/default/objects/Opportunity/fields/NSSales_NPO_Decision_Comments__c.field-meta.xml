@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_NPO_Decision_Comments__c</fullName>
+    <description>This will capture the comments entered by NPO approver while taking final NPO decision.</description>
+    <externalId>false</externalId>
+    <label>NPO Decision Comments</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

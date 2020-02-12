@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- One subset of Intermodal users, Crown Users, do not use
+the system. --></help>
+    <label><!-- Crown User --></label>
+    <name>Crown_User__c</name>
+</CustomFieldTranslation>

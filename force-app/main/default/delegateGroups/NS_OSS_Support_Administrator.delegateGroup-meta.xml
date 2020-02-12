@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DelegateGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <groups>Auto/Intermodal</groups>
+    <groups>IP/Unit Train</groups>
+    <groups>OPS Planning West</groups>
+    <groups>OPS Planning East Approver</groups>
+    <groups>Unit Train</groups>
+    <groups>Ops Planning North</groups>
+    <groups>Ops Planning South</groups>
+    <groups>OPS Planning Central</groups>
+    <groups>OPS Planning NOC</groups>
+    <groups>CS - AgFP Base</groups>
+    <groups>CS - AgFP S/C</groups>
+    <groups>CS - Chem Base</groups>
+    <groups>CS - Chem S/C</groups>
+    <groups>CS - MetCon Base</groups>
+    <groups>CS - MetCon S/C</groups>
+    <groups>CS - Unidentified</groups>
+    <groups>CS - B6 &amp; B5 Access Group</groups>
+    <groups>CS - PAD Access Group</groups>
+    <groups>Intermodal - Customer Service</groups>
+    <groups>Intermodal - Customer Service Manager</groups>
+    <groups>Intermodal - Domestic</groups>
+    <groups>Intermodal - International</groups>
+    <groups>Intermodal - JB Hunt</groups>
+    <groups>Intermodal - Terminal Support</groups>
+    <groups>Intermodal - Truckload</groups>
+    <groups>Intermodal - Premium</groups>
+    <groups>Intermodal - Customer Feedback</groups>
+    <groups>Automotive</groups>
+    <groups>Clearances</groups>
+    <groups>Data Quality</groups>
+    <groups>Holiday Polling</groups>
+    <groups>Intermodal</groups>
+    <groups>Loading &amp; Securement Solutions (LSS)</groups>
+    <groups>OS Northern Manager</groups>
+    <groups>OS Central Manager</groups>
+    <groups>CS Help Desk</groups>
+    <groups>OS Ancillary Services</groups>
+    <groups>OS Eastern Manager</groups>
+    <groups>OS Southern Manager</groups>
+    <groups>Special Services</groups>
+    <groups>Unit Train</groups>
+    <groups>Freight Claims</groups>
+    <groups>Freight Claims</groups>
+    <groups>OS Southern</groups>
+    <groups>OS Eastern</groups>
+    <groups>OS Central</groups>
+    <groups>OS Northern</groups>
+    <groups>Automotive - Bad Order</groups>
+    <groups>Automotive - Empties</groups>
+    <groups>Automotive - Loads</groups>
+    <groups>Automotive - Parts</groups>
+    <groups>Automotive - Support</groups>
+    <groups>EP - Boxcars</groups>
+    <groups>EP - Fleet Quality</groups>
+    <groups>EP - Hoppers</groups>
+    <groups>EP - Metals</groups>
+    <groups>EP - Private Cars</groups>
+    <groups>EP - System Support</groups>
+    <groups>EP - Auto Parts Boxcars</groups>
+    <groups>Equipment Planing</groups>
+    <groups>UTS – Energy</groups>
+    <groups>UTS – Grain</groups>
+    <groups>Coal - Met/Ex</groups>
+    <groups>Coal - Utility</groups>
+    <groups>CS Feedback</groups>
+    <groups>E-Commerce IT</groups>
+    <label>OSS Support Administrator</label>
+    <loginAccess>false</loginAccess>
+</DelegateGroup>

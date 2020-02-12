@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Contact_Name__c</columns>
+    <columns>User__c</columns>
+    <columns>RACF_Id__c</columns>
+    <columns>Event_Name__c</columns>
+    <columns>Event_Description__c</columns>
+    <columns>Customer_Alert_Name__c</columns>
+    <columns>isInternalUser__c</columns>
+    <columns>isProcessed__c</columns>
+    <columns>Notification_Email_Address__c</columns>
+    <columns>Notification_Message__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field can be used to provide specific topics for reporting purposes. For Example: Site Selection, Billing, Payment and Weather. --></help>
+    <label><!-- Topic(s) --></label>
+    <name>Other_Topic__c</name>
+</CustomFieldTranslation>

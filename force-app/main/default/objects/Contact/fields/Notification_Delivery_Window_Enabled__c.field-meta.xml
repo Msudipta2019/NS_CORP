@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Notification_Delivery_Window_Enabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Whether the contact has or has not subscribed to receive NS ENS notification.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Whether the contact has or has not subscribed to receive NS ENS notification.</inlineHelpText>
+    <label>Delivery Window Enabled</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

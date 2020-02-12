@@ -1,0 +1,213 @@
+<aura:component controller="CreateIDAccountController" implements="force:appHostable,lightning:actionOverride,lightning:isUrlAddressable,flexipage:availableForAllPageTypes,force:hasRecordId,force:hasSObjectName" access="global">
+	<lightning:workspaceAPI aura:id="CreateIDaccount"/>
+	<lightning:navigation aura:id="navigationService" />
+	<!-- lightning:pageReferenceUtils aura:id="pageRefUtils"/  --> 
+	
+	<!-- aura:attribute name="ObjectpageRef" type="Object"/ -->  <!-- ADDED FOR NAVIGATION	 -->
+	<aura:attribute name="url" type="String"/>  <!-- ADDED FOR NAVIGATION	 -->
+	
+	<aura:attribute name="refreshcomplete" type="Boolean" default='false'/>  <!-- ADDED FOR NAVIGATION	 -->
+	
+	<aura:attribute name="recordTypeId" type="String" default="{!v.sObjectName}"/>
+	<aura:attribute name="recordTypeName" type="String" default=""/>
+    <aura:attribute name="StatusIndicatorpicklistValues" type="Object" default="-- none --"/>
+    <aura:attribute name="StatusIndicator" type="String" default="-- none --"/>
+    <aura:attribute name="Account_Business_Type" type="String" default="-- none --"/>
+    <aura:attribute name="AcctBiztypepicklistValues" type="Object" />
+    <aura:attribute name="ConsoleSite" type="String" default="Service"/>
+    
+    <aura:attribute name="AcctRecord" type="Account" />
+    <aura:attribute name="modalContext" type="String" default="Industrial Development" />
+    <aura:attribute name="issearching" type="Boolean" default="false"/>
+    <aura:attribute name="isInD" type="Boolean"  default='false'/>
+        
+	<aura:attribute name="selectedLookUpRecord" type="sObject" default="{}"/>   
+	<aura:attribute name="selectedLookUpMrkOwner" type="sObject" default="{}"/> 
+	<aura:attribute name="selectedLookUpContactRecord" type="sObject" default="{}"/>
+	<aura:attribute name="selectedLookUpVdn" type="sObject" default="{}"/>
+
+    <aura:attribute name="fields" type="String[]" default="['Name', 'ParentId','RecordType', 'NS_Account_Business_Type__c', 'Phone', 'NS_Email__c', 
+                                'NSSales_Slim_Golden__c', 'NS_StatusIndicator__c', 'NS_AssociatedBusinessUnit__c', 'Website', 'NS_PrimaryVDN__c',
+                                 'NS_MarketingOwner__c', 'ShippingAddress', 'NS_OfflineContactFirstName__c', 'NS_OfflineContactLastName__c', 
+                                 'NS_OfflineContactWorkPhone__c', 'NS_OfflineContactMobile__c', 'NS_OfflineContactEmail__c','NS_ExistingContact__c','NS_MarketingOwner__c']" />
+    
+    <aura:attribute name="AssociatedBusinessUnit"  type="List" default="['Industrial Development']"/>
+    <aura:attribute name="AcctAsscBussUntpicklistValues" type="List" default="[
+        { label: 'Automotive', value: 'Automotive' },
+        { label: 'Coal', value: 'Coal' },
+        { label: 'Equipment Planning', value: 'Equipment Planning' },
+        { label: 'Industrial Development', value: 'Industrial Development' },
+        { label: 'Industrial Products', value: 'Industrial Products' },
+        { label: 'Intermodal', value: 'Intermodal' },
+        { label: 'OSS', value: 'OSS' },
+        { label: 'Real Estate', value: 'Real Estate' },
+        { label: 'Revenue Accounting', value: 'Revenue Accounting' },
+        { label: 'Revenue Waybilling', value: 'Revenue Waybilling' },
+        { label: 'Unit Train', value: 'Unit Train' },
+        { label: 'Marketing', value: 'Marketing' }]"/>
+
+	<aura:registerEvent name="InitTabEvent" type="c:InitTabEvent"/>
+	<aura:handler name="InitTabEvent" event="c:InitTabEvent" action="{!c.handleTabDisplay}"/>
+	<aura:registerEvent name="CloseTabEvent" type="c:CloseTabEvent"/>
+	<aura:handler name="CloseTabEvent" event="c:CloseTabEvent" action="{!c.CloseTabDisplay}"/>
+
+    <force:recordData aura:id="NewAccountRecord"
+                      recordId="{!v.recordId}"
+                      targetFields="{!v.AcctRecord}"
+                      fields="{!v.fields}"         
+                      mode="EDIT" />
+                      
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler name="change" value="{!v.pageReference}" action="{!c.reInit}"/>
+    
+    <c:StatusIndicatorPicklist sObjectName="Account" fieldName="NS_StatusIndicator__c" StatusIndicatorpicklistValues="{!v.StatusIndicatorpicklistValues}" />
+    <c:StatusIndicatorPicklist sObjectName="Account" fieldName="NS_Account_Business_Type__c" AcctBiztypepicklistValues="{!v.AcctBiztypepicklistValues}" />
+	<c:StatusIndicatorPicklist sObjectName="Account" fieldName="NS_AssociatedBusinessUnit__c" AcctAsscBussUntpicklistValues="{!v.AcctAsscBussUntpicklistValues}" />
+    <div aura:id="editDialog" role="dialog" tabindex="-1" aria-labelledby="header43" class="slds-modal slds-fade-in-open full-width">
+        <div class="slds-modal__container slds-scrollable">
+            <div class="slds-modal__header">
+                <h2 class="slds-text-heading--medium">New Account: {!v.modalContext}</h2>
+            </div>
+		
+		<aura:renderIf isTrue="{!v.isInD}">
+            <div class="slds-modal__content slds-p-around--medium slds-grid slds-wrap ">
+
+				<h3 class="slds-text-heading--medium slds-theme--shade slds-size--1-of-1">
+		            <span class="section-header-title slds-p-horizontal--small slds-truncate">Account Information</span>
+				</h3>
+
+                <lightning:input aura:id="AcctName" name="AcctName" label="Account Name" value="{!v.AcctRecord.Name}" required="true" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
+                <lightning:select aura:id="AcctStatus" name="AcctStatus" label="Status Indicator" value="{!v.StatusIndicator}" required="true" class="slds-size--1-of-2 slds-p-horizontal_x-small">
+                    <aura:iteration items="{!v.StatusIndicatorpicklistValues}" var="item"> 
+                        <aura:if isTrue="{!v.AcctRecord.NS_StatusIndicator__c == item }"> 
+                            <option value="{!item}" selected="selected">{!item}</option> 
+                            <aura:set attribute="else"> 
+                                <option value="{!item}">{!item}</option> 
+                            </aura:set> 
+                        </aura:if> 
+                    </aura:iteration> 
+                </lightning:select>
+                
+                <!--  SEARCH FOR Parent -->
+				<div style="width:275px" class="slds-size--1-of-2 slds-p-horizontal_x-small">    
+					<c:CustomLookup objectAPIName="account" IconName="standard:account" selectedRecord="{!v.selectedLookUpRecord}" label="Parent Account"/>            
+			    </div>
+			    
+                <div class="slds-size--1-of-2 slds-p-horizontal_x-small" >
+				    <lightning:dualListbox name="AcctBusinessUnit"
+				                           label= "Associated NS Business Unit(s)"
+				                           sourceLabel="Available"
+				                           selectedLabel="Chosen"
+				                           fieldLevelHelp="Business Unit or Units who do business with that particular Account"
+				                           options="{!v.AcctAsscBussUntpicklistValues}"
+				                           value="{!v.AssociatedBusinessUnit}"
+				                           onchange="{! c.AssignAcctBusinessUnit }"/>
+				</div>
+                
+                
+                <lightning:select aura:id="AcctBizType" name="AcctBizType" label="Account Business Type" value="{!v.Account_Business_Type}" required="true" class="slds-size--1-of-2 slds-p-horizontal_x-small">
+                    <aura:iteration items="{!v.AcctBiztypepicklistValues}" var="item"> 
+                        <aura:if isTrue="{!v.AcctRecord.NS_Account_Business_Type__c == item }"> 
+                            <option value="{!item}" selected="selected">{!item}</option> 
+                            <aura:set attribute="else"> 
+                                <option value="{!item}">{!item}</option> 
+                            </aura:set> 
+                        </aura:if> 
+                    </aura:iteration> 
+                </lightning:select>
+
+                <lightning:input aura:id="AcctWebsite" name="AcctWebsite" label="Website" value="{!v.AcctRecord.Website}" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
+                <lightning:input aura:id="AcctCompPhone" name="AcctCompPhone" label="Company Phone" value="{!v.AcctRecord.Phone}" fieldLevelHelp="Main business phone number for the Account" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
+				<!--  SEARCH FOR Account Primary VDN -->
+				<div style="width:275px" class="slds-size--1-of-2 slds-p-horizontal_x-small">    
+				   <c:CustomLookup objectAPIName="NS_VDN__c" IconName="standard:user" selectedRecord="{!v.selectedLookUpVdn}" label="Primary VDN"/>            
+				</div>
+                
+				<lightning:input aura:id="AcctEmail" name="AcctEmail" label="Email" value="{!v.AcctRecord.NS_Email__c}" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
+
+				<!--  SEARCH FOR Account Marketing owner -->
+				<div style="width:275px" class="slds-size--1-of-2 slds-p-horizontal_x-small">    
+				   <c:CustomLookup objectAPIName="user" IconName="standard:user" selectedRecord="{!v.selectedLookUpMrkOwner}" label="Marketing Account Owner"/>            
+				</div>
+ 
+                <lightning:input type="checkbox" aura:id="AcctSlimGolden" name="AcctSlimGolden" label="Slim Golden" value="{!v.AcctRecord.NSSales_Slim_Golden__c}" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
+            	<br/><br/>
+				<h3 class="slds-text-heading--medium slds-theme--shade slds-size--1-of-1">
+		            <span class="section-header-title slds-p-horizontal--small slds-truncate">Address Information</span>
+				</h3>
+
+			    
+			    
+				<div class="slds-size--1-of-1 slds-p-horizontal_x-small"></div>
+    		    <div class="slds-size--1-of-2 slds-p-horizontal_x-small" style="width:275px">
+		        <lightning:inputAddress
+		        	aura:id="ShippingAddr"
+		            addressLabel=""
+		            streetLabel="Shipping Street"
+		            cityLabel="Shipping City"
+		            countryLabel="Shipping Country"
+		            provinceLabel="Shipping State/Provence"
+		            postalCodeLabel="Shipping Zip/Postal Code"
+		            street="{!v.AcctRecord.ShippingStreet}"
+		            city="{!v.AcctRecord.ShippingCity}"
+		            country="{!v.AcctRecord.ShippingCountry}"
+		            province="{!v.AcctRecord.ShippingState}"
+		            postalCode="{!v.AcctRecord.ShippingPostalCode}"
+		            required="false"
+		            fieldLevelHelp=""
+		            showAddressLookup="true" 
+		        />
+		    	</div>
+		    	<div class="slds-size--1-of-2 slds-p-horizontal_x-small"></div>
+
+				<br/><br/>
+				<br/><br/>
+				<h3 class="slds-text-heading--medium slds-theme--shade slds-size--1-of-1">
+		            <span class="section-header-title slds-p-horizontal--small slds-truncate">
+						Contact Information
+					</span>
+				</h3>
+				<lightning:input aura:id="FirstName" name="FirstName" label="First Name" value="{!v.AcctRecord.NS_OfflineContactFirstName__c}" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
+
+				<!--  SEARCH FOR Existing Contact -->
+				<div style="width:275px" class="slds-size--1-of-2 slds-p-horizontal_x-small">    
+				   <c:CustomLookup objectAPIName="Contact" IconName="standard:contact" selectedRecord="{!v.selectedLookUpContactRecord}" label="Existing Contact"/>            
+				</div>
+
+				<lightning:input  aura:id="LastName"  name="LastName"  label="Last Name"  value="{!v.AcctRecord.NS_OfflineContactLastName__c}" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
+				<div class="slds-size--1-of-2 slds-p-horizontal_x-small"></div>   
+				<lightning:input  aura:id="ContactTitle"  name="ContactTitle"  label="Title"  value="{!v.AcctRecord.NS_ContactTitle__c}" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
+				<div class="slds-size--1-of-2 slds-p-horizontal_x-small"></div>
+				<lightning:input  aura:id="WorkPhone" name="WorkPhone" label="Contact Work Phone"  value="{!v.AcctRecord.NS_OfflineContactWorkPhone__c}" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
+				<div class="slds-size--1-of-2 slds-p-horizontal_x-small"></div>  
+				<lightning:input  aura:id="MobilePhone"  name="MobilePhone"  label="Contact Mobile"  value="{!v.AcctRecord.NS_OfflineContactMobile__c}" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
+				<div class="slds-size--1-of-2 slds-p-horizontal_x-small"></div>  
+				<lightning:input  aura:id="ContactEmail" name="ContactEmail" label="Contact Email" value="{!v.AcctRecord.NS_OfflineContactEmail__c}" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
+				<div class="slds-size--1-of-2 slds-p-horizontal_x-small"></div>  
+
+				<br/><br/>
+				<br/><br/>
+				<h3 class="slds-text-heading--medium slds-theme--shade slds-size--1-of-1">
+		            <span class="section-header-title slds-p-horizontal--small slds-truncate font-weight-bold">
+						System Information
+					</span>
+				</h3>
+				<lightning:input aura:id="AccountRecordType "  name="RecrdTypeName"  label="Account Record Type" readonly="true" value="{!v.AcctRecord.RecordType.Name}" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
+				<lightning:input aura:id="MonitoredAccount" name="MonitoredAccount" label="Monitored Account"  value="{!v.AcctRecord.NS_MonitoredAccount__c}" type="checkbox" fieldLevelHelp="Is the Account currently being monitored?"  class="slds-size--1-of-2 slds-p-horizontal_x-small" />
+				<br/><br/>  
+				<lightning:input type="checkbox" aura:id="deactivate"  name="deactivate"  label="Deactivate?"  value="{!v.AcctRecord.NS_Deactivate__c}" fieldLevelHelp="Does this Account need to be deactivated?" class="slds-size--1-of-2 slds-p-horizontal_x-small" />  
+				<lightning:input aura:id="DeactivateReason" name="DeactivateReason" label="Deactivate Reason" value="{!v.AcctRecord.NS_DeactivationReason__c}" class="slds-size--1-of-2 slds-p-horizontal_x-small" />  
+
+            </div>
+
+		</aura:renderIf>
+     
+            <div class="slds-modal__footer">                
+                <lightning:button variant="neutral" label="Cancel" onclick="{!c.cancelDialog}"/>
+                <lightning:button variant="brand" label="Save" onclick="{!c.saveRecord}" />
+            </div>
+        </div>
+        
+    </div>
+    <div aura:id="overlay" class="slds-backdrop slds-backdrop--open"></div>
+ </aura:component>

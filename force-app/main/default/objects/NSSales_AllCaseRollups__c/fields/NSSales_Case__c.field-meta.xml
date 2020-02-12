@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_Case__c</fullName>
+    <description>Case Related to a particular record</description>
+    <externalId>false</externalId>
+    <label>Case Number</label>
+    <referenceTo>Case</referenceTo>
+    <relationshipLabel>All Case Rollups</relationshipLabel>
+    <relationshipName>All_Case_Rollups</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

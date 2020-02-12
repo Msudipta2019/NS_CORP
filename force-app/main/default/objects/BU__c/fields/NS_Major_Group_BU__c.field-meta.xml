@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Major_Group_BU__c</fullName>
+    <description>Sales - field dependent on Sub bus group</description>
+    <externalId>false</externalId>
+    <label>Major Group_BU</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Coal</fullName>
+                <default>false</default>
+                <label>Coal</label>
+            </value>
+            <value>
+                <fullName>Intermodal</fullName>
+                <default>false</default>
+                <label>Intermodal</label>
+            </value>
+            <value>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+                <label>Agriculture</label>
+            </value>
+            <value>
+                <fullName>Metals &amp; Construction</fullName>
+                <default>false</default>
+                <label>Metals &amp; Construction</label>
+            </value>
+            <value>
+                <fullName>Agriculture, Forest and Consumer Products</fullName>
+                <default>false</default>
+                <label>Agriculture, Forest and Consumer Products</label>
+            </value>
+            <value>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+                <label>Chemicals</label>
+            </value>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Industrial Development</fullName>
+                <default>false</default>
+                <label>Industrial Development</label>
+            </value>
+            <value>
+                <fullName>Construction</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Construction</label>
+            </value>
+            <value>
+                <fullName>Forest and Consumer Products</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Forest and Consumer Products</label>
+            </value>
+            <value>
+                <fullName>Metals</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Metals</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

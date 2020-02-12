@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Notifications_Enabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checks is contact has subscribed to receive notification in AccessNS.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check is contact has subscribed to receive notification in AccessNS.</inlineHelpText>
+    <label>Notifications Enabled</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

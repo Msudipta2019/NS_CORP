@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_MarketingManager__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>It stores the Marketing Manager user name of the related record</description>
+    <externalId>false</externalId>
+    <label>Marketing Manager</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Marketing_Manager_Assignments</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

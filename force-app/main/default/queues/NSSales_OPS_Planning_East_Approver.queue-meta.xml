@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>OPS Planning East Approver</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>OPS_Planning_East_Approver</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>NSSales_NPO_Approval__c</sobjectType>
+    </queueSobject>
+</Queue>

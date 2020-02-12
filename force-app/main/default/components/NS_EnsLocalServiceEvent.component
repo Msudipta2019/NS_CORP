@@ -1,0 +1,160 @@
+<apex:component controller="NS_EnsLsPlacePullCarDetail" access="global">
+    <apex:attribute name="notifyIdValue" description="Notification Name" type="Id" assignTo="{!notifyId}" />
+    
+    <style>
+        .event {
+        width: 100%;
+        border-collapse: collapse;
+        }
+        .event th, td {
+        font-family: Arial, Helvetica, sans-serif; 
+        font-size: 10px; 
+        }
+        .trc{
+        font-family: Arial, Helvetica, sans-serif; 
+        font-size: 10px; 
+        font-weight: bold; 
+        color: #2C2D28; 
+        line-height: 14px; 
+        mso-line-height-rule:exactly; 
+        text-align: center; 
+        padding-top: 5px; 
+        padding-bottom: 5px; 
+        padding-left: 2px; 
+        padding-right: 2px;
+        }
+        .data td{
+        text-align: center;
+        }
+    </style>
+    
+    <br/>
+    <apex:outputPanel rendered="{! If(UpdatedPlace,true,false) }">
+        <span style="font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;"><u>Updated Place Cars</u></span>
+        <br/>
+        <table border = "1" cellspacing = "2" class="event">
+            <tr class="trc">
+                <td>No</td>
+                <td>Class Code</td>
+                <td>Equip Id</td>
+                <td>To Track</td>
+                <td>To Position</td>
+                <td>L/E</td>
+                <td>Waybill Nbr</td>
+                <td>Tons</td>
+                <td>CMDTY</td>
+                <td>Car Type</td>
+                <td>Release Req Type</td>
+                <apex:outputText rendered="{! If(EventName ='SVC_ADVISORY' ,true,false) }">
+                	<td>LOPA Reason</td>     
+                </apex:outputText>
+            </tr>
+            <apex:variable value="{!1}" var="rowNum1"/>
+            <apex:repeat value="{!plcUpdatedCarDtl}" var="updPlace">
+                <tr class="data">
+                    <td>{!rowNum1}</td> 
+                    <td>{!updPlace.classcd}</td>    
+                    <td>{!updPlace.eqinit} {!updPlace.eqnr}</td>
+                    <td>{!updPlace.totk}</td>    
+                    <td>{!updPlace.tospot}</td>    
+                    <td>{!updPlace.emptyind}</td>    
+                    <td>{!updPlace.wbsernr}</td>    
+                    <td>{!updPlace.wgt}</td>    
+                    <td>{!updPlace.commodity}</td>   
+                    <td>{!updPlace.cartype}</td>    
+                    <td>{!updPlace.rlsereqtype}</td>    
+                    <apex:outputText rendered="{! If(EventName ='SVC_ADVISORY' ,true,false) }">
+                        <td>{!updPlace.eqloparsn}</td>
+                    </apex:outputText>
+                </tr>
+                <apex:variable var="rowNum1" value="{!rowNum1 + 1}"/>
+            </apex:repeat>       
+        </table>
+    </apex:outputPanel>
+    <br/>
+    <apex:outputPanel rendered = "{! If(TotalplaceCar > 0 ,true,false) }">
+        <span style="font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;"><u>Place Cars</u></span>
+        <br/>
+        <table border = "1" cellspacing = "2" class="event">
+            <tr class="trc">
+                <td>No</td>
+                <td>Class Code</td>
+                <td>Equip Id</td>
+                <td>To Track</td>
+                <td>To Position</td>
+                <td>L/E</td>
+                <td>Waybill Nbr</td>
+                <td>Tons</td>
+                <td>CMDTY</td>
+                <td>Car Type</td>
+                <td>Release Req Type</td>
+                <apex:outputText rendered="{! If(EventName ='SVC_ADVISORY' ,true,false) }">
+                    <td>LOPA Reason</td>     
+                </apex:outputText>
+            </tr>
+            <apex:variable value="{!1}" var="rowNum1"/>
+            <apex:repeat value="{!placeCarDtl}" var="place">
+                <tr class="data">
+                    <td>{!rowNum1}</td> 
+                    <td>{!place.classcd}</td>    
+                    <td>{!place.eqinit} {!place.eqnr}</td>
+                    <td>{!place.totk}</td>    
+                    <td>{!place.tospot}</td>    
+                    <td>{!place.emptyind}</td>    
+                    <td>{!place.wbsernr}</td>    
+                    <td>{!place.wgt}</td>    
+                    <td>{!place.commodity}</td>   
+                    <td>{!place.cartype}</td>    
+                    <td>{!place.rlsereqtype}</td>    
+                    <apex:outputText rendered="{! If(EventName ='SVC_ADVISORY' ,true,false) }">
+                        <td>{!place.eqloparsn}</td>
+                    </apex:outputText>
+                </tr>
+                <apex:variable var="rowNum1" value="{!rowNum1 + 1}"/>
+            </apex:repeat>       
+        </table>
+    </apex:outputPanel>
+    <br/>
+    <apex:outputPanel rendered = "{! If(TotalpullCar > 0 ,true,false) }">
+        <span style="font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;"><u>Pull Cars</u></span>
+        <br/>
+        <table border = "1" cellspacing = "2" class="event">
+            <tr class="trc">
+                <td>No</td>
+                <td>Class Code</td>
+                <td>Equip Id</td>
+                <td>Track</td>
+                <td>Position</td>
+                <td>L/E</td>
+                <td>Waybill Nbr</td>
+                <td>Tons</td>
+                <td>CMDTY</td>
+                <td>Car Type</td>
+                <td>Release Req Type</td>
+                <apex:outputText rendered="{! If(EventName ='SVC_ADVISORY' ,true,false) }">
+                    <td>LOPA Reason</td>     
+                </apex:outputText>
+            </tr>
+            <apex:variable value="{!1}" var="rowNum2"/>
+            <apex:repeat value="{!pullCarDtl}" var="pull">
+                <tr class="data">
+                    <td>{!rowNum2}</td>  
+                    <td>{!pull.classcd}</td>    
+                    <td>{!pull.eqinit} {!pull.eqnr}</td>
+                    <td>{!pull.fromtk}</td>    
+                    <td>{!pull.fromspot}</td>    
+                    <td>{!pull.emptyind}</td>    
+                    <td>{!pull.wbsernr}</td>    
+                    <td>{!pull.wgt}</td>    
+                    <td>{!pull.commodity}</td>   
+                    <td>{!pull.cartype}</td>    
+                    <td>{!pull.rlsereqtype}</td>    
+                    <apex:outputText rendered="{! If(EventName ='SVC_ADVISORY' ,true,false) }">
+                        <td>{!pull.eqloparsn}</td>    
+                    </apex:outputText>
+                </tr>
+                <apex:variable var="rowNum2" value="{!rowNum2 + 1}"/>
+            </apex:repeat>       
+        </table>
+    </apex:outputPanel>
+</apex:component>

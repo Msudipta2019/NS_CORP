@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Campaign_IdLeadership</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Campaign IdLeadership</label>
+        <sharedTo>
+            <roleAndSubordinates>Integration_User</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>ID_Leadership</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Campaign_SalesLeadership</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Campaign SalesLeadership</label>
+        <sharedTo>
+            <roleAndSubordinates>Integration_User</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Sales_Leadership</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

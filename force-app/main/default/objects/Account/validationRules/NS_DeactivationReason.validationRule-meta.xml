@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_DeactivationReason</fullName>
+    <active>true</active>
+    <description>It checks if user has provided a reason upon deactivation of an account</description>
+    <errorConditionFormula>OR(NS_Deactivate__c   = true  &amp;&amp;  ISBLANK( NS_DeactivationReason__c ),NS_Deactivate__c   = false &amp;&amp;  NOT( ISBLANK( NS_DeactivationReason__c )))</errorConditionFormula>
+    <errorDisplayField>NS_DeactivationReason__c</errorDisplayField>
+    <errorMessage>Please enter the Deactivation Reason AND check the Deactivate checkbox to request that this Account be deactivated.</errorMessage>
+</ValidationRule>

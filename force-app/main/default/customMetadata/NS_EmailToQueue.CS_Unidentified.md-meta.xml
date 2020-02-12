@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>CS - Unidentified</label>
+    <protected>false</protected>
+    <values>
+        <field>Escalate_Based_On_Queue__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Forwarding_Address__c</field>
+        <value xsi:type="xsd:string">connectns.nsuat+uat.custsrvc@gmail.com</value>
+    </values>
+    <values>
+        <field>Queue_Id__c</field>
+        <value xsi:type="xsd:string">00G1I000000YSS7</value>
+    </values>
+    <values>
+        <field>Routing_Email_1__c</field>
+        <value xsi:type="xsd:string">uat.0110.custsrvc@4-hf0wf8e0he3i4umrq1y00qmsc73azezz7rr8lykyubjdzzj2z.j-3ra2omaw.cs10.apex.sandbox.salesforce.com</value>
+    </values>
+</CustomMetadata>

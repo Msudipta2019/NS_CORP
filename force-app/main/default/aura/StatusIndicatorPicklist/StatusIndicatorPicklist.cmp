@@ -1,0 +1,25 @@
+<aura:component controller="StatusIndicatorPicklistController" access="global">
+<aura:attribute name="sObjectName" type="String" />
+<aura:attribute name="fieldName" type="String" />
+<aura:attribute name="StatusIndicatorpicklistValues" type="Object" />
+<aura:attribute name="AcctBiztypepicklistValues" type="Object" />
+
+    <aura:attribute name="AcctAsscBussUntpicklistValues" type="List" default="[
+        { label: 'Automotive', value: 'Automotive' },
+        { label: 'Coal', value: 'Coal' },
+        { label: 'Equipment Planning', value: 'Equipment Planning' },
+        { label: 'Industrial Development', value: 'Industrial Development' },
+        { label: 'Industrial Products', value: 'Industrial Products' },
+        { label: 'Intermodal', value: 'Intermodal' },
+        { label: 'OSS', value: 'OSS' },
+        { label: 'Real Estate', value: 'Real Estate' },
+        { label: 'Revenue Accounting', value: 'Revenue Accounting' },
+        { label: 'Revenue Waybilling', value: 'Revenue Waybilling' },
+        { label: 'Unit Train', value: 'Unit Train' },
+        { label: 'Marketing', value: 'Marketing' }]"/>
+
+        
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+	
+    
+</aura:component>

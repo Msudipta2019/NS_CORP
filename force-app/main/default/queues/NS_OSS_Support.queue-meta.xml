@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>connectns.nsuat+uat.cshelpdesk@gmail.com</email>
+    <name>CS Help Desk</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>All_Queue_Access</publicGroup>
+            <publicGroup>NS_OSS_Support</publicGroup>
+        </publicGroups>
+        <users>
+            <user>alexander.mcneil@nscorp.com</user>
+            <user>chaina.smith@nscorp.com</user>
+            <user>craig.marin@nscorp.com</user>
+            <user>derek.green@nscorp.com</user>
+            <user>c2g2q@nscorp.com</user>
+            <user>michael.johnson2@nscorp.com</user>
+            <user>paul.petersen@nscorp.com</user>
+            <user>ryan.karjala@nscorp.com</user>
+            <user>tamirria.jackson2@nscorp.com</user>
+            <user>ted.billups@nscorp.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

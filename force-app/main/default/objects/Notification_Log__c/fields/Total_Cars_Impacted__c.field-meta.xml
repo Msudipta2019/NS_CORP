@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Cars_Impacted__c</fullName>
+    <description>total number of cars (equipment) impacted in the event</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Total number of cars (equipment) impacted in the event</inlineHelpText>
+    <label>Number of Cars Impacted</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,49 @@
+.THIS.backcol{
+    background-color: rgb(243, 242, 242) !important;
+}
+.THIS .tdbackcol{
+    background-color: rgb(243, 242, 242) !important;
+}
+.THIS .thbackcol{
+    background-color: #F0E68C !important;
+    padding:10px;
+}
+.THIS .cardmargin{
+    margin-left: 3%;
+}
+.THIS .pending {
+  border-radius: 5px;
+  padding: 2px;
+  border: 2px solid #66788a;
+  background-color: #66788a;
+  color: #FFFFFF;
+  width: 125px;
+  height: 25px;  
+}
+.THIS .approved {
+  border-radius: 5px;
+  padding: 2px;
+  border: 2px solid #1b7742;
+  background-color: #1b7742;
+  color: #FFFFFF;
+  width: 125px;
+  height: 25px;  
+}
+.THIS .rejected {
+  border-radius: 5px;
+  padding: 2px;
+  border: 2px solid #b94a48;
+  background-color: #b94a48;
+  color: #FFFFFF;
+  width: 125px;
+  height: 25px;  
+}
+.THIS .recalled {
+  border-radius: 5px;
+  padding: 2px;
+  border: 2px solid #66788a;
+  background-color: #66788a;
+  color: #FFFFFF;
+  width: 125px;
+  height: 25px;  
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_GateStatus__c</fullName>
+    <description>It indicates if a customer’s gate is open or closed</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates whether a customer’s gate is open or closed (Order for Placement or Place on Arrival)</inlineHelpText>
+    <label>Gate Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OPEN - PLACE ON ARRIVAL</fullName>
+                <default>false</default>
+                <label>OPEN - PLACE ON ARRIVAL</label>
+            </value>
+            <value>
+                <fullName>CLOSED - ORDER FOR PLACEMENT</fullName>
+                <default>false</default>
+                <label>CLOSED - ORDER FOR PLACEMENT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

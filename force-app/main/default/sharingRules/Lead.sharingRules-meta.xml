@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>General_Lead_Record</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>General Lead Record</label>
+        <sharedTo>
+            <roleAndSubordinates>Sales_Leadership</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>General Lead</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>General_and_ID_Lead_Record</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>General and ID Lead Record</label>
+        <sharedTo>
+            <roleAndSubordinates>ID_Leadership</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>General Lead,ID Lead</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NSSales_IDLeadSharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>NSSales_IDLeadSharing</label>
+        <sharedTo>
+            <group>ID_Access_for_General_Sales_Users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ID Lead</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_ClassCode__c</fullName>
+    <description>Class Code of Associated Account</description>
+    <externalId>false</externalId>
+    <formula>Account.NS_ClassCode__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Class Code of Associated Account</inlineHelpText>
+    <label>Class Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_IM_Specialist_Feedback_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( TEXT( NS_IM_Specialist_met_my_expectations__c ),
+&quot;Strongly Agree&quot;,&quot;Positive&quot;,
+&quot;Somewhat Agree&quot;,&quot;Positive&quot;,
+&quot;Somewhat Disagree&quot;,&quot;Negative&quot;,
+&quot;Strongly Disagree&quot;,&quot;Negative&quot;,
+&quot;N/A&quot;
+ )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>IM Specialist Feedback Formula</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

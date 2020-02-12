@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_Approval_Needed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field provisioning the user to go through the whole NPO approval process even if the Volume threshold criteria not met. Checking on this field will trigger process builder to lock the record, notify Approval owner.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>By checking this checkbox the NPO approval process can be initiated manually</inlineHelpText>
+    <label>Approval Needed</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

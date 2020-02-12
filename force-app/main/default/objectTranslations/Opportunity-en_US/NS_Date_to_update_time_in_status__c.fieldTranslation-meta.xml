@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Date to update time in status --></label>
+    <name>NS_Date_to_update_time_in_status__c</name>
+</CustomFieldTranslation>

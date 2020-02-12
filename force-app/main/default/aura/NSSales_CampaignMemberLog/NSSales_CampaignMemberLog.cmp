@@ -1,0 +1,31 @@
+<aura:component controller="logsController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+    <aura:attribute name="intMemberlogs" type="Object"/>
+    <aura:attribute name="intMembercolumns" type="List"/>
+    <aura:attribute name="campMemberlogs" type="Object"/>
+    <aura:attribute name="campMembercolumns" type="List"/>
+    
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+    
+    <lightning:accordion allowMultipleSectionsOpen="true" onsectiontoggle="{! c.handleSectionToggle }">
+        <lightning:accordionSection name="A" label="Internal Campaign Members">
+            <div style="height: 300px">
+                <lightning:datatable
+                                     keyField="id"
+                                     minColumnWidth="250"
+                                     data="{! v.intMemberlogs }"
+                                     columns="{! v.intMembercolumns }"
+                                     hideCheckboxColumn="true"/>
+            </div>
+        </lightning:accordionSection>
+        <lightning:accordionSection name="B" label="Campaign Members">
+            <div style="height: 300px">
+                <lightning:datatable
+                                     keyField="id"
+                                     minColumnWidth="250"
+                                     data="{! v.campMemberlogs }"
+                                     columns="{! v.campMembercolumns }"
+                                     hideCheckboxColumn="true"/>
+            </div>
+        </lightning:accordionSection>
+    </lightning:accordion>
+</aura:component>

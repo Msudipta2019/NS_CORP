@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_not_transferable_to_retired_queue</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISCHANGED(OwnerId),OR( Owner:Queue.QueueName =&#39;OSS South&#39;,
+Owner:Queue.QueueName =&#39;OSS North&#39;,Owner:Queue.QueueName =&#39;OSS East&#39;,
+Owner:Queue.QueueName =&#39;OSS West&#39;,
+Owner:Queue.QueueName =&#39;Automotive - Support&#39;,
+Owner:Queue.QueueName =&#39;EP - System Support&#39;,
+Owner:Queue.QueueName =&#39;UTS - Energy&#39;,
+Owner:Queue.QueueName =&#39;UTS - Grain&#39;,
+Owner:Queue.QueueName =&#39;UTS - Transportation&#39;
+),
+NOT(ISCHANGED(NS_Last_Activity_Time__c)),
+NOT(ISCHANGED(NS_Counter_Activity__c))
+)</errorConditionFormula>
+    <errorMessage>Transfers to this Queue are no longer Allowed.</errorMessage>
+</ValidationRule>

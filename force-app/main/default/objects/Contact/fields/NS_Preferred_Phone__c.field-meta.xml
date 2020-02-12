@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Preferred_Phone__c</fullName>
+    <description>Preferred Phone Number for Contact based on Preferred Contact Method</description>
+    <externalId>false</externalId>
+    <formula>CASE(NS_PrefConMethd__c,&quot;Work Phone&quot;, 
+if(AND(NOT(ISBLANK(Phone)),LEN(Phone)==10),&quot;(&quot; &amp; LEFT(Phone, 3) &amp; &quot;) &quot; &amp; LEFT(RIGHT(Phone, 7), 3) &amp; &quot;-&quot; &amp; RIGHT(Phone, 4), 
+LEFT(Phone,3) &amp; &quot;-&quot; &amp; RIGHT(Phone, 4)), 
+&quot;Mobile Phone&quot;, 
+if(AND(NOT(ISBLANK(MobilePhone)),LEN(MobilePhone)==10),&quot;(&quot; &amp; LEFT(MobilePhone, 3) &amp; &quot;) &quot; &amp; LEFT(RIGHT(MobilePhone, 7), 3) &amp; &quot;-&quot; &amp; RIGHT(MobilePhone, 4), 
+LEFT(MobilePhone,3) &amp; &quot;-&quot; &amp; RIGHT(MobilePhone, 4)), 
+&quot;Other Phone 1&quot;, 
+if(AND(NOT(ISBLANK(OtherPhone)),LEN(OtherPhone)==10),&quot;(&quot; &amp; LEFT(OtherPhone, 3) &amp; &quot;) &quot; &amp; LEFT(RIGHT(OtherPhone, 7), 3) &amp; &quot;-&quot; &amp; RIGHT(OtherPhone, 4), 
+LEFT(OtherPhone,3) &amp; &quot;-&quot; &amp; RIGHT(OtherPhone, 4)), 
+&quot;Other Phone 2&quot;, 
+if(AND(NOT(ISBLANK(HomePhone)),LEN(HomePhone)==10),&quot;(&quot; &amp; LEFT(HomePhone, 3) &amp; &quot;) &quot; &amp; LEFT(RIGHT(HomePhone, 7), 3) &amp; &quot;-&quot; &amp; RIGHT(HomePhone, 4), 
+LEFT(HomePhone,3) &amp; &quot;-&quot; &amp; RIGHT(HomePhone, 4)), 
+
+if(AND(NOT(ISBLANK(Phone)),LEN(Phone)==10),&quot;(&quot; &amp; LEFT(Phone, 3) &amp; &quot;) &quot; &amp; LEFT(RIGHT(Phone, 7), 3) &amp; &quot;-&quot; &amp; RIGHT(Phone, 4), 
+if(AND(NOT(ISBLANK(Phone)),LEN(Phone)==7) ,LEFT(Phone,3) &amp; &quot;-&quot; &amp; RIGHT(Phone, 4), 
+if(AND(NOT(ISBLANK(MobilePhone)),LEN(MobilePhone)==10),&quot;(&quot; &amp; LEFT(MobilePhone, 3) &amp; &quot;) &quot; &amp; LEFT(RIGHT(MobilePhone, 7), 3) &amp; &quot;-&quot; &amp; RIGHT(MobilePhone, 4) , 
+if(AND(NOT(ISBLANK(MobilePhone)),LEN(MobilePhone)==7) ,LEFT(MobilePhone,3) &amp; &quot;-&quot; &amp; RIGHT(MobilePhone, 4), 
+if( AND(NOT(ISBLANK(OtherPhone)),LEN(OtherPhone)==10),&quot;(&quot; &amp; LEFT(OtherPhone, 3) &amp; &quot;) &quot; &amp; LEFT(RIGHT(OtherPhone, 7), 3) &amp; &quot;-&quot; &amp; RIGHT(OtherPhone, 4), 
+if(AND(NOT(ISBLANK(OtherPhone)),LEN(OtherPhone)==7) ,LEFT(OtherPhone,3) &amp; &quot;-&quot; &amp; RIGHT(OtherPhone, 4), 
+if( AND(NOT(ISBLANK(HomePhone)),LEN(HomePhone)==10),&quot;(&quot; &amp; LEFT(HomePhone, 3) &amp; &quot;) &quot; &amp; LEFT(RIGHT(HomePhone, 7), 3) &amp; &quot;-&quot; &amp; RIGHT(HomePhone, 4), 
+if(AND(NOT(ISBLANK(HomePhone)),LEN(HomePhone)==7) ,LEFT(HomePhone,3) &amp; &quot;-&quot; &amp; RIGHT(HomePhone, 4), &quot;&quot;)) 
+
+) 
+) 
+) 
+) 
+) 
+) 
+)</formula>
+    <inlineHelpText>Preferred Phone Number for Contact based on Preferred Contact Method</inlineHelpText>
+    <label>Preferred Phone</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

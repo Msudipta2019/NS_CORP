@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>NPO_Service_Unit_Train_Opportunity_Sharing_Rule</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>This sharing rule gives users in the NPO Service Unit  public group visibility to General Opportunities.</description>
+        <label>NPO Service Unit Train Opportunity Sharing Rule</label>
+        <sharedTo>
+            <group>NPO_Service_User_Public_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>General Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NPO_Service_Unit_Train_Opportunity_Sharing_Rule_ID_Opportunity</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>This sharing rule gives users in the NPO Service Unit  public group visibility to Non-private Opportunities.</description>
+        <label>NPO Service Unit Train Opportunity Sharing Rule - ID Opportunity</label>
+        <sharedTo>
+            <group>NPO_Service_User_Public_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ID</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NS_Private__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NPO_Service_Unit_Train_Opportunity_Sharing_Rule_Read_Only_Opportunity</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>This sharing rule gives users in the NPO Service Unit  public group visibility to Read Only Opportunities.</description>
+        <label>NPO Service Unit Train Opportunity Sharing Rule - Read Only Opportunity</label>
+        <sharedTo>
+            <group>NPO_Service_User_Public_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Read Only</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NSSales_IDOpptySharingWithUsers</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>NSSales_IDOpptySharingWithUsers</label>
+        <sharedTo>
+            <group>ID_Oppty_Access_for_General_Sales_Users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ID</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NSSales_IDOptySharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>NSSales_IDOptySharing</label>
+        <sharedTo>
+            <group>ID_Access_for_General_Sales_Users</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ID</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>609.1</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>New_Opportunity_Sharing_for_ID</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>New Opportunity Sharing for ID</label>
+        <sharedTo>
+            <roleAndSubordinates>ID_Leadership</roleAndSubordinates>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>General Opportunity,ID</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>609.1</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Opp_Sharing_for_Read_only</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Opp Sharing for Read only</label>
+        <sharedTo>
+            <roleAndSubordinates>ID_Leadership</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Read Only</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Opportunity_General_Record</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Opportunity General Record`</label>
+        <sharedTo>
+            <roleAndSubordinates>Sales_Leadership</roleAndSubordinates>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>General Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>609.1</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Opportunity_Sharing_with_public_group_NPO</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Opportunity Sharing with public group NPO</label>
+        <sharedTo>
+            <group>NPO_Approvers</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Read Only</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ID</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Opportunity_Sharing_with_public_group_NPO_Automotive</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Opportunity Sharing with public group NPO Automative</label>
+        <sharedTo>
+            <group>NPO_Approvers_Automotive</group>
+        </sharedTo>
+        <booleanFilter>(1 OR 2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Read Only</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ID</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPO Operations ReadOnly</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NS_Originating_Department__c</field>
+            <operation>equals</operation>
+            <value>Automotive</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Opportunity_Sharing_with_public_group_NPO_Coal</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Opportunity Sharing with public group NPO Coal</label>
+        <sharedTo>
+            <group>NPO_Approvers_Coal</group>
+        </sharedTo>
+        <booleanFilter>(1 OR 2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Read Only</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ID</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPO Operations ReadOnly</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NS_Originating_Department__c</field>
+            <operation>equals</operation>
+            <value>Coal</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Opportunity_Sharing_with_public_group_NPO_ID</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Opportunity Sharing with public group NPO ID</label>
+        <sharedTo>
+            <group>NPO_Approvers_Industrial_Development</group>
+        </sharedTo>
+        <booleanFilter>(1 OR 2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Read Only</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ID</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPO Operations ReadOnly</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NS_Originating_Department__c</field>
+            <operation>equals</operation>
+            <value>Industrial Development</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Opportunity_Sharing_with_public_group_NPO_IP</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Opportunity Sharing with public group NPO IP</label>
+        <sharedTo>
+            <group>NPO_Approvers_Industrial_Products</group>
+        </sharedTo>
+        <booleanFilter>(1 OR 2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ID</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Read Only</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPO Operations ReadOnly</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NS_Originating_Department__c</field>
+            <operation>equals</operation>
+            <value>Industrial Products</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Opportunity_Sharing_with_public_group_NPO_Intermodal</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Opportunity Sharing with public group NPO Intermodal</label>
+        <sharedTo>
+            <group>NPO_Approvers_Intermodal</group>
+        </sharedTo>
+        <booleanFilter>(1 OR 2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ID</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Read Only</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPO Operations ReadOnly</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NS_Originating_Department__c</field>
+            <operation>equals</operation>
+            <value>Intermodal</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Private_RecordType</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Private RecordType</label>
+        <sharedTo>
+            <roleAndSubordinates>Sales_Leadership</roleAndSubordinates>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+        <criteriaItems>
+            <field>NS_Private__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ID</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>609.1</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Record_Type_ReadOnly</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Record Type ReadOnly</label>
+        <sharedTo>
+            <roleAndSubordinates>Sales_Leadership</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Read Only</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

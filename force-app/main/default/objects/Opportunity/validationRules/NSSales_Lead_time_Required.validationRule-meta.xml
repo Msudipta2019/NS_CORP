@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_Lead_time_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR(ISPICKVAL(NSSales_NPO_Final_Decision__c,&quot;Approved as Requested&quot;),ISPICKVAL(NSSales_NPO_Final_Decision__c,&quot;Approved with Conditions&quot;)),ISBLANK(NSSales_Lead_Time__c))</errorConditionFormula>
+    <errorMessage>Lead Time is a required field if the NPO Final Decision is &quot;Approved as Requested&quot; or &quot;Approved with Conditions.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_Track_609_1_For_FS__c</fullName>
+    <description>It initially captures 609.1 Trigger Stamp and then tracks the time stamp of any action taken by FS Manager.</description>
+    <externalId>false</externalId>
+    <label>Track 609.1 for FS</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

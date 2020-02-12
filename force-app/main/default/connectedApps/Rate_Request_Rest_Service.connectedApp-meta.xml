@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>pranay.banerjee@accenture.com</contactEmail>
+    <label>Rate Request Rest Service</label>
+    <oauthConfig>
+        <callbackUrl>https://omegaservice.com/response</callbackUrl>
+        <consumerKey>3MVG9_7ddP9KqTzes6JVIUhXMQmT4I8MBSp8kEv5_vbCx3z94D.bNWP3VRXKUf_cDS9tArKnzW9dvLb01j_AF</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <scopes>Api</scopes>
+    </oauthConfig>
+</ConnectedApp>

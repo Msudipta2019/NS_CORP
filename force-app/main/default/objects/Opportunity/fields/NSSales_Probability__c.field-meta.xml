@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_Probability__c</fullName>
+    <description>Custom Field For Probability</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please enter a valid Probability percentage. Valid percentages are as follows: 
+0%, 25%, 50%, 75%, 100%</inlineHelpText>
+    <label>Probability</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

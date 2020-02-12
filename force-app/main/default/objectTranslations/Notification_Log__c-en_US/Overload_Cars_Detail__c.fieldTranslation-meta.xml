@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- overload event impacted equipment/cars detail information --></help>
+    <label><!-- Overload Cars Detail --></label>
+    <name>Overload_Cars_Detail__c</name>
+</CustomFieldTranslation>

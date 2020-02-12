@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_RequiredFieldsSpcTrainClosedCase</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( NS_InteractionReason__c ,&#39;Expedite/Special Train&#39;), 
+ISPICKVAL( NS_Type__c ,&#39;Special Train&#39;) ,	ISPICKVAL(Status,&#39;NS_Closed&#39;), 
+RecordType.Name!=&#39;NS Internal&#39;,
+OR(ISPICKVAL( NS_AncillaryChargesProtected__c,&#39;&#39;), 
+ISBLANK( NS_ItemdispatchedOrigin__c), 
+ISBLANK(NS_RailcarQuantity__c)) 
+)</errorConditionFormula>
+    <errorMessage>Please provide Ancillary Charges Protected, Origin, Rail Car Quantity fields prior to closing the Case.</errorMessage>
+</ValidationRule>

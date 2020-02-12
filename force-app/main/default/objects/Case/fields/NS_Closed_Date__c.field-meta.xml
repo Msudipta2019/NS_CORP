@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Closed_Date__c</fullName>
+    <description>This shows the closed date in specified format ex. December 10, 2019</description>
+    <externalId>false</externalId>
+    <formula>CASE(MONTH( DATEVALUE( ClosedDate ) ),
+
+1, &quot; January&quot;,
+2, &quot; February&quot;,
+3, &quot; March&quot;,
+4, &quot; April&quot;,
+5, &quot; May&quot;,
+6, &quot; June&quot;,
+7, &quot; July&quot;,
+8, &quot; August&quot;,
+9, &quot; September&quot;,
+10,&quot; October&quot;,
+11,&quot; November&quot;,
+12,&quot; December&quot;,
+&quot; &quot;) + &quot; &quot; + TEXT(DAY(DATEVALUE( ClosedDate ))) + &#39;,&#39; +  &quot; &quot; + TEXT(YEAR(DATEVALUE( ClosedDate )))</formula>
+    <label>Closed Date Formula</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

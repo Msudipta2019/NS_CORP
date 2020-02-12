@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_TypeofError__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of Error</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AOC Billing Error</fullName>
+                <default>false</default>
+                <label>AOC Billing Error</label>
+            </value>
+            <value>
+                <fullName>Bad Ordered/Rejected Error</fullName>
+                <default>false</default>
+                <label>Bad Ordered/Rejected Error</label>
+            </value>
+            <value>
+                <fullName>Cars Released Not Ready for Pull</fullName>
+                <default>false</default>
+                <label>Cars Released Not Ready for Pull</label>
+            </value>
+            <value>
+                <fullName>Class Coding/ABC Error</fullName>
+                <default>false</default>
+                <label>Class Coding/ABC Error</label>
+            </value>
+            <value>
+                <fullName>Crew – Incomplete Work Order</fullName>
+                <default>false</default>
+                <label>Crew – Incomplete Work Order</label>
+            </value>
+            <value>
+                <fullName>Crew – Incorrect Date/Time</fullName>
+                <default>false</default>
+                <label>Crew – Incorrect Date/Time</label>
+            </value>
+            <value>
+                <fullName>Crew Failed to Switch</fullName>
+                <default>false</default>
+                <label>Crew Failed to Switch</label>
+            </value>
+            <value>
+                <fullName>Crew Placed or Pulled Incorrect Cars</fullName>
+                <default>false</default>
+                <label>Crew Placed or Pulled Incorrect Cars</label>
+            </value>
+            <value>
+                <fullName>Crew Used Wrong Reason Code</fullName>
+                <default>false</default>
+                <label>Crew Used Wrong Reason Code</label>
+            </value>
+            <value>
+                <fullName>Cust – Correct as Billed</fullName>
+                <default>false</default>
+                <label>Cust – Correct as Billed</label>
+            </value>
+            <value>
+                <fullName>Customer – CP/Notification</fullName>
+                <default>false</default>
+                <label>Customer – CP/Notification</label>
+            </value>
+            <value>
+                <fullName>Customer Track Out of Service</fullName>
+                <default>false</default>
+                <label>Customer Track Out of Service</label>
+            </value>
+            <value>
+                <fullName>DQ Write-Off/Waiver</fullName>
+                <default>false</default>
+                <label>DQ Write-Off/Waiver</label>
+            </value>
+            <value>
+                <fullName>Dunnage/Auto Racks</fullName>
+                <default>false</default>
+                <label>Dunnage/Auto Racks</label>
+            </value>
+            <value>
+                <fullName>Failed to Notify OSS of Empty Release</fullName>
+                <default>false</default>
+                <label>Failed to Notify OSS of Empty Release</label>
+            </value>
+            <value>
+                <fullName>Failed to Order Thru OSS</fullName>
+                <default>false</default>
+                <label>Failed to Order Thru OSS</label>
+            </value>
+            <value>
+                <fullName>Failure to Provide O/B Billing On Time</fullName>
+                <default>false</default>
+                <label>Failure to Provide O/B Billing On Time</label>
+            </value>
+            <value>
+                <fullName>Force Majeure (FRZ Lading, Strike, Weather, Shut Down)</fullName>
+                <default>false</default>
+                <label>Force Majeure (FRZ Lading, Strike, Weather, Shut Down)</label>
+            </value>
+            <value>
+                <fullName>Incorrect Customer Number</fullName>
+                <default>false</default>
+                <label>Incorrect Customer Number</label>
+            </value>
+            <value>
+                <fullName>Leased Track</fullName>
+                <default>false</default>
+                <label>Leased Track</label>
+            </value>
+            <value>
+                <fullName>Maintenance of Way</fullName>
+                <default>false</default>
+                <label>Maintenance of Way</label>
+            </value>
+            <value>
+                <fullName>Marketing Waiver – Backdated Contract</fullName>
+                <default>false</default>
+                <label>Marketing Waiver – Backdated Contract</label>
+            </value>
+            <value>
+                <fullName>NS Contract In Place</fullName>
+                <default>false</default>
+                <label>NS Contract In Place</label>
+            </value>
+            <value>
+                <fullName>OSS – Demurrage Keying Error</fullName>
+                <default>false</default>
+                <label>OSS – Demurrage Keying Error</label>
+            </value>
+            <value>
+                <fullName>OSS Failure – AP Date</fullName>
+                <default>false</default>
+                <label>OSS Failure – AP Date</label>
+            </value>
+            <value>
+                <fullName>OSS Failure – CP Date</fullName>
+                <default>false</default>
+                <label>OSS Failure – CP Date</label>
+            </value>
+            <value>
+                <fullName>OSS Failure – Order Date</fullName>
+                <default>false</default>
+                <label>OSS Failure – Order Date</label>
+            </value>
+            <value>
+                <fullName>OSS Failure – Release Date</fullName>
+                <default>false</default>
+                <label>OSS Failure – Release Date</label>
+            </value>
+            <value>
+                <fullName>OSS Failure – Special Handling</fullName>
+                <default>false</default>
+                <label>OSS Failure – Special Handling</label>
+            </value>
+            <value>
+                <fullName>Pacesetter</fullName>
+                <default>false</default>
+                <label>Pacesetter</label>
+            </value>
+            <value>
+                <fullName>Previous Adjustment Stands</fullName>
+                <default>false</default>
+                <label>Previous Adjustment Stands</label>
+            </value>
+            <value>
+                <fullName>Repair Facility/Car Owner Error</fullName>
+                <default>false</default>
+                <label>Repair Facility/Car Owner Error</label>
+            </value>
+            <value>
+                <fullName>RR Convenience</fullName>
+                <default>false</default>
+                <label>RR Convenience</label>
+            </value>
+            <value>
+                <fullName>RR Error/Damage Claim</fullName>
+                <default>false</default>
+                <label>RR Error/Damage Claim</label>
+            </value>
+            <value>
+                <fullName>SAA Reporting Error</fullName>
+                <default>false</default>
+                <label>SAA Reporting Error</label>
+            </value>
+            <value>
+                <fullName>Settlement, Waiver</fullName>
+                <default>false</default>
+                <label>Settlement, Waiver</label>
+            </value>
+            <value>
+                <fullName>System Error</fullName>
+                <default>false</default>
+                <label>System Error</label>
+            </value>
+            <value>
+                <fullName>Tracks Full, No Room for I/B Cars</fullName>
+                <default>false</default>
+                <label>Tracks Full, No Room for I/B Cars</label>
+            </value>
+            <value>
+                <fullName>Trip Leased Cars</fullName>
+                <default>false</default>
+                <label>Trip Leased Cars</label>
+            </value>
+            <value>
+                <fullName>Write-Off (RACS Only)</fullName>
+                <default>false</default>
+                <label>Write-Off (RACS Only)</label>
+            </value>
+            <value>
+                <fullName>Crew Reporting</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Crew Reporting</label>
+            </value>
+            <value>
+                <fullName>Customer Error</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Customer Error</label>
+            </value>
+            <value>
+                <fullName>OSS Reporting</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OSS Reporting</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

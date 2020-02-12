@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_vrStageName</fullName>
+    <active>true</active>
+    <description>validation rule to enforce user to start in Qualification/Analysis upon Opportunity Creation</description>
+    <errorConditionFormula>AND( ISNEW(), NOT(ISPICKVAL(StageName, &quot;Qualification/Analysis&quot;)),  RecordType.Name =&quot;General Opportunity&quot; )</errorConditionFormula>
+    <errorMessage>New Opportunities must start in the &quot;Qualification/Analysis&quot;  stage.  Please update the &quot;Stage&quot; field.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Function Type --></label>
+    <name>NS_Function_Type__c</name>
+    <picklistValues>
+        <masterLabel>IM Domestic</masterLabel>
+        <translation><!-- IM Domestic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IM International</masterLabel>
+        <translation><!-- IM International --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

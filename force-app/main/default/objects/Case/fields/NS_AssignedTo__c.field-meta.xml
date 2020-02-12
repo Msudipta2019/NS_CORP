@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_AssignedTo__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>To whom the Case is currently assigned</description>
+    <externalId>false</externalId>
+    <label>Assigned To</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(6 AND 1 AND 2 AND 3) OR (4 AND (5 OR 7 OR 8))</booleanFilter>
+        <filterItems>
+            <field>User.Profile.Name</field>
+            <operation>notEqual</operation>
+            <value>NS Marketing Leadership</value>
+        </filterItems>
+        <filterItems>
+            <field>User.Profile.Name</field>
+            <operation>notEqual</operation>
+            <value>NS Marketing Manager</value>
+        </filterItems>
+        <filterItems>
+            <field>User.Profile.Name</field>
+            <operation>notEqual</operation>
+            <value>OSS Regional Queue User</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>TOP21</value>
+        </filterItems>
+        <filterItems>
+            <field>User.Profile.Name</field>
+            <operation>equals</operation>
+            <value>NS Marketing Leadership</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>TOP21</value>
+        </filterItems>
+        <filterItems>
+            <field>User.Profile.Name</field>
+            <operation>equals</operation>
+            <value>NS Marketing Manager</value>
+        </filterItems>
+        <filterItems>
+            <field>User.Profile.Name</field>
+            <operation>equals</operation>
+            <value>NS Sales Manager</value>
+        </filterItems>
+        <infoMessage>Case cannot be assigned to a marketing user</infoMessage>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Cases7</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

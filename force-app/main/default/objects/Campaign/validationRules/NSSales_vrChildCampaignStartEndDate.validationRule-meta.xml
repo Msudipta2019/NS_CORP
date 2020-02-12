@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_vrChildCampaignStartEndDate</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISBLANK(ParentId)),
+ OR(StartDate &lt; Parent.StartDate ,
+ StartDate &gt; Parent.EndDate,
+ EndDate &lt; Parent.StartDate,
+ EndDate &gt; Parent.EndDate)
+)</errorConditionFormula>
+    <errorMessage>Please select start date and end date between the start date end date of the parent campaign</errorMessage>
+</ValidationRule>

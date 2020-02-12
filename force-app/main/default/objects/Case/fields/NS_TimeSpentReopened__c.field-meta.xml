@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_TimeSpentReopened__c</fullName>
+    <description>If reopened, the time a case spent reopened</description>
+    <externalId>false</externalId>
+    <formula>IF( ISNULL( ClosedDate ), 0, (ClosedDate -  NS_ReopenDate__c) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Time Spent Reopened</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

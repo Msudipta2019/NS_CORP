@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The time a email was bounced captured from Marketing Cloud. --></help>
+    <label><!-- Bounce Time --></label>
+    <name>Time__c</name>
+</CustomFieldTranslation>

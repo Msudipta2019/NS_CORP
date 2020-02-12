@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_NPO_Resubmission_UnCheck</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( StageName ,&#39;Qualification/Analysis&#39;),NSSales_NPO_Resubmission_Confirmation__c = TRUE)</errorConditionFormula>
+    <errorMessage>NPO Re-submission Checkbox should be unchecked.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Approval Type --></label>
+    <name>NSSales_Approval_Type__c</name>
+    <picklistValues>
+        <masterLabel>Auto/Intermodal</masterLabel>
+        <translation><!-- Auto/Intermodal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Planning</masterLabel>
+        <translation><!-- Commercial Planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Products/Unit</masterLabel>
+        <translation><!-- Industrial Products/Unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interline Services</masterLabel>
+        <translation><!-- Interline Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network Capacity</masterLabel>
+        <translation><!-- Network Capacity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network Optimization</masterLabel>
+        <translation><!-- Network Optimization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPS Planning Central</masterLabel>
+        <translation><!-- OPS Planning Central --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPS Planning NOC</masterLabel>
+        <translation><!-- OPS Planning NOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPS Planning North</masterLabel>
+        <translation><!-- OPS Planning North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPS Planning South</masterLabel>
+        <translation><!-- OPS Planning South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPS Planning West</masterLabel>
+        <translation><!-- OPS Planning West --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power</masterLabel>
+        <translation><!-- Power --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unit Train</masterLabel>
+        <translation><!-- Unit Train --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

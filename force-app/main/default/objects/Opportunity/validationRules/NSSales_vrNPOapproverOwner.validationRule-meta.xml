@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_vrNPOapproverOwner</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK(NS_SalesNPO_Approvers__c) &amp;&amp; 
+(NSSales_OPS_Planning_Central__c || NSSales_OPS_Planning_North__c || NSSales_OPS_Planning_South__c || NSSales_Unit_Train__c || NSSales_Network_Capacity__c || NSSales_Network_Optimization__c || NSSales_Interline_Services__c || NSSales_Auto_Intermodal__c || NSSales_Industrial_Products_Unit__c = TRUE)</errorConditionFormula>
+    <errorMessage>Please select a NPO Approval owner before start the NPO approval process</errorMessage>
+</ValidationRule>

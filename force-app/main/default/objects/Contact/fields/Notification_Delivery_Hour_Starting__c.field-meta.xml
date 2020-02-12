@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Notification_Delivery_Hour_Starting__c</fullName>
+    <description>ENS subscription window delivery hour starting</description>
+    <externalId>false</externalId>
+    <label>Notification Delivery Hour Starting</label>
+    <length>4</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

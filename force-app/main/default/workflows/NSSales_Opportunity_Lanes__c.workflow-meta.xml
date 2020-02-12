@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>NSSales_Update_Final_rate_Update_Field</fullName>
+        <field>NSSales_Final_Rate_Update__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Final rate Update Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Round_1_Rate_Update</fullName>
+        <description>Update Round-1 Rate Update</description>
+        <field>NSSales_Round_1_Rate_Update__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Round-1 Rate Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Final Rate Field Update</fullName>
+        <actions>
+            <name>NSSales_Update_Final_rate_Update_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>ISCHANGED(NSSales_Final_Rate__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Round-1 Rate Field Update</fullName>
+        <actions>
+            <name>Update_Round_1_Rate_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>ISCHANGED( NSSales_Round_1_Rate__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

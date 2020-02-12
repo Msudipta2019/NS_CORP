@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_SystemSortID__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;T&quot; &amp; 
+TEXT(IF(NS_Open_Tasks__c = TRUE,1,0)) &amp; 
+&quot;-S&quot; &amp; 
+TEXT(IF(ISPICKVAL(Status,&quot;New&quot;),5,IF(ISPICKVAL(Status,&#39;NS_New&#39;),5,IF(ISPICKVAL(Status,&quot;Escalated&quot;),4,IF(ISPICKVAL(Status,&#39;NS_Escalated&#39;),4,IF(ISPICKVAL(Status,&quot;Reopened&quot;),3,IF(ISPICKVAL(Status,&#39;NS_Reopened&#39;),3,IF(ISPICKVAL(Status,&quot;Working&quot;),2,IF(ISPICKVAL(Status,&#39;NS_Working&#39;),2,IF(ISPICKVAL(Status,&quot;Awaiting Response&quot;),1,IF(ISPICKVAL(Status,&#39;NS_AwaitingResponse&#39;),1,0))))))))))) &amp; 
+&quot;-E&quot; &amp; 
+TEXT(IF(NS_Unread_Email__c = TRUE,1,0)) &amp; 
+&quot;-P&quot; &amp; 
+TEXT(IF(ISPICKVAL(Priority,&quot;High&quot;),3,IF(ISPICKVAL(Priority,&quot;Medium&quot;),2,IF(ISPICKVAL(Priority,&quot;Low&quot;),1,0)))) &amp; 
+&quot;-D&quot; &amp; 
+IF(LEN(TEXT(CEILING(NS_CaseAgeInHours__c)))&gt;= 5,TEXT(CEILING(NS_CaseAgeInHours__c)),IF(LEN(TEXT(CEILING(NS_CaseAgeInHours__c)))= 4,&quot;0&quot; &amp; TEXT(CEILING(NS_CaseAgeInHours__c)),IF(LEN(TEXT(CEILING(NS_CaseAgeInHours__c))) = 3,&quot;00&quot; &amp; TEXT(CEILING(NS_CaseAgeInHours__c)),IF(LEN(TEXT(CEILING(NS_CaseAgeInHours__c))) = 2,&quot;000&quot; &amp; TEXT(CEILING(NS_CaseAgeInHours__c)),IF(LEN(TEXT(CEILING(NS_CaseAgeInHours__c))) = 1,&quot;0000&quot; &amp; TEXT(CEILING(NS_CaseAgeInHours__c)),&quot;00000&quot;)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>System Sort ID</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

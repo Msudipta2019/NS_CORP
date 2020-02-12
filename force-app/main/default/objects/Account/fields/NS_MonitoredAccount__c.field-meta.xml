@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_MonitoredAccount__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>It indicates a priority Account or an Account that has filed a complaint with STB</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Is the Account currently being monitored?</inlineHelpText>
+    <label>Monitored Account</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

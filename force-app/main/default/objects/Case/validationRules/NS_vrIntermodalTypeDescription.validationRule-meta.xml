@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_vrIntermodalTypeDescription</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+      !ISCHANGED( RecordTypeId ) ,
+      ISPICKVAL(NS_InteractionCategory__c,&quot;Intermodal&quot; ),
+      NOT(ISPICKVAL(NS_Type__c, &quot;Other&quot;)) ,
+      NOT(ISBLANK(NS_Type_Description__c)) ,
+      NS_Created_using_Quick_Case__c &lt;&gt; True  ,
+      NOT($User.CommunityNickname = &#39;automated.process&#39;),
+	  NOT(ISCHANGED(NS_Last_Activity_Time__c)),
+      NOT(ISCHANGED(NS_Counter_Activity__c))	  
+)</errorConditionFormula>
+    <errorMessage>&quot;Type Description&quot; field may only be populated if Interaction Type &quot;Other&quot; is selected.</errorMessage>
+</ValidationRule>
