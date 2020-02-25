@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Multi-pick; Use Carrier to refine Mode. --></help>
+    <label><!-- Mode --></label>
+    <name>Mode__c</name>
+    <picklistValues>
+        <masterLabel>Barge</masterLabel>
+        <translation><!-- Barge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IM</masterLabel>
+        <translation><!-- IM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ocean</masterLabel>
+        <translation><!-- Ocean --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipeline</masterLabel>
+        <translation><!-- Pipeline --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rail</masterLabel>
+        <translation><!-- Rail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transload</masterLabel>
+        <translation><!-- Transload --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Truck</masterLabel>
+        <translation><!-- Truck --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

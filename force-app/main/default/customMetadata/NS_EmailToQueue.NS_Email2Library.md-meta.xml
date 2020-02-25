@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Email2Library</label>
+    <protected>false</protected>
+    <values>
+        <field>Escalate_Based_On_Queue__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Forwarding_Address__c</field>
+        <value xsi:type="xsd:string">connectns.sit+pssit01.email2lib@gmail.com</value>
+    </values>
+    <values>
+        <field>Queue_Id__c</field>
+        <value xsi:type="xsd:string">00G1I000002HqO3</value>
+    </values>
+    <values>
+        <field>Routing_Email_1__c</field>
+        <value xsi:type="xsd:string">pssit01.0213.email2library@21h3mbzoz84i3lb6p2gq3i1mqopjl2yxtnshx960ccwevke1fq.1d-dkruua0.cs68.apex.sandbox.salesforce.com</value>
+    </values>
+</CustomMetadata>

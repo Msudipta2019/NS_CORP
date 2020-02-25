@@ -1,0 +1,614 @@
+<aura:component controller="NSSales_ShowExternalDataController" implements="flexipage:availableForRecordHome,force:hasRecordId,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:lightningQuickAction" access="global" >
+    <aura:attribute name="activeSections" type="List" default="['','']" />
+    <aura:attribute name="activeSectionsMessage" type="String" default="" />  
+    
+    <aura:attribute name="accountId" type="String" access="public" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>  
+    <aura:attribute name="gridData" type="Object[]"/>   
+    <aura:attribute name="thary" type="Object[]"/>   
+    <aura:attribute name="trafficHistoryAllYTD" type="Object[]"/>   
+    <aura:attribute name="eyeProfitAllRollingYear" type="Object[]"/>   
+    <aura:attribute name="eyeProfitAllYTD" type="Object[]"/>   
+    <aura:attribute name="spinner" type="boolean" default="false"/> 
+    <aura:attribute name="formattedDate1" type="String"/>
+    <aura:attribute name="formattedDate2" type="String"/>
+    <aura:attribute name="formattedDate3" type="String"/>
+    <aura:attribute name="formattedDate4" type="String"/>
+    <aura:attribute name="isVisibleIP" type="Boolean" default="false" />
+    <aura:attribute name="isVisibleIM" type="Boolean" default="false" />
+    
+<aura:if  isTrue="{!v.isVisibleIP}" >
+    <lightning:accordion
+                         allowMultipleSectionsOpen="true"
+                         onsectiontoggle=""
+                         activeSectionName="{! v.activeSections }"
+                         >
+        <lightning:accordionSection name="A" label="Rolling Year Results" class="accordionSectionColor" >
+            <aura:set attribute="body">
+                <div class="slds-box" >
+                    <div class="slds-scrollable" >
+                        <span class="sectxt">Traffic History Summary : {!v.formattedDate1}</span>
+                        <table class="slds-table slds-table_bordered  slds-table_cell-buffer scrollable_y" >
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="tblhdr First-CellWidth"></th>
+                                    <th scope="col" class="tblhdr cellwidth"></th>
+                                    <th scope="col" class="tblhdr cellwidth"><div class="slds-align--absolute-center">Vs. Prior Period</div></th>
+                                    <th scope="col" class="tblhdr cellwidthPct"></th>
+                                    <th scope="col" class="tblhdr cellwidth"></th>
+                                    <th scope="col" class="tblhdr cellwidth"><div class="slds-align--absolute-center">Vs. Prior Period</div></th>
+                                    <th scope="col" class="tblhdr cellwidthPct"></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col" class="tblhdr"></th>
+                                    <th scope="col" class="tblhdr cellborder">Current Period</th>
+                                    <th scope="col" class="tblhdr">ABS</th>		
+                                    <th scope="col" class="tblhdr">%</th>			
+                                    <th scope="col" class="tblhdr cellborder">Per Car</th>	
+                                    <th scope="col" class="tblhdr">ABS</th>			
+                                    <th scope="col" class="tblhdr">%</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <aura:iteration items="{!v.thary}" var="thry" indexVar="indx12">
+                                    <tr >
+                                        <td class="tblhdr">Carloads</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.carloads}</td>
+                                        <td scope="row" class="celldata">{!thry.carloadsVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.carloadsVsPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tblhdr">Tons</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.tons}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsVsPriorPeriodPerc}</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.tonsPerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsPerCarVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsPerCarVsPriorPeriodPerc}</td>
+                                    </tr>
+                                    <tr >
+                                        <td class="tblhdr">NS Revenue</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.nsRevenue}</td>
+                                        <td scope="row" class="celldata">{!thry.nsRevenueVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.nsRevenueVsPriorPeriodPerc}</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.nsRevenuePerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.nsRevenueVsPriorPeriodPerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.nsRevenueVsPriorPeriodPerCarPerc}</td>
+                                    </tr>
+                                    <tr >
+                                        <td class="tblhdr">Total Revenue</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.totalRevenue}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriodPerc}</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.totalRevenuePerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriodPerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriodPerCarPerc}</td>
+                                    </tr>
+                                </aura:iteration>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br/>
+                    <div class="slds-scrollable">
+                        <span class="sectxt">EyeProfit Summary : {!v.formattedDate2}</span>	<!-- hdrlabel  -->
+                        <table class="slds-table slds-table_bordered  slds-table_cell-buffer scrollable_y" >
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="tblhdr First-CellWidth"></th>
+                                    <th scope="col" class="tblhdr cellwidth"></th>
+                                    <th scope="col" class="tblhdr cellwidth"><div class="slds-align--absolute-center">Vs. Prior Period</div></th>
+                                    <th scope="col" class="tblhdr cellwidthPct"></th>
+                                    <th scope="col" class="tblhdr cellwidth"></th>
+                                    <th scope="col" class="tblhdr cellwidth"><div class="slds-align--absolute-center">Vs. Prior Period</div></th>
+                                    <th scope="col" class="tblhdr cellwidthPct"></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col" class="tblhdr"></th>
+                                    <th scope="col" class="tblhdr cellborder">Current Period</th>
+                                    <th scope="col" class="tblhdr">ABS</th>		
+                                    <th scope="col" class="tblhdr">%</th>			
+                                    <th scope="col" class="tblhdr cellborder">Per Car</th>	
+                                    <th scope="col" class="tblhdr">ABS</th>			
+                                    <th scope="col" class="tblhdr">%</th>
+                                </tr>
+                            </thead>
+                            
+                            <tbody>
+                                <aura:iteration items="{!v.eyeProfitAllRollingYear}" var="thry" indexVar="indx12">
+                                    <tr >
+                                        <td class="tblhdr">Carloads</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.carloads}</td>
+                                        <td scope="row" class="celldata">{!thry.carloadsVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.carloadsVsPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tblhdr">Avg. Days On Line</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.avgDaysOnLine}</td>
+                                        <td scope="row" class="celldata">{!thry.avgDaysOnLineVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.avgDaysOnLineVsPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                    <tr >
+                                        <td class="tblhdr">Avg. Loaded Miles</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.avgLoadedMiles}</td>
+                                        <td scope="row" class="celldata">{!thry.avgLoadedMilesVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.avgLoadedMilesVsPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                    <tr >
+                                        <td class="tblhdr">Avg. Empty Ret Ratio</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.emptyReturnRatio}</td>
+                                        <td scope="row" class="celldata">{!thry.emptyReturnRatioVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.emptyReturnRatioVsPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                    <tr >
+                                        <td class="tblhdr">NS Rev / Ton Mile</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.nsRevenuePerTonMile}</td>
+                                        <td scope="row" class="celldata">{!thry.nsRevenuePerTonMileVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.nsRevenuePerTonMileVsPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr >
+                                    <tr >
+                                        <td class="tblhdr">NS Rev / Car Day</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.revenuePerCarDay}</td>
+                                        <td scope="row" class="celldata">{!thry.revenuePerCarDayPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.revenuePerCarDayPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                    <tr >
+                                        <td class="tblhdr">Rev / Cost (VEC)</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.vecRevCostRatio}</td>
+                                        <td scope="row" class="celldata">{!thry.vecRevCostRatioVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.vecRevCostRatioVsPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                    <tr >
+                                        <td class="tblhdr">Tons</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.tons}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsVsPriorPeriodPerc}</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.tonsPerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsPerCarVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsPerCarVsPriorPeriodPerc}</td>
+                                    </tr>
+                                    <tr >
+                                        <td class="tblhdr">NS Revenue</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.totalRevenue}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriodPerc}</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.totalRevenuePerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriodPerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriodPerCarPerc}</td>
+                                    </tr>
+                                    <tr >
+                                        <td class="tblhdr">Cost (VEC)</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.vecCost}</td>
+                                        <td scope="row" class="celldata">{!thry.vecCostVsPriorPeriod}</td>		
+                                        <td scope="row" class="celldata">{!thry.vecCostVsPriorPeriodPerc}</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.vecCostPerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.vecCostPerCarVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.vecCostPerCarVsPriorPeriodPerc}</td>
+                                    </tr>
+                                    <tr >
+                                        <td class="tblhdr">Contrib (VEC)</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.vecContribution}</td>
+                                        <td scope="row" class="celldata">{!thry.vecContributionVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.vecContributionVsPriorPeriodPerc}</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.vecContributionPerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.vecContrPerCarVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.vecContrPerCarVsPriorPeriodPerc}</td>
+                                    </tr>
+                                    <tr >
+                                        <td class="tblhdr">Contrib / Car Day</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.contributionPerCarDay}</td>
+                                        <td scope="row" class="celldata">{!thry.contributionPerCarDayVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.contributionPerCarDayVsPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                    <tr >
+                                        <td class="tblhdr">Contrib / Car Day (w/o Equip)</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.contributionPerCarDayExcludingEquipment}</td>
+                                        <td scope="row" class="celldata">{!thry.contributionPerCarDayExcludingEquipmentVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.contributionPerCarDayExcludingEquipmentVsPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                    <tr >
+                                        <td class="tblhdr">Contrib / Ton Mile</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.contributionPerTonMile}</td>
+                                        <td scope="row" class="celldata">{!thry.contributionPerTonMileVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.contributionPerTonMileVsPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                </aura:iteration>
+                            </tbody>
+                        </table>
+                    </div>                    
+                </div> 
+            </aura:set>
+        </lightning:accordionSection>
+
+        <lightning:accordionSection name="B" label="YTD Results" class="accordionSectionColor" >
+            <aura:set attribute="body">
+                <div class="slds-box" >
+                    <div class="slds-scrollable">
+                        <span class="sectxt">Traffic History Summary : {!v.formattedDate3}</span>
+                        <table class="slds-table slds-table_bordered  slds-table_cell-buffer scrollable_y" >
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="tblhdr First-CellWidth"></th>
+                                    <th scope="col" class="tblhdr cellwidth"></th>
+                                    <th scope="col" class="tblhdr cellwidth"><div class="slds-align--absolute-center">Vs. Prior Period</div></th>
+                                    <th scope="col" class="tblhdr cellwidthPct"></th>
+                                    <th scope="col" class="tblhdr cellwidth"></th>
+                                    <th scope="col" class="tblhdr cellwidth"><div class="slds-align--absolute-center">Vs. Prior Period</div></th>
+                                    <th scope="col" class="tblhdr cellwidthPct"></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col" class="tblhdr"></th>
+                                    <th scope="col" class="tblhdr cellborder">Current Period</th>
+                                    <th scope="col" class="tblhdr">ABS</th>		
+                                    <th scope="col" class="tblhdr">%</th>			
+                                    <th scope="col" class="tblhdr cellborder">Per Car</th>	
+                                    <th scope="col" class="tblhdr">ABS</th>			
+                                    <th scope="col" class="tblhdr">%</th>
+                                </tr>
+                            </thead>
+                            
+                            <tbody>
+                                <aura:iteration items="{!v.trafficHistoryAllYTD}" var="thry" indexVar="indx12">
+                                    <tr >
+                                        <td class="tblhdr">Carloads</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.carloads}</td>
+                                        <td scope="row" class="celldata">{!thry.carloadsVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.carloadsVsPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tblhdr">Tons</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.tons}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsVsPriorPeriodPerc}</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.tonsPerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsPerCarVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsPerCarVsPriorPeriodPerc}</td>
+                                        
+                                    </tr>
+                                    <tr >
+                                        <td class="tblhdr">NS Revenue</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.nsRevenue}</td>
+                                        <td scope="row" class="celldata">{!thry.nsRevenueVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.nsRevenueVsPriorPeriodPerc}</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.nsRevenuePerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.nsRevenueVsPriorPeriodPerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.nsRevenueVsPriorPeriodPerCarPerc}</td>
+                                    </tr>
+                                    <tr >
+                                        <td class="tblhdr">Total Revenue</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.totalRevenue}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriodPerc}</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.totalRevenuePerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriodPerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriodPerCarPerc}</td>
+                                    </tr>
+                                </aura:iteration>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br/>
+                    <div class="slds-scrollable">
+                        <span class="sectxt">EyeProfit Summary : {!v.formattedDate4}</span>
+                        <table class="slds-table slds-table_bordered  slds-table_cell-buffer scrollable_y" >
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="tblhdr First-CellWidth"></th>
+                                    <th scope="col" class="tblhdr cellwidth"></th>
+                                    <th scope="col" class="tblhdr cellwidth"><div class="slds-align--absolute-center">Vs. Prior Period</div></th>
+                                    <th scope="col" class="tblhdr cellwidthPct"></th>
+                                    <th scope="col" class="tblhdr cellwidth"></th>
+                                    <th scope="col" class="tblhdr cellwidth"><div class="slds-align--absolute-center">Vs. Prior Period</div></th>
+                                    <th scope="col" class="tblhdr cellwidthPct"></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col" class="tblhdr"></th>
+                                    <th scope="col" class="tblhdr cellborder">Current Period</th>
+                                    <th scope="col" class="tblhdr">ABS</th>		
+                                    <th scope="col" class="tblhdr">%</th>			
+                                    <th scope="col" class="tblhdr cellborder">Per Car</th>	
+                                    <th scope="col" class="tblhdr">ABS</th>			
+                                    <th scope="col" class="tblhdr">%</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <aura:iteration items="{!v.eyeProfitAllYTD}" var="thry" indexVar="indx12">
+                                    <tr>
+                                        <td class="tblhdr">Carloads</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.carloads}</td>
+                                        <td scope="row" class="celldata">{!thry.carloadsVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.carloadsVsPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tblhdr">Avg. Days on line</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.avgDaysOnLine}</td>
+                                        <td scope="row" class="celldata">{!thry.avgDaysOnLineVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.avgDaysOnLineVsPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tblhdr">Avg. Loaded Miles</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.avgLoadedMiles}</td>
+                                        <td scope="row" class="celldata">{!thry.avgLoadedMilesVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.avgLoadedMilesVsPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tblhdr">Avg. Empty Ret Ratio</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.emptyReturnRatio}</td>
+                                        <td scope="row" class="celldata">{!thry.emptyReturnRatioVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.emptyReturnRatioVsPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="tblhdr">NS Rev / Ton Mile</td>
+                                        <td scope="row" class="celldata cellborder"><div class="slds-align--absolute-left">{!thry.nsRevenuePerTonMile}</div></td>
+                                        <td scope="row" class="celldata"><div class="slds-align--absolute-left">{!thry.nsRevenuePerTonMileVsPriorPeriod}</div></td>
+                                        <td scope="row" class="celldata"><div class="slds-align--absolute-left">{!thry.nsRevenuePerTonMileVsPriorPeriodPerc}</div></td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr >
+                                    <tr>
+                                        <td class="tblhdr">NS Rev / Car Day</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.revenuePerCarDay}</td>
+                                        <td scope="row" class="celldata">{!thry.revenuePerCarDayPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.revenuePerCarDayPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tblhdr">Rev / Cost (VEC)</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.vecRevCostRatio}</td>
+                                        <td scope="row" class="celldata">{!thry.vecRevCostRatioVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.vecRevCostRatioVsPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tblhdr">Tons</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.tons}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsVsPriorPeriodPerc}</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.tonsPerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsPerCarVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsPerCarVsPriorPeriodPerc}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tblhdr">NS Revenue</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.totalRevenue}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriodPerc}</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.totalRevenuePerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriodPerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriodPerCarPerc}</td>
+                                    </tr>
+                                    <tr >
+                                        <td class="tblhdr">Cost (VEC)</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.vecCost}</td>
+                                        <td scope="row" class="celldata">{!thry.vecCostVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.vecCostVsPriorPeriodPerc}</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.vecCostPerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.vecCostPerCarVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.vecCostPerCarVsPriorPeriodPerc}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tblhdr">Contrib (VEC)</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.vecContribution}</td>
+                                        <td scope="row" class="celldata">{!thry.vecContributionVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.vecContributionVsPriorPeriodPerc}</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.vecContributionPerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.vecContrPerCarVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.vecContrPerCarVsPriorPeriodPerc}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tblhdr">Contrib / Car Day</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.contributionPerCarDay}</td>
+                                        <td scope="row" class="celldata">{!thry.contributionPerCarDayVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.contributionPerCarDayVsPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tblhdr">Contrib / Car Day (w/o Equip)</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.contributionPerCarDayExcludingEquipment}</td>
+                                        <td scope="row" class="celldata">{!thry.contributionPerCarDayExcludingEquipmentVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.contributionPerCarDayExcludingEquipmentVsPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tblhdr">Contrib / Ton Mile</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.contributionPerTonMile}</td>
+                                        <td scope="row" class="celldata">{!thry.contributionPerTonMileVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.contributionPerTonMileVsPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                </aura:iteration>
+                            </tbody>
+                        </table>
+                    </div>                    
+                </div> 
+            </aura:set>
+        </lightning:accordionSection>      
+    </lightning:accordion>   
+    </aura:if>
+    <!--Table for IM-->
+    <aura:if  isTrue="{!v.isVisibleIM}" >
+    <lightning:accordion
+                         allowMultipleSectionsOpen="true"
+                         onsectiontoggle=""
+                         activeSectionName="{! v.activeSections }"
+                         >
+        <lightning:accordionSection name="A" label="Rolling Year Results(IM)" class="accordionSectionColor" >
+            <aura:set attribute="body">
+                <div class="slds-box" >
+                    <div class="slds-scrollable" >
+                        <span class="sectxt">Traffic History Summary</span>
+                        <table class="slds-table slds-table_bordered  slds-table_cell-buffer scrollable_y" >
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="tblhdr First-CellWidth"></th>
+                                    <th scope="col" class="tblhdr cellwidth"></th>
+                                    <th scope="col" class="tblhdr cellwidth"><div class="slds-align--absolute-center">Vs. Prior Period</div></th>
+                                    <th scope="col" class="tblhdr cellwidthPct"></th>
+                                    <th scope="col" class="tblhdr cellwidth"></th>
+                                    <th scope="col" class="tblhdr cellwidth"><div class="slds-align--absolute-center">Vs. Prior Period</div></th>
+                                    <th scope="col" class="tblhdr cellwidthPct"></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col" class="tblhdr"></th>
+                                    <th scope="col" class="tblhdr cellborder">Current Period</th>
+                                    <th scope="col" class="tblhdr">ABS</th>		
+                                    <th scope="col" class="tblhdr">%</th>			
+                                    <th scope="col" class="tblhdr cellborder">Per Unit</th>	
+                                    <th scope="col" class="tblhdr">ABS</th>			
+                                    <th scope="col" class="tblhdr">%</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <aura:iteration items="{!v.thary}" var="thry" indexVar="indx12">
+                                    <tr >
+                                        <td class="tblhdr">Volume</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.carloads}</td>
+                                        <td scope="row" class="celldata">{!thry.carloadsVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.carloadsVsPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                   <!-- <tr>
+                                        <td class="tblhdr">Tons</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.tons}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsVsPriorPeriodPerc}</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.tonsPerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsPerCarVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsPerCarVsPriorPeriodPerc}</td>
+                                    </tr> -->
+                                    <tr >
+                                        <td class="tblhdr">NS Revenue</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.nsRevenue}</td>
+                                        <td scope="row" class="celldata">{!thry.nsRevenueVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.nsRevenueVsPriorPeriodPerc}</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.nsRevenuePerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.nsRevenueVsPriorPeriodPerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.nsRevenueVsPriorPeriodPerCarPerc}</td>
+                                    </tr>
+                                    <tr >
+                                        <td class="tblhdr">Total Revenue</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.totalRevenue}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriodPerc}</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.totalRevenuePerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriodPerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriodPerCarPerc}</td>
+                                    </tr>
+                                </aura:iteration>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br/>
+                 </div> 
+            </aura:set>
+        </lightning:accordionSection>
+
+        <lightning:accordionSection name="B" label="YTD Results(IM)" class="accordionSectionColor" >
+            <aura:set attribute="body">
+                <div class="slds-box" >
+                    <div class="slds-scrollable">
+                        <span class="sectxt">Traffic History Summary : {!v.formattedDate3}</span>
+                        <table class="slds-table slds-table_bordered  slds-table_cell-buffer scrollable_y" >
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="tblhdr First-CellWidth"></th>
+                                    <th scope="col" class="tblhdr cellwidth"></th>
+                                    <th scope="col" class="tblhdr cellwidth"><div class="slds-align--absolute-center">Vs. Prior Period</div></th>
+                                    <th scope="col" class="tblhdr cellwidthPct"></th>
+                                    <th scope="col" class="tblhdr cellwidth"></th>
+                                    <th scope="col" class="tblhdr cellwidth"><div class="slds-align--absolute-center">Vs. Prior Period</div></th>
+                                    <th scope="col" class="tblhdr cellwidthPct"></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col" class="tblhdr"></th>
+                                    <th scope="col" class="tblhdr cellborder">Current Period</th>
+                                    <th scope="col" class="tblhdr">ABS</th>		
+                                    <th scope="col" class="tblhdr">%</th>			
+                                    <th scope="col" class="tblhdr cellborder">Per Unit</th>	
+                                    <th scope="col" class="tblhdr">ABS</th>			
+                                    <th scope="col" class="tblhdr">%</th>
+                                </tr>
+                            </thead>
+                            
+                            <tbody>
+                                <aura:iteration items="{!v.trafficHistoryAllYTD}" var="thry" indexVar="indx12">
+                                    <tr >
+                                        <td class="tblhdr">Volume</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.carloads}</td>
+                                        <td scope="row" class="celldata">{!thry.carloadsVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.carloadsVsPriorPeriodPerc}</td>
+                                        <td scope="row" colspan="3" class="cellborder"></td>
+                                    </tr>
+                                   <!-- <tr>
+                                        <td class="tblhdr">Tons</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.tons}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsVsPriorPeriodPerc}</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.tonsPerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsPerCarVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.tonsPerCarVsPriorPeriodPerc}</td>
+                                        
+                                    </tr> -->
+                                    <tr >
+                                        <td class="tblhdr">NS Revenue</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.nsRevenue}</td>
+                                        <td scope="row" class="celldata">{!thry.nsRevenueVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.nsRevenueVsPriorPeriodPerc}</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.nsRevenuePerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.nsRevenueVsPriorPeriodPerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.nsRevenueVsPriorPeriodPerCarPerc}</td>
+                                    </tr>
+                                    <tr >
+                                        <td class="tblhdr">Total Revenue</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.totalRevenue}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriod}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriodPerc}</td>
+                                        <td scope="row" class="celldata cellborder">{!thry.totalRevenuePerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriodPerCar}</td>
+                                        <td scope="row" class="celldata">{!thry.totalRevenueVsPriorPeriodPerCarPerc}</td>
+                                    </tr>
+                                </aura:iteration>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br/>
+                 </div> 
+            </aura:set>
+        </lightning:accordionSection>      
+    </lightning:accordion>   
+    </aura:if>
+     <!--END Table for IM-->
+    <!--loading spinner start-->
+    <aura:if isTrue="{!v.spinner}">
+        <div aura:id="spinnerId" class="slds-spinner_container">
+            <div class="slds-spinner--brand  slds-spinner slds-spinner--medium slds-is-relative" role="alert">
+                <span class="slds-assistive-text">Loading</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </aura:if>
+    
+    
+ 
+    <!-- Loading spinner end-->  
+</aura:component>

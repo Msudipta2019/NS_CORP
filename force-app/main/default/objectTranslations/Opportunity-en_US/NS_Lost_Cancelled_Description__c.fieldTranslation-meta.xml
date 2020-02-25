@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter additional description if necessary. --></help>
+    <label><!-- Lost/Cancelled Description --></label>
+    <name>NS_Lost_Cancelled_Description__c</name>
+</CustomFieldTranslation>

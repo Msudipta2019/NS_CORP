@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>NS_vrAccNameValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ RecordType.DeveloperName=&#39;NS_Driver&#39;,
+ AND(NOT($Profile.Name =&#39;System Administrator&#39;),NOT( $Profile.Name =&#39;NS Integration User&#39;)),
+ISCHANGED(AccountId))</errorConditionFormula>
+    <errorMessage>Account name cannot be edited for Driver Contacts</errorMessage>
+</ValidationRule>

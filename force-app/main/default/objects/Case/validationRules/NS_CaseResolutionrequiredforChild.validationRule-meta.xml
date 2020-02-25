@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_CaseResolutionrequiredforChild</fullName>
+    <active>true</active>
+    <description>This Validation Rule informs users of the Request Resolution field they must complete prior to Closed Status.</description>
+    <errorConditionFormula>AND(
+ISBLANK(Request_Resolution__c),
+ISPICKVAL( Status ,&#39;NS_Closed&#39;),
+RecordType.Name=&#39;NS Internal&#39;,
+NOT(ISPICKVAL(Parent.Status,&#39;NS_Closed&#39;))
+)</errorConditionFormula>
+    <errorMessage>Please complete Request Resolution prior to closing the Case.</errorMessage>
+</ValidationRule>

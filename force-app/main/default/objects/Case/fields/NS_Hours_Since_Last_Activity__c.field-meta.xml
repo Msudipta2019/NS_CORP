@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Hours_Since_Last_Activity__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF((ISPICKVAL(Status, &#39;NS_Closed&#39;)||ISPICKVAL(Status, &#39;NS_Cancelled&#39;)),null,
+IF(ISNULL(NS_Last_Activity_Time__c),
+(FLOOR((Now()-CreatedDate) * 24)),
+(FLOOR((Now()-NS_Last_Activity_Time__c) * 24))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Time since last outbound activity</inlineHelpText>
+    <label>Hours Since Last Activity</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

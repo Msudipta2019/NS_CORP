@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_User_Detail__c</fullName>
+    <externalId>false</externalId>
+    <formula>FirstName &amp; &quot; &quot; &amp; LastName &amp; &quot; (&quot;&amp;   TEXT(Associated_Business_Unit__c) &amp;&quot;)&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>NS User Detail</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

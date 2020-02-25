@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>NS_FleetTeam__c</fullName>
+    <externalId>false</externalId>
+    <label>Fleet Team</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Boxcars</fullName>
+                <default>false</default>
+                <label>Boxcars</label>
+            </value>
+            <value>
+                <fullName>Metals</fullName>
+                <default>false</default>
+                <label>Metals</label>
+            </value>
+            <value>
+                <fullName>Hoppers</fullName>
+                <default>false</default>
+                <label>Hoppers</label>
+            </value>
+            <value>
+                <fullName>Privates</fullName>
+                <default>false</default>
+                <label>Privates</label>
+            </value>
+            <value>
+                <fullName>Auto Parts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Auto Parts</label>
+            </value>
+            <value>
+                <fullName>Private Cars</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Cars</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Cases for 3PL accounts will automatically route to the CS – Unidentified queue --></help>
+    <label><!-- 3PL --></label>
+    <name>NS_X3PL__c</name>
+</CustomFieldTranslation>

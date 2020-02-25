@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>NS_CompactLayoutCustom</fullName>
+    <fields>Name</fields>
+    <fields>NS_ContactStatus__c</fields>
+    <fields>NS_Preferred_Phone__c</fields>
+    <fields>Email</fields>
+    <fields>NS_ContactRole__c</fields>
+    <label>NS Compact Layout</label>
+</CompactLayout>

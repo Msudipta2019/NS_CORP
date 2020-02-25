@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_vrNoNPONoStageChange</fullName>
+    <active>true</active>
+    <description>This vr will prevent the stage change if the NPO process not completed</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(StageName, &#39;Proposal&#39;),
+(ISCHANGED(StageName)), 
+(RecordTypeId ==  $Label.NSSales_OpportunityReadOnlyRecordType),
+ ISBLANK(TEXT(NSSales_NPO_Final_Decision__c )))</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>You cannot change the stage without NPO approvals</errorMessage>
+</ValidationRule>

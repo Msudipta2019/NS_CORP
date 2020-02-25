@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Est_Service_Window_From__c</fullName>
+    <description>Train details captured from notification.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Train details captured from notification.</inlineHelpText>
+    <label>Est Service Window - From</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

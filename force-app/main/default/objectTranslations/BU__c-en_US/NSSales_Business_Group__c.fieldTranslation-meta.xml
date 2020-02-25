@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Business Group --></label>
+    <name>NSSales_Business_Group__c</name>
+    <picklistValues>
+        <masterLabel>Coal</masterLabel>
+        <translation><!-- Coal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Development</masterLabel>
+        <translation><!-- Industrial Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Products</masterLabel>
+        <translation><!-- Industrial Products --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intermodal</masterLabel>
+        <translation><!-- Intermodal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA</masterLabel>
+        <translation><!-- NA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

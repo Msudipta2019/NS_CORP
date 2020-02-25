@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Sales_Quick_Text</fullName>
+    <active>true</active>
+    <label>NS Sales Quick Text</label>
+    <picklistValues>
+        <picklist>Category</picklist>
+        <values>
+            <fullName>Topic</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Task</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

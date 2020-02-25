@@ -1,0 +1,52 @@
+<aura:component controller="NSSales_Oppty_Address" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    
+    <!-- attributes -->
+    <aura:attribute name="mapMarkers" type="Object"/>
+    <aura:attribute name="zoomLevel" type="Integer" />
+    <aura:attribute name="Addressdetails" type="string" default="Sudipta"/>
+    <aura:attribute name="truthy" type="boolean" default="true"/>
+    <aura:attribute name="inptruthy" type="boolean" default="false"/>
+    <!-- handlers-->
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+
+    <!-- the map component -->
+ <aura:if isTrue="{!v.mapMarkers.length > 0}" >
+  <lightning:map mapMarkers="{! v.mapMarkers }" zoomLevel="{!v.zoomLevel}"/>
+</aura:if>  
+         
+
+        <div class="slds-box slds-theme_default">
+            
+            
+            <h1>
+              <span class="slds-page-header__title slds-hyphenate" title="Shipping Address Details">Shipping Address Details</span>
+            </h1>
+            <br></br>
+           <aura:if isTrue="{!v.truthy}">              
+            {!v.Addressdetails}
+            </aura:if>
+           
+            <aura:if isTrue="{!v.inptruthy}">      
+           <lightning:input aura:id="streetOppty" name="input1" label="Shipping Street" value=" " />
+            <lightning:input aura:id="cityOppty" name="input1" label="Shipping City" value=" " />
+            <lightning:input aura:id="stateOppty" name="input1" label="Shipping State" value=" " />
+              </aura:if>   
+            
+        </div>
+    
+    <lightning:layout class = "slds-box slds-theme_default">
+        <aura:if isTrue="{!v.inptruthy}">  
+        <lightning:layoutItem padding="horizontal-medium"  size="4">
+            <button class="slds-button slds-button_brand middle" onclick="{!c.handleSubmit}" >Submit</button >
+        </lightning:layoutItem>
+            </aura:if>
+        <lightning:layoutItem padding="horizontal-medium"  size="4">
+            <aura:if isTrue="{!v.truthy}">  
+            <button class="slds-button slds-button_brand middle" onclick="{!c.handleEdit}" >EDIT</button >
+             </aura:if>    
+        </lightning:layoutItem>
+        
+        
+        
+    </lightning:layout>
+</aura:component>

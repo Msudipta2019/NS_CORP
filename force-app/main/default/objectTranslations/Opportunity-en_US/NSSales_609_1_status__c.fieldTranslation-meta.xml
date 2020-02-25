@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- 609.1 Status --></label>
+    <name>NSSales_609_1_status__c</name>
+    <picklistValues>
+        <masterLabel>Approved for Removal</masterLabel>
+        <translation><!-- Approved for Removal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retained - New Business Opportunity</masterLabel>
+        <translation><!-- Retained - New Business Opportunity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retained - Not Applicable for 609.1 Review</masterLabel>
+        <translation><!-- Retained - Not Applicable for 609.1 Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retained - Strategic Asset</masterLabel>
+        <translation><!-- Retained - Strategic Asset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retained - Turnout Maintenance Fee Paid</masterLabel>
+        <translation><!-- Retained - Turnout Maintenance Fee Paid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under Review</masterLabel>
+        <translation><!-- Under Review --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_Reason_Lost</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+AND(
+ISPICKVAL(StageName, &quot;Closed Lost&quot;), 
+ISBLANK(TEXT(NS_Lost_To__c)),
+NOT(RecordType.DeveloperName=&#39;NSSales_609_1&#39;)),
+AND(
+ ISPICKVAL(StageName, &quot;Closed Lost&quot;), 
+ ISBLANK(TEXT(  NS_Lost_Cancelled_Reason__c  )),
+ NOT(RecordType.DeveloperName=&#39;NSSales_609_1&#39;))
+ )</errorConditionFormula>
+    <errorMessage>Please populate the &quot;Lost To&quot; and &quot;Lost/Cancelled Reason</errorMessage>
+</ValidationRule>

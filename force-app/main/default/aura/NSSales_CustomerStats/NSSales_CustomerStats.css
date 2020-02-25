@@ -1,0 +1,55 @@
+.THIS .fldLabel{
+    font-size:12px;
+	color:#686868;
+	text-align:left;
+    
+}
+
+.THIS .tblhdr { 
+    font-weight:bold;
+    text-align:left;
+    font-size:12px;
+    color:#555650;
+    vertical-align:middle;
+    text-align:left;
+    height:15px;
+    background:#fafafa;
+}
+
+.THIS .celldata {
+    font-size:12px;
+    color:#555650;
+    vertical-align:middle;
+    text-align:left;
+    height:15px;
+    }
+
+.THIS .cellwidth { 
+    width:14%;
+    }
+
+.THIS .cellwidthPct { 
+    width:8%;
+    }
+
+.THIS .First-CellWidth { 
+    width:28%;
+    }
+
+.THIS .schldta {
+    font-size:13px;
+    color:#2c2d28;
+    letter-spacing:0;
+    text-align:left;
+	line-height:18px;
+}
+
+.THIS .sectxt{
+    font-weight:bold;
+    font-size:14px;
+    text-align:left;
+}
+
+.THIS .cellborder {
+  border-left: 1px solid #e6e6e6;
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please check if the Opportunity is a Priority --></help>
+    <label><!-- Priority --></label>
+    <name>NS_Priority__c</name>
+</CustomFieldTranslation>

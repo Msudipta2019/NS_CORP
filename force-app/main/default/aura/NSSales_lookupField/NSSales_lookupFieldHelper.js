@@ -1,0 +1,27 @@
+({
+    processResults : function(results, returnFields) {
+        for (var i = 0; i < results.length; i++) {
+            
+            results[i]['Field0'] = results[i][returnFields[0]];    
+            
+            for(var j = 1; j < returnFields.length; j++){
+                var fieldValue = results[i][returnFields[j]];
+                if (fieldValue) {
+                    results[i]['Field1'] = (results[i]['Field1'] || '') + ' · ' + fieldValue;
+                }
+            }
+            if (results[i]['Field1']) {
+                results[i]['Field1'] = results[i]['Field1'].substring(3);
+            }
+        }
+        return results;
+    },
+    fireEvent : function(component, event, helper) {
+        var selectedId = component.get("v.selectedId");
+        var comEvent = component.getEvent("accClassificationEvent");
+        comEvent.setParams({
+            "accClassId" :   selectedId});
+        comEvent.fire();
+        console.log('Event fired in fireEvent');
+    }
+})

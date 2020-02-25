@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NSSales_609_1_Field_Sales_Manager__c</columns>
+    <columns>NSSales_609_1_FSM_Email__c</columns>
+    <columns>NSSales_609_1_Director__c</columns>
+    <columns>NSSales_609_1_FSM_DirectorEmail__c</columns>
+    <columns>NSSales_609_1_OperatingDivision__c</columns>
+    <columns>NSSales_609_1_LMP__c</columns>
+    <columns>NSSales_609_1_HMP__c</columns>
+    <columns>NSSales_609_1_Sales_Prefix__c</columns>
+    <columns>NSSales_609_1_Suffix__c</columns>
+    <columns>NSSales_609_1_FSM_Territory__c</columns>
+    <columns>NSSales_609_1_Sales_Title__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

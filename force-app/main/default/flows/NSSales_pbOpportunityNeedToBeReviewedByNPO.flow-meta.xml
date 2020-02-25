@@ -1,0 +1,1445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[{&quot;name&quot;:&quot;Industrial Products NPO Approvers&quot;,&quot;id&quot;:&quot;0F91I000000ILTRSA4&quot;}],&quot;message&quot;:&quot;Hi @[0F91I000000ILTRSA4] ,\n\nThe following Opportunity {![Opportunity].Name} has been submitted for NPO Approval. Please review and assign the appropriate Approval Owner.&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_12_A2</name>
+        <label>Post to record</label>
+        <locationX>1200</locationX>
+        <locationY>300</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>myRule_12_A3</targetReference>
+        </connector>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Hi @[0F91I000000ILTRSA4] ,
+
+The following Opportunity {!myVariable_current.Name} has been submitted for NPO Approval. Please review and assign the appropriate Approval Owner.</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>NSSales_Notification_to_NPO_Approver_Opportunity_To_Be_Reviewed_Industrial_Produ</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_12_A3</name>
+        <label>Send an Email Industrial Products NPO Approver</label>
+        <locationX>1200</locationX>
+        <locationY>400</locationY>
+        <actionName>Opportunity.NSSales_Notification_to_NPO_Approver_Opportunity_To_Be_Reviewed_Industrial_Produ</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[{&quot;name&quot;:&quot;Intermodal NPO Approvers&quot;,&quot;id&quot;:&quot;0F91I000000ILTWSA4&quot;}],&quot;message&quot;:&quot;Hi @[0F91I000000ILTWSA4] ,\n\nThe following Opportunity {![Opportunity].Name} has been submitted for NPO Approval. Please review and assign the appropriate Approval Owner.&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_15_A2</name>
+        <label>Post to record</label>
+        <locationX>1500</locationX>
+        <locationY>300</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>myRule_15_A3</targetReference>
+        </connector>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Hi @[0F91I000000ILTWSA4] ,
+
+The following Opportunity {!myVariable_current.Name} has been submitted for NPO Approval. Please review and assign the appropriate Approval Owner.</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>NSSales_Notification_to_NPO_Approver_Opportunity_To_Be_Reviewed_Intermodal</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_15_A3</name>
+        <label>Send an Email Intermodal NPO Approver</label>
+        <locationX>1500</locationX>
+        <locationY>400</locationY>
+        <actionName>Opportunity.NSSales_Notification_to_NPO_Approver_Opportunity_To_Be_Reviewed_Intermodal</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[{&quot;name&quot;:&quot;NPO Operations&quot;,&quot;id&quot;:&quot;0F91I000000ILcZSAW&quot;}],&quot;message&quot;:&quot;Hi @[0F91I000000ILcZSAW] ,\n\nThe following Opportunity {![Opportunity].Name} has been submitted for NPO Approval. Please review and assign the appropriate Approval Owner.&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_18_A2</name>
+        <label>Post to record</label>
+        <locationX>1800</locationX>
+        <locationY>300</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>myRule_18_A3</targetReference>
+        </connector>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Hi @[0F91I000000ILcZSAW] ,
+
+The following Opportunity {!myVariable_current.Name} has been submitted for NPO Approval. Please review and assign the appropriate Approval Owner.</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>NSSales_Notification_to_NPO_Approver_Opportunity_To_Be_Reviewed</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_18_A3</name>
+        <label>Send Email To NPO Operations</label>
+        <locationX>1800</locationX>
+        <locationY>400</locationY>
+        <actionName>Opportunity.NSSales_Notification_to_NPO_Approver_Opportunity_To_Be_Reviewed</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[{&quot;name&quot;:&quot;Industrial Development NPO Approvers&quot;,&quot;id&quot;:&quot;0F91I000000ILTMSA4&quot;}],&quot;message&quot;:&quot;Hi  @[0F91I000000ILTMSA4] ,\n\nThe following Opportunity {![Opportunity].Name} has been submitted for NPO Approval. Please review and assign the appropriate Approval Owner.&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_1_A1</name>
+        <label>Post to record</label>
+        <locationX>100</locationX>
+        <locationY>200</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>myRule_1_A2</targetReference>
+        </connector>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Hi  @[0F91I000000ILTMSA4] ,
+
+The following Opportunity {!myVariable_current.Name} has been submitted for NPO Approval. Please review and assign the appropriate Approval Owner.</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>NSSales_Notification_to_NPO_Approver_Opportunity_To_Be_Reviewed_Industrial_Devel</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_1_A2</name>
+        <label>Send an Email Industrial Development</label>
+        <locationX>100</locationX>
+        <locationY>300</locationY>
+        <actionName>Opportunity.NSSales_Notification_to_NPO_Approver_Opportunity_To_Be_Reviewed_Industrial_Devel</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[{&quot;name&quot;:&quot;Automotive NPO Approvers&quot;,&quot;id&quot;:&quot;0F91I000000ILTCSA4&quot;}],&quot;message&quot;:&quot;Hi @[0F91I000000ILTCSA4] ,\n\nThe following Opportunity {![Opportunity].Name} has been submitted for NPO Approval. Please review and assign the appropriate Approval Owner.&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_3_A2</name>
+        <label>Post to record</label>
+        <locationX>300</locationX>
+        <locationY>300</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>myRule_3_A3</targetReference>
+        </connector>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Hi @[0F91I000000ILTCSA4] ,
+
+The following Opportunity {!myVariable_current.Name} has been submitted for NPO Approval. Please review and assign the appropriate Approval Owner.</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>NSSales_Notification_to_NPO_Approver_Opportunity_To_Be_Reviewed_Automotive</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_3_A3</name>
+        <label>Send an Email Automotive NPO Approver</label>
+        <locationX>300</locationX>
+        <locationY>400</locationY>
+        <actionName>Opportunity.NSSales_Notification_to_NPO_Approver_Opportunity_To_Be_Reviewed_Automotive</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[{&quot;name&quot;:&quot;Coal NPO Approvers&quot;,&quot;id&quot;:&quot;0F91I000000ILTHSA4&quot;}],&quot;message&quot;:&quot;Hi @[0F91I000000ILTHSA4] ,\nThe following Opportunity {![Opportunity].Name} has been submitted for NPO Approval. Please review and assign the appropriate Approval Owner.&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_6_A2</name>
+        <label>Post to record</label>
+        <locationX>600</locationX>
+        <locationY>300</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>myRule_6_A3</targetReference>
+        </connector>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Hi @[0F91I000000ILTHSA4] ,
+The following Opportunity {!myVariable_current.Name} has been submitted for NPO Approval. Please review and assign the appropriate Approval Owner.</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>NSSales_Notification_to_NPO_Approver_Opportunity_To_Be_Reviewed_Coal</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_6_A3</name>
+        <label>Send an Email Coal NPO Approver</label>
+        <locationX>600</locationX>
+        <locationY>400</locationY>
+        <actionName>Opportunity.NSSales_Notification_to_NPO_Approver_Opportunity_To_Be_Reviewed_Coal</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[{&quot;name&quot;:&quot;Industrial Development NPO Approvers&quot;,&quot;id&quot;:&quot;0F91I000000ILTMSA4&quot;}],&quot;message&quot;:&quot;Hi  @[0F91I000000ILTMSA4] ,\n\nThe following Opportunity {![Opportunity].Name} has been submitted for NPO Approval. Please review and assign the appropriate Approval Owner.&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_9_A2</name>
+        <label>Post to record</label>
+        <locationX>900</locationX>
+        <locationY>300</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>myRule_9_A3</targetReference>
+        </connector>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Hi  @[0F91I000000ILTMSA4] ,
+
+The following Opportunity {!myVariable_current.Name} has been submitted for NPO Approval. Please review and assign the appropriate Approval Owner.</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>NSSales_Notification_to_NPO_Approver_Opportunity_To_Be_Reviewed_Industrial_Devel</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_9_A3</name>
+        <label>Send an Email Industrial Development NPO Approver</label>
+        <locationX>900</locationX>
+        <locationY>400</locationY>
+        <actionName>Opportunity.NSSales_Notification_to_NPO_Approver_Opportunity_To_Be_Reviewed_Industrial_Devel</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision</name>
+        <label>myDecision</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>IDOpportunity</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>4.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision11</name>
+        <label>myDecision11</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision14</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_12</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_12</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_12_A1</targetReference>
+            </connector>
+            <label>If Opportunity Stage is &#39;Internal Approval&#39; Industrial Products</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>5.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision14</name>
+        <label>myDecision14</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision17</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_15</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_15</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_15_A1</targetReference>
+            </connector>
+            <label>If Opportunity Stage is &#39;Internal Approval&#39; Intermodal</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>6.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision17</name>
+        <label>myDecision17</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_18</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_18</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_18_A1</targetReference>
+            </connector>
+            <label>If Opportunity Stage is &#39;Internal Review&#39; Automotive</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision2</name>
+        <label>myDecision2</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision5</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_3</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_3_A1</targetReference>
+            </connector>
+            <label>If Opportunity Stage is &#39;Internal Approval&#39; Automotive</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>2.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision5</name>
+        <label>myDecision5</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision8</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_6</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_6</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_6_A1</targetReference>
+            </connector>
+            <label>If Opportunity Stage is &#39;Internal Approval&#39; Coal</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>3.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision8</name>
+        <label>myDecision8</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision11</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_9</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_9</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_9_A1</targetReference>
+            </connector>
+            <label>If Opportunity Stage is &#39;Internal Approval&#39; Industrial Development</label>
+        </rules>
+    </decisions>
+    <description>1. It changes Opportunity record type to Read Only 2. Create a Task 3. Send email to NPO Approver for review</description>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>$Label.NSSales_OpportunityReadOnlyRecordType</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_10_myRule_9_A1_6829623857</name>
+        <dataType>String</dataType>
+        <expression>{!$Label.NSSales_OpportunityReadOnlyRecordType}</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>$Label.NSSales_OpportunityReadOnlyRecordType</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_13_myRule_12_A1_8384846960</name>
+        <dataType>String</dataType>
+        <expression>{!$Label.NSSales_OpportunityReadOnlyRecordType}</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>$Label.NSSales_OpportunityReadOnlyRecordType</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_16_myRule_15_A1_8946256938</name>
+        <dataType>String</dataType>
+        <expression>{!$Label.NSSales_OpportunityReadOnlyRecordType}</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>$Label.NSSales_OpportunityNOCRecordType</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_19_myRule_18_A1_5809281882</name>
+        <dataType>String</dataType>
+        <expression>{!$Label.NSSales_OpportunityNOCRecordType}</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>$Label.NSSales_OpportunityReadOnlyRecordType </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_4_myRule_3_A1_6693425301</name>
+        <dataType>String</dataType>
+        <expression>{!$Label.NSSales_OpportunityReadOnlyRecordType}</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>$Label.NSSales_OpportunityReadOnlyRecordType</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_7_myRule_6_A1_6247726352</name>
+        <dataType>String</dataType>
+        <expression>{!$Label.NSSales_OpportunityReadOnlyRecordType}</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(ISCHANGED([Opportunity].NSSales_Approval_Needed__c),[Opportunity].NSSales_Approval_Needed__c == True,
+[Opportunity].RecordType.Name =&#39;ID&#39;) </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_1</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(ISCHANGED({!myVariable_current.NSSales_Approval_Needed__c}),{!myVariable_current.NSSales_Approval_Needed__c} == True,
+{!myVariable_current.RecordType.Name} =&#39;ID&#39;)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>OR(
+AND(
+AND(ISCHANGED([Opportunity].StageName ),ISPICKVAL([Opportunity].StageName, &#39;Internal Review&#39;),
+[Opportunity].RecordType.DeveloperName = &#39;NS_General_Opportunity&#39;),
+
+
+ISPICKVAL([Opportunity].NS_Originating_Department__c, &#39;Industrial Products&#39;)
+),
+
+AND(
+ISCHANGED([Opportunity].NSSales_Approval_Needed__c),[Opportunity].NSSales_Approval_Needed__c == True,
+ISPICKVAL([Opportunity].StageName, &#39;Internal Review&#39;),
+[Opportunity].RecordType.DeveloperName = &#39;NS_General_Opportunity&#39;
+)
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_12</name>
+        <dataType>Boolean</dataType>
+        <expression>OR(
+AND(
+AND(ISCHANGED({!myVariable_current.StageName} ),ISPICKVAL({!myVariable_current.StageName}, &#39;Internal Review&#39;),
+{!myVariable_current.RecordType.DeveloperName} = &#39;NS_General_Opportunity&#39;),
+
+
+ISPICKVAL({!myVariable_current.NS_Originating_Department__c}, &#39;Industrial Products&#39;)
+),
+
+AND(
+ISCHANGED({!myVariable_current.NSSales_Approval_Needed__c}),{!myVariable_current.NSSales_Approval_Needed__c} == True,
+ISPICKVAL({!myVariable_current.StageName}, &#39;Internal Review&#39;),
+{!myVariable_current.RecordType.DeveloperName} = &#39;NS_General_Opportunity&#39;
+)
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>OR(
+AND(
+AND(ISCHANGED([Opportunity].StageName ),ISPICKVAL([Opportunity].StageName, &#39;Internal Review&#39;),
+[Opportunity].RecordType.DeveloperName = &#39;NS_General_Opportunity&#39;),
+
+
+AND(ISPICKVAL([Opportunity].NS_Originating_Department__c, &#39;Intermodal&#39;),[Opportunity].NS_Estimated_Volume__c&gt;= 1000)
+),
+
+AND(
+ISCHANGED([Opportunity].NSSales_Approval_Needed__c),[Opportunity].NSSales_Approval_Needed__c == True,
+ISPICKVAL([Opportunity].StageName, &#39;Internal Review&#39;),
+[Opportunity].RecordType.DeveloperName = &#39;NS_General_Opportunity&#39;
+)
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_15</name>
+        <dataType>Boolean</dataType>
+        <expression>OR(
+AND(
+AND(ISCHANGED({!myVariable_current.StageName} ),ISPICKVAL({!myVariable_current.StageName}, &#39;Internal Review&#39;),
+{!myVariable_current.RecordType.DeveloperName} = &#39;NS_General_Opportunity&#39;),
+
+
+AND(ISPICKVAL({!myVariable_current.NS_Originating_Department__c}, &#39;Intermodal&#39;),{!myVariable_current.NS_Estimated_Volume__c}&gt;= 1000)
+),
+
+AND(
+ISCHANGED({!myVariable_current.NSSales_Approval_Needed__c}),{!myVariable_current.NSSales_Approval_Needed__c} == True,
+ISPICKVAL({!myVariable_current.StageName}, &#39;Internal Review&#39;),
+{!myVariable_current.RecordType.DeveloperName} = &#39;NS_General_Opportunity&#39;
+)
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>OR(
+AND(
+AND(ISCHANGED([Opportunity].StageName ),ISPICKVAL([Opportunity].StageName, &#39;Internal Review&#39;),
+[Opportunity].RecordType.DeveloperName  =&#39;NSSales_NPO_Operations_Opportunity&#39;)
+),
+
+AND(
+ISCHANGED([Opportunity].NSSales_Approval_Needed__c),[Opportunity].NSSales_Approval_Needed__c == True,
+ISPICKVAL([Opportunity].StageName, &#39;Internal Review&#39;),
+[Opportunity].RecordType.DeveloperName  =&#39;NSSales_NPO_Operations_Opportunity&#39;
+)
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_18</name>
+        <dataType>Boolean</dataType>
+        <expression>OR(
+AND(
+AND(ISCHANGED({!myVariable_current.StageName} ),ISPICKVAL({!myVariable_current.StageName}, &#39;Internal Review&#39;),
+{!myVariable_current.RecordType.DeveloperName}  =&#39;NSSales_NPO_Operations_Opportunity&#39;)
+),
+
+AND(
+ISCHANGED({!myVariable_current.NSSales_Approval_Needed__c}),{!myVariable_current.NSSales_Approval_Needed__c} == True,
+ISPICKVAL({!myVariable_current.StageName}, &#39;Internal Review&#39;),
+{!myVariable_current.RecordType.DeveloperName}  =&#39;NSSales_NPO_Operations_Opportunity&#39;
+)
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>OR(
+AND(
+AND(ISCHANGED([Opportunity].StageName ),ISPICKVAL([Opportunity].StageName, &#39;Internal Review&#39;),
+[Opportunity].RecordType.DeveloperName = &#39;NS_General_Opportunity&#39; ),
+
+
+ISPICKVAL([Opportunity].NS_Originating_Department__c, &#39;Automotive&#39;)
+),
+
+AND(
+ISCHANGED([Opportunity].NSSales_Approval_Needed__c),[Opportunity].NSSales_Approval_Needed__c == True,
+ISPICKVAL([Opportunity].StageName, &#39;Internal Review&#39;),
+[Opportunity].RecordType.DeveloperName = &#39;NS_General_Opportunity&#39;
+)
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_3</name>
+        <dataType>Boolean</dataType>
+        <expression>OR(
+AND(
+AND(ISCHANGED({!myVariable_current.StageName} ),ISPICKVAL({!myVariable_current.StageName}, &#39;Internal Review&#39;),
+{!myVariable_current.RecordType.DeveloperName} = &#39;NS_General_Opportunity&#39; ),
+
+
+ISPICKVAL({!myVariable_current.NS_Originating_Department__c}, &#39;Automotive&#39;)
+),
+
+AND(
+ISCHANGED({!myVariable_current.NSSales_Approval_Needed__c}),{!myVariable_current.NSSales_Approval_Needed__c} == True,
+ISPICKVAL({!myVariable_current.StageName}, &#39;Internal Review&#39;),
+{!myVariable_current.RecordType.DeveloperName} = &#39;NS_General_Opportunity&#39;
+)
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>OR(
+AND(
+AND(ISCHANGED([Opportunity].StageName ),ISPICKVAL([Opportunity].StageName, &#39;Internal Review&#39;),
+[Opportunity].RecordType.DeveloperName = &#39;NS_General_Opportunity&#39;),
+
+
+ISPICKVAL([Opportunity].NS_Originating_Department__c, &#39;Coal&#39;)
+),
+
+AND(
+ISCHANGED([Opportunity].NSSales_Approval_Needed__c),[Opportunity].NSSales_Approval_Needed__c == True,
+ISPICKVAL([Opportunity].StageName, &#39;Internal Review&#39;),
+[Opportunity].RecordType.DeveloperName = &#39;NS_General_Opportunity&#39;
+)
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_6</name>
+        <dataType>Boolean</dataType>
+        <expression>OR(
+AND(
+AND(ISCHANGED({!myVariable_current.StageName} ),ISPICKVAL({!myVariable_current.StageName}, &#39;Internal Review&#39;),
+{!myVariable_current.RecordType.DeveloperName} = &#39;NS_General_Opportunity&#39;),
+
+
+ISPICKVAL({!myVariable_current.NS_Originating_Department__c}, &#39;Coal&#39;)
+),
+
+AND(
+ISCHANGED({!myVariable_current.NSSales_Approval_Needed__c}),{!myVariable_current.NSSales_Approval_Needed__c} == True,
+ISPICKVAL({!myVariable_current.StageName}, &#39;Internal Review&#39;),
+{!myVariable_current.RecordType.DeveloperName} = &#39;NS_General_Opportunity&#39;
+)
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>OR(
+AND(
+AND(ISCHANGED([Opportunity].StageName ),ISPICKVAL([Opportunity].StageName, &#39;Internal Review&#39;),
+[Opportunity].RecordType.DeveloperName = &#39;NS_General_Opportunity&#39;),
+
+
+ISPICKVAL([Opportunity].NS_Originating_Department__c, &#39;Industrial Development&#39;)
+),
+
+AND(
+ISCHANGED([Opportunity].NSSales_Approval_Needed__c),[Opportunity].NSSales_Approval_Needed__c == True,
+ISPICKVAL([Opportunity].StageName, &#39;Internal Review&#39;),
+[Opportunity].RecordType.DeveloperName = &#39;NS_General_Opportunity&#39;
+)
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_9</name>
+        <dataType>Boolean</dataType>
+        <expression>OR(
+AND(
+AND(ISCHANGED({!myVariable_current.StageName} ),ISPICKVAL({!myVariable_current.StageName}, &#39;Internal Review&#39;),
+{!myVariable_current.RecordType.DeveloperName} = &#39;NS_General_Opportunity&#39;),
+
+
+ISPICKVAL({!myVariable_current.NS_Originating_Department__c}, &#39;Industrial Development&#39;)
+),
+
+AND(
+ISCHANGED({!myVariable_current.NSSales_Approval_Needed__c}),{!myVariable_current.NSSales_Approval_Needed__c} == True,
+ISPICKVAL({!myVariable_current.StageName}, &#39;Internal Review&#39;),
+{!myVariable_current.RecordType.DeveloperName} = &#39;NS_General_Opportunity&#39;
+)
+)</expression>
+    </formulas>
+    <interviewLabel>NSSales_pbOpportunityNeedToBeReviewedByNPO-11_InterviewLabel</interviewLabel>
+    <label>NSSales_pbOpportunityNeedToBeReviewedByNPO</label>
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>Opportunity</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>ObjectVariable</name>
+        <value>
+            <elementReference>myVariable_current</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OldObjectVariable</name>
+        <value>
+            <elementReference>myVariable_old</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onAllChanges</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Opportunity]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_12_A1</name>
+        <label>Change the Opportunity Record Type to Read Only</label>
+        <locationX>1200</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myRule_12_A2</targetReference>
+        </connector>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Record Type ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue>RecordType</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>formula_13_myRule_12_A1_8384846960</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Opportunity]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_15_A1</name>
+        <label>Change the Opportunity Record Type to Read Only</label>
+        <locationX>1500</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myRule_15_A2</targetReference>
+        </connector>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Record Type ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue>RecordType</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>formula_16_myRule_15_A1_8946256938</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Opportunity]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_18_A1</name>
+        <label>Change the Opportunity Record Type to NPO Operation Read Only</label>
+        <locationX>1800</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myRule_18_A2</targetReference>
+        </connector>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Record Type ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue>RecordType</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>formula_19_myRule_18_A1_5809281882</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Opportunity]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_3_A1</name>
+        <label>Change the Opportunity Record Type to Read Only</label>
+        <locationX>300</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myRule_3_A2</targetReference>
+        </connector>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Record Type ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue>RecordType</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>formula_4_myRule_3_A1_6693425301</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Opportunity]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_6_A1</name>
+        <label>Change the Opportunity Record Type to Read Only</label>
+        <locationX>600</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myRule_6_A2</targetReference>
+        </connector>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Record Type ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue>RecordType</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>formula_7_myRule_6_A1_6247726352</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Opportunity]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_9_A1</name>
+        <label>Change the Opportunity Record Type to Read Only</label>
+        <locationX>900</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myRule_9_A2</targetReference>
+        </connector>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Record Type ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue>RecordType</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>formula_10_myRule_9_A1_6829623857</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <startElementReference>myDecision</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>myVariable_current</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_old</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+</Flow>

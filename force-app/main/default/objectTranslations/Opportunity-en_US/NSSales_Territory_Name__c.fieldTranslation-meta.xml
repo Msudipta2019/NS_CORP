@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Territory --></label>
+    <name>NSSales_Territory_Name__c</name>
+    <picklistValues>
+        <masterLabel>Atlanta</masterLabel>
+        <translation><!-- Atlanta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Birmingham</masterLabel>
+        <translation><!-- Birmingham --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Harrisburg East</masterLabel>
+        <translation><!-- Harrisburg East --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Harrisburg West</masterLabel>
+        <translation><!-- Harrisburg West --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indianapolis</masterLabel>
+        <translation><!-- Indianapolis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Knoxville</masterLabel>
+        <translation><!-- Knoxville --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Norfolk</masterLabel>
+        <translation><!-- Norfolk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North Carolina</masterLabel>
+        <translation><!-- North Carolina --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ohio</masterLabel>
+        <translation><!-- Ohio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Roanoke</masterLabel>
+        <translation><!-- Roanoke --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South Carolina</masterLabel>
+        <translation><!-- South Carolina --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>St. Louis</masterLabel>
+        <translation><!-- St. Louis --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

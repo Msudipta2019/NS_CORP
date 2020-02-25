@@ -1,0 +1,42 @@
+@media(max-width:700px){
+    .THIS .responsiveHide{
+        display : none !important;
+    }
+}
+.THIS .hiddenflds{
+        display : none !important;
+    }
+.THIS .isActivityLoading .slds-spinner_container {
+   position: relative !important;
+   top: 20px !important;
+}
+.THIS .ansbutton{
+    background:#f4ba05;
+    color:#ffffff;
+    /*border-radius: 16px;*/
+    text-decoration: none;
+}
+
+.THIS .ansbutton:hover{
+    background:#cc7a00;
+    /*border-radius: 16px;*/
+    text-decoration: none;
+}
+
+.THIS .ansbutton:onclick{
+    background:#cc7a00;
+    /*border-radius: 16px;*/
+    text-decoration: none;
+}
+.THIS .anstxt{
+    font-weight:bold;
+    font-size:14px;
+    font-family: Helvetica, Lato;
+    color:#ffffff;
+    text-align:bottom;
+}
+
+.THIS .slds-spinner_container  {
+    background-color: rgba(0, 0, 0, 0.10);
+    
+}

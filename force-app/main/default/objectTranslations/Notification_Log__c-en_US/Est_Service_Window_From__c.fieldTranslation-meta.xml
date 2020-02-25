@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Train details captured from notification. --></help>
+    <label><!-- Est Service Window - From --></label>
+    <name>Est_Service_Window_From__c</name>
+</CustomFieldTranslation>

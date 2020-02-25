@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Segment within the business unit associated to a particular user --></help>
+    <label><!-- Associated Business Unit Segment --></label>
+    <name>NS_AssociatedBusinessUnitSegment__c</name>
+    <picklistValues>
+        <masterLabel>Administrative</masterLabel>
+        <translation><!-- Administrative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clearances</masterLabel>
+        <translation><!-- Clearances --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Quality</masterLabel>
+        <translation><!-- Data Quality --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demurrage</masterLabel>
+        <translation><!-- Demurrage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Freight Claims</masterLabel>
+        <translation><!-- Freight Claims --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LSS</masterLabel>
+        <translation><!-- LSS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leadership</masterLabel>
+        <translation><!-- Leadership --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Premium</masterLabel>
+        <translation><!-- Non-Premium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSS East</masterLabel>
+        <translation><!-- OSS East --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSS North</masterLabel>
+        <translation><!-- OSS North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSS South</masterLabel>
+        <translation><!-- OSS South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSS West</masterLabel>
+        <translation><!-- OSS West --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Premium</masterLabel>
+        <translation><!-- Premium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenue Protection</masterLabel>
+        <translation><!-- Revenue Protection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special Services</masterLabel>
+        <translation><!-- Special Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Support</masterLabel>
+        <translation><!-- Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic</masterLabel>
+        <translation><!-- Traffic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>eCommerce</masterLabel>
+        <translation><!-- eCommerce --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Account_Type_BU__c</fullName>
+    <description>Sales - Classify the type of Account the customer is based on the NS Business group or user.</description>
+    <externalId>false</externalId>
+    <label>Account Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Beneficial Cargo Owner</fullName>
+                <default>false</default>
+                <label>Beneficial Cargo Owner</label>
+            </value>
+            <value>
+                <fullName>Port</fullName>
+                <default>false</default>
+                <label>Port</label>
+            </value>
+            <value>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+                <label>Vendor</label>
+            </value>
+            <value>
+                <fullName>Drayage Provider</fullName>
+                <default>false</default>
+                <label>Drayage Provider</label>
+            </value>
+            <value>
+                <fullName>Broker/3PL</fullName>
+                <default>false</default>
+                <label>Broker/3PL</label>
+            </value>
+            <value>
+                <fullName>Construction</fullName>
+                <default>false</default>
+                <label>Construction</label>
+            </value>
+            <value>
+                <fullName>Economic Development Ally</fullName>
+                <default>false</default>
+                <label>Economic Development Ally</label>
+            </value>
+            <value>
+                <fullName>Engineering Consultant</fullName>
+                <default>false</default>
+                <label>Engineering Consultant</label>
+            </value>
+            <value>
+                <fullName>Railroad</fullName>
+                <default>false</default>
+                <label>Railroad</label>
+            </value>
+            <value>
+                <fullName>Site Selector</fullName>
+                <default>false</default>
+                <label>Site Selector</label>
+            </value>
+            <value>
+                <fullName>State or Local EDC</fullName>
+                <default>false</default>
+                <label>State or Local EDC</label>
+            </value>
+            <value>
+                <fullName>Utility</fullName>
+                <default>false</default>
+                <label>Utility</label>
+            </value>
+            <value>
+                <fullName>Shipper</fullName>
+                <default>false</default>
+                <label>Shipper</label>
+            </value>
+            <value>
+                <fullName>Receiver</fullName>
+                <default>false</default>
+                <label>Receiver</label>
+            </value>
+            <value>
+                <fullName>Shipper/Receiver</fullName>
+                <default>false</default>
+                <label>Shipper/Receiver</label>
+            </value>
+            <value>
+                <fullName>Broker</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Broker</label>
+            </value>
+            <value>
+                <fullName>Direct Customer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Direct Customer</label>
+            </value>
+            <value>
+                <fullName>Indirect Customer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Indirect Customer</label>
+            </value>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Partner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

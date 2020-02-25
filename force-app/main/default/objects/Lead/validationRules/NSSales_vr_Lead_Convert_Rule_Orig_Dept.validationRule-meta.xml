@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_vr_Lead_Convert_Rule_Orig_Dept</fullName>
+    <active>false</active>
+    <description>Lead record must have an Originating Department prior to conversion because Opportunity field Originating Department is a required field.</description>
+    <errorConditionFormula>AND( IsConverted, ISBLANK(TEXT(NSSales_Originating_Department__c )) )</errorConditionFormula>
+    <errorDisplayField>NSSales_Originating_Department__c</errorDisplayField>
+    <errorMessage>Originating Department must be selected prior to converting Lead.</errorMessage>
+</ValidationRule>

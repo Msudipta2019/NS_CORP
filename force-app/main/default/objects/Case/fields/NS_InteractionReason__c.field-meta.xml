@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_InteractionReason__c</fullName>
+    <description>Reason for calling the customer care</description>
+    <externalId>false</externalId>
+    <label>Interaction Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>NS_InteractionCategory__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>3PL Tracing</fullName>
+                <default>false</default>
+                <label>3PL Tracing</label>
+            </value>
+            <value>
+                <fullName>Cash Hold</fullName>
+                <default>false</default>
+                <label>Cash Hold</label>
+            </value>
+            <value>
+                <fullName>Classification Issues</fullName>
+                <default>false</default>
+                <label>Classification Issues</label>
+            </value>
+            <value>
+                <fullName>Concerned Citizen</fullName>
+                <default>false</default>
+                <label>Concerned Citizen</label>
+            </value>
+            <value>
+                <fullName>CSAO Communication</fullName>
+                <default>false</default>
+                <label>CSAO Communication</label>
+            </value>
+            <value>
+                <fullName>Damage Prevention Holds</fullName>
+                <default>false</default>
+                <label>Damage Prevention Holds</label>
+            </value>
+            <value>
+                <fullName>Demurrage/Misc Bill/Freight Bill</fullName>
+                <default>false</default>
+                <label>Demurrage/Misc Bill/Freight Bill</label>
+            </value>
+            <value>
+                <fullName>Diversion/Reship</fullName>
+                <default>false</default>
+                <label>Diversion/Reship</label>
+            </value>
+            <value>
+                <fullName>DQ/RIT Assistance</fullName>
+                <default>false</default>
+                <label>DQ/RIT Assistance</label>
+            </value>
+            <value>
+                <fullName>EDI Request</fullName>
+                <default>false</default>
+                <label>EDI Request</label>
+            </value>
+            <value>
+                <fullName>Embargo/OT5</fullName>
+                <default>false</default>
+                <label>Embargo/OT5</label>
+            </value>
+            <value>
+                <fullName>Expedite Request</fullName>
+                <default>false</default>
+                <label>Expedite Request</label>
+            </value>
+            <value>
+                <fullName>FRA/TSA Requests</fullName>
+                <default>false</default>
+                <label>FRA/TSA Requests</label>
+            </value>
+            <value>
+                <fullName>Freight Claims</fullName>
+                <default>false</default>
+                <label>Freight Claims</label>
+            </value>
+            <value>
+                <fullName>High &amp; Wide Movements</fullName>
+                <default>false</default>
+                <label>High &amp; Wide Movements</label>
+            </value>
+            <value>
+                <fullName>Holiday Polling</fullName>
+                <default>false</default>
+                <label>Holiday Polling</label>
+            </value>
+            <value>
+                <fullName>Interchange Concerns</fullName>
+                <default>false</default>
+                <label>Interchange Concerns</label>
+            </value>
+            <value>
+                <fullName>Intermodal</fullName>
+                <default>false</default>
+                <label>Intermodal</label>
+            </value>
+            <value>
+                <fullName>Inventory Accuracy</fullName>
+                <default>false</default>
+                <label>Inventory Accuracy</label>
+            </value>
+            <value>
+                <fullName>Load Moving as Empty</fullName>
+                <default>false</default>
+                <label>Load Moving as Empty</label>
+            </value>
+            <value>
+                <fullName>Local Service ETA</fullName>
+                <default>false</default>
+                <label>Local Service ETA</label>
+            </value>
+            <value>
+                <fullName>Local Service Request</fullName>
+                <default>false</default>
+                <label>Local Service Request</label>
+            </value>
+            <value>
+                <fullName>LSS</fullName>
+                <default>false</default>
+                <label>LSS</label>
+            </value>
+            <value>
+                <fullName>Misroute</fullName>
+                <default>false</default>
+                <label>Misroute</label>
+            </value>
+            <value>
+                <fullName>Missed Switch</fullName>
+                <default>false</default>
+                <label>Missed Switch</label>
+            </value>
+            <value>
+                <fullName>Pull/Place Errors</fullName>
+                <default>false</default>
+                <label>Pull/Place Errors</label>
+            </value>
+            <value>
+                <fullName>Rate Request</fullName>
+                <default>false</default>
+                <label>Rate Request</label>
+            </value>
+            <value>
+                <fullName>Rejects</fullName>
+                <default>false</default>
+                <label>Rejects</label>
+            </value>
+            <value>
+                <fullName>Request for 418</fullName>
+                <default>false</default>
+                <label>Request for 418</label>
+            </value>
+            <value>
+                <fullName>RIT Not Qualified</fullName>
+                <default>false</default>
+                <label>RIT Not Qualified</label>
+            </value>
+            <value>
+                <fullName>Service Disruption/Derailment</fullName>
+                <default>false</default>
+                <label>Service Disruption/Derailment</label>
+            </value>
+            <value>
+                <fullName>Setback</fullName>
+                <default>false</default>
+                <label>Setback</label>
+            </value>
+            <value>
+                <fullName>Shutdown</fullName>
+                <default>false</default>
+                <label>Shutdown</label>
+            </value>
+            <value>
+                <fullName>Special Switch</fullName>
+                <default>false</default>
+                <label>Special Switch</label>
+            </value>
+            <value>
+                <fullName>Special Train</fullName>
+                <default>false</default>
+                <label>Special Train</label>
+            </value>
+            <value>
+                <fullName>Tracing</fullName>
+                <default>false</default>
+                <label>Tracing</label>
+            </value>
+            <value>
+                <fullName>US Customs &amp; Border Patrol</fullName>
+                <default>false</default>
+                <label>US Customs &amp; Border Patrol</label>
+            </value>
+            <value>
+                <fullName>Waybilling Issue</fullName>
+                <default>false</default>
+                <label>Waybilling Issue</label>
+            </value>
+            <value>
+                <fullName>Delays</fullName>
+                <default>false</default>
+                <label>Delays</label>
+            </value>
+            <value>
+                <fullName>Equipment Allocation</fullName>
+                <default>false</default>
+                <label>Equipment Allocation</label>
+            </value>
+            <value>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+                <label>Transportation</label>
+            </value>
+            <value>
+                <fullName>Pipeline Management</fullName>
+                <default>false</default>
+                <label>Pipeline Management</label>
+            </value>
+            <value>
+                <fullName>Refrigerated Equipment</fullName>
+                <default>false</default>
+                <label>Refrigerated Equipment</label>
+            </value>
+            <value>
+                <fullName>AccessNS/Inventory Management</fullName>
+                <default>false</default>
+                <label>AccessNS/Inventory Management</label>
+            </value>
+            <value>
+                <fullName>Dead-in-Tow Locomotive/Passenger Cars</fullName>
+                <default>false</default>
+                <label>Dead-in-Tow Locomotive/Passenger Cars</label>
+            </value>
+            <value>
+                <fullName>Overload/Imbalance</fullName>
+                <default>false</default>
+                <label>Overload/Imbalance</label>
+            </value>
+            <value>
+                <fullName>Request for Mktg Representative</fullName>
+                <default>false</default>
+                <label>Request for Mktg Representative</label>
+            </value>
+            <value>
+                <fullName>Data Quality</fullName>
+                <default>false</default>
+                <label>Data Quality</label>
+            </value>
+            <value>
+                <fullName>RIT</fullName>
+                <default>false</default>
+                <label>RIT</label>
+            </value>
+            <value>
+                <fullName>Local Service Inquiry</fullName>
+                <default>false</default>
+                <label>Local Service Inquiry</label>
+            </value>
+            <value>
+                <fullName>Load Issues</fullName>
+                <default>false</default>
+                <label>Load Issues</label>
+            </value>
+            <value>
+                <fullName>Foreign Line Inquiry</fullName>
+                <default>false</default>
+                <label>Foreign Line Inquiry</label>
+            </value>
+            <value>
+                <fullName>Expedite/Special Train</fullName>
+                <default>false</default>
+                <label>Expedite/Special Train</label>
+            </value>
+            <value>
+                <fullName>Freight Claims &amp; LSS</fullName>
+                <default>false</default>
+                <label>Freight Claims &amp; LSS</label>
+            </value>
+            <value>
+                <fullName>Dimensional/Locomotive</fullName>
+                <default>false</default>
+                <label>Dimensional/Locomotive</label>
+            </value>
+            <value>
+                <fullName>Inspection/Bad Order/Empty Rejects</fullName>
+                <default>false</default>
+                <label>Inspection/Bad Order/Empty Rejects</label>
+            </value>
+            <value>
+                <fullName>Technical Support</fullName>
+                <default>false</default>
+                <label>Technical Support</label>
+            </value>
+            <value>
+                <fullName>Billing</fullName>
+                <default>false</default>
+                <label>Billing</label>
+            </value>
+            <value>
+                <fullName>General Inquiry</fullName>
+                <default>false</default>
+                <label>General Inquiry</label>
+            </value>
+            <value>
+                <fullName>Interline Partner</fullName>
+                <default>false</default>
+                <label>Interline Partner</label>
+            </value>
+            <value>
+                <fullName>Reservations</fullName>
+                <default>false</default>
+                <label>Reservations</label>
+            </value>
+            <value>
+                <fullName>Shipment Exception</fullName>
+                <default>false</default>
+                <label>Shipment Exception</label>
+            </value>
+            <value>
+                <fullName>Business Functions</fullName>
+                <default>false</default>
+                <label>Business Functions</label>
+            </value>
+            <value>
+                <fullName>IM Tracing</fullName>
+                <default>false</default>
+                <label>IM Tracing</label>
+            </value>
+            <value>
+                <fullName>Internal Function</fullName>
+                <default>false</default>
+                <label>Internal Function</label>
+            </value>
+            <value>
+                <fullName>IM Concerned Citizen</fullName>
+                <default>false</default>
+                <label>IM Concerned Citizen</label>
+            </value>
+            <value>
+                <fullName>Equipment</fullName>
+                <default>false</default>
+                <label>Equipment</label>
+            </value>
+            <value>
+                <fullName>Storage</fullName>
+                <default>false</default>
+                <label>Storage</label>
+            </value>
+            <value>
+                <fullName>Reports</fullName>
+                <default>false</default>
+                <label>Reports</label>
+            </value>
+            <value>
+                <fullName>Overage</fullName>
+                <default>false</default>
+                <label>Overage</label>
+            </value>
+            <value>
+                <fullName>Bad Order/Mechanical Inspection</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bad Order/Mechanical Inspection</label>
+            </value>
+            <value>
+                <fullName>CSAO Communication.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CSAO Communication.</label>
+            </value>
+            <value>
+                <fullName>Delayed Shipment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Delayed Shipment</label>
+            </value>
+            <value>
+                <fullName>NS Reports</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>NS Reports</label>
+            </value>
+            <value>
+                <fullName>New problem</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>New problem</label>
+            </value>
+            <value>
+                <fullName>OSS Support</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OSS Support</label>
+            </value>
+            <value>
+                <fullName>Online Account Creation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Online Account Creation</label>
+            </value>
+            <value>
+                <fullName>Outbound</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Outbound</label>
+            </value>
+            <value>
+                <fullName>Email-to-Case</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>[DELETE]Email-to-Case</label>
+            </value>
+            <value>
+                <fullName>Enroute Delays</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>[DELETE]Enroute Delays</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Accounting/Waybilling</controllingFieldValue>
+            <valueName>Cash Hold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accounting/Waybilling</controllingFieldValue>
+            <valueName>Demurrage/Misc Bill/Freight Bill</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accounting/Waybilling</controllingFieldValue>
+            <valueName>Waybilling Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transit Exceptions</controllingFieldValue>
+            <valueName>Misroute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transit Exceptions</controllingFieldValue>
+            <valueName>Service Disruption/Derailment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transit Exceptions</controllingFieldValue>
+            <valueName>Delays</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transit Exceptions</controllingFieldValue>
+            <valueName>Load Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transit Exceptions</controllingFieldValue>
+            <valueName>Expedite/Special Train</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transit Exceptions</controllingFieldValue>
+            <valueName>Inspection/Bad Order/Empty Rejects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transit Exceptions</controllingFieldValue>
+            <valueName>Overage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Functions</controllingFieldValue>
+            <valueName>Classification Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Functions</controllingFieldValue>
+            <valueName>Equipment Allocation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Functions</controllingFieldValue>
+            <valueName>Transportation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Functions</controllingFieldValue>
+            <valueName>Pipeline Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Functions</controllingFieldValue>
+            <valueName>Refrigerated Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Functions</controllingFieldValue>
+            <valueName>Data Quality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Functions</controllingFieldValue>
+            <valueName>RIT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Functions</controllingFieldValue>
+            <valueName>Freight Claims &amp; LSS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Functions</controllingFieldValue>
+            <valueName>Technical Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reports</controllingFieldValue>
+            <valueName>Reports</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>Billing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>General Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>Interline Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>Shipment Exception</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>IM Tracing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>Internal Function</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>IM Concerned Citizen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>Storage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Concerned Citizen</controllingFieldValue>
+            <valueName>Concerned Citizen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foreign Road</controllingFieldValue>
+            <valueName>Setback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foreign Road</controllingFieldValue>
+            <valueName>Foreign Line Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Local Service</controllingFieldValue>
+            <valueName>Embargo/OT5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Local Service</controllingFieldValue>
+            <valueName>Holiday Polling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Local Service</controllingFieldValue>
+            <valueName>Shutdown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Local Service</controllingFieldValue>
+            <valueName>Special Switch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Local Service</controllingFieldValue>
+            <valueName>Local Service Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing/Sales</controllingFieldValue>
+            <valueName>Rate Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing/Sales</controllingFieldValue>
+            <valueName>Request for Mktg Representative</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tracing</controllingFieldValue>
+            <valueName>CSAO Communication</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tracing</controllingFieldValue>
+            <valueName>FRA/TSA Requests</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tracing</controllingFieldValue>
+            <valueName>Intermodal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tracing</controllingFieldValue>
+            <valueName>Tracing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tracing</controllingFieldValue>
+            <valueName>US Customs &amp; Border Patrol</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tracing</controllingFieldValue>
+            <valueName>Dimensional/Locomotive</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

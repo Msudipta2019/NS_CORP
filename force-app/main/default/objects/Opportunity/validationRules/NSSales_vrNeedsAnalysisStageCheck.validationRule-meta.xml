@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_vrNeedsAnalysisStageCheck</fullName>
+    <active>true</active>
+    <description>It will check if an opportunity is going through the stage &quot;Internal Request&quot;</description>
+    <errorConditionFormula>OR( 
+AND( 
+ISCHANGED(StageName), ISPICKVAL(StageName, &#39;Proposal&#39;) , 
+(TEXT(PRIORVALUE(StageName)) &lt;&gt; &#39;Internal Review&#39;), 
+NOT(AND(ISPICKVAL(NS_Originating_Department__c,&#39;Intermodal&#39;),NS_Estimated_Volume__c &lt;= 1000)) 
+), 
+AND( 
+ISCHANGED(StageName), ISPICKVAL(StageName, &#39;Negotiation&#39;) , 
+(TEXT(PRIORVALUE(StageName)) &lt;&gt; &#39;Proposal&#39;), 
+NOT(AND(ISPICKVAL(NS_Originating_Department__c,&#39;Intermodal&#39;),NS_Estimated_Volume__c &lt;= 1000)) 
+) 
+)</errorConditionFormula>
+    <errorMessage>You must go through each sales stage in order to save the record.</errorMessage>
+</ValidationRule>

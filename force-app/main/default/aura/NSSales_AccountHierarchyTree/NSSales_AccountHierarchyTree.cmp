@@ -1,0 +1,29 @@
+<aura:component controller="NSSales_LightningTreeApexController" implements="flexipage:availableForRecordHome,force:lightningQuickActionWithoutHeader,force:hasRecordId"> 
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />  
+    <aura:attribute name="cases" type="List" />
+    <aura:attribute name="opportunities" type="List" />
+    <aura:attribute name="items" type="Object"/>  
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="showCase" type="Boolean" default="false"/>
+    <aura:attribute name="showOpp" type="Boolean" default="false"/>
+
+    <div aura:id="divContainer" id="divContainer" class="slds-box slds-theme_default">
+        <table>
+        	<tr>
+                <td><span class="hdrlabel">Account Hierarchy</span></td>
+                <td>
+                	<a class="ansbutton"  onclick="{!c.expandAll}">
+                            <span class="anstxt">&nbsp;&nbsp;Expand All&nbsp;&nbsp;</span>
+                    </a> 
+                    <a class="ansbutton"  onclick="{!c.collapseAll}">
+                            <span class="anstxt">&nbsp;&nbsp;Collapse All&nbsp;&nbsp;</span>
+                    </a>
+                </td>         
+            </tr>
+        </table>
+        
+        <lightning:tree items="{!v.items }" onselect="{!c.handleSelect}">	      	<!-- header="Account Hierarchy" -->          
+        </lightning:tree>
+    </div>
+
+</aura:component>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_NonConnectNSRoleRequired</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISBLANK( NSSales_Non_Connect_NS_User__c ) ) , ISBLANK( NSSales_Non_Connect_NS_User_Role__c ) )</errorConditionFormula>
+    <errorDisplayField>NSSales_Non_Connect_NS_User_Role__c</errorDisplayField>
+    <errorMessage>If Non-ConnectNS User is populated, the Non-ConnectNS User Role should be required</errorMessage>
+</ValidationRule>

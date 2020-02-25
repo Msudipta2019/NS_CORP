@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select reason for how Opportunity was won --></help>
+    <label><!-- Won Reason --></label>
+    <name>Won_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Alternative Product</masterLabel>
+        <translation><!-- Alternative Product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alternative Service</masterLabel>
+        <translation><!-- Alternative Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bid Award</masterLabel>
+        <translation><!-- Bid Award --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Billing Type</masterLabel>
+        <translation><!-- Billing Type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business or Plant Closure/Bankruptcy</masterLabel>
+        <translation><!-- Business or Plant Closure/Bankruptcy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Competitor Capacity (i.e. Truck Capacity)</masterLabel>
+        <translation><!-- Competitor Capacity (i.e. Truck Capacity) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Competitor Customer Service</masterLabel>
+        <translation><!-- Competitor Customer Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Competitor Service Change (New or Cancelled Service)</masterLabel>
+        <translation><!-- Competitor Service Change (New or Cancelled Service) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment</masterLabel>
+        <translation><!-- Equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extreme Weather Event</masterLabel>
+        <translation><!-- Extreme Weather Event --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Location Inaccessible</masterLabel>
+        <translation><!-- Location Inaccessible --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Market Conditions</masterLabel>
+        <translation><!-- Market Conditions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPO</masterLabel>
+        <translation><!-- NPO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NS Customer Service</masterLabel>
+        <translation><!-- NS Customer Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NS Equipment Capacity/Quality</masterLabel>
+        <translation><!-- NS Equipment Capacity/Quality --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NS New or Cancelled Service</masterLabel>
+        <translation><!-- NS New or Cancelled Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Business</masterLabel>
+        <translation><!-- New Business --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plant Closure</masterLabel>
+        <translation><!-- Plant Closure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price</masterLabel>
+        <translation><!-- Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service</masterLabel>
+        <translation><!-- Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Terms and Conditions</masterLabel>
+        <translation><!-- Terms and Conditions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weather - Seasonality</masterLabel>
+        <translation><!-- Weather - Seasonality --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

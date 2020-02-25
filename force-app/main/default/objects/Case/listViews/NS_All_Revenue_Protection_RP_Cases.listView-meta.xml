@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_All_Revenue_Protection_RP_Cases</fullName>
+    <columns>NS_Unread_Email_Indicator__c</columns>
+    <columns>NS_StatusIndicator__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NS_AssignedTo__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NS_Controlling_Station__c</columns>
+    <columns>NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>NS_InteractionReason__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>NS_SystemSortID__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>NS_Cancelled,Cancelled</value>
+    </filters>
+    <label>All OS Ancillary Services Cases</label>
+    <queue>NS_RevenueProtectionRP</queue>
+    <sharedTo>
+        <group>All_Queue_Access</group>
+        <group>NS_ManagersOSSBU</group>
+        <group>NS_Revenue_Protection_RP</group>
+    </sharedTo>
+</ListView>

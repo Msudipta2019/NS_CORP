@@ -1,0 +1,14 @@
+.THIS.middle {
+    margin:2%;
+}
+.THIS.error {
+    /*text-align:center !important; */
+    font-size: 18px;
+    color: #D8000C;
+    background-color: #FFBABA;
+    border: 1px solid;
+    margin: 40px 0px;
+    padding: 15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- NS employee&apos;s manager RACF ID --></help>
+    <label><!-- Manager RACF --></label>
+    <name>Manager_RACF__c</name>
+</CustomFieldTranslation>

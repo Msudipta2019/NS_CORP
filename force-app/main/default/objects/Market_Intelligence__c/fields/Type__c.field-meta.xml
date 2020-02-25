@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business At Risk / Lost</fullName>
+                <default>false</default>
+                <label>Business At Risk / Lost</label>
+            </value>
+            <value>
+                <fullName>Business or Plant Closure / Bankruptcy</fullName>
+                <default>false</default>
+                <label>Business or Plant Closure / Bankruptcy</label>
+            </value>
+            <value>
+                <fullName>Competitor Capacity</fullName>
+                <default>false</default>
+                <label>Competitor Capacity</label>
+            </value>
+            <value>
+                <fullName>Competitor Customer Service</fullName>
+                <default>false</default>
+                <label>Competitor Customer Service</label>
+            </value>
+            <value>
+                <fullName>Competitor Service Change</fullName>
+                <default>false</default>
+                <label>Competitor Service Change</label>
+            </value>
+            <value>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+                <label>Customer Service</label>
+            </value>
+            <value>
+                <fullName>Economic</fullName>
+                <default>false</default>
+                <label>Economic</label>
+            </value>
+            <value>
+                <fullName>Equipment Capacity/Quality</fullName>
+                <default>false</default>
+                <label>Equipment Capacity / Quality</label>
+            </value>
+            <value>
+                <fullName>Market Conditions</fullName>
+                <default>false</default>
+                <label>Market Conditions</label>
+            </value>
+            <value>
+                <fullName>Mergers / Acquisitions</fullName>
+                <default>false</default>
+                <label>Mergers / Acquisitions</label>
+            </value>
+            <value>
+                <fullName>New Business</fullName>
+                <default>false</default>
+                <label>New Business</label>
+            </value>
+            <value>
+                <fullName>New or Cancelled Service</fullName>
+                <default>false</default>
+                <label>New or Cancelled Service</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Production</fullName>
+                <default>false</default>
+                <label>Production</label>
+            </value>
+            <value>
+                <fullName>Weather</fullName>
+                <default>false</default>
+                <label>Weather</label>
+            </value>
+            <value>
+                <fullName>Project Announcement</fullName>
+                <default>false</default>
+                <label>Project Announcement</label>
+            </value>
+            <value>
+                <fullName>Site Search</fullName>
+                <default>false</default>
+                <label>Site Search</label>
+            </value>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General</label>
+            </value>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Service</label>
+            </value>
+            <value>
+                <fullName>Site Selection</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Site Selection</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

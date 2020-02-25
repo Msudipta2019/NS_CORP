@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Equipment_Type__c</fullName>
+    <description>Sales - select the types of equipment needed for this deal</description>
+    <externalId>false</externalId>
+    <label>Equipment Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>60’ Boxcar</fullName>
+                <default>false</default>
+                <label>60’ Boxcar</label>
+            </value>
+            <value>
+                <fullName>86’ Boxcar</fullName>
+                <default>false</default>
+                <label>86’ Boxcar</label>
+            </value>
+            <value>
+                <fullName>Articulated Bi-Level</fullName>
+                <default>false</default>
+                <label>Articulated Bi-Level</label>
+            </value>
+            <value>
+                <fullName>Bi-Level</fullName>
+                <default>false</default>
+                <label>Bi-Level</label>
+            </value>
+            <value>
+                <fullName>Boxcar</fullName>
+                <default>false</default>
+                <label>Boxcar</label>
+            </value>
+            <value>
+                <fullName>Container</fullName>
+                <default>false</default>
+                <label>Container</label>
+            </value>
+            <value>
+                <fullName>Covered Coil</fullName>
+                <default>false</default>
+                <label>Covered Coil</label>
+            </value>
+            <value>
+                <fullName>Covered Hoppers</fullName>
+                <default>false</default>
+                <label>Covered Hoppers</label>
+            </value>
+            <value>
+                <fullName>Flatcar</fullName>
+                <default>false</default>
+                <label>Flatcar</label>
+            </value>
+            <value>
+                <fullName>Gondola</fullName>
+                <default>false</default>
+                <label>Gondola</label>
+            </value>
+            <value>
+                <fullName>Modified Articulated Bi-Level</fullName>
+                <default>false</default>
+                <label>Modified Articulated Bi-Level</label>
+            </value>
+            <value>
+                <fullName>Modified Bi-Level</fullName>
+                <default>false</default>
+                <label>Modified Bi-Level</label>
+            </value>
+            <value>
+                <fullName>Multi-level</fullName>
+                <default>false</default>
+                <label>Multi-level</label>
+            </value>
+            <value>
+                <fullName>Open Coil</fullName>
+                <default>false</default>
+                <label>Open Coil</label>
+            </value>
+            <value>
+                <fullName>Reefer Boxcar</fullName>
+                <default>false</default>
+                <label>Reefer Boxcar</label>
+            </value>
+            <value>
+                <fullName>Roadrailer</fullName>
+                <default>false</default>
+                <label>Roadrailer</label>
+            </value>
+            <value>
+                <fullName>Tank Car</fullName>
+                <default>false</default>
+                <label>Tank Car</label>
+            </value>
+            <value>
+                <fullName>Trailer</fullName>
+                <default>false</default>
+                <label>Trailer</label>
+            </value>
+            <value>
+                <fullName>Tri-Level</fullName>
+                <default>false</default>
+                <label>Tri-Level</label>
+            </value>
+            <value>
+                <fullName>Uni-Level</fullName>
+                <default>false</default>
+                <label>Uni-Level</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

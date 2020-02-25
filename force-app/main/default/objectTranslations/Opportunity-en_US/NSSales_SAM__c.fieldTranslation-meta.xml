@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Field Sales Manager --></label>
+    <name>NSSales_SAM__c</name>
+    <relationshipLabel><!-- Opportunities (Field Sales Manager) --></relationshipLabel>
+</CustomFieldTranslation>

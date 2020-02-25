@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Delay_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Delay Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bad Order</fullName>
+                <default>false</default>
+                <label>Bad Order</label>
+            </value>
+            <value>
+                <fullName>Boulder Strike</fullName>
+                <default>false</default>
+                <label>Boulder Strike</label>
+            </value>
+            <value>
+                <fullName>Bridge Collapse</fullName>
+                <default>false</default>
+                <label>Bridge Collapse</label>
+            </value>
+            <value>
+                <fullName>Congestion</fullName>
+                <default>false</default>
+                <label>Congestion</label>
+            </value>
+            <value>
+                <fullName>Crane Failure</fullName>
+                <default>false</default>
+                <label>Crane Failure</label>
+            </value>
+            <value>
+                <fullName>Derailment</fullName>
+                <default>false</default>
+                <label>Derailment</label>
+            </value>
+            <value>
+                <fullName>Detector Stop</fullName>
+                <default>false</default>
+                <label>Detector Stop</label>
+            </value>
+            <value>
+                <fullName>Engine Failure</fullName>
+                <default>false</default>
+                <label>Engine Failure</label>
+            </value>
+            <value>
+                <fullName>Foreign RR</fullName>
+                <default>false</default>
+                <label>Foreign RR</label>
+            </value>
+            <value>
+                <fullName>Held Out</fullName>
+                <default>false</default>
+                <label>Held Out</label>
+            </value>
+            <value>
+                <fullName>High Winds</fullName>
+                <default>false</default>
+                <label>High Winds</label>
+            </value>
+            <value>
+                <fullName>Incident</fullName>
+                <default>false</default>
+                <label>Incident</label>
+            </value>
+            <value>
+                <fullName>Late Grounding</fullName>
+                <default>false</default>
+                <label>Late Grounding</label>
+            </value>
+            <value>
+                <fullName>Signal Issue</fullName>
+                <default>false</default>
+                <label>Signal Issue</label>
+            </value>
+            <value>
+                <fullName>Switching Error</fullName>
+                <default>false</default>
+                <label>Switching Error</label>
+            </value>
+            <value>
+                <fullName>Train Meets</fullName>
+                <default>false</default>
+                <label>Train Meets</label>
+            </value>
+            <value>
+                <fullName>Trespasser</fullName>
+                <default>false</default>
+                <label>Trespasser</label>
+            </value>
+            <value>
+                <fullName>Washout</fullName>
+                <default>false</default>
+                <label>Washout</label>
+            </value>
+            <value>
+                <fullName>Winter</fullName>
+                <default>false</default>
+                <label>Winter</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

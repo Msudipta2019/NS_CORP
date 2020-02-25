@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_Days_in_Internal_Review__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( !ISBLANK(NSSales_InStageDayCount__c) , (NOW()-(NSSales_InStageDayCount__c)), null)</formula>
+    <label>Days in Internal Review</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

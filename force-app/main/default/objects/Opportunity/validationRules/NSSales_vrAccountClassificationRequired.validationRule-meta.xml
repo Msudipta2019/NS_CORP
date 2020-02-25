@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_vrAccountClassificationRequired</fullName>
+    <active>true</active>
+    <description>Validation rule needs to be added to populate Account Classification field before the opportunity is closed</description>
+    <errorConditionFormula>IF( AND( ISPICKVAL( StageName , &#39;Closed Won&#39;) , ISBLANK( NSSales_Account_Classification__c ) ,NOT(RecordType.DeveloperName=&#39;NSSales_609_1&#39;)) , true, false)</errorConditionFormula>
+    <errorMessage>Account Classification cannot be Blank,when Stage is Closed Won.</errorMessage>
+</ValidationRule>

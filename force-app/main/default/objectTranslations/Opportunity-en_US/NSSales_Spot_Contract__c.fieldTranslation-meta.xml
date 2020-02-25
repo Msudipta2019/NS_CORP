@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field is required to move the Opportunity to the Internal Review Stage --></help>
+    <label><!-- Spot/Contract --></label>
+    <name>NSSales_Spot_Contract__c</name>
+    <picklistValues>
+        <masterLabel>Contract</masterLabel>
+        <translation><!-- Contract --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spot</masterLabel>
+        <translation><!-- Spot --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

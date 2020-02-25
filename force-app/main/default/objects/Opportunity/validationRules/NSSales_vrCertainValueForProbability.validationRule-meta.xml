@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_vrCertainValueForProbability</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(NSSales_Probability__c*100 = 0) ,
+NOT(NSSales_Probability__c*100 = 25),
+NOT(NSSales_Probability__c*100 = 50), 
+NOT(NSSales_Probability__c*100 = 75),
+NOT(NSSales_Probability__c*100 = 100)
+)</errorConditionFormula>
+    <errorMessage>Please enter a valid Probability percentage. Valid percentages are as follows: 
+0%,25%,50%,75%,100%.</errorMessage>
+</ValidationRule>

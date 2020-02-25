@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Notification_Push_Enabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Whether  contact subscribed to receive notification via mobile push.</description>
+    <externalId>false</externalId>
+    <label>Notification Push Enabled</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

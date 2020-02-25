@@ -1,0 +1,62 @@
+<aura:component controller="NSSales_ID_Opportunity_StateSelection" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+
+     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
+    
+    <aura:attribute name="Opportunity" type="Opportunity" default="{ 'sobjectType': 'Opportunity' }"/>
+    <aura:attribute name="showSpinner" type="Boolean" default="false" />
+    <aura:attribute name="state" type="NSSales_609_1_Manager_Routing__c[]"/>
+    <aura:attribute name="county" type="NSSales_609_1_Manager_Routing__c[]"/>
+    <aura:attribute name="city" type="NSSales_609_1_Manager_Routing__c[]"/>
+    <aura:attribute name="territory" type="NSSales_609_1_Manager_Routing__c[]"/>
+    <aura:attribute name="stateSave" type="String"/>
+    <aura:attribute name="countySave" type="String"/>
+    <aura:attribute name="citySave" type="String"/>
+    <aura:attribute name="isValidMilepost" type="Boolean"/>
+   
+    <lightning:card class="backcol">
+        <!-- <aura:set attribute="title">
+            <lightning:icon iconName="utility:connected_apps" alternativeText="Event" />
+            Submission for Approval
+        </aura:set>-->
+        <span class="slds-text-heading--medium slds-hyphenate cardmargin" ><b>ID Switch Removal Location</b>&nbsp;&nbsp;</span>
+    </lightning:card>
+    <lightning:layout class = "slds-box slds-theme_default slds-grid">
+        <lightning:layoutItem padding="horizontal-small"  size="5" class="slds-col">
+            <aura:if isTrue="{!v.showSpinner}"> <lightning:spinner /> </aura:if>
+            <lightning:select aura:id="state" onchange="{!c.onStateChange}" name="state" label="State" required="true">
+                <option value="">--None--</option>
+                <aura:iteration items="{!v.state}" var="st">
+                    <option value="{!st}">{!st}</option>
+                </aura:iteration>
+            </lightning:select>
+            <lightning:select aura:id="county" onchange="{!c.onCountyChange}" name="county" label="County" required="true">
+                <option value="">--None--</option>
+                <aura:iteration items="{!v.county}" var="ct">
+                    <option value="{!ct.NSSales_County_Name__c}" >{!ct.NSSales_County_Name__c}</option>
+                </aura:iteration>
+            </lightning:select>
+            <lightning:select aura:id="city" onchange="{!c.onCityChange}" name="city" label="City" required="true">
+                <option value="">--None--</option>
+                <aura:iteration items="{!v.city}" var="cty">
+                    <option value="{!cty.NSSales_City_Name__c}">{!cty.NSSales_City_Name__c}</option>
+                </aura:iteration>
+            </lightning:select>          
+        </lightning:layoutItem>
+        <lightning:layoutItem padding="horizontal-small"  size="5" class="slds-col">
+            <lightning:recordEditForm
+                                      objectApiName="Opportunity">                
+                <lightning:inputField aura:id="operatingDivision" fieldName="NSSales_609_1_OperatingDivision__c" required="true"/>
+                <lightning:inputField aura:id="prefix" fieldName="NSSales_609_1_Prefix__c" />
+                <lightning:inputField aura:id="suffix" fieldName="NSSales_609_1_Suffix__c" />
+                <lightning:inputField aura:id="milepost" fieldName="NSSales_609_1_Milepost__c" value=" " required="true"/>
+            </lightning:recordEditForm>   
+        </lightning:layoutItem>
+        
+    </lightning:layout>
+    <lightning:layout class = "slds-box slds-theme_default">
+        <lightning:layoutItem padding="horizontal-medium"  size="4">
+            <button class="slds-button slds-button_brand middle" onclick="{!c.handleSubmit}" >Submit</button >
+        </lightning:layoutItem>
+    </lightning:layout>    
+
+</aura:component>

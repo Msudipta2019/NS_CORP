@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>NS_MobileServiceProvider__c</fullName>
+    <externalId>false</externalId>
+    <label>Mobile Carrier</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Appalachia Wireless</fullName>
+                <default>false</default>
+                <label>Appalachia Wireless</label>
+            </value>
+            <value>
+                <fullName>AT&amp;amp;T Wireless</fullName>
+                <default>false</default>
+                <label>AT&amp;T Wireless</label>
+            </value>
+            <value>
+                <fullName>Southernlinc</fullName>
+                <default>false</default>
+                <label>Southernlinc</label>
+            </value>
+            <value>
+                <fullName>Sprint</fullName>
+                <default>false</default>
+                <label>Sprint</label>
+            </value>
+            <value>
+                <fullName>T-Mobile</fullName>
+                <default>false</default>
+                <label>T-Mobile</label>
+            </value>
+            <value>
+                <fullName>US Cellular</fullName>
+                <default>false</default>
+                <label>US Cellular</label>
+            </value>
+            <value>
+                <fullName>Verizon Wireless</fullName>
+                <default>false</default>
+                <label>Verizon Wireless</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

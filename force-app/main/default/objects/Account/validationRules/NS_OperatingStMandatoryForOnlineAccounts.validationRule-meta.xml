@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_OperatingStMandatoryForOnlineAccounts</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(NS_ServiceAccountType__c , &#39;Service - Online&#39;),
+    OR(
+       ISNULL(NS_OperatingStation__c),
+       ISBLANK(NS_OperatingStation__c) 
+    )
+)</errorConditionFormula>
+    <errorDisplayField>NS_OperatingStation__c</errorDisplayField>
+    <errorMessage>Please select the Operating Station.</errorMessage>
+</ValidationRule>

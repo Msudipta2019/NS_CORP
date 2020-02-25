@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter current method used for transportation --></help>
+    <label><!-- Current Transport Method --></label>
+    <name>NS_Current_Transport_Method__c</name>
+    <picklistValues>
+        <masterLabel>3PL</masterLabel>
+        <translation><!-- 3PL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drayage</masterLabel>
+        <translation><!-- Drayage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LTL</masterLabel>
+        <translation><!-- LTL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rail</masterLabel>
+        <translation><!-- Rail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Truckload</masterLabel>
+        <translation><!-- Truckload --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation><!-- Unknown --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

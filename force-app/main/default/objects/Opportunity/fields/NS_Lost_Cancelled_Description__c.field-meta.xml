@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Lost_Cancelled_Description__c</fullName>
+    <description>Additional description for lost or cancelled opportunity reasons.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter additional description if necessary.</inlineHelpText>
+    <label>Lost/Cancelled Description</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,147 @@
+<aura:component controller="NSSales_ShowExternalDataController" implements="flexipage:availableForRecordHome,force:hasRecordId,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:lightningQuickAction,force:hasRecordId" access="global" >
+    <aura:attribute name="isLoading" type="Boolean" default="true" />
+    <aura:attribute name="recordId" type="Id"/>
+    <aura:attribute name="open_authLane_dtl" type="boolean" default="false"/>
+    <aura:attribute name="accountId" type="String" access="public" />
+    <aura:attribute name="gridData" type="Object[]"/> 
+    <aura:attribute name="gridData1" type="Object[]"/>
+    <aura:attribute type="Object[]"    name="rowData"/>
+    <aura:attribute type="Object[]"    name="rowData1" />
+    <aura:attribute type="Object[]"    name="headerList1" />
+    <aura:attribute type="Object[]"    name="sliceOfRowData" />
+    <aura:attribute type="Object[]"    name="searchResultData" />
+    <aura:attribute type="Object[]"    name="headerList" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>  
+    <aura:attribute type="Integer"      name="pageNumber"		default="1" />
+    <aura:attribute type="Integer"      name="maxPage"			default="1" />
+    <aura:attribute type="Integer"      name="filteredpageNumber"		default="1" />
+    <aura:attribute type="Integer"      name="filteredmaxPage"			default="1" />
+    <aura:handler name="change"			value="{!v.filteredpageNumber}"	action="{!c.FilterPagination}" /> 
+    <aura:handler name="change"			value="{!v.pageNumber}"	action="{!c.reRenderTable}" /> 
+    <aura:attribute name="searchText" type="String" />
+    <aura:attribute name="srchORtablePage" type="boolean" default="true"/>
+    <aura:attribute name="spinner" type="boolean" default="false"/> 
+    <aura:attribute name="AuthRenLaneNullCheck" type="boolean" default="false"/>
+    <aura:attribute name="isVisibleIP" type="Boolean" default="false" />
+    <aura:attribute name="isVisibleIM" type="Boolean" default="false" />
+    
+    <!--loading spinner start... style=Brand Medium (blue dots)-->
+    <!-- <aura:if isTrue="{!v.spinner}">
+   <lightning:spinner alternativeText="Loading" size="medium" style="position: fixed !important"/>
+ </aura:if> -->
+    <!-- Loading spinner end-->
+    
+    <div name="parentDiv" class="slds-clearfix slds-scrollable">
+        <aura:if isTrue="{!v.isLoading}">
+            <aura:set attribute="else">
+                <!--  <div class="slds-float_right"  >
+                    <lightning:input type="text" onchange="{!c.filter}" value="{!v.searchText}" placeholder="Search" />
+                </div> -->
+                <table class="slds-table slds-table--bordered">    	
+                    <thead>
+                        <tr class="slds-text-heading--label">            	
+                            <aura:iteration items="{!v.headerList}" var="col">                     
+                                <th class="{!col.cssClass}"> {!col.title} </th>  
+                            </aura:iteration>                
+                        </tr>        	 
+                    </thead>
+                    <tbody>
+                        <aura:iteration items="{!v.sliceOfRowData}" var="row">                    
+                            <tr class="slds-hint-parent"> 
+                                <td>
+                                    <div onclick="{!c.openAuthorityLane}"  data-v="{!row.vals[0].val}" data-v1="{!row.vals[6].val}" >
+                                        <!--	<lightning:button class="slds-button_neutral"   iconName="utility:new" variant="normal" />   -->
+                                        <a class="ansbutton"><span class="anstxt">&nbsp;+&nbsp;</span></a> 
+                                    </div>
+                                </td>
+                                <aura:iteration items="{!row.vals}" var="col" indexVar="idx">                         
+                                    <td class="{!col.cssClass}" ><aura:unescapedHtml value="{!col.val}"/></td> 
+                                </aura:iteration>
+                                <aura:if  isTrue="{!v.isVisibleIP}" >
+                                <td><div onclick="{!c.getSelectedRow}" data-v="{!row.vals[0].val}" data-v1="{!row.vals[1].val}" data-v2="{!row.vals[2].val}" data-v3="{!row.vals[3].val}" data-v4="{!row.vals[4].val}" data-v5="{!row.vals[6].val}">
+                                    <button class="slds-button slds-button--icon" title="Import Authority Renewal as Opportunity in ConnectNS">
+                                        <lightning:icon iconName="standard:opportunity" size="x-small" />   <!-- action:new_opportunity  -->
+                                        <span class="slds-assistive-text">Import Authority Renewal as Opportunity in ConnectNS</span></button>
+                                    </div></td> 
+                                </aura:if>    
+                            </tr>
+                        </aura:iteration>              
+                    </tbody>    
+                </table>
+                
+                <aura:if isTrue="{!v.open_authLane_dtl}">
+                    
+                    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" 
+                             class="slds-modal slds-fade-in-open slds-backdrop slds-modal_medium" style="position: fixed !important">
+                        <div class="slds-modal__container">  
+                            <div class="alignright">		
+                                <lightning:buttonIcon iconName="utility:close" size="large" alternativeText="Close" iconClass="dark" variant="bare-inverse" 
+                                                      onclick="{!c.closeAuthorityLane}" />
+                            </div>
+                            <div class="slds-modal__header">
+                                <h2 id="header99" class="slds-text-heading--medium slds-hyphenate"><Strong>Lane Details</Strong></h2>
+                                <div class="slds-modal__content slds-p-around--medium slds-scrollable" style="height:200px;">
+                                    <aura:if isTrue="{!v.spinner}">
+                                        <lightning:spinner alternativeText="Loading" size="medium"/>
+                                    </aura:if>
+                                    <aura:if isTrue="{!v.AuthRenLaneNullCheck}">
+                                        There is no data from source system.
+                                    </aura:if>
+                                    <table class="slds-table slds-table--bordered">    	
+                                    	<thead>
+                                           	<tr class="slds-text-title_caps">  
+                                                <aura:iteration items="{!v.headerList1}" var="col">                     
+                                            		<th style="background: #e7e7e7; position: sticky; top:-20px; z-index: 10;" class="{!col.cssClass1}"> {!col.title1} </th>
+                                               	</aura:iteration>      
+                                        	</tr>        	 
+                                     	</thead>
+                                        <tbody>
+                                        	<aura:iteration items="{!v.rowData1}" var="row1">                    
+                                            	<tr class="slds-hint-parent"> 
+                                                	<aura:iteration items="{!row1.vals1}" var="col" indexVar="idx">                         
+                                                    	<td class="{!col.cssClass1}">{!col.val1}</td>
+                                                    </aura:iteration>
+                                               	</tr>
+                                          	</aura:iteration>              
+                                     	</tbody>    
+                              		</table>
+                               	</div>
+                           	</div>
+                            
+                            <footer class="slds-modal__footer">
+                                <lightning:button variant="neutral" 
+                                                  label="Close"
+                                                  title="Close"
+                                                  onclick="{!c.closeAuthorityLane}"/>
+                                                  
+                                <lightning:button variant="brand" 
+                                                  label="DownloadExcel"
+                                                  title="DownloadExcel"
+                                                  onclick="{!c.downloadCsv}"/>
+                            </footer>
+                        </div>
+                    </section>
+                </aura:if>
+                
+                <div class="slds-float_left" style="margin-top: -8px;">
+                    <lightning:input type="text" onchange="{!c.filter}" value="{!v.searchText}" placeholder="Search" />
+                </div>
+                
+                <div class="slds-float_right" style="margin-top: 8px;">
+                    <aura:if isTrue="{!v.srchORtablePage}">
+                        <div aura:Id="dataPagination">
+                            <c:pagination currentPageNumber="{!v.pageNumber}" 
+                                          maxPageNumber="{!v.maxPage}" />
+                        </div>      
+                        <aura:set attribute="else">
+                            <div aura:Id="searchPagination">
+                                <c:pagination currentPageNumber="{!v.filteredpageNumber}" 
+                                              maxPageNumber="{!v.filteredmaxPage}" />
+                            </div>
+                        </aura:set>
+                    </aura:if>             
+                </div>
+            </aura:set>
+        </aura:if>
+    </div>
+</aura:component>

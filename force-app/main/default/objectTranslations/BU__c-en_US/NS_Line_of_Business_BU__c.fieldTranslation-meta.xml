@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Line of Business_BU --></label>
+    <name>NS_Line_of_Business_BU__c</name>
+    <picklistValues>
+        <masterLabel>Anthracite</masterLabel>
+        <translation><!-- Anthracite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coke</masterLabel>
+        <translation><!-- Coke --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic Met</masterLabel>
+        <translation><!-- Domestic Met --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Export Met</masterLabel>
+        <translation><!-- Export Met --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Export Steam</masterLabel>
+        <translation><!-- Export Steam --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hub</masterLabel>
+        <translation><!-- Hub --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hunt</masterLabel>
+        <translation><!-- Hunt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IMC</masterLabel>
+        <translation><!-- IMC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial</masterLabel>
+        <translation><!-- Industrial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>International</masterLabel>
+        <translation><!-- International --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Iron Ore</masterLabel>
+        <translation><!-- Iron Ore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LTL</masterLabel>
+        <translation><!-- LTL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Non/Met</masterLabel>
+        <translation><!-- Other Non/Met --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Petcoke</masterLabel>
+        <translation><!-- Petcoke --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Triple Crown</masterLabel>
+        <translation><!-- Triple Crown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Truckload</masterLabel>
+        <translation><!-- Truckload --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS</masterLabel>
+        <translation><!-- UPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unassigned</masterLabel>
+        <translation><!-- Unassigned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utility North</masterLabel>
+        <translation><!-- Utility North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utility South</masterLabel>
+        <translation><!-- Utility South --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

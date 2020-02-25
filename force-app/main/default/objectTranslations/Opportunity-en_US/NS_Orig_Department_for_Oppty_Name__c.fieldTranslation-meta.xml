@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Orig Department for Oppty Name --></label>
+    <name>NS_Orig_Department_for_Oppty_Name__c</name>
+</CustomFieldTranslation>

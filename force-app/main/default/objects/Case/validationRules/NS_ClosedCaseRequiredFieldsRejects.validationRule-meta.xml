@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_ClosedCaseRequiredFieldsRejects</fullName>
+    <active>false</active>
+    <description>This Validation Rule informs users of the blank fields they must complete prior to updating a Rejects Case to Closed Status.</description>
+    <errorConditionFormula>AND(ISPICKVAL(NS_InteractionReason__c,&#39;Rejects&#39;) ,	ISPICKVAL(Status,&#39;NS_Closed&#39;) ,
+NS_Created_using_Quick_Case__c &lt;&gt; True,
+
+OR( ISBLANK(NS_CustomerContactNotifiedOfResolution__c) , ISBLANK(NS_CustomerNotifiedDateTime__c) , ISBLANK(NS_NewWaybill__c) , ISBLANK(NS_ReasonForReject__c)  ))</errorConditionFormula>
+    <errorMessage>Please complete Customer Contact Notified, Date Customer Notified, New Waybill, and Reason for Reject prior to closing the Case.</errorMessage>
+</ValidationRule>

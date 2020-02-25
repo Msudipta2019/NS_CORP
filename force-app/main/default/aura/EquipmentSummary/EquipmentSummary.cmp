@@ -1,0 +1,156 @@
+<aura:component controller="NS_ShowExternalDataController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+    <aura:attribute name="open_Modal" type="boolean" default="false"/>
+    <aura:attribute name="gridData1" type="Object[]"/>
+    <aura:attribute type="Object[]"    name="rowData1" />
+    <aura:attribute type="Object[]"    name="headerList1" />
+    <aura:attribute type="List[]"    name="List1" />
+    <aura:attribute name="recordId" type="Id"/>
+    <aura:attribute name="equiNum" type="string"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <div class="container-fluid">
+        <table><tr class="cllclr"><td class="anstxt">&nbsp;Please Enter The Below Information</td></tr></table>
+        <!--     <span class="anstext">Please Enter The Below Information</span>   -->
+        
+        <!-- <div class="form-group">
+            <label>Equipment Init</label>
+            <ui:inputText value=""/>
+        </div> -->
+        <br></br>
+        <div class="form-group">
+            <span class="anslbl">Equipment Number</span>
+            <ui:inputText aura:id="enumId" value=""/>
+        </div>
+    </div>
+    <br></br>
+    <div class="col-md-4 text-center">
+        <ui:button class="btn btn-ansbutton" press="{!c.openModal}">Submit</ui:button>
+    </div>
+    
+    <aura:if isTrue="{!v.open_Modal}">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" 
+                 class="slds-modal slds-fade-in-open slds-backdrop slds-modal_medium" style="position: fixed !important">
+            <div class="slds-modal__container">  
+                <div class="alignright">		
+                    <lightning:buttonIcon iconName="utility:close" size="medium" alternativeText="Close" iconClass="dark" variant="bare-inverse" 
+                                          onclick="{!c.closeModal}" />
+                    
+                </div>
+                <div class="slds-modal__header" >
+                    <h1 id="header99" class="slds-text-heading--medium slds-hyphenate"><Strong>{!v.equiNum} - Equipment Details</Strong></h1>
+                </div>
+                <div class="slds-scrollable" style="vertical-align: middle">
+                    <div class="slds-page-header" style="cursor: pointer;" onclick="{!c.sectionOne}">
+                        <section class="slds-clearfix">
+                            <div class="slds-float--left">
+                                <lightning:icon class="slds-show" aura:id="articleOne" iconName="utility:chevronright" size="x-small" alternativeText="Indicates add"/>
+                                <lightning:icon class="slds-hide" aura:id="articleOne" iconName="utility:chevrondown" size="x-small" alternativeText="Indicates dash"/>
+                            </div>
+                            <div class="slds-m-left--large"><h5><b>Last Moves</b></h5></div>
+                        </section>
+                    </div>
+                    <div class="slds-hide slds-p-around--medium slds-theme--default" aura:id="articleOne">
+                        <table class="slds-table slds-table--bordered">    	
+                            <thead>
+                                <tr class="slds-text-heading--label">            	
+                                    <aura:iteration items="{!v.headerList1}" var="col">                     
+                                        <th class="{!col.cssClass1}"> {!col.title1} </th>  
+                                    </aura:iteration>                
+                                </tr>        	 
+                            </thead>
+                            <tbody>
+                                <aura:iteration items="{!v.rowData1}" var="row1">                    
+                                    <tr class="slds-hint-parent"> 
+                                        <aura:iteration items="{!row1.vals1}" var="col" indexVar="idx">                         
+                                            <td class="{!col.cssClass1}">{!col.val1}</td>
+                                        </aura:iteration>
+                                    </tr>
+                                </aura:iteration>              
+                            </tbody>    
+                        </table>
+                    </div> 
+                    
+                    <div>
+                        <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped tblscrll">							
+                            <thead>
+                                <tr><td colspan="6" class="sechdrEquip">
+                                    <h5 id="header99" class="slds-text-heading--medium slds-hyphenate" ><b>Equipment Information</b></h5></td>
+                                </tr>
+                                <tr class="slds-line-height_reset">
+                                    <th class="cllresize" scope="col">Pickup Number</th>
+                                    <th class="cllresize" scope="col">Current DETG</th>
+                                    <th class="cllresize" scope="col">Scheduled Availability</th>
+                                    <th class="cllresize" scope="col">Shipment Status</th>
+                                    <th class="cllresize" scope="col">Deliver By/Sail By</th>
+                                    <th class="cllresize" scope="col">Waybill Serial Number</th>	
+                                    <th class="cllresize" scope="col">Waybill Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <aura:iteration items="{!v.List1}" var="acc">
+                                    <tr>
+                                        <td>{!acc.pickupNumber}</td>
+                                        <td><lightning:formattedDateTime value="{!acc.etg}" year="numeric" month="numeric" day="numeric"  hour="2-digit" minute="2-digit" timeZone="GMT"/></td>
+                                        <td><lightning:formattedDateTime value="{!acc.eta}" year="numeric" month="numeric" day="numeric"  hour="2-digit" minute="2-digit" timeZone="GMT"/></td>
+                                      <!--Added By Gunjari for D-1851 : 11/11/2019-->
+                                        <aura:if isTrue="{!acc.classStatus == 'NA'}">
+                                                <td>{!acc.shipmentStatus}</td>
+                                        </aura:if> 
+                                        <aura:if isTrue="{!acc.classStatus == 'YES'}">
+                                            <td class="changeRed">{!acc.shipmentStatus}</td>
+                                        </aura:if>
+                                        <aura:if isTrue="{!acc.classStatus == 'NO'}">
+                                                <td id="changeclrGreen" class="changeGreen">{!acc.shipmentStatus}</td>
+                                        </aura:if> 
+                                        
+                                        <!--End of changes for D-1851-->
+                                        <td><lightning:formattedDateTime value="{!acc.deliverBy}" year="numeric" month="numeric" day="numeric"  hour="2-digit" minute="2-digit" timeZone="GMT"/></td>
+                                        <td>{!acc.waybillSerialNumber}</td>
+                                        <td>{!acc.status}</td>
+                                    </tr>
+                                </aura:iteration>  
+                            </tbody>
+                        </table>
+                        <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped slds-p-top_x-small tblscrll">						
+                            <thead>
+                                <tr><td colspan="6" class="sechdrWay">
+                                    <h5 id="header99" class="slds-text-heading--medium slds-hyphenate" ><b>Waybill</b></h5></td>
+                                </tr>
+                                <tr class="slds-line-height_reset">
+                                    <th class="cllresize2" scope="col">WBSN</th>
+                                    <th class="cllresize2" scope="col">Shipper</th>
+                                    <th class="cllresize2" scope="col">Bill To Party</th>
+                                    <th class="cllresize2" scope="col">Notify Contact</th>
+                                    <th class="cllresize2" scope="col">Beneficial Cargo Owner</th>
+                                    <th class="cllresize2" scope="col">Offline Origin</th>
+                                    <th class="cllresize2" scope="col">Online Origin</th>
+                                    <th class="cllresize2" scope="col">Online Destination</th>
+                                    <th class="cllresize2" scope="col">Offline Destination</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <aura:iteration items="{!v.List1}" var="acc">
+                                    <tr>
+                                        <td>{!acc.waybillSerialNumber}</td>
+                                        <td>{!acc.shipper}</td>
+                                        <td>{!acc.billToParty}</td>
+                                        <td>{!acc.notifyParty}</td>
+                                        <td>{!acc.beneficialOwner}</td>
+                                        <td>{!acc.offlineOrigin}</td>
+                                        <td>{!acc.onlineOrigin}</td>
+                                        <td>{!acc.onlineDestination}</td>   
+                                        <td>{!acc.offlineDestination}</td>
+                                    </tr>
+                                </aura:iteration> 
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <footer class="slds-modal__footer">
+                    <lightning:button variant="neutral" 	label="Close"
+                                      title="Close"			onclick="{!c.closeModal}"/>    
+                </footer>    
+            </div>
+        </section>
+    </aura:if>
+</aura:component>

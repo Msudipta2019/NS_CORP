@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>Business At Risk / Lost</masterLabel>
+        <translation><!-- Business At Risk / Lost --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business or Plant Closure / Bankruptcy</masterLabel>
+        <translation><!-- Business or Plant Closure / Bankruptcy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Competitor Capacity</masterLabel>
+        <translation><!-- Competitor Capacity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Competitor Customer Service</masterLabel>
+        <translation><!-- Competitor Customer Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Competitor Service Change</masterLabel>
+        <translation><!-- Competitor Service Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Service</masterLabel>
+        <translation><!-- Customer Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Economic</masterLabel>
+        <translation><!-- Economic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Capacity / Quality</masterLabel>
+        <translation><!-- Equipment Capacity / Quality --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Market Conditions</masterLabel>
+        <translation><!-- Market Conditions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mergers / Acquisitions</masterLabel>
+        <translation><!-- Mergers / Acquisitions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Business</masterLabel>
+        <translation><!-- New Business --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New or Cancelled Service</masterLabel>
+        <translation><!-- New or Cancelled Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price</masterLabel>
+        <translation><!-- Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production</masterLabel>
+        <translation><!-- Production --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Project Announcement</masterLabel>
+        <translation><!-- Project Announcement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Search</masterLabel>
+        <translation><!-- Site Search --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weather</masterLabel>
+        <translation><!-- Weather --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

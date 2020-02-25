@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NPO Approval Status Counter --></label>
+    <name>NSSales_NPO_Approval_Status_Counter__c</name>
+</CustomFieldTranslation>

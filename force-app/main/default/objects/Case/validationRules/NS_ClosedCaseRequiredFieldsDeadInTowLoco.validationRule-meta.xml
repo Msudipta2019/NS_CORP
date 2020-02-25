@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_ClosedCaseRequiredFieldsDeadInTowLoco</fullName>
+    <active>false</active>
+    <description>This Validation Rule informs users of the blank fields they must complete prior to updating a Dead-in-Tow Locomotive/Passenger Cars Case to Closed Status.</description>
+    <errorConditionFormula>AND(ISPICKVAL(NS_InteractionReason__c,&#39;Dead-in-Tow Locomotive/Passenger Cars&#39;) , ISPICKVAL(Status,&#39;NS_Closed&#39;) ,
+NS_Created_using_Quick_Case__c &lt;&gt; True,
+OR(
+   ISBLANK( NS_InspectionDate__c ) , 
+ISBLANK(NS_MechanicalApproval__c) , ISBLANK(NS_PACTICHD__c) ))</errorConditionFormula>
+    <errorMessage>Please complete Inspection Date, Mechanical Approval, and PACT/ICHD Date prior to closing the Case.</errorMessage>
+</ValidationRule>

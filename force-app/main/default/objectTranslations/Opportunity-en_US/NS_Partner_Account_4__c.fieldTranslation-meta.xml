@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Partner Account 4 --></label>
+    <name>NS_Partner_Account_4__c</name>
+    <relationshipLabel><!-- Opportunities4 --></relationshipLabel>
+</CustomFieldTranslation>

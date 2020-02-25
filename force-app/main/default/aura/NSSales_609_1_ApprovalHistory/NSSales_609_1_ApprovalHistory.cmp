@@ -1,0 +1,98 @@
+<aura:component controller="NSSales_ApprovalHistoryController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >  
+    <aura:attribute name="wrapMain" type="object"/>  
+    <aura:attribute name="recordId" type="Id" />  
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>  
+    <aura:attribute name="mapvalue" type="List" />  
+    <aura:attribute name="showSpinner" type="Boolean" default="false" />
+    <aura:handler event="c:NSSales_609_1_ApprovalStatusChange" action="{!c.refresh}"/>
+    <aura:if isTrue="{!v.showSpinner}">
+        <lightning:spinner />
+    </aura:if>
+    <lightning:card class="backcol">
+        <aura:set attribute="title">
+            <lightning:icon iconName="standard:event" alternativeText="Event" />
+            Approval History
+        </aura:set>
+        <span class="slds-text-heading--medium slds-hyphenate cardmargin" ><b>Opportunity Approval History Details</b>&nbsp;&nbsp;</span>
+    </lightning:card>
+    <div class="slds-box slds-theme_default">
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">  
+            <thead>  
+                <tr class="slds-text-title_caps">  
+                    <th scope="col" class="thbackcol">  
+                        <div class="slds-truncate" title="Date">Date</div>  
+                    </th>  
+                    <th scope="col" class="thbackcol">  
+                        <div class="slds-truncate" title="Status">Status</div>  
+                    </th>  
+                    <th scope="col" class="thbackcol">  
+                        <div class="slds-truncate" title="Comments">Comments</div>  
+                    </th>  
+                    <th scope="col" class="thbackcol">  
+                        <div class="slds-truncate" title="Overall Status">Overall Status</div>  
+                    </th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <aura:iteration items="{!v.wrapMain.OpportunityApprovalHistoryInformation}" var="objOppApp" indexVar="index">  
+                    <tr>  
+                        <td data-label="Step: Step 1" class="tdbackcol"> 
+                        </td>  
+                        <td data-label="Step: Step 1" class="tdbackcol"></td>  
+                        <td data-label="Step: Step 1" class="tdbackcol"></td>  
+                        <td data-label="Step: Step 1" class="tdbackcol">  
+                            <aura:if isTrue="{!objOppApp.Status == 'Approved'}">  
+                                <div style="padding:2px;">   
+                                    <lightning:icon iconName="action:approval" size="small" style="line-height: 1;"/> &nbsp; &nbsp; 
+                                    <span class="approved">Approved</span>
+                                </div>  
+                            </aura:if>  
+                            <aura:if isTrue="{!objOppApp.Status == 'Pending'}">  
+                                <div style="padding:2px;">   
+                                    
+                                    <lightning:icon iconName="utility:reminder" size="small" style="line-height: 1;"/> &nbsp; &nbsp;  
+                                    <span class="pending">Pending</span>
+                                    
+                                </div>  
+                            </aura:if>  
+                            <aura:if isTrue="{!objOppApp.Status == 'Rejected'}">  
+                                <div style="padding:2px;">   
+                                    <lightning:icon iconName="utility:error" size="small" style="line-height: 1;" variant="error"/> &nbsp; &nbsp;  
+                                    <span class="rejected">Rejected</span>
+                                </div>  
+                            </aura:if>  
+                            <aura:if isTrue="{!objOppApp.Status == 'Removed'}">  
+                                <div style="padding:2px;">   
+                                    <lightning:icon iconName="utility:connected_apps" size="small" style="line-height: 1;" variant="error"/> &nbsp; &nbsp;  
+                                    <span class="recalled">Recalled</span>
+                                </div>  
+                            </aura:if>  
+                        </td>  
+                    </tr>  
+                    <aura:iteration items="{!v.mapvalue}" var="childstep" indexVar="key">  
+                        <aura:if isTrue="{!objOppApp.Id == childstep.ProcessInstanceId}">  
+                            <tr> 
+                                <td class="dataCell">  
+                                    <ui:outputDateTime value="{!childstep.CreatedDate + offset}"/>  
+                                </td>  
+                                <td class="dataCell">  
+                                    <aura:if isTrue="{!childstep.StepStatus == 'Started'}"> Submitted by:   
+                                        <aura:set attribute="else"> {!childstep.StepStatus} by:   
+                                            <a href="{!'/'+childstep.ActorId}" target="_blank">{!childstep.OriginalActor.Name}</a>  
+                                        </aura:set>  
+                                        <a href="{!'/'+childstep.ActorId}" target="_blank">{!childstep.OriginalActor.Name}</a>  
+                                    </aura:if>  
+                                </td>  
+                                <td class="dataCell" style="white-space: normal;">  
+                                    {!childstep.Comments}  
+                                </td>  
+                                <td class="dataCell">  
+                                </td>  
+                            </tr>  
+                        </aura:if>  
+                    </aura:iteration>  
+                </aura:iteration>  
+            </tbody>  
+        </table>  
+    </div>
+</aura:component>

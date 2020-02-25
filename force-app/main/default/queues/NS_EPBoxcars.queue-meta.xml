@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>EP - Boxcars</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>NS_EPBoxcars</publicGroup>
+        </publicGroups>
+        <users>
+            <user>almarose.bleyl@nscorp.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

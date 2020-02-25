@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Unqualified Reason --></label>
+    <name>Unqualified_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Alternative Product</masterLabel>
+        <translation><!-- Alternative Product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alternative Source</masterLabel>
+        <translation><!-- Alternative Source --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Market Conditions</masterLabel>
+        <translation><!-- Market Conditions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plant Closure</masterLabel>
+        <translation><!-- Plant Closure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price, Service</masterLabel>
+        <translation><!-- Price, Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weather - Seasonality</masterLabel>
+        <translation><!-- Weather - Seasonality --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

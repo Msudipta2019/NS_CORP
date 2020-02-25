@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_ClosedCaseRequiredFieldsDQRITAssistan</fullName>
+    <active>false</active>
+    <description>This Validation Rule informs users of the blank fields they must complete prior to updating a DQ/RIT Assistance Case to Closed Status.</description>
+    <errorConditionFormula>AND(ISPICKVAL(NS_InteractionReason__c,&#39;DQ/RIT Assistance&#39;), ISPICKVAL(Status,&#39;NS_Closed&#39;) , 
+$Profile.Name &lt;&gt; &quot;OSS Support&quot;,
+NS_Created_using_Quick_Case__c &lt;&gt; True,
+OR( 
+
+ISBLANK( NS_ExternalCaseNotes__c )))</errorConditionFormula>
+    <errorMessage>Please complete Case Resolution (External) prior to closing the Case.</errorMessage>
+</ValidationRule>

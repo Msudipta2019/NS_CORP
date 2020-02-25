@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Primary_Conversion_Reason__c</fullName>
+    <description>Sales - IM request to select conversion reason. Will need to include other with tree text field if selected</description>
+    <externalId>false</externalId>
+    <label>Primary Conversion Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bid Award</fullName>
+                <default>false</default>
+                <label>Bid Award</label>
+            </value>
+            <value>
+                <fullName>Business or plant closure/bankruptcy</fullName>
+                <default>false</default>
+                <label>Business or plant closure/bankruptcy</label>
+            </value>
+            <value>
+                <fullName>Competitor Capacity (i.e. truck capacity)</fullName>
+                <default>false</default>
+                <label>Competitor Capacity (i.e. truck capacity)</label>
+            </value>
+            <value>
+                <fullName>Competitor Customer Service</fullName>
+                <default>false</default>
+                <label>Competitor Customer Service</label>
+            </value>
+            <value>
+                <fullName>Competitor Service Change (new or cancelled service)</fullName>
+                <default>false</default>
+                <label>Competitor Service Change (new or cancelled service)</label>
+            </value>
+            <value>
+                <fullName>Extreme Weather Event</fullName>
+                <default>false</default>
+                <label>Extreme Weather Event</label>
+            </value>
+            <value>
+                <fullName>New Business</fullName>
+                <default>false</default>
+                <label>New Business</label>
+            </value>
+            <value>
+                <fullName>NS Customer Service</fullName>
+                <default>false</default>
+                <label>NS Customer Service</label>
+            </value>
+            <value>
+                <fullName>NS Equipment Capacity/Quality</fullName>
+                <default>false</default>
+                <label>NS Equipment Capacity/Quality</label>
+            </value>
+            <value>
+                <fullName>NS New or Cancelled Service</fullName>
+                <default>false</default>
+                <label>NS New or Cancelled Service</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please enter a valid Probability percentage. Valid percentages are as follows: 
+0%, 25%, 50%, 75%, 100% --></help>
+    <label><!-- Probability --></label>
+    <name>NSSales_Probability__c</name>
+</CustomFieldTranslation>

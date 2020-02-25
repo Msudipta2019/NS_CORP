@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Escalate_Based_On_Queue__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used to prevent the Case Owner from being updated during escalation.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Escalate Based On Queue</label>
+    <type>Checkbox</type>
+</CustomField>

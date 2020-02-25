@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_Self_Service_Tools__c</fullName>
+    <externalId>false</externalId>
+    <label>Related Self-Service Tools</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AccessNS</fullName>
+                <default>false</default>
+                <label>AccessNS</label>
+            </value>
+            <value>
+                <fullName>ExpressNS</fullName>
+                <default>false</default>
+                <label>ExpressNS</label>
+            </value>
+            <value>
+                <fullName>NS Trax</fullName>
+                <default>false</default>
+                <label>NS Trax</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

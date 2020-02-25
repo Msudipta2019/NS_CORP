@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>609.1 Layout</layout>
+        <sections>
+            <label><!-- 609.1 Switch Removal Process Details --></label>
+            <section>609.1 Switch Removal Process Details</section>
+        </sections>
+        <sections>
+            <label><!-- Associated Partner Account Details --></label>
+            <section>Associated Partner Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Deal Details --></label>
+            <section>Deal Details</section>
+        </sections>
+        <sections>
+            <label><!-- Equipment Information --></label>
+            <section>Equipment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Incentives --></label>
+            <section>Incentives</section>
+        </sections>
+        <sections>
+            <label><!-- Industrial Products --></label>
+            <section>Industrial Products</section>
+        </sections>
+        <sections>
+            <label><!-- Lead Information --></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label><!-- Network Planning &amp; Optimization --></label>
+            <section>Network Planning &amp; Optimization</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing &amp; Profitability --></label>
+            <section>Pricing &amp; Profitability</section>
+        </sections>
+        <sections>
+            <label><!-- Workbench Data --></label>
+            <section>Workbench Data</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ID Opportunity Page Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Location --></label>
+            <section>Location</section>
+        </sections>
+        <sections>
+            <label><!-- Network Planning &amp; Optimization --></label>
+            <section>Network Planning &amp; Optimization</section>
+        </sections>
+        <sections>
+            <label><!-- Project Requirements --></label>
+            <section>Project Requirements</section>
+        </sections>
+        <sections>
+            <label><!-- iTrax Information --></label>
+            <section>iTrax Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>NPO Operations Opportunity Layout</layout>
+        <sections>
+            <label><!-- Network Process Optimization --></label>
+            <section>Network Process Optimization</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>NPO Operations Opportunity ReadOnly Layout</layout>
+        <sections>
+            <label><!-- Network Process Optimization --></label>
+            <section>Network Process Optimization</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Layout</layout>
+        <sections>
+            <label><!-- Associated Partner Account Details --></label>
+            <section>Associated Partner Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Deal Details --></label>
+            <section>Deal Details</section>
+        </sections>
+        <sections>
+            <label><!-- Equipment Information --></label>
+            <section>Equipment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Incentives --></label>
+            <section>Incentives</section>
+        </sections>
+        <sections>
+            <label><!-- Industrial Products --></label>
+            <section>Industrial Products</section>
+        </sections>
+        <sections>
+            <label><!-- Lane Data --></label>
+            <section>Lane Data</section>
+        </sections>
+        <sections>
+            <label><!-- Lead Information --></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label><!-- Network Planning &amp; Optimization --></label>
+            <section>Network Planning &amp; Optimization</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing &amp; Profitability --></label>
+            <section>Pricing &amp; Profitability</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Read Only Opportunity Layout</layout>
+        <sections>
+            <label><!-- Associated Partner Account Details --></label>
+            <section>Associated Partner Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Equipment Information --></label>
+            <section>Equipment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Incentives --></label>
+            <section>Incentives</section>
+        </sections>
+        <sections>
+            <label><!-- Industrial Products --></label>
+            <section>Industrial Products</section>
+        </sections>
+        <sections>
+            <label><!-- Lead Information --></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label><!-- Network Planning &amp; Optimization --></label>
+            <section>Network Planning &amp; Optimization</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing Information --></label>
+            <section>Pricing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Workbench Data --></label>
+            <section>Workbench Data</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Change to General Opportunity --></label>
+        <name>Change_to_General_Opportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Market Intel --></label>
+        <name>NSSales_Create_Market_Intel_Opportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Recall --></label>
+        <name>NSSales_Recall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Recall From NPO --></label>
+        <name>Recall_From_NPO</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Email --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Sales --></description>
+        <label><!-- 609.1 --></label>
+        <name>NSSales_609_1</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Sales --></description>
+        <label><!-- NPO Operations Opportunity --></label>
+        <name>NSSales_NPO_Operations_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- NPO Operations ReadOnly --></label>
+        <name>NSSales_NPO_Operations_ReadOnly</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Sales --></description>
+        <label><!-- General Opportunity --></label>
+        <name>NS_General_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Sales --></description>
+        <label><!-- ID --></label>
+        <name>NS_ID</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Read Only --></label>
+        <name>Read_Only</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Opportunity close date should be on or after lead time from the date of NPO Decision. --></errorMessage>
+        <name>NSSales_Close_Date_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide valid Expiration Notification TimeFrame, so Renewal Notification Date is not before &apos;Rate Renewal Notification Date&apos;. --></errorMessage>
+        <name>NSSales_Expiration_TimeFrame_Notifcation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Lead Time is a required field if the NPO Final Decision is &quot;Approved as Requested&quot; or &quot;Approved with Conditions. --></errorMessage>
+        <name>NSSales_Lead_time_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- NPO Re-submission Checkbox should be unchecked. --></errorMessage>
+        <name>NSSales_NPO_Resubmission_UnCheck</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity update requires NPO Approval. Check the &quot;NPO Re-submission Confirmation&quot; checkbox to continue. --></errorMessage>
+        <name>NSSales_NPO_Resubmission_ValidationRule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Lost To entity must be selected when Opportunity is Closed Lost. --></errorMessage>
+        <name>NSSales_Provide_Lost_To_Entity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must provide a reason why the Opportunity was cancelled in the &quot;Lost/Cancelled Reason&quot; Field. --></errorMessage>
+        <name>NSSales_Reason_Cancelled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must provide a reason why the Opportunity was set to stage &quot;Inactive&quot; in the &quot;Lost/Cancelled Reason&quot; Field. --></errorMessage>
+        <name>NSSales_Reason_Inactive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please populate the &quot;Lost To&quot; and &quot;Lost/Cancelled Reason --></errorMessage>
+        <name>NSSales_Reason_Lost</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must provide a reason why the Opportunity was Won in the &quot;Won Reason&quot; Field. --></errorMessage>
+        <name>NSSales_Reason_Won</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot push the 609.1 Opportunity to the &apos;Proposal&apos; or &apos;Negotiation&apos; stage --></errorMessage>
+        <name>NSSales_vr609_1_RecallStageRestriction</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Account selected in the Account Classification does not match the Account selected in the Opportunity. --></errorMessage>
+        <name>NSSales_vrAccountClassification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account Classification cannot be Blank,when Stage is Closed Won. --></errorMessage>
+        <name>NSSales_vrAccountClassificationRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid Probability percentage. Valid percentages are as follows: 
+0%,25%,50%,75%,100%. --></errorMessage>
+        <name>NSSales_vrCertainValueForProbability</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot edit this field. --></errorMessage>
+        <name>NSSales_vrFSRecmmndtnNotEditable_609_1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Final Approved or Select the Reason for Rejection --></errorMessage>
+        <name>NSSales_vrFinalApprovalRejectionReason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot edit this field. --></errorMessage>
+        <name>NSSales_vrIDRecmmndtnNotEditable_609_1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Intermodal Opportunites with a volume less than or equal to 1000 should not be moved to the &quot;Internal Review&quot; stage. Please proceed with the &quot;Proposal&quot; stage. --></errorMessage>
+        <name>NSSales_vrIntermodal1000</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Closed Won opportunities cannot be edited. --></errorMessage>
+        <name>NSSales_vrLockRecordsWhenClosedWon</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a NPO Approval owner before start the NPO approval process --></errorMessage>
+        <name>NSSales_vrNPOapproverOwner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must go through each sales stage in order to save the record. --></errorMessage>
+        <name>NSSales_vrNeedsAnalysisStageCheck</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Record is in approval process, no changes allowed --></errorMessage>
+        <name>NSSales_vrNoChangeInReadOnlyRecordType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the stage without NPO approvals --></errorMessage>
+        <name>NSSales_vrNoNPONoStageChange</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please populate the following fields to update the stage to &quot;Internal Review&quot; for &quot;Intermodal&quot; Originating Department:
+&quot;Origin Ramp&quot;,&quot;Destination Ramp&quot; --></errorMessage>
+        <name>NSSales_vrOriginatingDepartment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Parent opportunity you selected is already a subordinate of this Opportunity. --></errorMessage>
+        <name>NSSales_vrParentOpportunityRestriction</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a Partner Account --></errorMessage>
+        <name>NSSales_vrPartnerAccountRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a Partner Account Type --></errorMessage>
+        <name>NSSales_vrPartnerAccountTypeRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Prefix or Suffix in order to save the Opportunity. You cannot select both at the same time. --></errorMessage>
+        <name>NSSales_vrPrefixSuffix_609_1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot create this type of Opportunity under this type of Account --></errorMessage>
+        <name>NSSales_vrRecorsTypeCheckWithAccount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The following fields are required to move the Opportunity to the &quot;Internal Review&quot; Stage: 
+Origin Station,Destination Station,Estimated Volume,Commodity Group,Projected Start Date,Contract Start Date,	
+Destination State,Frequency,Spot/Contract --></errorMessage>
+        <name>NSSales_vrRequiredForInternalReview1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The following fields are required to move the Opportunity to the &quot;Internal Review&quot; Stage: 
+Need by Date,Origin City,Route,Destination City,Shipper, Account Classification --></errorMessage>
+        <name>NSSales_vrRequiredForInternalReview2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The following field is required to move the Opportunity to the &quot;Internal Review&quot; Stage: 
+Consignee --></errorMessage>
+        <name>NSSales_vrRequiredForInternalReview4</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill up the NPO Decision Comments field. --></errorMessage>
+        <name>NSSales_vrRequiredNPODecisionComments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide a Rejection Reason --></errorMessage>
+        <name>NSSales_vrRequiredNPORejectionReason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- New Opportunities must start in the &quot;Qualification/Analysis&quot;  stage.  Please update the &quot;Stage&quot; field. --></errorMessage>
+        <name>NSSales_vrStageName</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The stage needs to be set to &apos;Qualification/Analysis&apos; for 609.1 Switch Removal Requests --></errorMessage>
+        <name>NSSales_vrStageNameRestriction_609_1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot edit this field after the Opportunity is closed. --></errorMessage>
+        <name>NSSales_vrSwitchIdNoNotEditable_609_1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide an update in the Opportunity Owner NPO Updates field in order to move the Opportunity forward. --></errorMessage>
+        <name>NS_sales_Opportunity_Owner_NPO_Updates</name>
+    </validationRules>
+</CustomObjectTranslation>

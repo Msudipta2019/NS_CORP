@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_ClosedCaseRequiredFieldsWaybillingIss</fullName>
+    <active>false</active>
+    <description>This Validation Rule informs users of the blank fields they must complete prior to updating a Waybilling Issue Case to Closed Status.
+
+Deactivated on 6/14/2018 - Duplicate of NS_CaseClosureInfoRequired (WJD)</description>
+    <errorConditionFormula>AND(ISPICKVAL(NS_InteractionReason__c,&#39;Waybilling Issue&#39;) ,	ISPICKVAL(Status,&#39;NS_Closed&#39;) ,
+NS_Created_using_Quick_Case__c &lt;&gt; True,
+
+or( ISBLANK(NS_ReasonForError__c) ))</errorConditionFormula>
+    <errorDisplayField>NS_ReasonForError__c</errorDisplayField>
+    <errorMessage>Please complete Reason for Error prior to closing the Case.</errorMessage>
+</ValidationRule>

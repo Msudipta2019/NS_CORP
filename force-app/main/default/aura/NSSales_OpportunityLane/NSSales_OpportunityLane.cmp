@@ -1,0 +1,16 @@
+<aura:component controller="NSSales_OpportunityLane" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+	
+    <aura:attribute type="NSSales_Opportunity_Lanes__c[]" name="laneList"/>
+    <aura:attribute name="mycolumns" type="List"/>
+      
+    <aura:handler name="init" value="{!this}" action="{!c.fetchopplane}"/>
+      
+    <lightning:datatable data="{! v.laneList }"
+                         columns="{! v.mycolumns }"
+                         keyField="id"
+                         hideCheckboxColumn="true"
+                         enable-infinite-loading="true"/>
+    <div align="right">
+    <button class="slds-button slds-button--brand" onclick="{!c.downloadCsv}">Download Excel</button> <br/><br/>
+    </div>
+</aura:component>

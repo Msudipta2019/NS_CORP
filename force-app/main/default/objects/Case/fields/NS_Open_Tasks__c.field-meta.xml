@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Open_Tasks__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Should not be able to close a case if Case is having an open task.</description>
+    <externalId>false</externalId>
+    <label>Open Tasks</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

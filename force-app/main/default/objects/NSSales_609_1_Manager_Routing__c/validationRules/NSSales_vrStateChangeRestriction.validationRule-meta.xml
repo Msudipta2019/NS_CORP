@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_vrStateChangeRestriction</fullName>
+    <active>true</active>
+    <description>It restricts user from changing the State from a record. User has to create a new record if the State needs to be changed.</description>
+    <errorConditionFormula>ISCHANGED(NSSales_State_Name__c)</errorConditionFormula>
+    <errorMessage>State cannot be changed. Please create a new record.</errorMessage>
+</ValidationRule>

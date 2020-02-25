@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Tracks the Push  Notification Sent information from Marketing Cloud --></help>
+    <label><!-- Push Notified Time --></label>
+    <name>Push_Notified_Time__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Account Type --></label>
+    <name>NS_Account_Type_BU__c</name>
+    <picklistValues>
+        <masterLabel>Beneficial Cargo Owner</masterLabel>
+        <translation><!-- Beneficial Cargo Owner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broker/3PL</masterLabel>
+        <translation><!-- Broker/3PL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction</masterLabel>
+        <translation><!-- Construction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer</masterLabel>
+        <translation><!-- Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drayage Provider</masterLabel>
+        <translation><!-- Drayage Provider --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Economic Development Ally</masterLabel>
+        <translation><!-- Economic Development Ally --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineering Consultant</masterLabel>
+        <translation><!-- Engineering Consultant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Port</masterLabel>
+        <translation><!-- Port --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Railroad</masterLabel>
+        <translation><!-- Railroad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Receiver</masterLabel>
+        <translation><!-- Receiver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipper</masterLabel>
+        <translation><!-- Shipper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipper/Receiver</masterLabel>
+        <translation><!-- Shipper/Receiver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Selector</masterLabel>
+        <translation><!-- Site Selector --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>State or Local EDC</masterLabel>
+        <translation><!-- State or Local EDC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utility</masterLabel>
+        <translation><!-- Utility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vendor</masterLabel>
+        <translation><!-- Vendor --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

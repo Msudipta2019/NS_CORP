@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_CannotAssigneCaseToMarketingUsers</fullName>
+    <active>false</active>
+    <description>This rule prevents users from assigning cases to the &quot;NS Marketing Manager&quot; and &quot;NS Marketing Leadership&quot; profiles.</description>
+    <errorConditionFormula>OR(NS_AssignedTo__r.Profile.Name = &#39;NS Marketing Leadership&#39;,
+NS_AssignedTo__r.Profile.Name = &#39;NS Marketing Manager&#39;)</errorConditionFormula>
+    <errorMessage>Case cannot be assigned to a marketing user</errorMessage>
+</ValidationRule>

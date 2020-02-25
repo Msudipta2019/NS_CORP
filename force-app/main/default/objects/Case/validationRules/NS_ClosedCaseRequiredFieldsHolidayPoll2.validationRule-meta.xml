@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_ClosedCaseRequiredFieldsHolidayPoll2</fullName>
+    <active>true</active>
+    <description>This Validation Rule informs users of the blank fields they must complete prior to updating a Holiday Polling Case to Closed Status.</description>
+    <errorConditionFormula>AND(ISPICKVAL(NS_InteractionReason__c,&#39;Holiday Polling&#39;), 
+	ISPICKVAL(Status,&#39;NS_Closed&#39;), 
+	NS_Created_using_Quick_Case__c &lt;&gt; True, 
+	ISPICKVAL(NS_HolidaySwitch__c,&#39;No&#39;), 
+	OR(ISBLANK(NS_CustomerNotifiedDateTime__c)))</errorConditionFormula>
+    <errorMessage>Please complete Date Customer Notified, Holiday Switch prior to closing the Case.</errorMessage>
+</ValidationRule>

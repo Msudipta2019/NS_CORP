@@ -1,0 +1,36 @@
+<aura:component controller="NSSales_609_1_ApprovalProcessController"
+                implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+                access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>   
+    <aura:attribute name="showSpinner" type="Boolean" default="false" />
+    <aura:attribute name="opp" type="Opportunity" default="{ 'sobjectType': 'Opportunity' } "/>
+    <aura:attribute name="recordId" type="id" />
+    
+    <lightning:card class="backcol">
+      <!--  <aura:set attribute="title">
+            <lightning:icon iconName="utility:connected_apps" alternativeText="Event" />
+            Reassign Approval Manager
+        </aura:set>-->
+        <span class="slds-text-heading--medium slds-hyphenate cardmargin"><b>609.1 Approval Manager Reassignment&nbsp;&nbsp;</b></span>
+    </lightning:card>
+    <aura:if isTrue="{!v.showSpinner}"> <lightning:spinner /> </aura:if> 
+    <lightning:recordEditForm
+                              recordId = "{!v.recordId}"
+                              onsubmit="{!c.handleSubmit}"
+                              onsuccess="{!c.handleSuccess}"
+                              objectApiName="Opportunity">
+        <lightning:layout class = "slds-box slds-theme_default">
+            <lightning:layoutItem padding="horizontal-medium"  >
+                <lightning:inputField fieldName="NSSales_609_1_FSManagerApprovalOwner__c" required='true'/>
+                <lightning:inputField fieldName="NSSales_609_1_IDManagerApprovalOwner__c" required='true'/>
+            </lightning:layoutItem>
+        </lightning:layout>
+        <lightning:layout class = "slds-box slds-theme_default">
+            <lightning:layoutItem padding="horizontal-medium"  size="4">
+                <lightning:button class="slds-button slds-button_brand middle" type="save" name="save" label="Submit" />
+            </lightning:layoutItem>
+        </lightning:layout>
+    </lightning:recordEditForm>
+    
+    
+</aura:component>

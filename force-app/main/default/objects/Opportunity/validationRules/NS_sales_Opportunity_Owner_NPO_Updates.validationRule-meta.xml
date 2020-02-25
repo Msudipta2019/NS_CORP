@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_sales_Opportunity_Owner_NPO_Updates</fullName>
+    <active>false</active>
+    <description>Opportunity Owner NPO Updates for moving stage forward</description>
+    <errorConditionFormula>ISBLANK(Opportunity_Owner_NPO_Updates__c )  &amp;&amp;ISCHANGED( StageName ) &amp;&amp;   (ISPICKVAL( PRIORVALUE(StageName ) , &#39;Proposal&#39;)|| (ISPICKVAL( PRIORVALUE(StageName ) , &#39;Negotiation&#39;)))</errorConditionFormula>
+    <errorDisplayField>Opportunity_Owner_NPO_Updates__c</errorDisplayField>
+    <errorMessage>Please provide an update in the Opportunity Owner NPO Updates field in order to move the Opportunity forward.</errorMessage>
+</ValidationRule>

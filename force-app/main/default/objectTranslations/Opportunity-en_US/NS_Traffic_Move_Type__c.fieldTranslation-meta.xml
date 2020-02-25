@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Traffic Class --></label>
+    <name>NS_Traffic_Move_Type__c</name>
+    <picklistValues>
+        <masterLabel>Both NS Local &amp; Interline</masterLabel>
+        <translation><!-- Both NS Local &amp; Interline --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interline</masterLabel>
+        <translation><!-- Interline --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NS Local</masterLabel>
+        <translation><!-- NS Local --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_AssociatedBusinessUnitSegment__c</fullName>
+    <description>This tells segment within the business unit associated to a particular user</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Segment within the business unit associated to a particular user</inlineHelpText>
+    <label>Associated Business Unit Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Associated_Business_Unit__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Traffic</fullName>
+                <default>false</default>
+                <label>Traffic</label>
+            </value>
+            <value>
+                <fullName>Demurrage</fullName>
+                <default>false</default>
+                <label>Demurrage</label>
+            </value>
+            <value>
+                <fullName>Northern Region East</fullName>
+                <default>false</default>
+                <label>OSS North</label>
+            </value>
+            <value>
+                <fullName>Northern Region West</fullName>
+                <default>false</default>
+                <label>OSS West</label>
+            </value>
+            <value>
+                <fullName>Southern Region East</fullName>
+                <default>false</default>
+                <label>OSS East</label>
+            </value>
+            <value>
+                <fullName>Southern Region West</fullName>
+                <default>false</default>
+                <label>OSS South</label>
+            </value>
+            <value>
+                <fullName>Premium</fullName>
+                <default>false</default>
+                <label>Premium</label>
+            </value>
+            <value>
+                <fullName>Non-Premium</fullName>
+                <default>false</default>
+                <label>Non-Premium</label>
+            </value>
+            <value>
+                <fullName>Leadership</fullName>
+                <default>false</default>
+                <label>Leadership</label>
+            </value>
+            <value>
+                <fullName>Support</fullName>
+                <default>false</default>
+                <label>Support</label>
+            </value>
+            <value>
+                <fullName>Revenue Protection</fullName>
+                <default>false</default>
+                <label>Revenue Protection</label>
+            </value>
+            <value>
+                <fullName>Special Services</fullName>
+                <default>false</default>
+                <label>Special Services</label>
+            </value>
+            <value>
+                <fullName>Data Quality</fullName>
+                <default>false</default>
+                <label>Data Quality</label>
+            </value>
+            <value>
+                <fullName>Clearances</fullName>
+                <default>false</default>
+                <label>Clearances</label>
+            </value>
+            <value>
+                <fullName>LSS</fullName>
+                <default>false</default>
+                <label>LSS</label>
+            </value>
+            <value>
+                <fullName>Freight Claims</fullName>
+                <default>false</default>
+                <label>Freight Claims</label>
+            </value>
+            <value>
+                <fullName>Administrative</fullName>
+                <default>false</default>
+                <label>Administrative</label>
+            </value>
+            <value>
+                <fullName>eCommerce</fullName>
+                <default>false</default>
+                <label>eCommerce</label>
+            </value>
+            <value>
+                <fullName>Northern Region East  </fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Northern Region East  </label>
+            </value>
+            <value>
+                <fullName>Northern Region West  </fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Northern Region West  </label>
+            </value>
+            <value>
+                <fullName>Southern Region East  </fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Southern Region East  </label>
+            </value>
+            <value>
+                <fullName>Southern Region West </fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Southern Region West </label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <controllingFieldValue>Revenue Accounting</controllingFieldValue>
+            <controllingFieldValue>Revenue Waybilling</controllingFieldValue>
+            <controllingFieldValue>Unit Train</controllingFieldValue>
+            <valueName>Traffic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <controllingFieldValue>Revenue Accounting</controllingFieldValue>
+            <controllingFieldValue>Revenue Waybilling</controllingFieldValue>
+            <controllingFieldValue>Unit Train</controllingFieldValue>
+            <valueName>Demurrage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <controllingFieldValue>Revenue Waybilling</controllingFieldValue>
+            <controllingFieldValue>Unit Train</controllingFieldValue>
+            <valueName>Northern Region East</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <controllingFieldValue>Revenue Waybilling</controllingFieldValue>
+            <controllingFieldValue>Unit Train</controllingFieldValue>
+            <valueName>Northern Region West</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <controllingFieldValue>Revenue Waybilling</controllingFieldValue>
+            <controllingFieldValue>Unit Train</controllingFieldValue>
+            <valueName>Southern Region East</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <controllingFieldValue>Revenue Waybilling</controllingFieldValue>
+            <controllingFieldValue>Unit Train</controllingFieldValue>
+            <valueName>Southern Region West</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <controllingFieldValue>Revenue Waybilling</controllingFieldValue>
+            <controllingFieldValue>Unit Train</controllingFieldValue>
+            <valueName>Premium</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <controllingFieldValue>Revenue Waybilling</controllingFieldValue>
+            <controllingFieldValue>Unit Train</controllingFieldValue>
+            <valueName>Non-Premium</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

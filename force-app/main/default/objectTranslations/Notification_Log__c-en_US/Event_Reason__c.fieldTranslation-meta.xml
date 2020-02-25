@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- event reason, for example for bar order event, the reason the car ID is bad ordered --></help>
+    <label><!-- Event Reason --></label>
+    <name>Event_Reason__c</name>
+</CustomFieldTranslation>

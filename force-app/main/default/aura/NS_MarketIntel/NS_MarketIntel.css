@@ -1,0 +1,19 @@
+.THIS .FldLabel{
+    font-size:12px;
+	color:#686868;
+	text-align:left;
+    padding-top:12px; 
+}
+.THIS.divmiddle
+{
+    margin-left:25%;
+    width: 50%;
+}
+.THIS .footer
+{
+    margin-left:70%;
+}
+.THIS .footer button
+{
+    margin:10px;
+}

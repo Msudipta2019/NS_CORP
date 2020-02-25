@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- 609.1 Industrial Development Approver --></label>
+    <name>NSSales_609_1_IDManagerApprovalOwner__c</name>
+    <relationshipLabel><!-- Opportunities (609.1 Industrial Development Approver) --></relationshipLabel>
+</CustomFieldTranslation>

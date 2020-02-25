@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Traffic_Move_Type__c</fullName>
+    <description>Sales - to capture the type of move including the name of the foreign lines part of the deal</description>
+    <externalId>false</externalId>
+    <label>Traffic Class</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Both NS Local &amp; Interline</fullName>
+                <default>false</default>
+                <label>Both NS Local &amp; Interline</label>
+            </value>
+            <value>
+                <fullName>Interline</fullName>
+                <default>false</default>
+                <label>Interline</label>
+            </value>
+            <value>
+                <fullName>NS Local</fullName>
+                <default>false</default>
+                <label>NS Local</label>
+            </value>
+            <value>
+                <fullName>Local</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Local</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

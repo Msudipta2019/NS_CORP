@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_RequireInteractionCategoryReason</fullName>
+    <active>true</active>
+    <description>This Validation Rule ensures users populate the Interaction Category and Interaction Reason on an Email-to-Case when the Status does not equal New or Cancelled.</description>
+    <errorConditionFormula>NOT(ISPICKVAL(Origin,&#39;Email&#39;)) &amp;&amp; NOT(ISPICKVAL(Status,&#39;NS_New&#39;)||ISPICKVAL(Status,&#39;NS_Cancelled&#39;)) &amp;&amp; (ISBLANK(TEXT(NS_InteractionCategory__c)) || ISBLANK(TEXT(NS_InteractionReason__c)))
+&amp;&amp; 
+RecordType.Name!=&#39;NS Internal&#39;
+&amp;&amp;
+RecordType.Name!=&#39;Feedback Case&#39;
+&amp;&amp;
+NOT(ISCHANGED(NS_Last_Activity_Time__c))
+&amp;&amp;
+NOT(ISCHANGED(NS_Counter_Activity__c))</errorConditionFormula>
+    <errorMessage>Please populate Interaction Category and Interaction Reason</errorMessage>
+</ValidationRule>

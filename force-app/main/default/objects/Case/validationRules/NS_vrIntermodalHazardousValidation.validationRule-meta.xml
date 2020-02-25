@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_vrIntermodalHazardousValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL( NS_InteractionCategory__c,&quot;Intermodal&quot;) 
+&amp;&amp; ISPICKVAL(NS_InteractionReason__c, &quot;Shipment Exception&quot;)
+&amp;&amp;  ISPICKVAL(NS_Type__c, &quot;Hazardous&quot;) 
+&amp;&amp; ISBLANK(Text(NS_Hazardous_Error__c))
+&amp;&amp; NS_Created_using_Quick_Case__c &lt;&gt; True 
+&amp;&amp; PRIORVALUE(NS_RecordTypeName__c) = &#39;NS Intermodal Shipping&#39;
+&amp;&amp; NOT($User.CommunityNickname = &#39;automated.process&#39;)
+&amp;&amp; NOT(ISCHANGED(NS_Last_Activity_Time__c))
+&amp;&amp; NOT(ISCHANGED(NS_Counter_Activity__c))</errorConditionFormula>
+    <errorMessage>Hazardous Error field is required for Interaction Reason &quot;Shipment Exception&quot; with Interaction Type &quot;Hazardous&quot;</errorMessage>
+</ValidationRule>

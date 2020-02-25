@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_MyMarketingManagerAssignments</fullName>
+    <columns>NSSales_Account__c</columns>
+    <columns>NSSales_Role__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NSSales_AssignedId__c</field>
+        <operation>equals</operation>
+        <value>TRUE</value>
+    </filters>
+    <label>My Marketing Manager Assignments</label>
+</ListView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Primary Conversion Reason --></label>
+    <name>NS_Primary_Conversion_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Bid Award</masterLabel>
+        <translation><!-- Bid Award --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business or plant closure/bankruptcy</masterLabel>
+        <translation><!-- Business or plant closure/bankruptcy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Competitor Capacity (i.e. truck capacity)</masterLabel>
+        <translation><!-- Competitor Capacity (i.e. truck capacity) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Competitor Customer Service</masterLabel>
+        <translation><!-- Competitor Customer Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Competitor Service Change (new or cancelled service)</masterLabel>
+        <translation><!-- Competitor Service Change (new or cancelled service) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extreme Weather Event</masterLabel>
+        <translation><!-- Extreme Weather Event --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NS Customer Service</masterLabel>
+        <translation><!-- NS Customer Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NS Equipment Capacity/Quality</masterLabel>
+        <translation><!-- NS Equipment Capacity/Quality --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NS New or Cancelled Service</masterLabel>
+        <translation><!-- NS New or Cancelled Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Business</masterLabel>
+        <translation><!-- New Business --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price</masterLabel>
+        <translation><!-- Price --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_Expiration_TimeFrame_Notifcation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NS_Expiration_Notification_Timeframe__c &gt; (  NSSales_Rate_Renewal_Expiration_Date__c  -   TODAY() ), NOT( ISNEW() ))</errorConditionFormula>
+    <errorMessage>Please provide valid Expiration Notification TimeFrame, so Renewal Notification Date is not before &#39;Rate Renewal Notification Date&#39;.</errorMessage>
+</ValidationRule>

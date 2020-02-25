@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>609.1 FS Manager Routing</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>609.1FSSalesManagers</value>
+    </caseValues>
+    <layouts>
+        <layout>NSSales_609.1FSSalesManager Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

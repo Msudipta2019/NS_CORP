@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_ControllingStation__c</fullName>
+    <description>Controlling Station derived from Service Station</description>
+    <externalId>false</externalId>
+    <formula>NS_OperatingStation__r.NS_ControllingStationCode__c &amp; 
+if( 
+OR( 
+ISBLANK(NS_OperatingStation__r.NS_ControllingStationCode__c ),ISBLANK(NS_OperatingStation__r.NS_ControllingStationName__c) 
+) ,&#39;&#39;,&#39;-&#39;) &amp; 
+NS_OperatingStation__r.NS_ControllingStationName__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Controlling Station</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

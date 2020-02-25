@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_MDMMastered__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>For requests other than On Boarding, &quot;MDM mastered&quot; is available on the Account object</description>
+    <externalId>false</externalId>
+    <label>MDM Mastered</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

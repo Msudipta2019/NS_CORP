@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>General_Lead_Automotive</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>General Sales roles should have Read/Write access to the following record types: General Lead.</description>
+        <label>General Lead Automotive</label>
+        <sharedTo>
+            <roleAndSubordinates>Sales_Automotive_Leadership</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>General Lead</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>General_Lead_Coal</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>General Lead Coal</label>
+        <sharedTo>
+            <roleAndSubordinates>Sales_Coal_Leadership</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>General Lead</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>General_Lead_Intermodal</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>General Lead Intermodal</label>
+        <sharedTo>
+            <roleAndSubordinates>Sales_Intermodal_Leadership</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>General Lead</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>General_Lead_MRF</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>General Lead MRF</label>
+        <sharedTo>
+            <roleAndSubordinates>Sales_Marketing_Research_Forecasting_User</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>General Lead</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>General_Lead_Product</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>General Lead Product</label>
+        <sharedTo>
+            <roleAndSubordinates>Sales_Industrial_Product_Leadership</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>General Lead</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ID_Lead_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ID Lead Sharing</label>
+        <sharedTo>
+            <roleAndSubordinates>Sales_Industrial_Development_Leadership</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>General Lead,ID Lead</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NSSales_IDLeadSharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>NSSales_IDLeadSharing</label>
+        <sharedTo>
+            <group>ID_Access_for_General_Sales_Users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ID Lead</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Queue__c</fullName>
+    <externalId>false</externalId>
+    <label>Queue</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>NS_Owner_Business_Unit__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Automotive - Empties</fullName>
+                <default>false</default>
+                <label>Automotive - Empties</label>
+            </value>
+            <value>
+                <fullName>Automotive - Loads</fullName>
+                <default>false</default>
+                <label>Automotive - Loads</label>
+            </value>
+            <value>
+                <fullName>Automotive - Parts</fullName>
+                <default>false</default>
+                <label>Automotive - Parts</label>
+            </value>
+            <value>
+                <fullName>Business Unit</fullName>
+                <default>false</default>
+                <label>Business Unit</label>
+            </value>
+            <value>
+                <fullName>Clearances</fullName>
+                <default>false</default>
+                <label>Clearances</label>
+            </value>
+            <value>
+                <fullName>Data Quality (DQ)</fullName>
+                <default>false</default>
+                <label>Data Quality (DQ)</label>
+            </value>
+            <value>
+                <fullName>Demurrage</fullName>
+                <default>false</default>
+                <label>Demurrage</label>
+            </value>
+            <value>
+                <fullName>eCommerce</fullName>
+                <default>false</default>
+                <label>eCommerce</label>
+            </value>
+            <value>
+                <fullName>EP - Boxcars</fullName>
+                <default>false</default>
+                <label>EP - Boxcars</label>
+            </value>
+            <value>
+                <fullName>EP - Fleet Quality</fullName>
+                <default>false</default>
+                <label>EP - Fleet Quality</label>
+            </value>
+            <value>
+                <fullName>EP - Hoppers</fullName>
+                <default>false</default>
+                <label>EP - Hoppers</label>
+            </value>
+            <value>
+                <fullName>EP - Metals</fullName>
+                <default>false</default>
+                <label>EP - Metals</label>
+            </value>
+            <value>
+                <fullName>EP - Private Cars</fullName>
+                <default>false</default>
+                <label>EP - Private Cars</label>
+            </value>
+            <value>
+                <fullName>Freight Claims</fullName>
+                <default>false</default>
+                <label>Freight Claims</label>
+            </value>
+            <value>
+                <fullName>Functional Team</fullName>
+                <default>false</default>
+                <label>Functional Team</label>
+            </value>
+            <value>
+                <fullName>Holiday Polling</fullName>
+                <default>false</default>
+                <label>Holiday Polling</label>
+            </value>
+            <value>
+                <fullName>No Reply</fullName>
+                <default>false</default>
+                <label>No Reply</label>
+            </value>
+            <value>
+                <fullName>NS Bad Order</fullName>
+                <default>false</default>
+                <label>NS Bad Order</label>
+            </value>
+            <value>
+                <fullName>NS Box Car</fullName>
+                <default>false</default>
+                <label>NS Box Car</label>
+            </value>
+            <value>
+                <fullName>NS Energy</fullName>
+                <default>false</default>
+                <label>NS Energy</label>
+            </value>
+            <value>
+                <fullName>Operations NRE</fullName>
+                <default>false</default>
+                <label>Operations NRE</label>
+            </value>
+            <value>
+                <fullName>Operations NRW</fullName>
+                <default>false</default>
+                <label>Operations NRW</label>
+            </value>
+            <value>
+                <fullName>Operations SRE</fullName>
+                <default>false</default>
+                <label>Operations SRE</label>
+            </value>
+            <value>
+                <fullName>Operations SRW</fullName>
+                <default>false</default>
+                <label>Operations SRW</label>
+            </value>
+            <value>
+                <fullName>Revenue Protection (RP)</fullName>
+                <default>false</default>
+                <label>Revenue Protection (RP)</label>
+            </value>
+            <value>
+                <fullName>Service Requests</fullName>
+                <default>false</default>
+                <label>Service Requests</label>
+            </value>
+            <value>
+                <fullName>Transportation NRE</fullName>
+                <default>false</default>
+                <label>Transportation NRE</label>
+            </value>
+            <value>
+                <fullName>UTS - Empty North</fullName>
+                <default>false</default>
+                <label>UTS - Empty North</label>
+            </value>
+            <value>
+                <fullName>UTS - Loaded North</fullName>
+                <default>false</default>
+                <label>UTS - Loaded North</label>
+            </value>
+            <value>
+                <fullName>UTS - Loaded South</fullName>
+                <default>false</default>
+                <label>UTS - Loaded South</label>
+            </value>
+            <value>
+                <fullName>Coal - Met/Ex</fullName>
+                <default>false</default>
+                <label>Coal - Met/Ex</label>
+            </value>
+            <value>
+                <fullName>OS Northern Manager</fullName>
+                <default>false</default>
+                <label>OS Northern Manager</label>
+            </value>
+            <value>
+                <fullName>OS Northern</fullName>
+                <default>false</default>
+                <label>OS Northern</label>
+            </value>
+            <value>
+                <fullName>OS Southern Manager</fullName>
+                <default>false</default>
+                <label>OS Southern Manager</label>
+            </value>
+            <value>
+                <fullName>OS Southern</fullName>
+                <default>false</default>
+                <label>OS Southern</label>
+            </value>
+            <value>
+                <fullName>OS Central Manager</fullName>
+                <default>false</default>
+                <label>OS Central Manager</label>
+            </value>
+            <value>
+                <fullName>OS Central</fullName>
+                <default>false</default>
+                <label>OS Central</label>
+            </value>
+            <value>
+                <fullName>EP - Auto Parts Boxcars</fullName>
+                <default>false</default>
+                <label>EP - Auto Parts Boxcars</label>
+            </value>
+            <value>
+                <fullName>Coal - Utility</fullName>
+                <default>false</default>
+                <label>Coal - Utility</label>
+            </value>
+            <value>
+                <fullName>Intermodal - Premium</fullName>
+                <default>false</default>
+                <label>Intermodal - Premium</label>
+            </value>
+            <value>
+                <fullName>Intermodal - JB Hunt</fullName>
+                <default>false</default>
+                <label>Intermodal - JB Hunt</label>
+            </value>
+            <value>
+                <fullName>Intermodal - Truckload</fullName>
+                <default>false</default>
+                <label>Intermodal - Truckload</label>
+            </value>
+            <value>
+                <fullName>Intermodal - Domestic</fullName>
+                <default>false</default>
+                <label>Intermodal - Domestic</label>
+            </value>
+            <value>
+                <fullName>Intermodal - International</fullName>
+                <default>false</default>
+                <label>Intermodal - International</label>
+            </value>
+            <value>
+                <fullName>Intermodal - Customer Service</fullName>
+                <default>false</default>
+                <label>Intermodal - Customer Service</label>
+            </value>
+            <value>
+                <fullName>Intermodal - Customer Service Manager</fullName>
+                <default>false</default>
+                <label>Intermodal - Customer Service Manager</label>
+            </value>
+            <value>
+                <fullName>Intermodal - Terminal Support</fullName>
+                <default>false</default>
+                <label>Intermodal - Terminal Support</label>
+            </value>
+            <value>
+                <fullName>CS - AgFP Strategic</fullName>
+                <default>false</default>
+                <label>CS - AgFP Strategic</label>
+            </value>
+            <value>
+                <fullName>CS - AgFP Core</fullName>
+                <default>false</default>
+                <label>CS - AgFP Core</label>
+            </value>
+            <value>
+                <fullName>CS - AgFP Base</fullName>
+                <default>false</default>
+                <label>CS - AgFP Base</label>
+            </value>
+            <value>
+                <fullName>CS - Chem Strategic</fullName>
+                <default>false</default>
+                <label>CS - Chem Strategic</label>
+            </value>
+            <value>
+                <fullName>CS - Chem Core</fullName>
+                <default>false</default>
+                <label>CS - Chem Core</label>
+            </value>
+            <value>
+                <fullName>CS - Chem Base</fullName>
+                <default>false</default>
+                <label>CS - Chem Base</label>
+            </value>
+            <value>
+                <fullName>CS - MetCon Strategic</fullName>
+                <default>false</default>
+                <label>CS - MetCon Strategic</label>
+            </value>
+            <value>
+                <fullName>CS - MetCon Core</fullName>
+                <default>false</default>
+                <label>CS - MetCon Core</label>
+            </value>
+            <value>
+                <fullName>CS - MetCon Base</fullName>
+                <default>false</default>
+                <label>CS - MetCon Base</label>
+            </value>
+            <value>
+                <fullName>Loading &amp; Securement Solutions (LSS)</fullName>
+                <default>false</default>
+                <label>Loading &amp; Securement Solutions (LSS)</label>
+            </value>
+            <value>
+                <fullName>CS Help Desk</fullName>
+                <default>false</default>
+                <label>CS Help Desk</label>
+            </value>
+            <value>
+                <fullName>OS Ancillary Services</fullName>
+                <default>false</default>
+                <label>OS Ancillary Services</label>
+            </value>
+            <value>
+                <fullName>E - Commerce IT</fullName>
+                <default>false</default>
+                <label>E - Commerce IT</label>
+            </value>
+            <value>
+                <fullName>Unit Train Operations</fullName>
+                <default>false</default>
+                <label>Unit Train Operations</label>
+            </value>
+            <value>
+                <fullName>EP - Overages</fullName>
+                <default>false</default>
+                <label>EP - Overages</label>
+            </value>
+            <value>
+                <fullName>Automotive - Bad Order</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Automotive - Bad Order</label>
+            </value>
+            <value>
+                <fullName>Automotive - Support</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Automotive - Support</label>
+            </value>
+            <value>
+                <fullName>EP - System Support</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>EP - System Support</label>
+            </value>
+            <value>
+                <fullName>Northern Region East (NRE)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Northern Region East (NRE)</label>
+            </value>
+            <value>
+                <fullName>Northern Region East (NRE) Managers</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Northern Region East (NRE) Managers</label>
+            </value>
+            <value>
+                <fullName>Northern Region West (NRW)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Northern Region West (NRW)</label>
+            </value>
+            <value>
+                <fullName>Northern Region West (NRW) Managers</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Northern Region West (NRW) Managers</label>
+            </value>
+            <value>
+                <fullName>OSS Administrative</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OSS Administrative</label>
+            </value>
+            <value>
+                <fullName>OSS East</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OSS East</label>
+            </value>
+            <value>
+                <fullName>OSS East Ops</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OSS East Ops</label>
+            </value>
+            <value>
+                <fullName>OSS East Manager</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OSS Eastern Manager</label>
+            </value>
+            <value>
+                <fullName>OSS Leadership</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OSS Leadership</label>
+            </value>
+            <value>
+                <fullName>OSS South</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OSS South</label>
+            </value>
+            <value>
+                <fullName>OSS Support</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OSS Support</label>
+            </value>
+            <value>
+                <fullName>OSS West</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OSS West</label>
+            </value>
+            <value>
+                <fullName>Southern Region East (SRE)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Southern Region East (SRE)</label>
+            </value>
+            <value>
+                <fullName>Southern Region East (SRE) Managers</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Southern Region East (SRE) Managers</label>
+            </value>
+            <value>
+                <fullName>Southern Region West (SRW)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Southern Region West (SRW)</label>
+            </value>
+            <value>
+                <fullName>Southern Region West (SRW) Managers</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Southern Region West (SRW) Managers</label>
+            </value>
+            <value>
+                <fullName>Special Services</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Special Services</label>
+            </value>
+            <value>
+                <fullName>UTS - Energy</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UTS - Energy</label>
+            </value>
+            <value>
+                <fullName>UTS - Grain</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UTS - Grain</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Automotive - Empties</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Automotive - Loads</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Automotive - Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Planning</controllingFieldValue>
+            <valueName>EP - Boxcars</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Planning</controllingFieldValue>
+            <valueName>EP - Fleet Quality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Planning</controllingFieldValue>
+            <valueName>EP - Hoppers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Planning</controllingFieldValue>
+            <valueName>EP - Metals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Planning</controllingFieldValue>
+            <valueName>EP - Private Cars</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Planning</controllingFieldValue>
+            <valueName>EP - Auto Parts Boxcars</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Planning</controllingFieldValue>
+            <valueName>EP - Overages</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>Clearances</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>Data Quality (DQ)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>OS Northern Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>OS Northern</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>OS Southern Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>OS Southern</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>OS Central Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>OS Central</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>CS - AgFP Strategic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>CS - AgFP Core</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>CS - AgFP Base</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>CS - Chem Strategic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>CS - Chem Core</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>CS - Chem Base</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>CS - MetCon Strategic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>CS - MetCon Core</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>CS - MetCon Base</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>Loading &amp; Securement Solutions (LSS)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>CS Help Desk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>OS Ancillary Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>E - Commerce IT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OSS</controllingFieldValue>
+            <valueName>Unit Train Operations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coal</controllingFieldValue>
+            <valueName>Coal - Met/Ex</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coal</controllingFieldValue>
+            <valueName>Coal - Utility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>Intermodal - Premium</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>Intermodal - JB Hunt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>Intermodal - Truckload</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>Intermodal - Domestic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>Intermodal - International</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>Intermodal - Customer Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>Intermodal - Customer Service Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>Intermodal - Terminal Support</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

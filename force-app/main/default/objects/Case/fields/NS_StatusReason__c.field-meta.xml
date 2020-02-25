@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_StatusReason__c</fullName>
+    <externalId>false</externalId>
+    <label>Status Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Action Needed – Mechanical</fullName>
+                <default>false</default>
+                <label>Action Needed – Mechanical</label>
+            </value>
+            <value>
+                <fullName>Additional Information Needed – Customer</fullName>
+                <default>false</default>
+                <label>Additional Information Needed – Customer</label>
+            </value>
+            <value>
+                <fullName>Additional Information Needed - IM Operations</fullName>
+                <default>false</default>
+                <label>Additional Information Needed - IM Operations</label>
+            </value>
+            <value>
+                <fullName>Additional Information Needed – Mechanical</fullName>
+                <default>false</default>
+                <label>Additional Information Needed – Mechanical</label>
+            </value>
+            <value>
+                <fullName>Additional Information Needed - Transportation</fullName>
+                <default>false</default>
+                <label>Additional Information Needed - Transportation</label>
+            </value>
+            <value>
+                <fullName>Additional Information Needed - Port/Foreign Rail</fullName>
+                <default>false</default>
+                <label>Additional Information Needed - Port/Foreign Rail</label>
+            </value>
+            <value>
+                <fullName>Awaiting Response - Internal</fullName>
+                <default>false</default>
+                <label>Awaiting Response - Internal</label>
+            </value>
+            <value>
+                <fullName>Case Created in Error</fullName>
+                <default>false</default>
+                <label>Case Created in Error</label>
+            </value>
+            <value>
+                <fullName>Disposal Pending</fullName>
+                <default>false</default>
+                <label>Disposal Pending</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Fleet Quality</fullName>
+                <default>false</default>
+                <label>Fleet Quality</label>
+            </value>
+            <value>
+                <fullName>Inspected</fullName>
+                <default>false</default>
+                <label>Inspected</label>
+            </value>
+            <value>
+                <fullName>Inspection Pending</fullName>
+                <default>false</default>
+                <label>Inspection Pending</label>
+            </value>
+            <value>
+                <fullName>Internal Request</fullName>
+                <default>false</default>
+                <label>Internal Request</label>
+            </value>
+            <value>
+                <fullName>No Action Required</fullName>
+                <default>false</default>
+                <label>No Action Required</label>
+            </value>
+            <value>
+                <fullName>Spam</fullName>
+                <default>false</default>
+                <label>Spam</label>
+            </value>
+            <value>
+                <fullName>Transload Pending</fullName>
+                <default>false</default>
+                <label>Transload Pending</label>
+            </value>
+            <value>
+                <fullName>Analysis Required</fullName>
+                <default>false</default>
+                <label>Analysis Required</label>
+            </value>
+            <value>
+                <fullName>Phone Outreach Required</fullName>
+                <default>false</default>
+                <label>Phone Outreach Required</label>
+            </value>
+            <value>
+                <fullName>Awaiting Customer Response</fullName>
+                <default>false</default>
+                <label>Awaiting Customer Response</label>
+            </value>
+            <value>
+                <fullName>Case Resolution in Progress</fullName>
+                <default>false</default>
+                <label>Case Resolution in Progress</label>
+            </value>
+            <value>
+                <fullName>Phone Outreach Completed</fullName>
+                <default>false</default>
+                <label>Phone Outreach Completed</label>
+            </value>
+            <value>
+                <fullName>Email Outreach Completed</fullName>
+                <default>false</default>
+                <label>Email Outreach Completed</label>
+            </value>
+            <value>
+                <fullName>No Outreach Required</fullName>
+                <default>false</default>
+                <label>No Outreach Required</label>
+            </value>
+            <value>
+                <fullName>Awaiting Response - IT</fullName>
+                <default>false</default>
+                <label>Awaiting Response - IT</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>NS_New</controllingFieldValue>
+            <valueName>Analysis Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_New</controllingFieldValue>
+            <valueName>Phone Outreach Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_Closed</controllingFieldValue>
+            <valueName>Phone Outreach Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_Closed</controllingFieldValue>
+            <valueName>Email Outreach Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_Closed</controllingFieldValue>
+            <valueName>No Outreach Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_AwaitingResponse</controllingFieldValue>
+            <valueName>Action Needed – Mechanical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_AwaitingResponse</controllingFieldValue>
+            <valueName>Additional Information Needed – Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_AwaitingResponse</controllingFieldValue>
+            <valueName>Additional Information Needed - IM Operations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_AwaitingResponse</controllingFieldValue>
+            <valueName>Additional Information Needed – Mechanical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_AwaitingResponse</controllingFieldValue>
+            <valueName>Additional Information Needed - Transportation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_AwaitingResponse</controllingFieldValue>
+            <valueName>Additional Information Needed - Port/Foreign Rail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_AwaitingResponse</controllingFieldValue>
+            <valueName>Awaiting Response - Internal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_AwaitingResponse</controllingFieldValue>
+            <valueName>Disposal Pending</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_AwaitingResponse</controllingFieldValue>
+            <valueName>Fleet Quality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_AwaitingResponse</controllingFieldValue>
+            <valueName>Inspected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_AwaitingResponse</controllingFieldValue>
+            <valueName>Inspection Pending</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_AwaitingResponse</controllingFieldValue>
+            <valueName>Internal Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_AwaitingResponse</controllingFieldValue>
+            <valueName>Transload Pending</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_AwaitingResponse</controllingFieldValue>
+            <valueName>Awaiting Customer Response</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_AwaitingResponse</controllingFieldValue>
+            <valueName>Awaiting Response - IT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_Cancelled</controllingFieldValue>
+            <valueName>Case Created in Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_Cancelled</controllingFieldValue>
+            <valueName>Duplicate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_Cancelled</controllingFieldValue>
+            <valueName>No Action Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NS_Cancelled</controllingFieldValue>
+            <valueName>Spam</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

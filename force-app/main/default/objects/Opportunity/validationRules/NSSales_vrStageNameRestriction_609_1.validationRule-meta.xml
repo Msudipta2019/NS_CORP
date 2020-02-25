@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_vrStageNameRestriction_609_1</fullName>
+    <active>true</active>
+    <description>validation rule to enforce user to start in Qualification/Analysis upon Opportunity Creation</description>
+    <errorConditionFormula>AND( ISNEW(), NOT(ISPICKVAL(StageName, &quot;Qualification/Analysis&quot;)),
+NSSales_609_1_SwitchRemovalRequest__c = True)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>The stage needs to be set to &#39;Qualification/Analysis&#39; for 609.1 Switch Removal Requests</errorMessage>
+</ValidationRule>

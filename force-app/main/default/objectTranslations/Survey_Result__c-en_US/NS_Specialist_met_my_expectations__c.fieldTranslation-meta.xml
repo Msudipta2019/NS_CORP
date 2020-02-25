@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CS Specialist met my expectations --></label>
+    <name>NS_Specialist_met_my_expectations__c</name>
+    <picklistValues>
+        <masterLabel>Neither Agree Nor Disagree</masterLabel>
+        <translation><!-- Neither Agree Nor Disagree --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Somewhat Agree</masterLabel>
+        <translation><!-- Somewhat Agree --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Somewhat Disagree</masterLabel>
+        <translation><!-- Somewhat Disagree --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Strongly Agree</masterLabel>
+        <translation><!-- Strongly Agree --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Strongly Disagree</masterLabel>
+        <translation><!-- Strongly Disagree --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

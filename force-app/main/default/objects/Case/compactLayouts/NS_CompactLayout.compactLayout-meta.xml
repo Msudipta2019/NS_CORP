@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_CompactLayout</fullName>
+    <fields>CaseNumber</fields>
+    <fields>NS_AssignedTo__c</fields>
+    <fields>AccountId</fields>
+    <fields>ContactId</fields>
+    <fields>NS_OperatingStation__c</fields>
+    <fields>OwnerId</fields>
+    <fields>NS_InteractionReason__c</fields>
+    <label>NS Compact Layout</label>
+</CompactLayout>

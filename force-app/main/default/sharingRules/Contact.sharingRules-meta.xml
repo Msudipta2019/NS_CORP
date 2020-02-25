@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>ANI_Visible_to_OSS_Support</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ANI Visible to OSS Support</label>
+        <sharedTo>
+            <role>OSS_Support</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ANI ONLY</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Automotive_General_Contact</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Automotive General Contact</label>
+        <sharedTo>
+            <roleAndSubordinates>Sales_Automotive_Leadership</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>General Contact</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Coal_General_Contact</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Coal General Contact</label>
+        <sharedTo>
+            <roleAndSubordinates>Sales_Coal_Leadership</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>General Contact</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Contact_Visible_to_All</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Contact Visible to All</label>
+        <sharedTo>
+            <roleAndSubordinates>NS_Executive</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>General Contact,Read Only Inactive Contact</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ID_General_Contact</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ID General Contact</label>
+        <sharedTo>
+            <roleAndSubordinates>Sales_Industrial_Development_Leadership</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>General Contact,ID Contact</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>IP_General_Contact</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>IP General Contact</label>
+        <sharedTo>
+            <roleAndSubordinates>Sales_Industrial_Product_Leadership</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>General Contact</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Intermodal_General_Contact</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Intermodal General Contact</label>
+        <sharedTo>
+            <roleAndSubordinates>Sales_Intermodal_Leadership</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>General Contact</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NSSales_IDContactSharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>NSSales_IDContactSharing</label>
+        <sharedTo>
+            <group>ID_Access_for_General_Sales_Users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ID Contact</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>RecordTypedriver</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>RecordTypedriver</label>
+        <sharedTo>
+            <roleAndSubordinates>Integration_User</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Driver</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SMRF_General_Contact</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SMRF General Contact</label>
+        <sharedTo>
+            <roleAndSubordinates>Sales_Marketing_Research_Forecasting_User</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>General Contact</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

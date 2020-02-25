@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <quickActions>
+        <label><!-- Add Member --></label>
+        <name>Add_Member</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Market Intel --></label>
+        <name>NSSales_Create_Market_Intel_Campaign</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage><!-- Please select start date and end date between the start date end date of the parent campaign --></errorMessage>
+        <name>NSSales_vrChildCampaignStartEndDate</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- ViewAllCampaignMembers --></label>
+        <name>ViewAllCampaignMembers</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ViewCampaignInfluenceReport --></label>
+        <name>ViewCampaignInfluenceReport</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_ExactTarget_Email --></label>
+        <name>et4ae5__Send_ExactTarget_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ViewCampaignInfluenceReport --></label>
+        <name>et4ae5__ViewCampaignInfluenceReport</name>
+    </webLinks>
+</CustomObjectTranslation>

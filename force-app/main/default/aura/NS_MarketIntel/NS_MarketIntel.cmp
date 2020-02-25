@@ -1,0 +1,73 @@
+<aura:component controller="NSSales_MarketIntelController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction,lightning:actionOverride,clients:availableForMailAppAppPage,clients:hasItemContext" access="global" >
+    <aura:attribute name="disabled" type="Boolean" default="false" />
+    <aura:attribute name="saved" type="Boolean" default="false" />
+    <aura:attribute name="showSpinner" type="Boolean" default="true" />
+    
+    <aura:attribute name="marketIntel" type="Market_Intelligence__c"
+                    default="{ 'sobjectType': 'Market_Intelligence__c'     
+                             }"/>
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="isSourceAcc" type="Boolean" default="true" />
+    <aura:attribute name="onAccountPage" type="Boolean" default="false" />
+    <aura:attribute name="source" type="String" />
+    <aura:attribute name="AccId" type="String" />
+    <aura:attribute name="disabledAcc" type="Boolean" default="true" />
+    <aura:attribute name="AccClassificationId" type="String" />
+    <aura:attribute name="accountId" type="String" />
+    <aura:handler name="accClassificationEvent" action="{!c.populateAccClassificationfromevent}" event="c:NSSales_lookupField_AccClassificationPopulate"/>
+    <aura:handler name="init" value="{!this}" action="{!c.handleLoad}"/>
+    <aura:registerEvent name="accClassificationEventChild" type="c:NSSales_lookupField_AccClassificationPopulateChild"/>
+    
+    
+    
+    <aura:if isTrue="{!v.showSpinner}">
+        <lightning:spinner />
+    </aura:if>
+    <div class="slds-box slds-theme_default" id="MIDetail" aura:id="MIDiv">
+        <lightning:recordEditForm 
+                                  onsubmit="{!c.handleSubmit}"
+                                  onsuccess="{!c.handleSuccess}"
+                                  objectApiName="Market_Intelligence__c"
+                                  >
+            <!-- the messages component is for error messages -->
+            <lightning:messages />
+            <lightning:inputField fieldName="Name" required ='true' aura:id="marketForm"/>
+            <lightning:inputField fieldName="Type__c" required ='true' aura:id="marketForm"/>
+            <lightning:inputField fieldName="Source__c" required ='true' aura:id="Source" onchange="{!c.handleSourceChange}"/>
+            <!--*******Changes for D-1834 on 18/11/2019**********-->                    
+            <div id="accDetail">
+                <aura:if isTrue="{!v.isSourceAcc}">
+                    <lightning:inputField fieldName="Account__c" aura:id="acc1" required='true' onchange="{!c.populateAccClassification}"/>
+                    <aura:set attribute="else">
+                        <lightning:inputField fieldName="Account__c" aura:id="acc2" onchange="{!c.populateAccClassification}"/>
+                    </aura:set>
+                </aura:if>                 
+            </div>
+            <lightning:inputField fieldName="Account_Classification__c" aura:id="marketForm" value="{!v.AccClassificationId}" class="slds-hide"/> 
+            <aura:if isTrue="{!v.onAccountPage}">
+                <lightning:inputField fieldName="Account__c" aura:id="marketForm" value="{!v.accountId}" class="slds-hide"/> 
+            </aura:if>    
+            <!-- Code Change for D-1885 - Auto populate Account Classification on Market Intel by Sudipto G -->
+            <c:NSSales_lookupField 
+                                   objectAPIName="BU__c" 
+                                   label="Account Classification"
+                                   returnFields="['Name','NSSales_Group_Name1__c']" 
+                                   queryFields="['Name','NSSales_Group_Name1__c']"
+                                   AccId="{!v.AccId}" />
+            <!-- end of look up -->
+            <lightning:inputField fieldName="Market__c" aura:id="marketForm"/>
+            <lightning:inputField fieldName="Mode__c" required ='true' aura:id="marketForm"/>
+            <lightning:inputField fieldName="Geography__c" required ='true' aura:id="marketForm"/>
+            <lightning:inputField fieldName="Other_Topic__c" aura:id="marketForm"/>
+            <lightning:inputField fieldName="Executive_Reporting_Flag__c" aura:id="marketForm"/>
+            <lightning:inputField fieldName="Intel__c" aura:id="marketForm"/>
+            
+            <div class="slds-m-top_medium footer">
+                <lightning:button class="slds-button slds-button--neutral slds-hide" type="button" name="Cancel" label="Cancel" aura:id="footCanc" onclick="{!c.cancel}" />
+                <lightning:button disabled="{!v.disabled}" variant="brand" type="submit" name="save" label="Save" />  
+            </div>
+            
+            
+        </lightning:recordEditForm>
+    </div>
+</aura:component>

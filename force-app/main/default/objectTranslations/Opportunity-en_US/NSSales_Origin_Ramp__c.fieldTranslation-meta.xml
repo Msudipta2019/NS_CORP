@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field is required to move to the Internal Review Stage --></help>
+    <label><!-- Origin Ramp --></label>
+    <name>NSSales_Origin_Ramp__c</name>
+</CustomFieldTranslation>

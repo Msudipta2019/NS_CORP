@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Sales Path - ID Opportunity</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>NS_Lost_Cancelled_Reason__c</fieldNames>
+        <fieldNames>Amount</fieldNames>
+        <picklistValueName>Closed Lost</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>OwnerId</fieldNames>
+        <fieldNames>Amount</fieldNames>
+        <picklistValueName>Closed Won</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>OwnerId</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Opportunity is inactive &lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Inactive</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>Minimum_Investment__c</fieldNames>
+        <fieldNames>Maximum_Investment__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Industry has Submitted Detailed Design Plans for review&lt;/li&gt;&lt;li&gt;Develop Negotiating Strategy and Proposal with Opportunity Team&lt;/li&gt;&lt;li&gt;Track Agreement / Track Lease Negotiation with Industry Begins&lt;/li&gt;&lt;li&gt;Document and upload supporting information, as needed&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Project</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Amount</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;ID has prepared a Preliminary Plan (or accepted an external preliminary plan)&lt;/li&gt;&lt;li&gt;Update the Account and Add any Partner Accounts associated to the Opportunity&lt;/li&gt;&lt;li&gt;Complete as many Opportunity Detail Fields as possible&lt;/li&gt;&lt;li&gt;Identify and Collaborate with the Opportunity Team&lt;/li&gt;&lt;li&gt;Note GM Approval prior to Detailed Design Phase&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Prospect</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>Name</fieldNames>
+        <fieldNames>Amount</fieldNames>
+        <fieldNames>OwnerId</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Default Status when an Opportunity is Created&lt;/li&gt;&lt;li&gt;Who is the main point of contact?&lt;/li&gt;&lt;li&gt;Collect the initial details for the Opportunity&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Suspect</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>NS_ID</recordTypeName>
+</PathAssistant>

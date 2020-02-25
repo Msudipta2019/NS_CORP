@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>NotifyNetwork_OptimizationApproverOwneronClosedImplementationPending</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_11_A1</name>
+        <label>NotifyNetworkOptimizationOwner</label>
+        <locationX>1100</locationX>
+        <locationY>200</locationY>
+        <actionName>Opportunity.NotifyNetwork_OptimizationApproverOwneronClosedImplementationPending</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myDecision12</targetReference>
+        </connector>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>NotifyNetwork_CapacityApproverOwneronClosedImplementationPending</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_13_A1</name>
+        <label>NotifyNetworkCapacityOwner</label>
+        <locationX>1300</locationX>
+        <locationY>200</locationY>
+        <actionName>Opportunity.NotifyNetwork_CapacityApproverOwneronClosedImplementationPending</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myDecision14</targetReference>
+        </connector>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>NotifyUnit_TrainApproverOwneronClosedImplementationPending</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_15_A1</name>
+        <label>NotifyUnitTrainOwner</label>
+        <locationX>1500</locationX>
+        <locationY>200</locationY>
+        <actionName>Opportunity.NotifyUnit_TrainApproverOwneronClosedImplementationPending</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myDecision16</targetReference>
+        </connector>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>NotifyOPSPlanningNOCApproverOwneronClosedImplementationPending</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_17_A1</name>
+        <label>NotifyOPSPlanningNOCOwner</label>
+        <locationX>1700</locationX>
+        <locationY>200</locationY>
+        <actionName>Opportunity.NotifyOPSPlanningNOCApproverOwneronClosedImplementationPending</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myDecision18</targetReference>
+        </connector>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>NotifyOPSPlanningCentralApproverOwneronClosedImplementationPending</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_19_A1</name>
+        <label>NotifyOPSPlanningCentralOwner</label>
+        <locationX>1900</locationX>
+        <locationY>200</locationY>
+        <actionName>Opportunity.NotifyOPSPlanningCentralApproverOwneronClosedImplementationPending</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myDecision20</targetReference>
+        </connector>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>NSSales_NotifyOpportunityOwneronClosedImplementationPending</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_1_A1</name>
+        <label>NotifyOpportunityOwner</label>
+        <locationX>100</locationX>
+        <locationY>200</locationY>
+        <actionName>Opportunity.NSSales_NotifyOpportunityOwneronClosedImplementationPending</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myDecision2</targetReference>
+        </connector>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>NotifyOPSPlanningSouthApproverOwneronClosedImplementationPending</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_21_A1</name>
+        <label>NotifyOPSPlanningSouthOwner</label>
+        <locationX>2100</locationX>
+        <locationY>200</locationY>
+        <actionName>Opportunity.NotifyOPSPlanningSouthApproverOwneronClosedImplementationPending</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myDecision22</targetReference>
+        </connector>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>NotifyOPSPlanningNorthApproverOwneronClosedImplementationPending</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_23_A1</name>
+        <label>NotifyOPSPlanningNorthOwner</label>
+        <locationX>2300</locationX>
+        <locationY>200</locationY>
+        <actionName>Opportunity.NotifyOPSPlanningNorthApproverOwneronClosedImplementationPending</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>NotifyPowerApproverOwneronClosedImplementationPending</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_3_A1</name>
+        <label>NotifyPowerOwner</label>
+        <locationX>300</locationX>
+        <locationY>200</locationY>
+        <actionName>Opportunity.NotifyPowerApproverOwneronClosedImplementationPending</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myDecision4</targetReference>
+        </connector>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>NotifyIndustrial_Products_UnitApproverOwneronClosedImplementationPending</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_5_A1</name>
+        <label>NotifyIndustrialProductUnitOwner</label>
+        <locationX>500</locationX>
+        <locationY>200</locationY>
+        <actionName>Opportunity.NotifyIndustrial_Products_UnitApproverOwneronClosedImplementationPending</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myDecision6</targetReference>
+        </connector>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>NotifyAuto_IntermodalApproverOwneronClosedImplementationPending</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_7_A1</name>
+        <label>NotifyAutoIntermodalOwner</label>
+        <locationX>700</locationX>
+        <locationY>200</locationY>
+        <actionName>Opportunity.NotifyAuto_IntermodalApproverOwneronClosedImplementationPending</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myDecision8</targetReference>
+        </connector>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>NotifyInterline_ServicesApproverOwneronClosedImplementationPending</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_9_A1</name>
+        <label>NotifyInterlineServicesOwner</label>
+        <locationX>900</locationX>
+        <locationY>200</locationY>
+        <actionName>Opportunity.NotifyInterline_ServicesApproverOwneronClosedImplementationPending</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myDecision10</targetReference>
+        </connector>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision</name>
+        <label>myDecision</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>CheckOpportunityOwner</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>5.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision10</name>
+        <label>myDecision10</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision12</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_11</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_11</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_11_A1</targetReference>
+            </connector>
+            <label>CheckNetworkOptimizationOwner</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>6.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision12</name>
+        <label>myDecision12</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision14</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_13</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_13</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_13_A1</targetReference>
+            </connector>
+            <label>CheckNetworkCapacityOwner</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>7.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision14</name>
+        <label>myDecision14</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision16</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_15</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_15</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_15_A1</targetReference>
+            </connector>
+            <label>CheckUnitTrainOwner</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>8.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision16</name>
+        <label>myDecision16</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision18</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_17</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_17</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_17_A1</targetReference>
+            </connector>
+            <label>CheckOPSPlanningNOCOwner</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>9.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision18</name>
+        <label>myDecision18</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision20</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_19</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_19</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_19_A1</targetReference>
+            </connector>
+            <label>CheckOPSPlanningCentralOwner</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision2</name>
+        <label>myDecision2</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision4</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_3</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_3_A1</targetReference>
+            </connector>
+            <label>CheckPowerOwner</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>10.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision20</name>
+        <label>myDecision20</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision22</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_21</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_21</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_21_A1</targetReference>
+            </connector>
+            <label>CheckOPSPlanningSouthOwner</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>11.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision22</name>
+        <label>myDecision22</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_23</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_23</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_23_A1</targetReference>
+            </connector>
+            <label>CheckOPSPlanningNorthOwner</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>2.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision4</name>
+        <label>myDecision4</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision6</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_5</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_5</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_5_A1</targetReference>
+            </connector>
+            <label>CheckIndustrialProductsUnit</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>3.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision6</name>
+        <label>myDecision6</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision8</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_7</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_7</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_7_A1</targetReference>
+            </connector>
+            <label>CheckAutoIntermodalOwner</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>4.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision8</name>
+        <label>myDecision8</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision10</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_9</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_9</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_9_A1</targetReference>
+            </connector>
+            <label>CheckInterlineServicesOwner</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+ !ISBLANK([Opportunity].OwnerId ) ,
+TEXT([Opportunity].StageName ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE([Opportunity].StageName) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)
+</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_1</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+ !ISBLANK({!myVariable_current.OwnerId} ) ,
+TEXT({!myVariable_current.StageName} ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE({!myVariable_current.StageName}) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+ !ISBLANK([Opportunity].NSSales_Network_Optimization_Owner_Email__c    ) ,
+TEXT([Opportunity].StageName ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE([Opportunity].StageName) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)
+</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_11</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+ !ISBLANK({!myVariable_current.NSSales_Network_Optimization_Owner_Email__c}    ) ,
+TEXT({!myVariable_current.StageName} ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE({!myVariable_current.StageName}) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+ !ISBLANK([Opportunity].NSSales_Network_Capacity_Owner_Email__c    ) ,
+TEXT([Opportunity].StageName ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE([Opportunity].StageName) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)
+</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_13</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+ !ISBLANK({!myVariable_current.NSSales_Network_Capacity_Owner_Email__c}    ) ,
+TEXT({!myVariable_current.StageName} ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE({!myVariable_current.StageName}) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+ !ISBLANK([Opportunity].NSSales_Unit_Train_Owner_Email__c    ) ,
+TEXT([Opportunity].StageName ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE([Opportunity].StageName) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)
+</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_15</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+ !ISBLANK({!myVariable_current.NSSales_Unit_Train_Owner_Email__c}    ) ,
+TEXT({!myVariable_current.StageName} ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE({!myVariable_current.StageName}) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+ !ISBLANK([Opportunity].NSSales_OPS_Planning_NOC_Owner_Email__c  ) ,
+TEXT([Opportunity].StageName ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE([Opportunity].StageName) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)
+</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_17</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+ !ISBLANK({!myVariable_current.NSSales_OPS_Planning_NOC_Owner_Email__c}  ) ,
+TEXT({!myVariable_current.StageName} ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE({!myVariable_current.StageName}) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+ !ISBLANK([Opportunity].NSSales_OPS_Planning_Central_Owner_Email__c  ) ,
+TEXT([Opportunity].StageName ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE([Opportunity].StageName) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)
+</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_19</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+ !ISBLANK({!myVariable_current.NSSales_OPS_Planning_Central_Owner_Email__c}  ) ,
+TEXT({!myVariable_current.StageName} ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE({!myVariable_current.StageName}) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+ !ISBLANK([Opportunity].NSSales_OPS_Planning_South_Owner_Email__c    ) ,
+TEXT([Opportunity].StageName ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE([Opportunity].StageName) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)
+</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_21</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+ !ISBLANK({!myVariable_current.NSSales_OPS_Planning_South_Owner_Email__c}    ) ,
+TEXT({!myVariable_current.StageName} ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE({!myVariable_current.StageName}) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+ !ISBLANK([Opportunity].NSSales_OPS_Planning_North_Owner_Email__c    ) ,
+TEXT([Opportunity].StageName ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE([Opportunity].StageName) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)
+</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_23</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+ !ISBLANK({!myVariable_current.NSSales_OPS_Planning_North_Owner_Email__c}    ) ,
+TEXT({!myVariable_current.StageName} ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE({!myVariable_current.StageName}) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+ !ISBLANK([Opportunity].NSSales_Power_Owner_Email__c ) ,
+TEXT([Opportunity].StageName ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE([Opportunity].StageName) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)
+</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_3</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+ !ISBLANK({!myVariable_current.NSSales_Power_Owner_Email__c} ) ,
+TEXT({!myVariable_current.StageName} ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE({!myVariable_current.StageName}) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+ !ISBLANK([Opportunity].NSSales_Ind_Products_Unit_Owner_Email__c   ) ,
+TEXT([Opportunity].StageName ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE([Opportunity].StageName) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)
+</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_5</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+ !ISBLANK({!myVariable_current.NSSales_Ind_Products_Unit_Owner_Email__c}   ) ,
+TEXT({!myVariable_current.StageName} ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE({!myVariable_current.StageName}) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+ !ISBLANK([Opportunity].NSSales_Auto_Intermodal_Owner_Email__c  ) ,
+TEXT([Opportunity].StageName ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE([Opportunity].StageName) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_7</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+ !ISBLANK({!myVariable_current.NSSales_Auto_Intermodal_Owner_Email__c}  ) ,
+TEXT({!myVariable_current.StageName} ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE({!myVariable_current.StageName}) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+ !ISBLANK([Opportunity].NSSales_Interline_Services_Owner_Email__c    ) ,
+TEXT([Opportunity].StageName ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE([Opportunity].StageName) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)
+</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_9</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+ !ISBLANK({!myVariable_current.NSSales_Interline_Services_Owner_Email__c}    ) ,
+TEXT({!myVariable_current.StageName} ) =&#39;Closed: Implementation Pending&#39;,
+PRIORVALUE({!myVariable_current.StageName}) &lt;&gt; &#39;Closed: Implementation Pending&#39;
+)</expression>
+    </formulas>
+    <interviewLabel>NSSales_pbNotifyon-8_InterviewLabel</interviewLabel>
+    <label>NSSales_pbNotifyonClosedImplementationPending</label>
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>Opportunity</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>ObjectVariable</name>
+        <value>
+            <elementReference>myVariable_current</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OldObjectVariable</name>
+        <value>
+            <elementReference>myVariable_old</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onAllChanges</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+    <startElementReference>myDecision</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>myVariable_current</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_old</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+</Flow>

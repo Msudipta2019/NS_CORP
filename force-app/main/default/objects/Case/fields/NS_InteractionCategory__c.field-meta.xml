@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_InteractionCategory__c</fullName>
+    <description>Basically its the case record type</description>
+    <externalId>false</externalId>
+    <label>Interaction Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accounting/Waybilling</fullName>
+                <default>false</default>
+                <label>Accounting/Waybilling</label>
+            </value>
+            <value>
+                <fullName>Concerned Citizen</fullName>
+                <default>false</default>
+                <label>Concerned Citizen</label>
+            </value>
+            <value>
+                <fullName>Foreign Road</fullName>
+                <default>false</default>
+                <label>Foreign Road</label>
+            </value>
+            <value>
+                <fullName>Local Service</fullName>
+                <default>false</default>
+                <label>Local Service</label>
+            </value>
+            <value>
+                <fullName>Marketing/Sales</fullName>
+                <default>false</default>
+                <label>Marketing/Sales</label>
+            </value>
+            <value>
+                <fullName>Tracing</fullName>
+                <default>false</default>
+                <label>Tracing</label>
+            </value>
+            <value>
+                <fullName>Transit Exceptions</fullName>
+                <default>false</default>
+                <label>Transit Exceptions</label>
+            </value>
+            <value>
+                <fullName>Business Functions</fullName>
+                <default>false</default>
+                <label>Business Functions</label>
+            </value>
+            <value>
+                <fullName>Intermodal</fullName>
+                <default>false</default>
+                <label>Intermodal</label>
+            </value>
+            <value>
+                <fullName>Reports</fullName>
+                <default>false</default>
+                <label>Reports</label>
+            </value>
+            <value>
+                <fullName>Accounting/Billing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Accounting/Billing</label>
+            </value>
+            <value>
+                <fullName>Billing/Accounting</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Billing/Accounting</label>
+            </value>
+            <value>
+                <fullName>Delayed Shipment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Delayed Shipment</label>
+            </value>
+            <value>
+                <fullName>Email-to-case</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Email-to-case</label>
+            </value>
+            <value>
+                <fullName>Internal NS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Internal NS</label>
+            </value>
+            <value>
+                <fullName>Outbound</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Outbound</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_SendFor609_1_Approval__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>This field is checked when 609.1 Opportunity is in Internal Review stage</description>
+    <externalId>false</externalId>
+    <label>Send for 609.1 Approval</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

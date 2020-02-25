@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_IntegerFieldsCannotBeNegative</fullName>
+    <active>true</active>
+    <description>For “Pipeline Management” , number/integer fields cannot be blank for data quality assurance</description>
+    <errorConditionFormula>AND(
+OR((NS_AVPLCount__c&lt;0),(NS_AVPLDays__c&lt;0),(NS_OnsiteCount__c&lt;0 ),(NS_LeaseTrackCount__c&lt;0),(NS_PipelineCount__c&lt;0),(NS_PipelineDays__c&lt;0)),
+NOT(ISCHANGED(NS_Last_Activity_Time__c)),
+NOT(ISCHANGED(NS_Counter_Activity__c)))</errorConditionFormula>
+    <errorMessage>Entered value(s) cannot be negative</errorMessage>
+</ValidationRule>

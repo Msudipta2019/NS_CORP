@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Suffix --></label>
+    <name>NSSales_609_1_Suffix__c</name>
+    <picklistValues>
+        <masterLabel>A</masterLabel>
+        <translation><!-- A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AG</masterLabel>
+        <translation><!-- AG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B</masterLabel>
+        <translation><!-- B --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BC</masterLabel>
+        <translation><!-- BC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BL</masterLabel>
+        <translation><!-- BL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BS</masterLabel>
+        <translation><!-- BS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BY</masterLabel>
+        <translation><!-- BY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C</masterLabel>
+        <translation><!-- C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CD</masterLabel>
+        <translation><!-- CD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CG</masterLabel>
+        <translation><!-- CG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CJ</masterLabel>
+        <translation><!-- CJ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CO</masterLabel>
+        <translation><!-- CO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D</masterLabel>
+        <translation><!-- D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DW</masterLabel>
+        <translation><!-- DW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EB</masterLabel>
+        <translation><!-- EB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EJ</masterLabel>
+        <translation><!-- EJ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ES</masterLabel>
+        <translation><!-- ES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>G</masterLabel>
+        <translation><!-- G --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H</masterLabel>
+        <translation><!-- H --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I</masterLabel>
+        <translation><!-- I --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>K</masterLabel>
+        <translation><!-- K --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KA</masterLabel>
+        <translation><!-- KA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KB</masterLabel>
+        <translation><!-- KB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>L</masterLabel>
+        <translation><!-- L --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LS</masterLabel>
+        <translation><!-- LS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M</masterLabel>
+        <translation><!-- M --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MB</masterLabel>
+        <translation><!-- MB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ME</masterLabel>
+        <translation><!-- ME --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MF</masterLabel>
+        <translation><!-- MF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N</masterLabel>
+        <translation><!-- N --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NT</masterLabel>
+        <translation><!-- NT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P</masterLabel>
+        <translation><!-- P --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PH</masterLabel>
+        <translation><!-- PH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R</masterLabel>
+        <translation><!-- R --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RB</masterLabel>
+        <translation><!-- RB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RE</masterLabel>
+        <translation><!-- RE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SA</masterLabel>
+        <translation><!-- SA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SY</masterLabel>
+        <translation><!-- SY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>T</masterLabel>
+        <translation><!-- T --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TC</masterLabel>
+        <translation><!-- TC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V</masterLabel>
+        <translation><!-- V --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>W</masterLabel>
+        <translation><!-- W --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WB</masterLabel>
+        <translation><!-- WB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WT</masterLabel>
+        <translation><!-- WT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

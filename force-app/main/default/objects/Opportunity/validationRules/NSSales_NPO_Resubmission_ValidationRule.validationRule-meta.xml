@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_NPO_Resubmission_ValidationRule</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR(ISPICKVAL(StageName, &quot;Proposal&quot;), ISPICKVAL(StageName, &quot;Negotiation&quot;) ) ,OR( ISCHANGED(NSSales_Commodity_Group__c), ISCHANGED(Consignee__c), ISCHANGED(NS_Contract_Start_Date__c), ISCHANGED(NS_Destination_City__c), ISCHANGED(NS_Destination_State__c), ISCHANGED(NS_Destination_Station__c), ISCHANGED(NS_Estimated_Volume__c), ISCHANGED(Frequency__c), ISCHANGED(NSSales_Need_by_Date__c) ,
+ISCHANGED(NS_Origin_City__c),
+ISCHANGED(Origin_State__c),
+ISCHANGED(NS_Origin_Station__c),
+ISCHANGED(Projected_Start_Date__c),
+ISCHANGED(NSSales_Route__c),
+ISCHANGED(NSSales_Shipper__c),
+ISCHANGED(NSSales_Spot_Contract__c),
+ISCHANGED(NSSales_Origin_Ramp__c), ISCHANGED(NSSales_Destination_Ramp__c),
+ISCHANGED(NSSales_Account_Classification__c) ),NSSales_NPO_Resubmission_Confirmation__c = FALSE)</errorConditionFormula>
+    <errorMessage>Opportunity update requires NPO Approval. Check the &quot;NPO Re-submission Confirmation&quot; checkbox to continue.</errorMessage>
+</ValidationRule>

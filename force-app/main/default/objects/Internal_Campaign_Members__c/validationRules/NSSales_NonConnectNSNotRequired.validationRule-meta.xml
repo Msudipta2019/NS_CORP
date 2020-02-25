@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_NonConnectNSNotRequired</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISBLANK( NSSales_Internal_User__c ) ) , OR( NOT( ISBLANK( NSSales_Non_Connect_NS_User__c ) ) , NOT( ISBLANK( NSSale_Non_Connect_NS_User_Email_Address__c ) ),NOT( ISBLANK(  NSSale_Non_Connect_NS_User_Phone_Number__c ) ),NOT( ISBLANK(  NSSales_Non_Connect_NS_User_Role__c ) ) ) )</errorConditionFormula>
+    <errorMessage>You can only add either a Internal ConnectNS User OR a Non-ConnectNS User</errorMessage>
+</ValidationRule>

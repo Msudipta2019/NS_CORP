@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Revert_to_Paperwork__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Built as part of Phase 1 enhancement</description>
+    <externalId>false</externalId>
+    <label>Revert to Paperwork</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
