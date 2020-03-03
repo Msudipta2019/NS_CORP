@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_AccountNameCantBeChanged</fullName>
+    <active>true</active>
+    <description>Online Account name cannot be changed by any user.Also Rep and Manager cannot change it for 3PL and NS Field Locations.</description>
+    <errorConditionFormula>IF(OR( $Profile.Name =&#39;OSS Manager&#39;,
+$Profile.Name =&#39;OSS Rep&#39;,
+$Profile.Name =&#39;Automotive Manager&#39;,
+$Profile.Name =&#39;Automotive Leadership&#39;,
+$Profile.Name =&#39;EP Manager&#39;,
+$Profile.Name =&#39;EP Leadership&#39;,
+$Profile.Name =&#39;UTS Manager&#39;,
+$Profile.Name =&#39;UTS Leadership&#39;,
+$Profile.Name =&#39;NS Industrial Development Manager&#39;,
+$Profile.Name =&#39;NS Sales Manager&#39;,
+$Profile.Name =&#39;Intermodal Manager&#39;,
+$Profile.Name =&#39;Intermodal User&#39;,
+$Profile.Name =&#39;OSS Manager Sales and Service&#39;
+),
+OR(AND( RecordType.DeveloperName =&#39;NS_OnlineCustomerService&#39;, ISCHANGED( Name ) ) ,
+AND( RecordType.DeveloperName =&#39;NS_OnlineCustomerCorporate&#39;, ISCHANGED( Name ) ),
+AND( RecordType.DeveloperName =&#39;NS_OnlineCustomerBusiness&#39;, ISCHANGED( Name ) ) ,
+AND( RecordType.DeveloperName =&#39;NS_FieldLocation&#39;, ISCHANGED( Name )),
+AND( RecordType.DeveloperName =&#39;NS_3PL&#39;, ISCHANGED( Name )), AND( RecordType.DeveloperName =&#39;NS_Drayage&#39;, ISCHANGED( Name ) )),
+IF(
+$Profile.Name =&#39;OSS Support&#39;,
+OR(AND( RecordType.DeveloperName =&#39;NS_OnlineCustomerService&#39;, ISCHANGED( Name ) ) ,
+AND( RecordType.DeveloperName =&#39;NS_OnlineCustomerCorporate&#39;, ISCHANGED( Name ) ),
+AND( RecordType.DeveloperName =&#39;NS_OnlineCustomerBusiness&#39;, ISCHANGED( Name ) ) ),
+IF(
+OR($Profile.Name =&#39;NS Marketing Leadership&#39;,$Profile.Name =&#39;NS Marketing Manager&#39;),
+ISCHANGED( Name ), false)
+)
+)</errorConditionFormula>
+    <errorMessage>Account Name cannot be changed</errorMessage>
+</ValidationRule>

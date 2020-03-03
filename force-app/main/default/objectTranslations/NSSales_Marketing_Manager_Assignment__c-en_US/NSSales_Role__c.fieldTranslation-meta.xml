@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Role --></label>
+    <name>NSSales_Role__c</name>
+    <picklistValues>
+        <masterLabel>Account Manager</masterLabel>
+        <translation><!-- Account Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director</masterLabel>
+        <translation><!-- Director --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Field Sales Manager</masterLabel>
+        <translation><!-- Field Sales Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Group Manager</masterLabel>
+        <translation><!-- Group Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Development Manager</masterLabel>
+        <translation><!-- Industrial Development Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Market Manager</masterLabel>
+        <translation><!-- Market Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>National Account Manager</masterLabel>
+        <translation><!-- National Account Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pricing Manager</masterLabel>
+        <translation><!-- Pricing Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Manager</masterLabel>
+        <translation><!-- Service Manager --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

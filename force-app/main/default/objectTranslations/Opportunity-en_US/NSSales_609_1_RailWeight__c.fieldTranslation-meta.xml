@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Rail Weight --></label>
+    <name>NSSales_609_1_RailWeight__c</name>
+    <picklistValues>
+        <masterLabel>100#</masterLabel>
+        <translation><!-- 100# --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>112#</masterLabel>
+        <translation><!-- 112# --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>115#</masterLabel>
+        <translation><!-- 115# --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>122#</masterLabel>
+        <translation><!-- 122# --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>131#</masterLabel>
+        <translation><!-- 131# --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>132#</masterLabel>
+        <translation><!-- 132# --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>136#</masterLabel>
+        <translation><!-- 136# --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>140#</masterLabel>
+        <translation><!-- 140# --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>90#</masterLabel>
+        <translation><!-- 90# --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

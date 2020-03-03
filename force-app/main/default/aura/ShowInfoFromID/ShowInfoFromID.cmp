@@ -1,0 +1,176 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" controller="NSSales_OpportunityRecordTypeConvertion">
+    <aura:attribute name="newOpportunity" type="Opportunity" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <div aura:id="divContainer" id="divContainer" class="slds-box slds-theme_default">
+        
+        <div class="slds-page-header" role="banner">
+            <h2 class="title slds-text-heading--medium">Converted ID Opportunity Information</h2>
+        </div><br/><br/>
+        <div class="slds-grid slds-wrap slds-grid--pull-padded slads-hide slds-p-around--medium">
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    ID Opportunity Owner : {!v.newOpportunity.NSSales_Owner_Name__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Annual System Revenue : {!v.newOpportunity.NSSales_Annual_System_Revenue__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Date of State Lead : {!v.newOpportunity.Date_of_State_Lead__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Date Reported : {!v.newOpportunity.NSSales_Date_Reported__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Facility Type : {!v.newOpportunity.NS_Facility_Type__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    High Priority : {!v.newOpportunity.NSSales_High_Priority__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Industry Investment : {!v.newOpportunity.NS_Industry_Investment__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Incentive Per Car : {!v.newOpportunity.Incentive_Per_Car__c}</div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Initial Contact Date : {!v.newOpportunity.Initial_Contact_Date__c}</div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Marketing Involved : {!v.newOpportunity.NSSales_Marketing_Involved__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Maximum Building Size (Sq Ft) : {!v.newOpportunity.Maximum_Building_Size_sq_ft__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Maximum Daily Truck Volume : {!v.newOpportunity.Maximum_Daily_Truck_Volume__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Maximum Investment : {!v.newOpportunity.Maximum_Investment__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Maximum Jobs : {!v.newOpportunity.Maximum_Jobs__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Maximum Power Requirement (MW) : {!v.newOpportunity.Maximum_Power_Requirements_MW__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Maximum Site Size (Acres) : {!v.newOpportunity.Maximum_Site_Size_Acres__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Maximum Weekly Rail Volume : {!v.newOpportunity.Maximum_Weekly_Rail_Volume__c}</div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    
+                    Minimum Building Clear Height (ft) : {!v.newOpportunity.Building_Clear_Height_ft__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Minimum Building Size (Sq Ft) : {!v.newOpportunity.Minimum_Building_Size_Sq_Ft__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Minimum Daily Truck Volume : {!v.newOpportunity.Minimum_Daily_Truck_Volume__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Minimum Investment : {!v.newOpportunity.Minimum_Investment__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Minimum Jobs : {!v.newOpportunity.Minimum_Jobs__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Minimum Power Requirement (MW) : {!v.newOpportunity.Minimum_Power_Requirement_MW__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Minimum Site Size (Acres) : {!v.newOpportunity.Minimum_Site_Size_Acres__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Minimum Weekly Rail Volume : {!v.newOpportunity.Minimum_Weekly_Rail_Volume__c}</div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    New Employees : {!v.newOpportunity.NSSales_New_Employees__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    New/Exp : {!v.newOpportunity.NSSales_New_Exp__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Project Name : {!v.newOpportunity.Project_Name__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    SAM : {!v.newOpportunity.NSSales_SAM_User_Name__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Site Selection Company : {!v.newOpportunity.Site_Selection_Company__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    System Cars : {!v.newOpportunity.NSSales_System_Cars__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Traffic Beginning : {!v.newOpportunity.NSSales_Traffic_Beginning__c}
+                </div>
+            </div>
+            <div class="slds-form-element slds-p-horizontal--medium slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                <div class="slds-form-element__control">
+                    Type of Project : {!v.newOpportunity.Type_of_Project__c}
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</aura:component>

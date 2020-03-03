@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_restrictionOnUserinfochange</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(NSSales_Non_Connect_NS_User__c) ||
+ISCHANGED(NSSales_Internal_User__c)</errorConditionFormula>
+    <errorMessage>You cannot edit the name of an existing Internal Campaign Member. Please create a new Internal Campaign Member.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Minor_Commodity__c</fullName>
+    <externalId>false</externalId>
+    <label>Minor Commodity</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>NS_Major_Commodity__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Null</fullName>
+                <default>false</default>
+                <label>Null</label>
+            </value>
+            <value>
+                <fullName>Aggregates</fullName>
+                <default>false</default>
+                <label>Aggregates</label>
+            </value>
+            <value>
+                <fullName>Agrifuels</fullName>
+                <default>false</default>
+                <label>Agrifuels</label>
+            </value>
+            <value>
+                <fullName>Aluminum Products</fullName>
+                <default>false</default>
+                <label>Aluminum Products</label>
+            </value>
+            <value>
+                <fullName>Beverages/Cons Prds</fullName>
+                <default>false</default>
+                <label>Beverages/Cons Prds</label>
+            </value>
+            <value>
+                <fullName>Canned Goods</fullName>
+                <default>false</default>
+                <label>Canned Goods</label>
+            </value>
+            <value>
+                <fullName>Cement</fullName>
+                <default>false</default>
+                <label>Cement</label>
+            </value>
+            <value>
+                <fullName>Coil</fullName>
+                <default>false</default>
+                <label>Coil</label>
+            </value>
+            <value>
+                <fullName>Corn &amp; Other Grains</fullName>
+                <default>false</default>
+                <label>Corn &amp; Other Grains</label>
+            </value>
+            <value>
+                <fullName>Crude Oil</fullName>
+                <default>false</default>
+                <label>Crude Oil</label>
+            </value>
+            <value>
+                <fullName>Feed &amp; Feed Prds</fullName>
+                <default>false</default>
+                <label>Feed &amp; Feed Prds</label>
+            </value>
+            <value>
+                <fullName>Fertilizers</fullName>
+                <default>false</default>
+                <label>Fertilizers</label>
+            </value>
+            <value>
+                <fullName>Flour</fullName>
+                <default>false</default>
+                <label>Flour</label>
+            </value>
+            <value>
+                <fullName>Food Oils</fullName>
+                <default>false</default>
+                <label>Food Oils</label>
+            </value>
+            <value>
+                <fullName>Food Products</fullName>
+                <default>false</default>
+                <label>Food Products</label>
+            </value>
+            <value>
+                <fullName>Graphic Paper</fullName>
+                <default>false</default>
+                <label>Graphic Paper</label>
+            </value>
+            <value>
+                <fullName>Inorganic Chemicals</fullName>
+                <default>false</default>
+                <label>Inorganic Chemicals</label>
+            </value>
+            <value>
+                <fullName>Iron &amp; Steel</fullName>
+                <default>false</default>
+                <label>Iron &amp; Steel</label>
+            </value>
+            <value>
+                <fullName>Kaolin</fullName>
+                <default>false</default>
+                <label>Kaolin</label>
+            </value>
+            <value>
+                <fullName>Lumber &amp; Wood</fullName>
+                <default>false</default>
+                <label>Lumber &amp; Wood</label>
+            </value>
+            <value>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+                <label>Machinery</label>
+            </value>
+            <value>
+                <fullName>Military/Misc Trans</fullName>
+                <default>false</default>
+                <label>Military/Misc Trans</label>
+            </value>
+            <value>
+                <fullName>Misc. Construction</fullName>
+                <default>false</default>
+                <label>Misc. Construction</label>
+            </value>
+            <value>
+                <fullName>Ngls</fullName>
+                <default>false</default>
+                <label>Ngls</label>
+            </value>
+            <value>
+                <fullName>Organic Chemicals</fullName>
+                <default>false</default>
+                <label>Organic Chemicals</label>
+            </value>
+            <value>
+                <fullName>Plastics</fullName>
+                <default>false</default>
+                <label>Plastics</label>
+            </value>
+            <value>
+                <fullName>Petroleum Products</fullName>
+                <default>false</default>
+                <label>Petroleum Products</label>
+            </value>
+            <value>
+                <fullName>Pulp</fullName>
+                <default>false</default>
+                <label>Pulp</label>
+            </value>
+            <value>
+                <fullName>Pulpboard</fullName>
+                <default>false</default>
+                <label>Pulpboard</label>
+            </value>
+            <value>
+                <fullName>Sand - Proppants</fullName>
+                <default>false</default>
+                <label>Sand - Proppants</label>
+            </value>
+            <value>
+                <fullName>Scrap Metal</fullName>
+                <default>false</default>
+                <label>Scrap Metal</label>
+            </value>
+            <value>
+                <fullName>Solid Waste And C&amp;D</fullName>
+                <default>false</default>
+                <label>Solid Waste And C&amp;D</label>
+            </value>
+            <value>
+                <fullName>Soybeans</fullName>
+                <default>false</default>
+                <label>Soybeans</label>
+            </value>
+            <value>
+                <fullName>Sweeteners</fullName>
+                <default>false</default>
+                <label>Sweeteners</label>
+            </value>
+            <value>
+                <fullName>Wheat</fullName>
+                <default>false</default>
+                <label>Wheat</label>
+            </value>
+            <value>
+                <fullName>Wood Chips</fullName>
+                <default>false</default>
+                <label>Wood Chips</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>AgFP</controllingFieldValue>
+            <valueName>Agrifuels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgFP</controllingFieldValue>
+            <valueName>Beverages/Cons Prds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgFP</controllingFieldValue>
+            <valueName>Canned Goods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgFP</controllingFieldValue>
+            <valueName>Corn &amp; Other Grains</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgFP</controllingFieldValue>
+            <valueName>Feed &amp; Feed Prds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgFP</controllingFieldValue>
+            <valueName>Fertilizers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgFP</controllingFieldValue>
+            <valueName>Flour</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgFP</controllingFieldValue>
+            <valueName>Food Oils</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgFP</controllingFieldValue>
+            <valueName>Food Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgFP</controllingFieldValue>
+            <valueName>Graphic Paper</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgFP</controllingFieldValue>
+            <controllingFieldValue>MetCon</controllingFieldValue>
+            <valueName>Kaolin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgFP</controllingFieldValue>
+            <valueName>Lumber &amp; Wood</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgFP</controllingFieldValue>
+            <controllingFieldValue>Chem</controllingFieldValue>
+            <valueName>Organic Chemicals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgFP</controllingFieldValue>
+            <valueName>Pulp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgFP</controllingFieldValue>
+            <valueName>Pulpboard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgFP</controllingFieldValue>
+            <valueName>Soybeans</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgFP</controllingFieldValue>
+            <valueName>Sweeteners</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgFP</controllingFieldValue>
+            <valueName>Wheat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgFP</controllingFieldValue>
+            <valueName>Wood Chips</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chem</controllingFieldValue>
+            <valueName>Crude Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chem</controllingFieldValue>
+            <valueName>Inorganic Chemicals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chem</controllingFieldValue>
+            <valueName>Ngls</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chem</controllingFieldValue>
+            <valueName>Plastics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chem</controllingFieldValue>
+            <valueName>Petroleum Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chem</controllingFieldValue>
+            <valueName>Solid Waste And C&amp;D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MetCon</controllingFieldValue>
+            <valueName>Aggregates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MetCon</controllingFieldValue>
+            <valueName>Aluminum Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MetCon</controllingFieldValue>
+            <valueName>Cement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MetCon</controllingFieldValue>
+            <valueName>Coil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MetCon</controllingFieldValue>
+            <valueName>Iron &amp; Steel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MetCon</controllingFieldValue>
+            <valueName>Machinery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MetCon</controllingFieldValue>
+            <valueName>Military/Misc Trans</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MetCon</controllingFieldValue>
+            <valueName>Misc. Construction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MetCon</controllingFieldValue>
+            <valueName>Sand - Proppants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MetCon</controllingFieldValue>
+            <valueName>Scrap Metal</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

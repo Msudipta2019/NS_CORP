@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Division__c</fullName>
+    <externalId>false</externalId>
+    <label>Division</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alabama</fullName>
+                <default>false</default>
+                <label>Alabama</label>
+            </value>
+            <value>
+                <fullName>Dearborn</fullName>
+                <default>false</default>
+                <label>Dearborn</label>
+            </value>
+            <value>
+                <fullName>Detroit CSAO</fullName>
+                <default>false</default>
+                <label>Detroit CSAO</label>
+            </value>
+            <value>
+                <fullName>Georgia</fullName>
+                <default>false</default>
+                <label>Georgia</label>
+            </value>
+            <value>
+                <fullName>Harrisburg</fullName>
+                <default>false</default>
+                <label>Harrisburg</label>
+            </value>
+            <value>
+                <fullName>Illinois</fullName>
+                <default>false</default>
+                <label>Illinois</label>
+            </value>
+            <value>
+                <fullName>Lake</fullName>
+                <default>false</default>
+                <label>Lake</label>
+            </value>
+            <value>
+                <fullName>North Jersey CSAO</fullName>
+                <default>false</default>
+                <label>North Jersey CSAO</label>
+            </value>
+            <value>
+                <fullName>NPBL</fullName>
+                <default>false</default>
+                <label>NPBL</label>
+            </value>
+            <value>
+                <fullName>Piedmont</fullName>
+                <default>false</default>
+                <label>Piedmont</label>
+            </value>
+            <value>
+                <fullName>Pittsburgh</fullName>
+                <default>false</default>
+                <label>Pittsburgh</label>
+            </value>
+            <value>
+                <fullName>Pocahontas</fullName>
+                <default>false</default>
+                <label>Pocahontas</label>
+            </value>
+            <value>
+                <fullName>South Jersey CSAO</fullName>
+                <default>false</default>
+                <label>South Jersey CSAO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

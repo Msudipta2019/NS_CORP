@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>NS_CustomerAccnt__c</fullName>
+    <description>Account Name of Account in which another Account is calling on behalf of OR in which Online Account creation has been initiated but the Account has not yet been on-boarded to Salesforce</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Account Name for which Contact should be associated to when the Account becomes available in Salesforce.</inlineHelpText>
+    <label>Customer Account</label>
+    <length>50</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

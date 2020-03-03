@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_CannotCloseEmailtoCase</fullName>
+    <active>true</active>
+    <description>This Validation Rule prevents users from updating the Status of an Email-to-Case to Closed. The user should either update the Status to Cancelled with the appropriate Status Reason, or change the Interaction Reason &amp; Category on the Case prior to closing.</description>
+    <errorConditionFormula>(RecordType.Name = &#39;Email-to-Case&#39;) &amp;&amp; ISPICKVAL(Status, &#39;NS_Closed&#39;)</errorConditionFormula>
+    <errorDisplayField>NS_InteractionCategory__c</errorDisplayField>
+    <errorMessage>Please populate Interaction Category &amp; Interaction Reason prior to closing the Case, or update the Status to Cancelled.</errorMessage>
+</ValidationRule>

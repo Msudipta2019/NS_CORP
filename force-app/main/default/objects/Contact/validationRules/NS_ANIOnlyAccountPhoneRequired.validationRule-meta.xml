@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>NS_ANIOnlyAccountPhoneRequired</fullName>
+    <active>true</active>
+    <description>Requires both Account name and Work Phone to save the ANI ONLY Record.</description>
+    <errorConditionFormula>IF( RecordType.DeveloperName =&#39;ANI_ONLY&#39; , OR(ISBLANK( AccountId ) , ISBLANK( Phone )),FALSE )</errorConditionFormula>
+    <errorMessage>Please enter Account Name and Work Phone.</errorMessage>
+</ValidationRule>

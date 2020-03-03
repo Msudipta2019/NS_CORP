@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_ValidationOnContextUser</fullName>
+    <active>true</active>
+    <description>Restrict Users from assigning a case to Context user</description>
+    <errorConditionFormula>Owner:User.NS_Context_User__c=True||
+(Owner:User.FirstName=&#39;Automated&#39; &amp;&amp;
+Owner:User.LastName=&#39;Process&#39;)</errorConditionFormula>
+    <errorMessage>Tasks can not be assigned to Context users</errorMessage>
+</ValidationRule>

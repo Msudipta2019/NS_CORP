@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_DispatchedItemDestination__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>As per phase 1 enhancement, this should be a look up to Operation Station. Same field exists as a text area. Creating this field since we can&#39;t change the field type for the existing field.</description>
+    <externalId>false</externalId>
+    <label>Destination</label>
+    <referenceTo>NS_ServiceStations__c</referenceTo>
+    <relationshipLabel>Cases (Operating Station)</relationshipLabel>
+    <relationshipName>Cases4</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

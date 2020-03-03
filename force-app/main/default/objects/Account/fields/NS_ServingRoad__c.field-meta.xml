@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_ServingRoad__c</fullName>
+    <description>For Service account, 
+    service - only account would be populated with NS; 
+    service - offline account would be populated with Class Code field value left token string of first dash, &quot;-&quot;, sign.
+For non Service account, it would be of blank string.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+ISPICKVAL(NS_ServiceAccountType__c, &quot;Service - Online&quot;), 
+&quot;NS&quot;, 
+LEFT(NS_ClassCode__c,Find(&quot;-&quot;, NS_ClassCode__c)-1))</formula>
+    <label>Serving Road</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_RequiredFieldsSpcTrainSaveCase</fullName>
+    <active>false</active>
+    <description>This Validation Rule informs users of the blank fields they must complete prior to updating a Special Train Case to Closed Status.</description>
+    <errorConditionFormula>AND(ISPICKVAL( NS_InteractionReason__c ,&#39;Expedite/Special Train&#39;), 
+ISPICKVAL( NS_Type__c ,&#39;Special Train&#39;),
+NS_Created_using_Quick_Case__c &lt;&gt; True, 
+
+OR(ISBLANK( NS_ItemdispatchedOrigin__c ),
+ISBLANK(NS_RailcarQuantity__c)))</errorConditionFormula>
+    <errorMessage>Please complete Origin and Railcar Quantity prior to saving the Case.</errorMessage>
+</ValidationRule>

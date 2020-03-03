@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_ClosedCaseRequiredFieldsDimentionalLo</fullName>
+    <active>true</active>
+    <description>This Validation Rule informs users of the blank fields they must complete prior to updating a  Dimensional/Locomotive Case to Closed Status.</description>
+    <errorConditionFormula>AND(ISPICKVAL( NS_InteractionReason__c ,&#39;Dimensional/Locomotive&#39;),
+ISPICKVAL( NS_Type__c ,&#39;Live-Loads&#39;),
+ISPICKVAL(Status, &quot;NS_Closed&quot;),
+NS_Created_using_Quick_Case__c &lt;&gt; True,
+ISBLANK( NS_LoadIDNumber__c))</errorConditionFormula>
+    <errorDisplayField>NS_LoadIDNumber__c</errorDisplayField>
+    <errorMessage>Please complete Load ID prior to closing the Case.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_StatusIndicator__c</fullName>
+    <description>This is a visual indicator for new cases and displays blue if case age less than 3 hours,displays yellow if case age between 3 &amp;5 hours and red if case age greater than 5 hours.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+OR(
+AND(
+TEXT(Status)=&#39;NS_New&#39;,
+OR(
+AND(
+Owner:Queue.QueueName=&#39;Loading &amp; Securement Solutions (LSS)&#39;,
+NS_CaseAgeInHours__c&gt;=120, NS_CaseAgeInHours__c&lt;192
+),
+AND(
+NS_CaseAgeInHours__c&gt;=3,NS_CaseAgeInHours__c&lt;5,
+OR(
+NS_CaseBusinessUnit__c=&#39;OSS&#39;,
+NS_CaseBusinessUnit__c=&#39;Unit Train&#39;
+)
+),
+AND(
+NS_CaseBusinessUnit__c=&#39;Automotive&#39;,
+NS_CaseAgeInHours__c&gt;=2,NS_CaseAgeInHours__c&lt;4
+),
+AND(
+NS_CaseBusinessUnit__c=&#39;Equipment Planning&#39;,
+NS_CaseAgeInHours__c&gt;=12,NS_CaseAgeInHours__c&lt;24
+)
+)
+),
+AND(
+ISBLANK(NS_AssignedTo__c),
+TEXT(Status)=&#39;NS_New&#39;,
+OR(
+AND(
+OR(
+Owner:Queue.DeveloperName=&#39;NS_Intermodal_Premium&#39;,
+Owner:Queue.DeveloperName=&#39;NS_Intermodal_TerminalSupport&#39;
+),
+(NS_CaseAgeInHours__c*60)&gt;30,(NS_CaseAgeInHours__c*60)&lt;=60
+),
+AND(
+(NS_CaseAgeInHours__c*60)&gt;45,(NS_CaseAgeInHours__c*60)&lt;=90,
+OR(
+Owner:Queue.DeveloperName=&#39;NS_IntermodalJBHunt&#39;,
+Owner:Queue.DeveloperName=&#39;NS_IntermodalTruckload&#39;
+)
+),
+AND(
+(NS_CaseAgeInHours__c*60)&gt;60,(NS_CaseAgeInHours__c*60)&lt;=120,
+OR(
+Owner:Queue.DeveloperName=&#39;NS_IntermodalDomestic&#39;,
+Owner:Queue.DeveloperName=&#39;NS_IntermodalInternational&#39;,
+Owner:Queue.DeveloperName=&#39;NS_IntermodalCustomerServiceManager&#39;
+)
+),
+AND(
+Owner:Queue.DeveloperName=&#39;NS_IntermodalCustomerService&#39;,
+(NS_CaseAgeInHours__c*60)&gt;90,(NS_CaseAgeInHours__c*60)&lt;=150
+),
+AND(
+Owner:Queue.DeveloperName=&#39;Intermodal_Customer_Feedback&#39;, 
+(NS_CaseAgeInHours__c*60)&gt;360,(NS_CaseAgeInHours__c*60)&lt;=720
+)
+)
+)
+),IMAGE(&quot;/resource/NS_Yellow&quot;,&#39;Yellow&#39;),
+IF(
+OR(
+AND(
+TEXT(Status)=&#39;NS_New&#39;,
+OR(
+AND(
+Owner:Queue.QueueName=&#39;Loading &amp; Securement Solutions (LSS)&#39;,
+NS_CaseAgeInHours__c&gt;=192
+),
+AND(
+NS_CaseAgeInHours__c&gt;=5,
+OR(
+NS_CaseBusinessUnit__c=&#39;OSS&#39;,
+NS_CaseBusinessUnit__c=&#39;Unit Train&#39;
+)
+),
+AND(
+NS_CaseBusinessUnit__c=&#39;Automotive&#39;,
+NS_CaseAgeInHours__c&gt;=4
+),
+AND(
+NS_CaseBusinessUnit__c=&#39;Equipment Planning&#39;,
+NS_CaseAgeInHours__c&gt;=24
+)
+)
+),
+AND(
+ISBLANK(NS_AssignedTo__c),
+TEXT(Status)=&#39;NS_New&#39;,
+OR(
+AND(
+
+OR(
+Owner:Queue.DeveloperName=&#39;NS_Intermodal_Premium&#39;,
+Owner:Queue.DeveloperName=&#39;NS_Intermodal_TerminalSupport&#39;
+)
+,
+(NS_CaseAgeInHours__c*60)&gt;60
+),
+AND(
+(NS_CaseAgeInHours__c*60)&gt;90,
+OR(
+Owner:Queue.DeveloperName=&#39;NS_IntermodalJBHunt&#39;,
+Owner:Queue.DeveloperName=&#39;NS_IntermodalTruckload&#39;
+)
+),
+AND(
+(NS_CaseAgeInHours__c*60)&gt;120,
+OR(
+Owner:Queue.DeveloperName=&#39;NS_IntermodalDomestic&#39;,
+Owner:Queue.DeveloperName=&#39;NS_IntermodalInternational&#39;,
+Owner:Queue.DeveloperName=&#39;NS_IntermodalCustomerServiceManager&#39;
+)
+),
+AND(
+Owner:Queue.DeveloperName=&#39;NS_IntermodalCustomerService&#39;,
+(NS_CaseAgeInHours__c*60)&gt;150
+),
+AND(
+Owner:Queue.DeveloperName=&#39;NS_CS_Feedback&#39;,
+(NS_CaseAgeInHours__c&gt;=24)
+),
+AND( 
+Owner:Queue.DeveloperName=&#39;Intermodal_Customer_Feedback&#39;,
+(NS_CaseAgeInHours__c*60)&gt;720 
+) 
+)
+)
+),IMAGE(&quot;/resource/NS_Red&quot;,&#39;Red&#39;),null
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Status Indicator</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

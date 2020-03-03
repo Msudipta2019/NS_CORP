@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Minor_Group_BU__c</fullName>
+    <description>Sales - field dependent on major group</description>
+    <externalId>false</externalId>
+    <label>Minor Group_BU</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>NS_Major_Group_BU__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Domestic</fullName>
+                <default>false</default>
+                <label>Domestic</label>
+            </value>
+            <value>
+                <fullName>International</fullName>
+                <default>false</default>
+                <label>International</label>
+            </value>
+            <value>
+                <fullName>Premium</fullName>
+                <default>false</default>
+                <label>Premium</label>
+            </value>
+            <value>
+                <fullName>Triple Crown</fullName>
+                <default>false</default>
+                <label>Triple Crown</label>
+            </value>
+            <value>
+                <fullName>Unassigned</fullName>
+                <default>false</default>
+                <label>Unassigned</label>
+            </value>
+            <value>
+                <fullName>Utility Coal</fullName>
+                <default>false</default>
+                <label>Utility Coal</label>
+            </value>
+            <value>
+                <fullName>Export Coal</fullName>
+                <default>false</default>
+                <label>Export Coal</label>
+            </value>
+            <value>
+                <fullName>Domestic Met Coal</fullName>
+                <default>false</default>
+                <label>Domestic Met Coal</label>
+            </value>
+            <value>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+                <label>Industrial</label>
+            </value>
+            <value>
+                <fullName>Other Non/Met</fullName>
+                <default>false</default>
+                <label>Other Non/Met</label>
+            </value>
+            <value>
+                <fullName>Agrifuels</fullName>
+                <default>false</default>
+                <label>Agrifuels</label>
+            </value>
+            <value>
+                <fullName>Corn &amp; Other Grains</fullName>
+                <default>false</default>
+                <label>Corn &amp; Other Grains</label>
+            </value>
+            <value>
+                <fullName>Feed &amp; Feed Prds</fullName>
+                <default>false</default>
+                <label>Feed &amp; Feed Prds</label>
+            </value>
+            <value>
+                <fullName>Fertilizers</fullName>
+                <default>false</default>
+                <label>Fertilizers</label>
+            </value>
+            <value>
+                <fullName>Flour</fullName>
+                <default>false</default>
+                <label>Flour</label>
+            </value>
+            <value>
+                <fullName>Food Oils</fullName>
+                <default>false</default>
+                <label>Food Oils</label>
+            </value>
+            <value>
+                <fullName>Food Products</fullName>
+                <default>false</default>
+                <label>Food Products</label>
+            </value>
+            <value>
+                <fullName>Soybeans</fullName>
+                <default>false</default>
+                <label>Soybeans</label>
+            </value>
+            <value>
+                <fullName>Sweeteners</fullName>
+                <default>false</default>
+                <label>Sweeteners</label>
+            </value>
+            <value>
+                <fullName>Wheat</fullName>
+                <default>false</default>
+                <label>Wheat</label>
+            </value>
+            <value>
+                <fullName>Beverages/Cons Prds</fullName>
+                <default>false</default>
+                <label>Beverages/Cons Prds</label>
+            </value>
+            <value>
+                <fullName>Canned Goods</fullName>
+                <default>false</default>
+                <label>Canned Goods</label>
+            </value>
+            <value>
+                <fullName>Graphic Paper</fullName>
+                <default>false</default>
+                <label>Graphic Paper</label>
+            </value>
+            <value>
+                <fullName>Lumber &amp; Wood</fullName>
+                <default>false</default>
+                <label>Lumber &amp; Wood</label>
+            </value>
+            <value>
+                <fullName>Pulp</fullName>
+                <default>false</default>
+                <label>Pulp</label>
+            </value>
+            <value>
+                <fullName>Pulpboard</fullName>
+                <default>false</default>
+                <label>Pulpboard</label>
+            </value>
+            <value>
+                <fullName>Wood Chips</fullName>
+                <default>false</default>
+                <label>Wood Chips</label>
+            </value>
+            <value>
+                <fullName>Crude Oil</fullName>
+                <default>false</default>
+                <label>Crude Oil</label>
+            </value>
+            <value>
+                <fullName>Inorganic Chemicals</fullName>
+                <default>false</default>
+                <label>Inorganic Chemicals</label>
+            </value>
+            <value>
+                <fullName>NGLs</fullName>
+                <default>false</default>
+                <label>NGLs</label>
+            </value>
+            <value>
+                <fullName>Organic Chemicals</fullName>
+                <default>false</default>
+                <label>Organic Chemicals</label>
+            </value>
+            <value>
+                <fullName>Petroleum Products</fullName>
+                <default>false</default>
+                <label>Petroleum Products</label>
+            </value>
+            <value>
+                <fullName>Plastics</fullName>
+                <default>false</default>
+                <label>Plastics</label>
+            </value>
+            <value>
+                <fullName>Sand - Proppants</fullName>
+                <default>false</default>
+                <label>Sand - Proppants</label>
+            </value>
+            <value>
+                <fullName>Solid Waste And C&amp;D</fullName>
+                <default>false</default>
+                <label>Solid Waste And C&amp;D</label>
+            </value>
+            <value>
+                <fullName>Aluminum Ore</fullName>
+                <default>false</default>
+                <label>Aluminum Ore</label>
+            </value>
+            <value>
+                <fullName>Aluminum Products</fullName>
+                <default>false</default>
+                <label>Aluminum Products</label>
+            </value>
+            <value>
+                <fullName>Coil</fullName>
+                <default>false</default>
+                <label>Coil</label>
+            </value>
+            <value>
+                <fullName>Iron &amp; Steel</fullName>
+                <default>false</default>
+                <label>Iron &amp; Steel</label>
+            </value>
+            <value>
+                <fullName>Kaolin</fullName>
+                <default>false</default>
+                <label>Kaolin</label>
+            </value>
+            <value>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+                <label>Machinery</label>
+            </value>
+            <value>
+                <fullName>Military/Misc. Trans</fullName>
+                <default>false</default>
+                <label>Military/Misc. Trans</label>
+            </value>
+            <value>
+                <fullName>Scrap Metal</fullName>
+                <default>false</default>
+                <label>Scrap Metal</label>
+            </value>
+            <value>
+                <fullName>Aggregates</fullName>
+                <default>false</default>
+                <label>Aggregates</label>
+            </value>
+            <value>
+                <fullName>Cement</fullName>
+                <default>false</default>
+                <label>Cement</label>
+            </value>
+            <value>
+                <fullName>Misc. Construction</fullName>
+                <default>false</default>
+                <label>Misc. Construction</label>
+            </value>
+            <value>
+                <fullName>Vehicle Parts</fullName>
+                <default>false</default>
+                <label>Vehicle Parts</label>
+            </value>
+            <value>
+                <fullName>Vehicles - Artbilev</fullName>
+                <default>false</default>
+                <label>Vehicles - Artbilev</label>
+            </value>
+            <value>
+                <fullName>Vehicles - Bilevel</fullName>
+                <default>false</default>
+                <label>Vehicles - Bilevel</label>
+            </value>
+            <value>
+                <fullName>Vehicles - Trilevel</fullName>
+                <default>false</default>
+                <label>Vehicles - Trilevel</label>
+            </value>
+            <value>
+                <fullName>Aggregates/Stone (2A0)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Aggregates/Stone (2A0)</label>
+            </value>
+            <value>
+                <fullName>Agrifuels (1D0)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Agrifuels (1D0)</label>
+            </value>
+            <value>
+                <fullName>Aluminum Products (220)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Aluminum Products (220)</label>
+            </value>
+            <value>
+                <fullName>Beverages/Consumer Products (150)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Beverages/Consumer Products (150)</label>
+            </value>
+            <value>
+                <fullName>Canned Goods (160)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Canned Goods (160)</label>
+            </value>
+            <value>
+                <fullName>Cement (250)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cement (250)</label>
+            </value>
+            <value>
+                <fullName>Coil (290)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Coil (290)</label>
+            </value>
+            <value>
+                <fullName>Corn &amp; Other Grains (1A0)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Corn &amp; Other Grains (1A0)</label>
+            </value>
+            <value>
+                <fullName>Crude Oil (4B0)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Crude Oil (4B0)</label>
+            </value>
+            <value>
+                <fullName>Domestic Met</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Domestic Met</label>
+            </value>
+            <value>
+                <fullName>Environmental Services (4D0)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Environmental Services (4D0)</label>
+            </value>
+            <value>
+                <fullName>Export</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Export</label>
+            </value>
+            <value>
+                <fullName>Feed &amp; Feed Products (110)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Feed &amp; Feed Products (110)</label>
+            </value>
+            <value>
+                <fullName>Fertilizers (1C0)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fertilizers (1C0)</label>
+            </value>
+            <value>
+                <fullName>Flour (140)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Flour (140)</label>
+            </value>
+            <value>
+                <fullName>Food Oils (130)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Food Oils (130)</label>
+            </value>
+            <value>
+                <fullName>Food Products (120)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Food Products (120)</label>
+            </value>
+            <value>
+                <fullName>Graphic Paper (350)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Graphic Paper (350)</label>
+            </value>
+            <value>
+                <fullName>Inorganic Chemicals (4F0)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Inorganic Chemicals (4F0)</label>
+            </value>
+            <value>
+                <fullName>International (705)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>International (705)</label>
+            </value>
+            <value>
+                <fullName>Iron &amp; Steel (210)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Iron &amp; Steel (210)</label>
+            </value>
+            <value>
+                <fullName>Iron Ore (860)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Iron Ore (860)</label>
+            </value>
+            <value>
+                <fullName>Kaolin (380)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Kaolin (380)</label>
+            </value>
+            <value>
+                <fullName>Lumber &amp; Wood (370)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lumber &amp; Wood (370)</label>
+            </value>
+            <value>
+                <fullName>Machinery (280)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Machinery (280)</label>
+            </value>
+            <value>
+                <fullName>Military/Miscellaneous Transportation (1B0)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Military/Miscellaneous Transportation (1B0)</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Construction (270)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Miscellaneous Construction (270)</label>
+            </value>
+            <value>
+                <fullName>NGLs (4C0)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>NGLs (4C0)</label>
+            </value>
+            <value>
+                <fullName>Organic Chemicals (4A0)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Organic Chemicals (4A0)</label>
+            </value>
+            <value>
+                <fullName>Other Non/Met (890)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other Non/Met (890)</label>
+            </value>
+            <value>
+                <fullName>Petroleum Products (4E0)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Petroleum Products (4E0)</label>
+            </value>
+            <value>
+                <fullName>Plastics (410)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Plastics (410)</label>
+            </value>
+            <value>
+                <fullName>Pulp (330)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pulp (330)</label>
+            </value>
+            <value>
+                <fullName>Pulpboard (320)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pulpboard (320)</label>
+            </value>
+            <value>
+                <fullName>Sand-Proppants (2B0)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sand-Proppants (2B0)</label>
+            </value>
+            <value>
+                <fullName>Scrap Metal (230)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Scrap Metal (230)</label>
+            </value>
+            <value>
+                <fullName>Solid Waste and C&amp;D (4G0)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Solid Waste and C&amp;D (4G0)</label>
+            </value>
+            <value>
+                <fullName>Soybeans (100)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Soybeans (100)</label>
+            </value>
+            <value>
+                <fullName>Sweeteners (170)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sweeteners (170)</label>
+            </value>
+            <value>
+                <fullName>Triple Crown (720)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Triple Crown (720)</label>
+            </value>
+            <value>
+                <fullName>Unassigned (799)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Unassigned (799)</label>
+            </value>
+            <value>
+                <fullName>Utility (800)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Utility (800)</label>
+            </value>
+            <value>
+                <fullName>Vehicle Parts (620)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vehicle Parts (620)</label>
+            </value>
+            <value>
+                <fullName>Vehicles - Artbilev (630)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vehicles - Artbilev (630)</label>
+            </value>
+            <value>
+                <fullName>Vehicles - Bilevel (610)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vehicles - Bilevel (610)</label>
+            </value>
+            <value>
+                <fullName>Vehicles - Trilevel (600)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vehicles - Trilevel (600)</label>
+            </value>
+            <value>
+                <fullName>Wheat (180)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Wheat (180)</label>
+            </value>
+            <value>
+                <fullName>Wood Chips (300)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Wood Chips (300)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>Domestic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>International</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>Premium</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>Triple Crown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Intermodal</controllingFieldValue>
+            <valueName>Unassigned</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Coal</controllingFieldValue>
+            <valueName>Utility Coal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Coal</controllingFieldValue>
+            <valueName>Export Coal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Coal</controllingFieldValue>
+            <valueName>Domestic Met Coal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Coal</controllingFieldValue>
+            <valueName>Industrial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Coal</controllingFieldValue>
+            <valueName>Other Non/Met</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Agriculture, Forest and Consumer Products</controllingFieldValue>
+            <valueName>Agrifuels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Agriculture, Forest and Consumer Products</controllingFieldValue>
+            <valueName>Corn &amp; Other Grains</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Agriculture, Forest and Consumer Products</controllingFieldValue>
+            <valueName>Feed &amp; Feed Prds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Agriculture, Forest and Consumer Products</controllingFieldValue>
+            <valueName>Fertilizers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Agriculture, Forest and Consumer Products</controllingFieldValue>
+            <valueName>Flour</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Agriculture, Forest and Consumer Products</controllingFieldValue>
+            <valueName>Food Oils</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Agriculture, Forest and Consumer Products</controllingFieldValue>
+            <valueName>Food Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Agriculture, Forest and Consumer Products</controllingFieldValue>
+            <valueName>Soybeans</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Agriculture, Forest and Consumer Products</controllingFieldValue>
+            <valueName>Sweeteners</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Agriculture, Forest and Consumer Products</controllingFieldValue>
+            <valueName>Wheat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Agriculture, Forest and Consumer Products</controllingFieldValue>
+            <valueName>Beverages/Cons Prds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Agriculture, Forest and Consumer Products</controllingFieldValue>
+            <valueName>Canned Goods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Agriculture, Forest and Consumer Products</controllingFieldValue>
+            <valueName>Graphic Paper</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Agriculture, Forest and Consumer Products</controllingFieldValue>
+            <valueName>Lumber &amp; Wood</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Agriculture, Forest and Consumer Products</controllingFieldValue>
+            <valueName>Pulp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Agriculture, Forest and Consumer Products</controllingFieldValue>
+            <valueName>Pulpboard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Agriculture, Forest and Consumer Products</controllingFieldValue>
+            <valueName>Wood Chips</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Crude Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Inorganic Chemicals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>NGLs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Organic Chemicals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Petroleum Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Plastics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Sand - Proppants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Solid Waste And C&amp;D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Metals &amp; Construction</controllingFieldValue>
+            <valueName>Aluminum Ore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Metals &amp; Construction</controllingFieldValue>
+            <valueName>Aluminum Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Metals &amp; Construction</controllingFieldValue>
+            <valueName>Coil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Metals &amp; Construction</controllingFieldValue>
+            <valueName>Iron &amp; Steel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Metals &amp; Construction</controllingFieldValue>
+            <valueName>Kaolin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Metals &amp; Construction</controllingFieldValue>
+            <valueName>Machinery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Metals &amp; Construction</controllingFieldValue>
+            <valueName>Military/Misc. Trans</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Metals &amp; Construction</controllingFieldValue>
+            <valueName>Scrap Metal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Metals &amp; Construction</controllingFieldValue>
+            <valueName>Aggregates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Metals &amp; Construction</controllingFieldValue>
+            <valueName>Cement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Metals &amp; Construction</controllingFieldValue>
+            <valueName>Misc. Construction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Vehicle Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Vehicles - Artbilev</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Vehicles - Bilevel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Development</controllingFieldValue>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Vehicles - Trilevel</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

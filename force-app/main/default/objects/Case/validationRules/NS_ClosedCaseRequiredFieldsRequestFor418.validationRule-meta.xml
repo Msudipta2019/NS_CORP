@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_ClosedCaseRequiredFieldsRequestFor418</fullName>
+    <active>false</active>
+    <description>This Validation Rule informs users of the blank fields they must complete prior to updating a Request for 418 Case to Closed Status.</description>
+    <errorConditionFormula>AND(ISPICKVAL(NS_InteractionReason__c,&#39;Request for 418&#39;) ,	ISPICKVAL(Status,&#39;NS_Closed&#39;) ,
+NS_Created_using_Quick_Case__c &lt;&gt; True,
+
+OR( ISBLANK( NS_Equipment__c )))</errorConditionFormula>
+    <errorDisplayField>NS_Equipment__c</errorDisplayField>
+    <errorMessage>Please complete the Equipment Number(s) prior to closing the Case.</errorMessage>
+</ValidationRule>

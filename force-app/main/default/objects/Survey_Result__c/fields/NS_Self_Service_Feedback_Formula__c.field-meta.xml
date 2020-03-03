@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Self_Service_Feedback_Formula__c</fullName>
+    <description>This field converts Self-Service feedback values to Positive, Negative or Neutral</description>
+    <externalId>false</externalId>
+    <formula>CASE( TEXT( NS_Self_Service_Tools_are_easy_to_use__c ),
+&quot;Strongly Disagree&quot;,&quot;Negative&quot;,
+&quot;Somewhat Disagree&quot;,&quot;Negative&quot;,
+&quot;Somewhat Agree&quot;,&quot;Positive&quot;,
+&quot;Strongly Agree&quot;,&quot;Positive&quot;,
+&quot;N/A&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Self-Service Feedback Formula</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

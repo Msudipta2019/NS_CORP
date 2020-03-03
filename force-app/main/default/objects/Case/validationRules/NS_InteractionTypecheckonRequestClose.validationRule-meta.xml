@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_InteractionTypecheckonRequestClose</fullName>
+    <active>true</active>
+    <description>Check the Interaction Type for request on closure</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(Status ,&quot;NS_Closed&quot;),
+RecordType.Name=&#39;NS Internal&#39;,
+CASE(NS_InteractionReason__c,
+&#39;Demurrage/Misc Bill/Freight Bill&#39;,1,
+&#39;Waybilling Issue&#39;,1,
+&#39;Inspection/Bad Order/Empty Rejects&#39;,1,
+&#39;Expedite/Special Train&#39;,1,
+&#39;Load issues&#39;,1,
+&#39;Delays&#39;,1,
+&#39;Freight Claims &amp; LSS&#39;,1,
+&#39;Systems Admin&#39;,1,
+&#39;RIT&#39;,1,
+&#39;Pipeline Management&#39;,1,
+&#39;Transportation&#39;,1,
+&#39;Refrigerated Equipment&#39;,1,
+&#39;Equipment Allocation&#39;,1,
+&#39;Local Service Inquiry&#39;,1,
+&#39;Dimensional/Locomotive&#39;,1,
+&#39;Tracing&#39;,1,
+&#39;Foreign Line Inquiry&#39;,1,
+0 ) = 1,
+ISBLANK(TEXT(NS_Type__c))
+)</errorConditionFormula>
+    <errorMessage>Please fill the  Interaction Type prior to closing the Case.</errorMessage>
+</ValidationRule>

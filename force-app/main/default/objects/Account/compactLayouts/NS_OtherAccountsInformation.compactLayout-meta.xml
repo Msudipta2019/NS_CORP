@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_OtherAccountsInformation</fullName>
+    <fields>Name</fields>
+    <fields>RecordTypeId</fields>
+    <fields>Phone</fields>
+    <fields>NS_Address__c</fields>
+    <label>Other Accounts Information</label>
+</CompactLayout>

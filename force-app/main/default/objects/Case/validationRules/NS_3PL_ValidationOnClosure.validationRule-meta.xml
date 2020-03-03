@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_3PL_ValidationOnClosure</fullName>
+    <active>true</active>
+    <description>If “Contacting on Behalf of” is required in order to close a case where 3PL is checked</description>
+    <errorConditionFormula>ISPICKVAL(Status,&#39;NS_Closed&#39;) &amp;&amp;
+ISCHANGED(Status) &amp;&amp;
+NOT(ISBLANK(NS_Logo_3PL_Account__c)) &amp;&amp;
+ISBLANK(NS_Contacting_on_Behalf_of__c)&amp;&amp;
+(NS_RecordTypeName__c !=&#39;3PL Tracing&#39;&amp;&amp;
+NS_RecordTypeName__c !=&#39;AccessNS/Inventory Management&#39;&amp;&amp;
+NS_RecordTypeName__c !=&#39;Cash Hold&#39;&amp;&amp;
+NS_RecordTypeName__c !=&#39;Dimensional/Locomotive&#39;&amp;&amp;
+NS_RecordTypeName__c !=&#39;Equipment Allocation&#39;&amp;&amp;
+NS_RecordTypeName__c !=&#39;Expedite/Special Train&#39;&amp;&amp;
+NS_RecordTypeName__c !=&#39;Holiday Polling&#39;&amp;&amp;
+NS_RecordTypeName__c !=&#39;Overload/Imbalance&#39;&amp;&amp;
+NS_RecordTypeName__c !=&#39;Pipeline Management&#39;&amp;&amp;
+NS_RecordTypeName__c !=&#39;Refrigerated Equipment&#39;&amp;&amp;
+NS_RecordTypeName__c !=&#39;TOP21&#39;&amp;&amp;
+NS_RecordTypeName__c !=&#39;Transportation&#39;
+)</errorConditionFormula>
+    <errorMessage>Please complete &quot;Contacting on Behalf of&quot; prior to closing the Case.</errorMessage>
+</ValidationRule>

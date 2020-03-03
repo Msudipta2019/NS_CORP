@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Domain</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Account Domains</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Must enter a Valid Domain Name, i.e. nscorp.com or gmail.com --></errorMessage>
+        <name>Check_Domain</name>
+    </validationRules>
+</CustomObjectTranslation>

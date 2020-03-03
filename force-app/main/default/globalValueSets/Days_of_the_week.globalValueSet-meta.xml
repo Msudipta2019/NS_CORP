@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>MON</fullName>
+        <default>false</default>
+        <label>MON</label>
+    </customValue>
+    <customValue>
+        <fullName>TUE</fullName>
+        <default>false</default>
+        <label>TUE</label>
+    </customValue>
+    <customValue>
+        <fullName>WED</fullName>
+        <default>false</default>
+        <label>WED</label>
+    </customValue>
+    <customValue>
+        <fullName>THU</fullName>
+        <default>false</default>
+        <label>THU</label>
+    </customValue>
+    <customValue>
+        <fullName>FRI</fullName>
+        <default>false</default>
+        <label>FRI</label>
+    </customValue>
+    <customValue>
+        <fullName>SAT</fullName>
+        <default>false</default>
+        <label>SAT</label>
+    </customValue>
+    <customValue>
+        <fullName>SUN</fullName>
+        <default>false</default>
+        <label>SUN</label>
+    </customValue>
+    <description>days of the week 3 letter abbreviation</description>
+    <masterLabel>Days of the week</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

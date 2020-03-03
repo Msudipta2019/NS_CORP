@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Update_External__c</fullName>
+    <description>This field contains cumulative external comments (from new_external_Comment__c field). Is populated via workflow. Should be read only on the page layouts. Created as per Case Update (External) Field For TRAX</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is for external facing customer updates for the Trax application. You can write to this field in the “Case Update (External)” option in the Activity &amp; Chatter Panel. Click &quot;More&quot; if the option is not visible.</inlineHelpText>
+    <label>Case Update  (External)</label>
+    <length>100000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

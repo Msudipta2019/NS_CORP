@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_vrIDRecmmndtnNotEditable_609_1</fullName>
+    <active>true</active>
+    <description>validation rule to prevent Field Sales user from editing the &#39;Industrial Recommendation&#39; field after the opportunity is closed.</description>
+    <errorConditionFormula>AND(
+OR(ISPICKVAL(StageName, &quot;Closed Won&quot;), ISPICKVAL(StageName, &quot;Cancelled&quot;)),
+RecordType.DeveloperName=&#39;NSSales_609_1&#39;,
+$Profile.Name = &#39;NS Sales Manager&#39;,
+ISCHANGED(NSSales_609_1_IndustrialDevRecommendatio__c)
+)</errorConditionFormula>
+    <errorDisplayField>NSSales_609_1_IndustrialDevRecommendatio__c</errorDisplayField>
+    <errorMessage>You cannot edit this field.</errorMessage>
+</ValidationRule>

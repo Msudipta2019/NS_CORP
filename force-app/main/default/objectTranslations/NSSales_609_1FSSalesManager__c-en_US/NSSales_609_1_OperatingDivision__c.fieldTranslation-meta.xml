@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Operating Division --></label>
+    <name>NSSales_609_1_OperatingDivision__c</name>
+    <picklistValues>
+        <masterLabel>ALABAMA</masterLabel>
+        <translation><!-- ALABAMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DEARBORN</masterLabel>
+        <translation><!-- DEARBORN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GEORGIA</masterLabel>
+        <translation><!-- GEORGIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HARRISBURG</masterLabel>
+        <translation><!-- HARRISBURG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ILLINOIS</masterLabel>
+        <translation><!-- ILLINOIS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LAKE</masterLabel>
+        <translation><!-- LAKE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PIEDMONT</masterLabel>
+        <translation><!-- PIEDMONT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PITTSBURGH</masterLabel>
+        <translation><!-- PITTSBURGH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POCAHONTAS</masterLabel>
+        <translation><!-- POCAHONTAS --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

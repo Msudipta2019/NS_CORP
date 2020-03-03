@@ -1,0 +1,42 @@
+<aura:component  controller="NSSales_ShowExternalDataController" implements="flexipage:availableForRecordHome,force:hasRecordId,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:lightningQuickAction" access="global">
+    <aura:attribute name="activeSections" type="List" default="['','']" />
+    <aura:attribute name="activeSectionsMessage" type="String" default="" />
+    <aura:attribute name="isDVisible" type="Boolean" default="false" />
+    <aura:attribute name="recordId" type="Id"/>
+    <aura:attribute name="isVisibleIP" type="Boolean" default="false" />
+    <aura:attribute name="isVisibleIM" type="Boolean" default="false" />
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+     <aura:if  isTrue="{!v.isVisibleIP}" >
+    <lightning:accordion
+                         allowMultipleSectionsOpen="true"
+                         onsectiontoggle="{! c.handleSectionToggle }"
+                         activeSectionName="{! v.activeSections }"
+                         >
+         
+           
+        <lightning:accordionSection name="A" label="Rate Request" class="accordionSectionColor" >
+            <aura:set attribute="body">
+                <c:NSSales_RateReq accountId="{!v.recordId}" />
+            </aura:set>
+        </lightning:accordionSection>
+        
+	        <lightning:accordionSection name="B" label="Authority Renewal" class="accordionSectionColor">
+            <c:NSSales_AuthorityRenewal accountId="{!v.recordId}" />   
+        </lightning:accordionSection> 
+         </lightning:accordion>
+    </aura:if>
+        
+        <aura:if  isTrue="{!v.isVisibleIM}" >
+    <lightning:accordion
+                         allowMultipleSectionsOpen="true"
+                         onsectiontoggle="{! c.handleSectionToggle }"
+                         activeSectionName="{! v.activeSections }"
+                         >        
+         <lightning:accordionSection name="B" label="Bids" class="accordionSectionColor">
+            <c:NSSales_AuthorityRenewal accountId="{!v.recordId}" />   
+        </lightning:accordionSection> 
+        
+    </lightning:accordion>
+    </aura:if>
+    
+</aura:component>

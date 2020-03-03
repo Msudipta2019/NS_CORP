@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Validation_Rule</fullName>
+    <active>true</active>
+    <description>Requires one of the following (phone or email)  to be populated before saving a Lead record.</description>
+    <errorConditionFormula>AND(ISBLANK( Email ) , ISBLANK( Phone ))</errorConditionFormula>
+    <errorMessage>Please enter either email or phone number</errorMessage>
+</ValidationRule>

@@ -1,0 +1,19 @@
+.THIS .commentbox{
+    padding-left : 30px;
+    padding-top :5px;
+    padding-bottom :5px;
+}
+.THIS .commentbox_cmt{
+    padding-left : 45px;
+    padding-top :1px;
+    padding-right :25px;
+}
+.THIS .commentbox_date{
+    padding-left : 45px;
+    padding-top :1px;
+    color : rgb(84, 105, 141) !important;
+}
+.THIS.backcol{
+    /*background-color: rgb(243, 242, 242) !important;*/
+    /*height : 500px;*/
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- notification event location&apos;s Norfolk level 10 account number --></help>
+    <label><!-- Location Account Number --></label>
+    <name>Location_Account_Number__c</name>
+</CustomFieldTranslation>

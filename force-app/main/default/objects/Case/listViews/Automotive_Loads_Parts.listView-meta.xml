@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Automotive_Loads_Parts</fullName>
+    <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+    <columns>NS_Unread_Email_Indicator__c</columns>
+    <columns>NS_StatusIndicator__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NAME</columns>
+    <columns>NS_InteractionReason__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>NS_AssignedTo__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CASES.LAST_UPDATE</columns>
+    <columns>CASES.ORIGIN</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>NS_Closed,Closed,NS_Cancelled,Cancelled</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>equals</operation>
+        <value>Automotive - Loads</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>equals</operation>
+        <value>Automotive - Parts</value>
+    </filters>
+    <label>Automotive – Loads &amp; Parts</label>
+    <sharedTo>
+        <group>All_Queue_Access</group>
+        <role>Automotive_Leadership</role>
+        <role>Automotive_Manager</role>
+        <role>NS_Automotive</role>
+    </sharedTo>
+</ListView>

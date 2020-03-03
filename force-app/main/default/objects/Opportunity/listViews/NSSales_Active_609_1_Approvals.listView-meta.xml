@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_Active_609_1_Approvals</fullName>
+    <booleanFilter>((1 AND 2) OR (3 AND 4) ) AND 5 AND 6</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>NSSales_609_1_status__c</columns>
+    <columns>NSSales_609_1_IDManagerApprovalOwner__c</columns>
+    <columns>NSSales_609_1_IndustrialDevRecommendatio__c</columns>
+    <columns>NSSales_609_1_FSManagerApprovalOwner__c</columns>
+    <columns>NSSales_609_1_FieldSalesRecommendation__c</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NSSales_AssignedId_ID__c</field>
+        <operation>equals</operation>
+        <value>true</value>
+    </filters>
+    <filters>
+        <field>NSSales_609_1_IndustrialDevRecommendatio__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>NSSales_AssignedId_FS__c</field>
+        <operation>equals</operation>
+        <value>true</value>
+    </filters>
+    <filters>
+        <field>NSSales_609_1_FieldSalesRecommendation__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>NSSales_609_1_status__c</field>
+        <operation>equals</operation>
+        <value>Under Review</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.NSSales_609_1</value>
+    </filters>
+    <label>Active 609.1 Approvals</label>
+    <sharedTo>
+        <group>NSSales_Active609_1_ID_FSM</group>
+    </sharedTo>
+</ListView>

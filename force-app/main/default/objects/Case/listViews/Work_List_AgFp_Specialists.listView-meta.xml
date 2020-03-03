@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Work_List_AgFp_Specialists</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 and (5 or (6 and 7))</booleanFilter>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>NS_Unread_Email_Indicator__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NS_AssignedTo__c</columns>
+    <columns>NS_Hours_Since_Last_Activity__c</columns>
+    <columns>NS_Time_To_Response__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Account_Minor_Commodity__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>NS_StatusReason__c</columns>
+    <columns>NS_InteractionReason__c</columns>
+    <columns>NS_Type__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.PRIORITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NS_InteractionReason__c</field>
+        <operation>notEqual</operation>
+        <value>Pipeline Management</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>startsWith</operation>
+        <value>CS - AG</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>contains</operation>
+        <value>Base</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>NS_Escalated,NS_New,NS_Working,NS_AwaitingResponse,NS_Reopened,Open</value>
+    </filters>
+    <filters>
+        <field>NS_Hours_Since_Last_Activity__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>20</value>
+    </filters>
+    <filters>
+        <field>NS_Time_To_Response__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>CASES.ORIGIN</field>
+        <operation>equals</operation>
+        <value>Email</value>
+    </filters>
+    <label>Work List AgFp Specialists</label>
+</ListView>

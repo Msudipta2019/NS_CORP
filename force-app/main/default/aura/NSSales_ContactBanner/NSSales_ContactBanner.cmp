@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    <div class="slds-align_absolute-center slds-theme_error">
+        
+        <h1 style="color:White;font-size:180%;">ID Confidential</h1>
+        
+    </div>
+    
+    
+    
+</aura:component>

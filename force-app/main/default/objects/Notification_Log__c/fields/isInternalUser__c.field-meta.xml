@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>isInternalUser__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>whether the receiver is an internal norfolk southern employee</description>
+    <externalId>false</externalId>
+    <label>is Internal User</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

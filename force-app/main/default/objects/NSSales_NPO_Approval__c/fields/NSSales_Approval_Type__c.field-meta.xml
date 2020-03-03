@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_Approval_Type__c</fullName>
+    <description>Approval Type for the related opportunity</description>
+    <externalId>false</externalId>
+    <label>Approval Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OPS Planning North</fullName>
+                <default>false</default>
+                <label>OPS Planning North</label>
+            </value>
+            <value>
+                <fullName>OPS Planning Central</fullName>
+                <default>false</default>
+                <label>OPS Planning Central</label>
+            </value>
+            <value>
+                <fullName>OPS Planning South</fullName>
+                <default>false</default>
+                <label>OPS Planning South</label>
+            </value>
+            <value>
+                <fullName>OPS Planning West</fullName>
+                <default>false</default>
+                <label>OPS Planning West</label>
+            </value>
+            <value>
+                <fullName>Unit Train</fullName>
+                <default>false</default>
+                <label>Unit Train</label>
+            </value>
+            <value>
+                <fullName>Network Capacity</fullName>
+                <default>false</default>
+                <label>Network Capacity</label>
+            </value>
+            <value>
+                <fullName>Network Optimization</fullName>
+                <default>false</default>
+                <label>Network Optimization</label>
+            </value>
+            <value>
+                <fullName>Commercial Planning</fullName>
+                <default>false</default>
+                <label>Commercial Planning</label>
+            </value>
+            <value>
+                <fullName>Interline Services</fullName>
+                <default>false</default>
+                <label>Interline Services</label>
+            </value>
+            <value>
+                <fullName>Auto/Intermodal</fullName>
+                <default>false</default>
+                <label>Auto/Intermodal</label>
+            </value>
+            <value>
+                <fullName>Industrial Products/Unit</fullName>
+                <default>false</default>
+                <label>Industrial Products/Unit</label>
+            </value>
+            <value>
+                <fullName>Power</fullName>
+                <default>false</default>
+                <label>Power</label>
+            </value>
+            <value>
+                <fullName>OPS Planning NOC</fullName>
+                <default>false</default>
+                <label>OPS Planning NOC</label>
+            </value>
+            <value>
+                <fullName>OPS Planning East</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OPS Planning East</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

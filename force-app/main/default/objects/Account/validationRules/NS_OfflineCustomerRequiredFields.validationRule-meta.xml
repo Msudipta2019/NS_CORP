@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_OfflineCustomerRequiredFields</fullName>
+    <active>true</active>
+    <description>Either User has to enter &#39;Existing Contact&#39; or has to provide Contact details i.e, First Name, Last Name and Contact Work Phone to create a new contact who will be associated with the new Offline Account.</description>
+    <errorConditionFormula>IF(AND(
+RecordType.DeveloperName=&#39;NS_OfflineCustomer&#39;
+,ISBLANK(NS_ExistingContact__c),
+!Lead_Created__c) ,
+OR(ISBLANK( NS_OfflineContactFirstName__c ),ISBLANK( NS_OfflineContactLastName__c ), ISBLANK( NS_OfflineContactWorkPhone__c)),
+AND(RecordType.DeveloperName=&#39;NS_OfflineCustomer&#39;,OR(!ISBLANK( NS_OfflineContactFirstName__c ),!ISBLANK( NS_OfflineContactLastName__c ), !ISBLANK( NS_OfflineContactWorkPhone__c))))</errorConditionFormula>
+    <errorMessage>Please select an &quot;Existing Contact&quot; or fill in ALL of the following fields to create a new contact: &quot;First Name&quot;, &quot;Last Name&quot;, &quot;Contact Work Phone&quot;.</errorMessage>
+</ValidationRule>

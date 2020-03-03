@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter additional Site details of benefit to lead process --></help>
+    <label><!-- Site Details --></label>
+    <name>NS_Site_Details__c</name>
+</CustomFieldTranslation>

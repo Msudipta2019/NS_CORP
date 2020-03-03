@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Bounce_Type__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>email delivery bounce type</description>
+    <externalId>false</externalId>
+    <inlineHelpText>email delivery bounce type</inlineHelpText>
+    <label>Email Bounce Type</label>
+    <length>50</length>
+    <required>false</required>
+    <securityClassification>Public</securityClassification>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

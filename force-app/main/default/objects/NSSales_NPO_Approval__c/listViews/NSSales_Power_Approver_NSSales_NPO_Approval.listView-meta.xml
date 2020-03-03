@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_Power_Approver_NSSales_NPO_Approval</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Power Approver</label>
+    <queue>NSSales_Power_Approver</queue>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

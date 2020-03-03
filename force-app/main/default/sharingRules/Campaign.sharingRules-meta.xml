@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Campaign_Access_Automotive</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Campaign Access Automotive</label>
+        <sharedTo>
+            <roleAndSubordinates>Integration_User</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Sales_Automotive_Leadership</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Campaign_Access_Coal</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Campaign Access Coal</label>
+        <sharedTo>
+            <roleAndSubordinates>Integration_User</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Sales_Coal_Leadership</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Campaign_Access_ID</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Campaign Access ID</label>
+        <sharedTo>
+            <roleAndSubordinates>Integration_User</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Sales_Industrial_Development_Leadership</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Campaign_Access_IP</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Campaign Access IP</label>
+        <sharedTo>
+            <roleAndSubordinates>Integration_User</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Sales_Industrial_Product_Leadership</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Campaign_Access_Intermodal</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Campaign Access Intermodal</label>
+        <sharedTo>
+            <roleAndSubordinates>Integration_User</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Sales_Intermodal_Leadership</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Campaign_Access_MRF</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Campaign Access MRF</label>
+        <sharedTo>
+            <roleAndSubordinates>Integration_User</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Sales_Marketing_Research_Forecasting_User</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

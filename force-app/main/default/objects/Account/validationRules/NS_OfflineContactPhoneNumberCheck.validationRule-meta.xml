@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_OfflineContactPhoneNumberCheck</fullName>
+    <active>true</active>
+    <description>It checks if the phone number entered for Offline Contact is valid</description>
+    <errorConditionFormula>OR( 
+IF( 
+NOT(ISBLANK( NS_OfflineContactWorkPhone__c ) ), 
+NOT(REGEX(NS_OfflineContactWorkPhone__c ,&quot;(\\d){7}|(\\d){10}&quot;)), 
+FALSE 
+), 
+IF( 
+NOT(ISBLANK( NS_OfflineContactMobile__c ) ), 
+NOT(REGEX(NS_OfflineContactMobile__c ,&quot;(\\d){7}|(\\d){10}&quot;)), 
+FALSE 
+))</errorConditionFormula>
+    <errorMessage>Please ensure that Contact Work Phone (and Contact Mobile if entered) are 7 digits or 10 digits with no dashes - or parenthesis ()</errorMessage>
+</ValidationRule>

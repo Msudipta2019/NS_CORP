@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Internal Campaign Members</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Internal Campaign Members</value>
+    </caseValues>
+    <layouts>
+        <layout>Internal Campaign Members Layout</layout>
+        <sections>
+            <label><!-- Campaign Information --></label>
+            <section>Campaign Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Connect NS User --></label>
+            <section>Internal Connect NS User</section>
+        </sections>
+        <sections>
+            <label><!-- Non - Connect NS User --></label>
+            <section>Non - Connect NS User</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If Internal User is populated and Role is required. --></errorMessage>
+        <name>NSSales_ConnectNSRoleRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can only add either a Internal ConnectNS User OR a Non-ConnectNS User --></errorMessage>
+        <name>NSSales_NonConnectNSNotRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Non-ConnectNS User is populated, the Non-ConnectNS User Role should be required --></errorMessage>
+        <name>NSSales_NonConnectNSRoleRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot edit the name of an existing Internal Campaign Member. Please create a new Internal Campaign Member. --></errorMessage>
+        <name>NSSales_restrictionOnUserinfochange</name>
+    </validationRules>
+</CustomObjectTranslation>

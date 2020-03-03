@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_InteractionTypeRequiredOnCaseClose</fullName>
+    <active>true</active>
+    <description>2.1.2019, Interaction Reason: Refrigerated Equipment, Transportation
+Interaction Type:  *Required at case close</description>
+    <errorConditionFormula>AND(
+OR(ISPICKVAL(NS_InteractionReason__c,&#39;Refrigerated Equipment&#39;),
+ISPICKVAL(NS_InteractionReason__c,&#39;Transportation&#39;)
+),
+ISBLANK( TEXT(NS_Type__c)), 
+ISPICKVAL(Status, &#39;NS_Closed&#39;)
+)</errorConditionFormula>
+    <errorMessage>Please provide Interaction Type for selected interaction reason before closing the case.</errorMessage>
+</ValidationRule>

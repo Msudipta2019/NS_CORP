@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Crown_User__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>One subset of Intermodal users, Crown Users, do not use 
+the system.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>One subset of Intermodal users, Crown Users, do not use 
+the system.</inlineHelpText>
+    <label>Crown User</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

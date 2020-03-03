@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Import_Export__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Sales - If the deal involves an import or export of goods, check the box</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check the box if the deal includes import or export opportunity .</inlineHelpText>
+    <label>Import/Export</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

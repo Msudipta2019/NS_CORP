@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>NS_ANIOnlyValidPhoneCheck</fullName>
+    <active>true</active>
+    <description>Check valid work Phone for ANI Only contacts</description>
+    <errorConditionFormula>AND( 
+IF( 
+NOT(ISBLANK( Phone ) ), 
+NOT(REGEX(Phone ,&quot;(\\d){7}|(\\d){10}&quot;)), 
+FALSE 
+), 
+RecordType.DeveloperName=&#39;ANI_ONLY&#39; 
+)</errorConditionFormula>
+    <errorMessage>Invalid Work Phone entered.</errorMessage>
+</ValidationRule>

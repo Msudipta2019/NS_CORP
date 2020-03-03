@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the primary Contact type --></help>
+    <label><!-- Contact Classification --></label>
+    <name>Contact_Classification__c</name>
+    <picklistValues>
+        <masterLabel>Customer</masterLabel>
+        <translation><!-- Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Economic Development</masterLabel>
+        <translation><!-- Economic Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NS Internal</masterLabel>
+        <translation><!-- NS Internal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partner</masterLabel>
+        <translation><!-- Partner --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

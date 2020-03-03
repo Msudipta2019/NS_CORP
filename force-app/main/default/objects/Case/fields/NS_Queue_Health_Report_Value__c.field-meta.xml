@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Queue_Health_Report_Value__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(ISPICKVAL(Status,&#39;NS_New&#39;),Owner:Queue.QueueName &lt;&gt; &#39;Loading &amp; Securement Solutions (LSS)&#39;,ISBLANK(NS_AssignedTo__c),(NS_CaseAgeInHours__c &lt; 3)),&#39;New, Unassigned, &lt;3 Hours&#39;, 
+IF(AND(ISPICKVAL(Status,&#39;NS_New&#39;),Owner:Queue.QueueName &lt;&gt; &#39;Loading &amp; Securement Solutions (LSS)&#39;,ISBLANK(NS_AssignedTo__c),(NS_CaseAgeInHours__c &lt; 5),(NS_CaseAgeInHours__c &gt;= 3)),&#39;New, Unassigned, 3 to 5 Hours&#39;, 
+IF(AND(ISPICKVAL(Status,&#39;NS_New&#39;),Owner:Queue.QueueName &lt;&gt; &#39;Loading &amp; Securement Solutions (LSS)&#39;,ISBLANK(NS_AssignedTo__c),(NS_CaseAgeInHours__c &gt;= 5)),&#39;New, Unassigned, &gt; 5 Hours&#39;,
+IF(AND(ISPICKVAL(Status,&#39;NS_New&#39;),Owner:Queue.QueueName = &#39;Loading &amp; Securement Solutions (LSS)&#39;,ISBLANK(NS_AssignedTo__c),(NS_CaseAgeInHours__c &lt; 120)),&#39;New, Unassigned, &lt;5 Days&#39;, 
+IF(AND(ISPICKVAL(Status,&#39;NS_New&#39;),Owner:Queue.QueueName = &#39;Loading &amp; Securement Solutions (LSS)&#39;,ISBLANK(NS_AssignedTo__c),(NS_CaseAgeInHours__c &lt; 192),(NS_CaseAgeInHours__c &gt;= 120)),&#39;New, Unassigned, 5 to 8 Days&#39;, 
+IF(AND(ISPICKVAL(Status,&#39;NS_New&#39;),Owner:Queue.QueueName = &#39;Loading &amp; Securement Solutions (LSS)&#39;,ISBLANK(NS_AssignedTo__c),(NS_CaseAgeInHours__c &gt;= 192)),&#39;New, Unassigned, &gt; 8 Days&#39;,  
+IF(AND(ISPICKVAL(Status,&#39;NS_Working&#39;),NOT(ISBLANK(NS_AssignedTo__c))),&#39;Working, Assigned&#39;, 
+IF(AND(ISPICKVAL(Status,&#39;NS_Working&#39;),ISBLANK(NS_AssignedTo__c)),&#39;Working, Unassigned&#39;, 
+IF(AND(ISPICKVAL(Status,&#39;NS_AwaitingResponse&#39;),NOT(ISBLANK(NS_AssignedTo__c))),&#39;Awaiting Response, Assigned&#39;, 
+IF(AND(ISPICKVAL(Status,&#39;NS_AwaitingResponse&#39;),ISBLANK(NS_AssignedTo__c)),&#39;Awaiting Response, Unassigned&#39;, 
+IF(AND(ISPICKVAL(Status,&#39;NS_Escalated&#39;),NOT(ISBLANK(NS_AssignedTo__c))),&#39;Escalated, Assigned&#39;, 
+IF(AND(ISPICKVAL(Status,&#39;NS_Escalated&#39;),ISBLANK(NS_AssignedTo__c)),&#39;Escalated, Unassigned&#39;, 
+NULL))))))))))))</formula>
+    <label>Queue Health Report Value</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

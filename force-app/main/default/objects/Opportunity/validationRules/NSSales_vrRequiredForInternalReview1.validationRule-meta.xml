@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_vrRequiredForInternalReview1</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL( StageName , &quot;Internal Review&quot; ), 
+OR( 
+ISBLANK(NS_Origin_Station__c), 
+ISBLANK(NS_Estimated_Volume__c), 
+ISBLANK(NS_Destination_Station__c), 
+ISBLANK(NSSales_Commodity_Group__c), 
+ISBLANK(Projected_Start_Date__c), 
+ISBLANK(NS_Contract_Start_Date__c), 
+ISBLANK(NS_Destination_State__c), 
+ISBLANK(TEXT(Frequency__c)), 
+ISBLANK(TEXT(NSSales_Spot_Contract__c)) 
+),$Permission.NSSales_Bypass_validation_for_IR  = FALSE,
+				NOT(OR(RecordType.Name=&#39;NPO Operations Opportunity&#39;, 
+RecordType.Name=&#39;NPO Operations ReadOnly&#39;,
+RecordType.DeveloperName=&#39;NSSales_609_1&#39;)))</errorConditionFormula>
+    <errorMessage>The following fields are required to move the Opportunity to the &quot;Internal Review&quot; Stage: 
+Origin Station,Destination Station,Estimated Volume,Commodity Group,Projected Start Date,Contract Start Date,	
+Destination State,Frequency,Spot/Contract</errorMessage>
+</ValidationRule>

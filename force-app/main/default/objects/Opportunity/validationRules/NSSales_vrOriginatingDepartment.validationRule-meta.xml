@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_vrOriginatingDepartment</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL( StageName , &quot;Internal Review&quot; ) , 
+ ISPICKVAL(NS_Originating_Department__c ,&quot;Intermodal&quot;),
+  ISBLANK(NSSales_Origin_Ramp__c),
+ISBLANK(NSSales_Destination_Ramp__c),
+$Permission.NSSales_Bypass_validation_for_IR = FALSE,
+NOT(RecordType.DeveloperName=&#39;NSSales_609_1&#39;))</errorConditionFormula>
+    <errorMessage>Please populate the following fields to update the stage to &quot;Internal Review&quot; for &quot;Intermodal&quot; Originating Department:
+&quot;Origin Ramp&quot;,&quot;Destination Ramp&quot;</errorMessage>
+</ValidationRule>

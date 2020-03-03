@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_ExistingContact__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>It looks up a Contact if User wants to associate an existing Contact for the new Offline Account to be created.</description>
+    <externalId>false</externalId>
+    <label>Existing Contact</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Contact status should be Active</errorMessage>
+        <filterItems>
+            <field>Contact.NS_ContactStatus__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Accounts</relationshipLabel>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

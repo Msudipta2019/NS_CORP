@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_Internal_Campaign_Member_Hidden__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( NOT( ISBLANK( NSSales_Internal_User__c ) ) ,NSSales_Internal_User__r.FirstName +&quot; &quot;+ NSSales_Internal_User__r.LastName ,  IF( NOT( ISBLANK( NSSales_Non_Connect_NS_User__c ) ) ,NSSales_Non_Connect_NS_User__c , &#39;&#39;) )</formula>
+    <label>Internal Campaign Member</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

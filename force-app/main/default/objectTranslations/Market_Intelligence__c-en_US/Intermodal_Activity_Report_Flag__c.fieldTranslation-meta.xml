@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check if Market Intel needs to be in the #IMActivityReport. --></help>
+    <label><!-- Intermodal Activity Report Flag --></label>
+    <name>Intermodal_Activity_Report_Flag__c</name>
+</CustomFieldTranslation>

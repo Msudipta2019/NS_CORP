@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Partner Account Type 4 --></label>
+    <name>NS_Partner_Account_Type_4__c</name>
+    <picklistValues>
+        <masterLabel>*3PL</masterLabel>
+        <translation><!-- *3PL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beneficial Owner</masterLabel>
+        <translation><!-- Beneficial Owner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drayage</masterLabel>
+        <translation><!-- Drayage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ID Allies</masterLabel>
+        <translation><!-- ID Allies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payer</masterLabel>
+        <translation><!-- Payer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Port</masterLabel>
+        <translation><!-- Port --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RR</masterLabel>
+        <translation><!-- RR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Receiver</masterLabel>
+        <translation><!-- Receiver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipper</masterLabel>
+        <translation><!-- Shipper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipper &amp; Receiver</masterLabel>
+        <translation><!-- Shipper &amp; Receiver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TBT</masterLabel>
+        <translation><!-- TBT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transload</masterLabel>
+        <translation><!-- Transload --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

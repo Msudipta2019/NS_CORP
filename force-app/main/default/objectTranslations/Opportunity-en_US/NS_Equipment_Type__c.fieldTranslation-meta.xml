@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Equipment Type --></label>
+    <name>NS_Equipment_Type__c</name>
+    <picklistValues>
+        <masterLabel>60’ Boxcar</masterLabel>
+        <translation><!-- 60’ Boxcar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>86’ Boxcar</masterLabel>
+        <translation><!-- 86’ Boxcar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Articulated Bi-Level</masterLabel>
+        <translation><!-- Articulated Bi-Level --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bi-Level</masterLabel>
+        <translation><!-- Bi-Level --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boxcar</masterLabel>
+        <translation><!-- Boxcar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Container</masterLabel>
+        <translation><!-- Container --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Covered Coil</masterLabel>
+        <translation><!-- Covered Coil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Covered Hoppers</masterLabel>
+        <translation><!-- Covered Hoppers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flatcar</masterLabel>
+        <translation><!-- Flatcar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gondola</masterLabel>
+        <translation><!-- Gondola --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modified Articulated Bi-Level</masterLabel>
+        <translation><!-- Modified Articulated Bi-Level --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modified Bi-Level</masterLabel>
+        <translation><!-- Modified Bi-Level --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multi-level</masterLabel>
+        <translation><!-- Multi-level --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open Coil</masterLabel>
+        <translation><!-- Open Coil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reefer Boxcar</masterLabel>
+        <translation><!-- Reefer Boxcar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Roadrailer</masterLabel>
+        <translation><!-- Roadrailer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tank Car</masterLabel>
+        <translation><!-- Tank Car --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trailer</masterLabel>
+        <translation><!-- Trailer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tri-Level</masterLabel>
+        <translation><!-- Tri-Level --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uni-Level</masterLabel>
+        <translation><!-- Uni-Level --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Tracking of Notification Email fields  from Marketing Cloud. --></help>
+    <label><!-- Email Name --></label>
+    <name>Email_Name__c</name>
+</CustomFieldTranslation>

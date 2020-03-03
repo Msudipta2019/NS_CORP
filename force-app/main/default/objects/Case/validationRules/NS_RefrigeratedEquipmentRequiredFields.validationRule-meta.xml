@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_RefrigeratedEquipmentRequiredFields</fullName>
+    <active>false</active>
+    <description>Interaction Reason: Refrigerated Equipment
+Interaction Type:  Drop down for selection with values of:  Fuel, Inspection, Repair, Shutdown   *Required at case open &amp; close</description>
+    <errorConditionFormula>OR( 
+AND(ISPICKVAL(NS_InteractionReason__c,&#39;Refrigerated Equipment&#39;),ISBLANK( TEXT(NS_Type__c)), ISPICKVAL(Origin, &#39;Email&#39;)), 
+AND(ISPICKVAL(NS_InteractionReason__c,&#39;Refrigerated Equipment&#39;),ISBLANK( TEXT(NS_Type__c)), NOT(ISPICKVAL(Origin, &#39;Email&#39;)), NOT(ISNEW()))
+)</errorConditionFormula>
+    <errorMessage>Please provide Interaction Type for selected interaction reason.</errorMessage>
+</ValidationRule>

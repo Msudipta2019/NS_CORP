@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Interaction_Type_Translation__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( TEXT( NS_Type__c ),
+&quot;Confirm/Update Billing&quot;,&quot;Billing&quot;,
+&quot;Damage/Loadshift&quot;,&quot;Shipment Exception&quot;,
+&quot;Hazardous&quot;,&quot;Shipment Exception&quot;,
+&quot;Misroute&quot;,&quot;Shipment Exception&quot;,
+&quot;ETG&quot;,&quot;Tracing&quot;,
+TEXT( NS_Type__c ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Interaction Type Translation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

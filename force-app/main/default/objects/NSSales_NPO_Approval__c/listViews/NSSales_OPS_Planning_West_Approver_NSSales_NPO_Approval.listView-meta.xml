@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_OPS_Planning_West_Approver_NSSales_NPO_Approval</fullName>
+    <filterScope>Queue</filterScope>
+    <label>OPS Planning West Approver</label>
+    <queue>NSSales_OPS_Planning_West_Approver</queue>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

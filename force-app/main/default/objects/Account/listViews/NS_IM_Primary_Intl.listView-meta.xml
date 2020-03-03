@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_IM_Primary_Intl</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NS_Address__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>NS_Function_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.NS_OnlineCustomerBusiness</value>
+    </filters>
+    <filters>
+        <field>NS_Function_Type__c</field>
+        <operation>equals</operation>
+        <value>IM International</value>
+    </filters>
+    <label>IM International Accounts</label>
+    <sharedTo>
+        <role>Intermodal_Manager</role>
+        <role>Intermodal_User</role>
+    </sharedTo>
+</ListView>

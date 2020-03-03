@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_ConnectNSRoleRequired</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISBLANK( NSSales_Internal_User__c ) ) , ISBLANK( NSSales_Role__c ) )</errorConditionFormula>
+    <errorDisplayField>NSSales_Role__c</errorDisplayField>
+    <errorMessage>If Internal User is populated and Role is required.</errorMessage>
+</ValidationRule>

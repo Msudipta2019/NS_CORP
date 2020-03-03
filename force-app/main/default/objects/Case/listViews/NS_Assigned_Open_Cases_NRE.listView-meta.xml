@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Assigned_Open_Cases_NRE</fullName>
+    <booleanFilter>1 AND 2 AND 3</booleanFilter>
+    <columns>NS_Unread_Email_Indicator__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NS_AssignedTo__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NS_Controlling_Station__c</columns>
+    <columns>NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>NS_InteractionReason__c</columns>
+    <columns>NS_Type__c</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>NS_SystemSortID__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>NS_Closed,Closed,NS_Cancelled,Cancelled</value>
+    </filters>
+    <filters>
+        <field>NS_AssignedTo__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>equals</operation>
+        <value>OS Northern</value>
+    </filters>
+    <label>Assigned, Open OS Northern</label>
+    <sharedTo>
+        <group>All_Queue_Access</group>
+        <group>NS_ManagersOSSBU</group>
+        <group>NS_Northern_Region_East_NRE</group>
+        <group>NS_Northern_Region_East_NRE_Managers</group>
+        <group>NS_OSS_North_Operations</group>
+    </sharedTo>
+</ListView>

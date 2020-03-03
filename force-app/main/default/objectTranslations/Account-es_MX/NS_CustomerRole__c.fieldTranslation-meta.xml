@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Role --></label>
+    <name>NS_CustomerRole__c</name>
+    <picklistValues>
+        <masterLabel>BCO</masterLabel>
+        <translation><!-- BCO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Freight Forwarder</masterLabel>
+        <translation><!-- Freight Forwarder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Railroad</masterLabel>
+        <translation><!-- Railroad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipper</masterLabel>
+        <translation><!-- Shipper --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

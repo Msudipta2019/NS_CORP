@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_CaseInfoRequired</fullName>
+    <active>false</active>
+    <description>This rule ensures all of the following information is entered in order to be able to save a Case when Status = “Working”: 1) Contact Name, 2) Subject</description>
+    <errorConditionFormula>AND(OR(ISPICKVAL(Status,&#39;NS_Working&#39;),
+ISPICKVAL(Status,&#39;NS_Escalated&#39;),
+ISPICKVAL(Status,&#39;NS_AwaitingResponse&#39;),
+ISPICKVAL(Status,&#39;NS_Closed&#39;)),
+ISBLANK(Contact.Id),
+PRIORVALUE(NS_RecordTypeName__c) &lt;&gt; &#39;Email-to-Case&#39;)</errorConditionFormula>
+    <errorMessage>Please populate the Contact Name field prior to saving the Case.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_OperatingStation__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>It is a lookup to the service stations available for a particular Account.</description>
+    <externalId>false</externalId>
+    <label>Operating Station</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Inactive Station cannot be added</errorMessage>
+        <filterItems>
+            <field>NS_ServiceStations__c.NS_StationStatus__c</field>
+            <operation>notEqual</operation>
+            <value>Inactive</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>NS_ServiceStations__c</referenceTo>
+    <relationshipLabel>Accounts</relationshipLabel>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

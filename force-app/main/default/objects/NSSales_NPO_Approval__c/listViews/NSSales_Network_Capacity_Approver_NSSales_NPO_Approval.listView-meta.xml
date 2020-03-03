@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_Network_Capacity_Approver_NSSales_NPO_Approval</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Network Capacity Approver</label>
+    <queue>NSSales_Network_Capacity_Approver</queue>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

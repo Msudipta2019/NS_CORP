@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Associated_Business_Unit__c</fullName>
+    <description>This tells Business unit associated with a particular user</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Business unit associated with a particular user</inlineHelpText>
+    <label>Associated Business Unit</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Coal</fullName>
+                <default>false</default>
+                <label>Coal</label>
+            </value>
+            <value>
+                <fullName>Equipment Planning</fullName>
+                <default>false</default>
+                <label>Equipment Planning</label>
+            </value>
+            <value>
+                <fullName>Industrial Development</fullName>
+                <default>false</default>
+                <label>Industrial Development</label>
+            </value>
+            <value>
+                <fullName>Industrial Products</fullName>
+                <default>false</default>
+                <label>Industrial Products</label>
+            </value>
+            <value>
+                <fullName>Intermodal</fullName>
+                <default>false</default>
+                <label>Intermodal</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Marketing Research &amp; Forecasting</fullName>
+                <default>false</default>
+                <label>Marketing Research &amp; Forecasting</label>
+            </value>
+            <value>
+                <fullName>NPO</fullName>
+                <default>false</default>
+                <label>NPO</label>
+            </value>
+            <value>
+                <fullName>OSS</fullName>
+                <default>false</default>
+                <label>OSS</label>
+            </value>
+            <value>
+                <fullName>Revenue Accounting</fullName>
+                <default>false</default>
+                <label>Revenue Accounting</label>
+            </value>
+            <value>
+                <fullName>Revenue Waybilling</fullName>
+                <default>false</default>
+                <label>Revenue Waybilling</label>
+            </value>
+            <value>
+                <fullName>Unit Train</fullName>
+                <default>false</default>
+                <label>Unit Train</label>
+            </value>
+            <value>
+                <fullName>NS Real Estate</fullName>
+                <default>false</default>
+                <label>NS Real Estate</label>
+            </value>
+            <value>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+                <label>Human Resources</label>
+            </value>
+            <value>
+                <fullName>Information Technology</fullName>
+                <default>false</default>
+                <label>Information Technology</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

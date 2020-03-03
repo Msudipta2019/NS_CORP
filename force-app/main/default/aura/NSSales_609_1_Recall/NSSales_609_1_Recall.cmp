@@ -1,0 +1,27 @@
+<aura:component controller="NSSales_609_1_ApprovalProcessController"
+                implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+                access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>  
+    <aura:attribute name="recallShow" type="boolean" default ="false" /> 
+    <aura:attribute name="norecallAccess" type="boolean" default ="false" />  
+    <aura:attribute name="norecallRequest" type="boolean" default ="false" />  
+    <aura:attribute name="showSpinner" type="Boolean" default="false" />
+    <aura:if isTrue="{!v.showSpinner}"> <lightning:spinner /> </aura:if>
+    <aura:if isTrue="{!v.recallShow}">
+        <!--<lightning:textarea aura:id="recall_comments" name="Recall Comments" label="Recall Comments"/>-->
+        <ui:inputTextArea aura:id="recall_comments" label="Recall Comments" rows="5" required = "true"/>
+        <button class="slds-button slds-button_brand middle" onclick="{!c.handleSubmit}" >Submit</button >
+    </aura:if>
+    <aura:if isTrue="{!v.norecallRequest}">
+        <div class="error" > 
+            <lightning:icon iconName="action:close" size="small" style="line-height: 1;" /> &nbsp; &nbsp;  
+                No Valid Approval Request found for Recall
+        </div>
+    </aura:if>
+    <aura:if isTrue="{!v.norecallAccess}">
+        <div class="error" > 
+            <lightning:icon iconName="action:close" size="small" style="line-height: 1;" /> &nbsp; &nbsp;  
+                You are not authorized for Recall Process
+        </div>
+    </aura:if>
+</aura:component>

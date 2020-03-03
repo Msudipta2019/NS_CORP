@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Validation_Rule_ForPhoneNumber</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( 
+NOT(ISBLANK(Phone)) 
+, 
+NOT(REGEX(Phone,&quot;(\\d){7}|(\\d){10}&quot;)), 
+FALSE 
+)</errorConditionFormula>
+    <errorMessage>Please ensure that Phone Number is 7 digits or 10 digits with no dashes - or parenthesis ()</errorMessage>
+</ValidationRule>

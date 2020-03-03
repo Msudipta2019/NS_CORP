@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_IDCustomerRequiredFields</fullName>
+    <active>true</active>
+    <description>Either User has to enter &#39;Existing Contact&#39; or has to provide Contact details i.e, First Name, Last Name and either from Contact Work Phone, Mobile No or Email to create a new contact who will be associated with the new ID Account.</description>
+    <errorConditionFormula>IF(!ISBLANK(NS_ExistingContact__c),False,
+	IF(AND(
+		RecordType.DeveloperName=&#39;NS_Industrial_Development&#39;,
+		!Lead_Created__c,
+		ISBLANK(NS_ExistingContact__c),
+		ISBLANK(NS_OfflineContactFirstName__c),
+		ISBLANK(NS_OfflineContactLastName__c ),
+		ISBLANK(NS_OfflineContactWorkPhone__c),
+		ISBLANK(NS_OfflineContactMobile__c),
+		ISBLANK(NS_OfflineContactEmail__c)
+	),
+	FALSE,
+	IF(
+		AND(
+			(RecordType.DeveloperName=&#39;NS_Industrial_Development&#39; &amp;&amp; ISBLANK(NS_ExistingContact__c) &amp;&amp; !Lead_Created__c),
+			OR(
+				ISBLANK(NS_OfflineContactFirstName__c),
+				ISBLANK(NS_OfflineContactLastName__c ),
+				AND(
+					ISBLANK(NS_OfflineContactWorkPhone__c),
+					ISBLANK(NS_OfflineContactMobile__c),
+					ISBLANK(NS_OfflineContactEmail__c)
+				)
+			)
+		),
+		TRUE,
+		IF(
+			AND(
+				RecordType.DeveloperName=&#39;NS_Industrial_Development&#39;,
+				!Lead_Created__c,
+				!ISBLANK(NS_ExistingContact__c),
+				OR(
+					!ISBLANK(NS_OfflineContactFirstName__c),
+					!ISBLANK(NS_OfflineContactLastName__c ),
+					!ISBLANK(NS_OfflineContactWorkPhone__c),
+					!ISBLANK(NS_OfflineContactMobile__c),
+					!ISBLANK(NS_OfflineContactEmail__c)
+				)
+			),
+			TRUE,
+			FALSE
+		)
+	)
+)
+)</errorConditionFormula>
+    <errorMessage>Please select an &quot;Existing Contact&quot; or fill in ALL of the following fields to create a new contact: &quot;First Name&quot;, &quot;Last Name&quot; and &quot;Contact Work Phone&quot;/&quot;Contact Mobile&quot;/&quot;Email&quot; .</errorMessage>
+</ValidationRule>

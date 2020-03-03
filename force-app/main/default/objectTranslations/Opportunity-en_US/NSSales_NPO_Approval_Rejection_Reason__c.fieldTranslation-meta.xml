@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NPO Rejection Reason --></label>
+    <name>NSSales_NPO_Approval_Rejection_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Crew Availability</masterLabel>
+        <translation><!-- Crew Availability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment (cars)</masterLabel>
+        <translation><!-- Equipment (cars) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Line Capacity</masterLabel>
+        <translation><!-- Line Capacity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power Constraint</masterLabel>
+        <translation><!-- Power Constraint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Terminal Capacity</masterLabel>
+        <translation><!-- Terminal Capacity --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

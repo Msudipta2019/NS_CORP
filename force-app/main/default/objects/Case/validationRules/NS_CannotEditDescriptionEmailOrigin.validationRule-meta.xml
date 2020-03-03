@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_CannotEditDescriptionEmailOrigin</fullName>
+    <active>false</active>
+    <description>This Validation Rule prevents users from editing the Description field on a Case when the Origin of the Case is Email</description>
+    <errorConditionFormula>ISPICKVAL(Origin,&#39;Email&#39;) &amp;&amp; NOT(ISNEW()) &amp;&amp;  ISCHANGED(Description)</errorConditionFormula>
+    <errorDisplayField>Description</errorDisplayField>
+    <errorMessage>The Description of an Email Case cannot be edited.</errorMessage>
+</ValidationRule>

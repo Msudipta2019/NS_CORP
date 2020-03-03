@@ -1,0 +1,138 @@
+<aura:component controller="NSSales_609_1_ApprovalProcessController" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    <aura:attribute name="optyRecordId" type="String" />
+    <aura:attribute name="approvalStatus" type="String" />
+    <aura:attribute name="processInstanceId" type="String" />
+    <aura:attribute name="processInstanceWorkItemId" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="showSpinner" type="Boolean" default="false" />
+    <aura:attribute name="pIDetails" type="List" />
+    <aura:attribute name="isOppPage" type="Boolean" default="false" />
+    <aura:attribute name="approver" type="Boolean" default="false"/>
+    <aura:registerEvent name="statusEvent" type="c:NSSales_609_1_ApprovalStatusChange"/>
+    
+    
+    <lightning:card class="backcol">
+        <aura:set attribute="title">
+            <lightning:icon iconName="utility:warning" size="medium" variant="warning" aura:id="pending" class="slds-hide" />
+            <lightning:icon iconName="action:approval" size="small" aura:id="approved" class="slds-hide"/>
+            <lightning:icon iconName="utility:error" size="medium" variant="error" aura:id="rejected" class="slds-hide"/>
+            Approval Request
+        </aura:set>
+        <span class="slds-text-heading--medium slds-hyphenate cardmargin" ><b>609.1 Switch Removal Request</b>&nbsp;&nbsp;</span>
+        <span class="pending slds-hide" aura:id="pendingspan">Pending</span>
+        <span class="approved slds-hide" aura:id="approvedspan">Approved</span>
+        <span class="rejected slds-hide" aura:id="rejectedspan">Rejected</span>
+    </lightning:card>
+    <div class="slds-box slds-theme_default">
+        
+        <table class="tableWidth">
+            <thead>
+                <tr>
+                    <th scope="col">Submitter</th>
+                    <th scope="col">Date Submitted</th>
+                    <th scope="col">Actual Approver</th>
+                    <th scope="col">Assigned to</th>
+                </tr>
+            </thead> 
+            <tbody>
+                <aura:iteration items="{!v.pIDetails}" var="pIDetail">
+                    <tr>
+                        <td>{!pIDetail.CreatedBy.Name}</td>
+                        <td><lightning:formattedDateTime value="{!pIDetail.CreatedDate}"/></td>
+                        <td>{!pIDetail.Actor.Name}</td>
+                        <td>{!pIDetail.Actor.Name}</td>
+                        
+                    </tr>
+                </aura:iteration>
+            </tbody>
+        </table>
+        <br/>
+        <aura:if isTrue="{!v.approver}">
+            <div class="slds-m-top_medium footer slds-hide" aura:id="approvalbutton">
+                
+                <lightning:button label="Remove" title= "Remove" onclick="{! c.openApprovalModal }" />
+                &nbsp;
+                <lightning:button label="Retain" title= "Retain" onclick="{! c.openRejectionModal }" />
+            </div>
+        </aura:if>
+        
+    </div>
+    
+    <aura:if isTrue="{!v.showSpinner}">
+        <lightning:spinner />
+    </aura:if>
+    
+    <div aura:id="openApprovalModal" class="slds-modal slds-backdrop slds-hide" aria-hidden="false" role="dialog">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <div class="alignright">		
+                    <lightning:buttonIcon iconName="utility:close" size="medium" alternativeText="Close" 
+                                          onclick="{!c.closeModal}" variant="bare-inverse"/>
+                </div>
+                <div class="slds-modal__header">
+                    <span class="slds-text-heading--medium">Remove Opportunity</span>
+                </div>
+                
+                <div class="slds-modal__content slds-p-around--medium">
+                    <!-- <lightning:recordEditForm
+                                              recordId="{!v.optyRecordId}"
+                                              objectApiName="Opportunity">
+                        <lightning:inputField aura:id="opty_609_1_status_Approval" fieldName="NSSales_609_1_status__c" />
+                    </lightning:recordEditForm>-->
+                    
+                    <lightning:select name="609_1_status" label="609.1 status">
+                        <option value="1">Approved for Removal</option>
+                    </lightning:select>
+                    <lightning:textarea aura:id="approve_comments" name="Comments" label="Comments" required = "true"/>
+                </div>
+                
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick="{!c.closeModal}">Cancel</button>
+                    <button class="slds-button slds-button_brand" onclick="{!c.handleApprove}">Remove</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+    
+    
+    <div aura:id="openRejectionModal" class="slds-modal slds-backdrop slds-hide" aria-hidden="false" role="dialog">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <div class="alignright">		
+                    <lightning:buttonIcon iconName="utility:close" size="medium" alternativeText="Close" 
+                                          onclick="{!c.closeModal}" variant="bare-inverse"/>
+                </div>
+                <div class="slds-modal__header">
+                    <span class="slds-text-heading--medium">Retain Opportunity</span>
+                </div>
+                
+                <div class="slds-modal__content slds-p-around--medium">
+                    
+                    <!-- <lightning:recordEditForm
+                                              recordId="{!v.optyRecordId}"
+                                              objectApiName="Opportunity">
+                        <lightning:inputField aura:id="opty_609_1_status_Rejection" onError="{!c.handleError}" fieldName="NSSales_609_1_status__c" />
+                    </lightning:recordEditForm>-->
+                    
+                    <lightning:select aura:id="opty_609_1_status_Rejection" name="609_1_status" label="609.1 status" required= "true">
+                        <option value="">--None--</option>
+                        <option value="1">Retained - Strategic Asset</option>
+                        <option value="2">Retained - Turnout Maintenance Fee Paid</option>
+                        <option value="3">Retained - New Business Opportunity</option>
+                        <option value="4">Retained - Not Applicable for 609.1 Review</option>
+                    </lightning:select>
+                    <lightning:textarea aura:id="reject_comments" name="Comments" label="Comments" required="true"/>
+                </div>
+                
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick="{!c.closeModal}">Cancel</button>
+                    <button class="slds-button slds-button_brand" onclick="{!c.handleReject}">Retain</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+    
+</aura:component>

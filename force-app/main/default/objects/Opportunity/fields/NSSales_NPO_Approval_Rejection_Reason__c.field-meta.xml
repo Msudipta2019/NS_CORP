@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_NPO_Approval_Rejection_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>NPO Rejection Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>NSSales_NPO_Final_Decision__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Line Capacity</fullName>
+                <default>false</default>
+                <label>Line Capacity</label>
+            </value>
+            <value>
+                <fullName>Terminal Capacity</fullName>
+                <default>false</default>
+                <label>Terminal Capacity</label>
+            </value>
+            <value>
+                <fullName>Equipment (cars)</fullName>
+                <default>false</default>
+                <label>Equipment (cars)</label>
+            </value>
+            <value>
+                <fullName>Crew Availability</fullName>
+                <default>false</default>
+                <label>Crew Availability</label>
+            </value>
+            <value>
+                <fullName>Power Constraint</fullName>
+                <default>false</default>
+                <label>Power Constraint</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Line Capacity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Terminal Capacity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Equipment (cars)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Crew Availability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Power Constraint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

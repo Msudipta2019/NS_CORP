@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_MarketingOwner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This looks up to User object. Marketing Owner for each Account gets notification whenever specific Interaction Reasons are selected and when Cases associated to their Accounts are escalated. Implementation as per Phase 2 requirement.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Marketing Representative for this Account</inlineHelpText>
+    <label>Marketing Account Owner</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 AND 4) OR (2 AND 3)</booleanFilter>
+        <errorMessage>Please select a member of the Marketing Team</errorMessage>
+        <filterItems>
+            <field>User.Profile.Name</field>
+            <operation>equals</operation>
+            <value>NS Sales Manager</value>
+        </filterItems>
+        <filterItems>
+            <field>User.Profile.Name</field>
+            <operation>equals</operation>
+            <value>NS Industrial Development Manager</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Industrial Development, 3PL, Dray Carrier, NS Field Location, Manual Customer, Business, Corporate, Service, Other Company, Other Railroad, Port</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>3PL, Dray Carrier, NS Field Location, Manual Customer, Business, Corporate, Service, Other Company, Other Railroad, Port</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

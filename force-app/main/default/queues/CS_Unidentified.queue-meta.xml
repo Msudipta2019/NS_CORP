@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>customerservice@nscorp.com</email>
+    <name>CS - Unidentified</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>All_Queue_Access</publicGroup>
+            <publicGroup>AgFP_Tier3</publicGroup>
+            <publicGroup>CS_Chem_Tier3</publicGroup>
+            <publicGroup>CS_MetCon_Tier3</publicGroup>
+        </publicGroups>
+        <users>
+            <user>angel.figueroa@accenture.nscorp</user>
+            <user>ashwin.kumar@nscorp.com</user>
+            <user>chaina.smith@nscorp.com</user>
+            <user>daniel.p.glaser@accenture.nscorp</user>
+            <user>haibing.wang@nscorp.com</user>
+            <user>horace.anderson@nscorp.com</user>
+            <user>c2g2q@nscorp.com</user>
+            <user>michael.johnson2@nscorp.com</user>
+            <user>nanda.kishore@nscorp.com</user>
+            <user>raeanne.graham@nscorp.com</user>
+            <user>tamirria.jackson2@nscorp.com</user>
+            <user>ted.billups@nscorp.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

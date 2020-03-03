@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>609.1 Manager Routing</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>609.1 Managers Routing</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- State cannot be changed. Please create a new record. --></errorMessage>
+        <name>NSSales_vrStateChangeRestriction</name>
+    </validationRules>
+</CustomObjectTranslation>

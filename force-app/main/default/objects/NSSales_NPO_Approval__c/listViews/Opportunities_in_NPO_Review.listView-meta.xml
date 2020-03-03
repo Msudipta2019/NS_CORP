@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunities_in_NPO_Review</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>NSSales_Related_Opportunity__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>NSSales_Approval_Type__c</columns>
+    <columns>NSSales_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NSSales_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Approved,Rejected,Recalled</value>
+    </filters>
+    <label>Open NPO Approvals</label>
+</ListView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_AccountPhoneNumberCheck</fullName>
+    <active>true</active>
+    <description>It throws error if user enters invalid phone number.</description>
+    <errorConditionFormula>IF( 
+AND(NOT(ISBLANK(Phone)),!Lead_Created__c)
+,
+NOT(REGEX(Phone,&quot;(\\d){7}|(\\d){10}&quot;)), 
+FALSE 
+)</errorConditionFormula>
+    <errorMessage>Please ensure that Company Phone is 7 digits or 10 digits with no dashes - or parenthesis ()</errorMessage>
+</ValidationRule>

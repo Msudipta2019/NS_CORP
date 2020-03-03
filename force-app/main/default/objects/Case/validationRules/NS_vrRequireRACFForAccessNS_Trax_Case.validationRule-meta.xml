@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_vrRequireRACFForAccessNS_Trax_Case</fullName>
+    <active>true</active>
+    <description>When the Interaction Type = AccessNS/Trax – System Defect OR AccessNS/Trax – Training OR AccessNS/Trax – General Feedback, then the RACF field is required to be filled out in order to save the case</description>
+    <errorConditionFormula>AND(
+!ISNEW(),
+ISBLANK(NS_RACFUserID__c),
+OR(
+ISPICKVAL(NS_Type__c,&#39;AccessNS/TRAX - General Feedback&#39;),
+ISPICKVAL(NS_Type__c,&#39;AccessNS/TRAX - System Defect&#39;),
+ISPICKVAL(NS_Type__c,&#39;AccessNS/TRAX - Training&#39;)
+),
+NOT(ISCHANGED(NS_Last_Activity_Time__c)),
+NOT(ISCHANGED(NS_Counter_Activity__c)),
+IF((ISCHANGED(RecordTypeId) &amp;&amp; PRIORVALUE(RecordTypeId) = &#39;0121I000000ab7X&#39; &amp;&amp; RecordTypeId = &#39;0121I000000RGVl&#39;) ||
+(ISCHANGED(RecordTypeId) &amp;&amp; PRIORVALUE(RecordTypeId) = &#39;0121I000000RGVV&#39; &amp;&amp; RecordTypeId = &#39;0121I000000RGVl&#39;)||
+RecordTypeId = &#39;0121I000000ab7U&#39;, FALSE, TRUE)
+)</errorConditionFormula>
+    <errorDisplayField>NS_RACFUserID__c</errorDisplayField>
+    <errorMessage>Please enter the RACF/User ID before saving the case</errorMessage>
+</ValidationRule>

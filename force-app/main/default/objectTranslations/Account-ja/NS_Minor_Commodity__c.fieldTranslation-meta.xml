@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Minor Commodity --></label>
+    <name>NS_Minor_Commodity__c</name>
+    <picklistValues>
+        <masterLabel>Aggregates</masterLabel>
+        <translation><!-- Aggregates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agrifuels</masterLabel>
+        <translation><!-- Agrifuels --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aluminum Products</masterLabel>
+        <translation><!-- Aluminum Products --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beverages/Cons Prds</masterLabel>
+        <translation><!-- Beverages/Cons Prds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canned Goods</masterLabel>
+        <translation><!-- Canned Goods --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cement</masterLabel>
+        <translation><!-- Cement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coil</masterLabel>
+        <translation><!-- Coil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corn &amp; Other Grains</masterLabel>
+        <translation><!-- Corn &amp; Other Grains --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crude Oil</masterLabel>
+        <translation><!-- Crude Oil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Feed &amp; Feed Prds</masterLabel>
+        <translation><!-- Feed &amp; Feed Prds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fertilizers</masterLabel>
+        <translation><!-- Fertilizers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flour</masterLabel>
+        <translation><!-- Flour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food Oils</masterLabel>
+        <translation><!-- Food Oils --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food Products</masterLabel>
+        <translation><!-- Food Products --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Graphic Paper</masterLabel>
+        <translation><!-- Graphic Paper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inorganic Chemicals</masterLabel>
+        <translation><!-- Inorganic Chemicals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Iron &amp; Steel</masterLabel>
+        <translation><!-- Iron &amp; Steel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kaolin</masterLabel>
+        <translation><!-- Kaolin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lumber &amp; Wood</masterLabel>
+        <translation><!-- Lumber &amp; Wood --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Machinery</masterLabel>
+        <translation><!-- Machinery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Military/Misc Trans</masterLabel>
+        <translation><!-- Military/Misc Trans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Misc. Construction</masterLabel>
+        <translation><!-- Misc. Construction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ngls</masterLabel>
+        <translation><!-- Ngls --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Null</masterLabel>
+        <translation><!-- Null --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Organic Chemicals</masterLabel>
+        <translation><!-- Organic Chemicals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Petroleum Products</masterLabel>
+        <translation><!-- Petroleum Products --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plastics</masterLabel>
+        <translation><!-- Plastics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pulp</masterLabel>
+        <translation><!-- Pulp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pulpboard</masterLabel>
+        <translation><!-- Pulpboard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sand - Proppants</masterLabel>
+        <translation><!-- Sand - Proppants --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scrap Metal</masterLabel>
+        <translation><!-- Scrap Metal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solid Waste And C&amp;D</masterLabel>
+        <translation><!-- Solid Waste And C&amp;D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Soybeans</masterLabel>
+        <translation><!-- Soybeans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sweeteners</masterLabel>
+        <translation><!-- Sweeteners --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wheat</masterLabel>
+        <translation><!-- Wheat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wood Chips</masterLabel>
+        <translation><!-- Wood Chips --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

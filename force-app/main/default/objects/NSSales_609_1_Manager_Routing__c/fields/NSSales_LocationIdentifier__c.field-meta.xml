@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_LocationIdentifier__c</fullName>
+    <description>This field stores the combination of State, Country and City of a record.</description>
+    <externalId>false</externalId>
+    <formula>NSSales_State_Name__c +&#39;:&#39;+NSSales_County_Name__c+&#39;:&#39;+NSSales_City_Name__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Location Identifier</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Notification Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Notification Logs</value>
+    </caseValues>
+    <layouts>
+        <layout>Notification Capture Layout</layout>
+        <sections>
+            <label><!-- Dynamic Data Links --></label>
+            <section>Dynamic Data Links</section>
+        </sections>
+        <sections>
+            <label><!-- Notification Details --></label>
+            <section>Notification Details</section>
+        </sections>
+        <sections>
+            <label><!-- Notification Tracking Information --></label>
+            <section>Notification Tracking Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Notification Log Admin</layout>
+        <sections>
+            <label><!-- Dynamic Data Links --></label>
+            <section>Dynamic Data Links</section>
+        </sections>
+        <sections>
+            <label><!-- Notification Details --></label>
+            <section>Notification Details</section>
+        </sections>
+        <sections>
+            <label><!-- Notification Tracking Information --></label>
+            <section>Notification Tracking Information</section>
+        </sections>
+        <sections>
+            <label><!-- Payload Details --></label>
+            <section>Payload Details</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- enterprise notification system message log --></description>
+        <label><!-- Notification Log --></label>
+        <name>Notification_Log</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

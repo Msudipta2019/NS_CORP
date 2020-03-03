@@ -1,0 +1,113 @@
+<aura:component controller="NSSales_NPOCommentController" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    <aura:attribute name="isNPOPage" type="Boolean" default="false" />
+    <aura:attribute name="isOppPage" type="Boolean" default="false" />
+    <aura:attribute name="isNPOPageStep" type="Boolean" default="false" />
+    <aura:attribute name="isOppPageStep" type="Boolean" default="false" />
+    <aura:attribute name="showSpinner" type="Boolean" default="false" />
+    <aura:attribute name="pIDetails" type="List" />
+    <aura:attribute name="cmtDetails" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <lightning:card class="slds-scrollable backcol">
+        <aura:set attribute="title">
+            <b>Comments</b>
+        </aura:set>
+        
+        <aura:if isTrue="{!v.isNPOPage}">
+            <aura:if isTrue="{!v.pIDetails.length==0}">
+                <lightning:layoutItem class="slds-align_absolute-center" flexibility="auto" padding="around-small">   
+                    <ui:outputText value="No Comments" />
+                </lightning:layoutItem>
+            </aura:if>
+            <aura:iteration items="{!v.pIDetails}" var="pIDetail">
+                <div class="commentbox">  
+                    <a href="{!'/'+pIDetail.NSSales_Commented_By__c}" target="_blank">
+                        <lightning:avatar variant="circle" src="{!pIDetail.NSSales_Commented_By__r.SmallPhotoUrl}" fallbackIconName="standard:user" alternativeText="{!pIDetail.NSSales_Commented_By__r.Name}" class="slds-m-right_small"/>
+                        {!pIDetail.NSSales_Commented_By__r.Name}</a> 
+                    <div class="commentbox_cmt">  
+                        {!pIDetail.NSSales_Comments__c}
+                    </div>
+                    <div class="commentbox_date">  
+                        <lightning:formattedDateTime value="{!pIDetail.CreatedDate}" 
+                                                     year="numeric" month="short" day="numeric"  
+                                                     hour="2-digit" minute="2-digit" hour12="true"/>
+                    </div> 
+                </div>
+            </aura:iteration>
+        </aura:if>
+        
+        <aura:if isTrue="{!v.isNPOPageStep}">
+            <aura:if isTrue="{!v.pIDetails.length==0}">
+                <lightning:layoutItem class="slds-align_absolute-center" flexibility="auto" padding="around-small">   
+                    <ui:outputText value="No Comments" />
+                </lightning:layoutItem>
+            </aura:if>
+            <aura:iteration items="{!v.pIDetails}" var="pIDetail">
+                <div class="commentbox">  
+                    <a href="{!'/'+pIDetail.NSSales_Commented_By__c}" target="_blank">
+                        <lightning:avatar variant="circle" src="{!pIDetail.NSSales_Commented_By__r.SmallPhotoUrl}" fallbackIconName="standard:user" alternativeText="{!pIDetail.NSSales_Commented_By__r.Name}" class="slds-m-right_small"/>
+                        {!pIDetail.NSSales_Commented_By__r.Name}</a> 
+                    <div class="commentbox_cmt">  
+                        {!pIDetail.NSSales_Comments__c}
+                    </div>
+                    <div class="commentbox_date">  
+                        <lightning:formattedDateTime value="{!pIDetail.CreatedDate}" 
+                                                     year="numeric" month="short" day="numeric"  
+                                                     hour="2-digit" minute="2-digit" hour12="true"/>
+                    </div>
+                </div>
+            </aura:iteration>
+        </aura:if>
+        
+        <aura:if isTrue="{!v.isOppPage}">
+            <aura:if isTrue="{!v.cmtDetails.length==0}">
+                <lightning:layoutItem class="slds-align_absolute-center" flexibility="auto" padding="around-small">   
+                    <ui:outputText value="No Comments" />
+                </lightning:layoutItem>
+            </aura:if>
+            <aura:iteration items="{!v.cmtDetails}" var="cmtDetail">
+                <div class="commentbox">  
+                    <a href="{!'/'+cmtDetail.CreatedById}" target="_blank">
+                        <lightning:avatar variant="circle" src="{!cmtDetail.CreatedBy.SmallPhotoUrl}" fallbackIconName="standard:user" alternativeText="{!cmtDetail.CreatedBy.Name}" class="slds-m-right_small"/>
+                        {!cmtDetail.CreatedBy.Name}</a> 
+                    <div class="commentbox_cmt">  
+                        {!cmtDetail.Comments}
+                    </div>
+                    <div class="commentbox_date">  
+                        <lightning:formattedDateTime value="{!cmtDetail.CreatedDate}" 
+                                                     year="numeric" month="short" day="numeric"  
+                                                     hour="2-digit" minute="2-digit" hour12="true"/>
+                    </div>
+                </div> 
+            </aura:iteration>
+        </aura:if>
+        
+        <aura:if isTrue="{!v.isOppPageStep}">
+            <aura:if isTrue="{!v.cmtDetails.length==0}">
+                <lightning:layoutItem class="slds-align_absolute-center" flexibility="auto" padding="around-small">   
+                    <ui:outputText value="No Comments" />
+                </lightning:layoutItem>
+            </aura:if> 
+            <aura:iteration items="{!v.cmtDetails}" var="cmtDetail">
+                <div class="commentbox">  
+                    <a href="{!'/'+cmtDetail.CreatedById}" target="_blank">
+                        <lightning:avatar variant="circle" src="{!cmtDetail.CreatedBy.SmallPhotoUrl}" fallbackIconName="standard:user" alternativeText="{!cmtDetail.CreatedBy.Name}" class="slds-m-right_small"/>
+                        {!cmtDetail.CreatedBy.Name}</a> 
+                    <div class="commentbox_cmt">  
+                        {!cmtDetail.Comments}
+                    </div>
+                    <div class="commentbox_date">  
+                        <lightning:formattedDateTime value="{!cmtDetail.CreatedDate}" 
+                                                     year="numeric" month="short" day="numeric"  
+                                                     hour="2-digit" minute="2-digit" hour12="true"/>
+                    </div>
+                </div>
+            </aura:iteration>
+        </aura:if>
+        
+    </lightning:card>
+    <aura:if isTrue="{!v.showSpinner}">
+        <lightning:spinner />
+    </aura:if>
+</aura:component>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_vrIntermodalDescription</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+AND(
+ISPICKVAL(NS_InteractionCategory__c,&quot;Intermodal&quot;),
+ISPICKVAL(NS_InteractionReason__c,&quot;General Inquiry&quot;), 
+ISBLANK(Description),
+NS_Created_using_Quick_Case__c &lt;&gt; True,
+PRIORVALUE(NS_RecordTypeName__c) = &#39;NS Intermodal Non Shipping&#39;
+),
+AND(
+ISPICKVAL( NS_InteractionCategory__c,&quot;Intermodal&quot;),
+ISPICKVAL(NS_InteractionReason__c, &quot;Internal Function&quot;), 
+ISBLANK(Description),
+NS_Created_using_Quick_Case__c &lt;&gt; True,
+PRIORVALUE(NS_RecordTypeName__c) = &#39;NS Intermodal Non Shipping&#39;
+),
+AND(
+ISPICKVAL( NS_InteractionCategory__c,&quot;Intermodal&quot;),
+ISPICKVAL(NS_InteractionReason__c, &quot;IM Concerned Citizen&quot;), 
+ISBLANK(Description),
+NS_Created_using_Quick_Case__c &lt;&gt; True,
+PRIORVALUE(NS_RecordTypeName__c) = &#39;NS Intermodal Non Shipping&#39;
+))
+&amp;&amp; NOT($User.CommunityNickname = &#39;automated.process&#39;)
+&amp;&amp; NOT(ISCHANGED(NS_Last_Activity_Time__c))
+&amp;&amp; NOT(ISCHANGED(NS_Counter_Activity__c))</errorConditionFormula>
+    <errorMessage>Description field is required for Interaction Reasons &quot;Concerned Citizen&quot;, &quot;General Inquiry&quot;, and &quot;Internal Function&quot;</errorMessage>
+</ValidationRule>

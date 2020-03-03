@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Business unit associated with a particular user --></help>
+    <label><!-- Associated Business Unit --></label>
+    <name>Associated_Business_Unit__c</name>
+    <picklistValues>
+        <masterLabel>Automotive</masterLabel>
+        <translation><!-- Automotive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coal</masterLabel>
+        <translation><!-- Coal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Planning</masterLabel>
+        <translation><!-- Equipment Planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Human Resources</masterLabel>
+        <translation><!-- Human Resources --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Development</masterLabel>
+        <translation><!-- Industrial Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Products</masterLabel>
+        <translation><!-- Industrial Products --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Information Technology</masterLabel>
+        <translation><!-- Information Technology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intermodal</masterLabel>
+        <translation><!-- Intermodal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing</masterLabel>
+        <translation><!-- Marketing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing Research &amp; Forecasting</masterLabel>
+        <translation><!-- Marketing Research &amp; Forecasting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPO</masterLabel>
+        <translation><!-- NPO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NS Real Estate</masterLabel>
+        <translation><!-- NS Real Estate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSS</masterLabel>
+        <translation><!-- OSS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenue Accounting</masterLabel>
+        <translation><!-- Revenue Accounting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenue Waybilling</masterLabel>
+        <translation><!-- Revenue Waybilling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unit Train</masterLabel>
+        <translation><!-- Unit Train --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

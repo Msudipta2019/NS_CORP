@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_vrIntermodalTerminalCase</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+AND(
+ISPICKVAL(NS_InteractionCategory__c,&quot;Intermodal&quot;),
+ISPICKVAL(NS_InteractionReason__c,&quot;Billing&quot;), ISPICKVAL(NS_Type__c,&quot;Lift/Payment Request&quot;),
+ISBLANK(Terminal__c),
+OR(
+PRIORVALUE(NS_RecordTypeName__c) = &#39;NS Intermodal Non Shipping&#39;,
+PRIORVALUE(NS_RecordTypeName__c) = &#39;NS Intermodal Shipping&#39;
+),
+NS_Created_using_Quick_Case__c &lt;&gt; True
+),
+AND(
+ISPICKVAL( NS_InteractionCategory__c,&quot;Intermodal&quot;),
+ISPICKVAL(NS_InteractionReason__c, &quot;Billing&quot;), ISPICKVAL(NS_Type__c, &quot;Misc Billing&quot;),
+ISBLANK(Terminal__c),
+OR(
+PRIORVALUE(NS_RecordTypeName__c) = &#39;NS Intermodal Non Shipping&#39;,
+PRIORVALUE(NS_RecordTypeName__c) = &#39;NS Intermodal Shipping&#39;
+),
+NS_Created_using_Quick_Case__c &lt;&gt; True
+),
+AND(
+ISPICKVAL( NS_InteractionCategory__c,&quot;Intermodal&quot;),
+ISPICKVAL(NS_InteractionReason__c, &quot;Storage&quot;), ISPICKVAL(NS_Type__c, &quot;Guarantee&quot;),
+ISBLANK(Terminal__c),
+OR(
+PRIORVALUE(NS_RecordTypeName__c) = &#39;NS Intermodal Non Shipping&#39;,
+PRIORVALUE(NS_RecordTypeName__c) = &#39;NS Intermodal Shipping&#39;
+),
+NS_Created_using_Quick_Case__c &lt;&gt; True
+),
+AND(
+ISPICKVAL( NS_InteractionCategory__c,&quot;Intermodal&quot;),
+ISPICKVAL(NS_InteractionReason__c, &quot;Storage&quot;), ISPICKVAL(NS_Type__c, &quot;Last Free Day&quot;),
+ISBLANK(Terminal__c),
+OR(
+PRIORVALUE(NS_RecordTypeName__c) = &#39;NS Intermodal Non Shipping&#39;,
+PRIORVALUE(NS_RecordTypeName__c) = &#39;NS Intermodal Shipping&#39;
+),
+NS_Created_using_Quick_Case__c &lt;&gt; True
+)) &amp;&amp; NOT($User.CommunityNickname = &#39;automated.process&#39;)
+&amp;&amp;
+NOT(ISCHANGED(NS_Last_Activity_Time__c))
+&amp;&amp;
+NOT(ISCHANGED(NS_Counter_Activity__c))</errorConditionFormula>
+    <errorMessage>Terminal field is required</errorMessage>
+</ValidationRule>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Activity_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Activity Type</label>
+    <required>false</required>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business Review</fullName>
+                <default>false</default>
+                <label>Business Review</label>
+            </value>
+            <value>
+                <fullName>Competitive Intel</fullName>
+                <default>false</default>
+                <label>Competitive Intel</label>
+            </value>
+            <value>
+                <fullName>Equipment issues</fullName>
+                <default>false</default>
+                <label>Equipment issues</label>
+            </value>
+            <value>
+                <fullName>IM Development</fullName>
+                <default>false</default>
+                <label>IM Development</label>
+            </value>
+            <value>
+                <fullName>Market Intel</fullName>
+                <default>false</default>
+                <label>Market Intel</label>
+            </value>
+            <value>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+                <label>Pricing</label>
+            </value>
+            <value>
+                <fullName>Service Issues</fullName>
+                <default>false</default>
+                <label>Service Issues</label>
+            </value>
+            <value>
+                <fullName>Weather Related</fullName>
+                <default>false</default>
+                <label>Weather Related</label>
+            </value>
+            <value>
+                <fullName>NPO Approval</fullName>
+                <default>false</default>
+                <label>NPO Approval</label>
+            </value>
+            <value>
+                <fullName>Mergers/Acquisitions</fullName>
+                <default>false</default>
+                <label>Mergers/Acquisitions</label>
+            </value>
+            <value>
+                <fullName>Capacity Expansions/New Plants</fullName>
+                <default>false</default>
+                <label>Capacity Expansions/New Plants</label>
+            </value>
+            <value>
+                <fullName>Plant Closures</fullName>
+                <default>false</default>
+                <label>Plant Closures</label>
+            </value>
+            <value>
+                <fullName>Plant Outages</fullName>
+                <default>false</default>
+                <label>Plant Outages</label>
+            </value>
+            <value>
+                <fullName>Personnel Changes</fullName>
+                <default>false</default>
+                <label>Personnel Changes</label>
+            </value>
+            <value>
+                <fullName>Invoicing/Billing</fullName>
+                <default>false</default>
+                <label>Invoicing/Billing</label>
+            </value>
+            <value>
+                <fullName>Storage/Demurrage/Ancillary Charges</fullName>
+                <default>false</default>
+                <label>Storage/Demurrage/Ancillary Charges</label>
+            </value>
+            <value>
+                <fullName>Forecasts</fullName>
+                <default>false</default>
+                <label>Forecasts</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

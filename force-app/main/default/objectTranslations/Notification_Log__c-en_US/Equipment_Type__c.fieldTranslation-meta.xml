@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Equipment type of the car impacted by the event --></help>
+    <label><!-- Equipment Type --></label>
+    <name>Equipment_Type__c</name>
+</CustomFieldTranslation>

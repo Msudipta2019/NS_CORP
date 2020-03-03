@@ -1,0 +1,53 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickActionWithoutHeader" access="global" controller="NSSales_OpportunityRecordTypeConvertion">
+    <ltng:require styles="/resource/slds/assets/styles/salesforce-lightning-design-system-ltng.min.css"/>
+    <aura:attribute name="show" type="Boolean" default="true"/>
+    <aura:html tag="style">
+        .uiModal .modal-container {
+        width: 70%;
+        max-width: 840px;
+        min-width: 480px;
+        }
+        .modal-body {    
+        height: auto !important;
+        max-height: 700px !important;
+        padding: 0;	
+        }
+        .slds-page-header {
+        position: relative;
+        border-top-right-radius: .25rem;
+        border-top-left-radius: .25rem;
+        border-bottom: 2px solid rgb(216, 221, 230);
+        padding: 1rem;
+        text-align: center;
+        background: rgb(0, 158, 219);
+        }
+        .uiInput {
+        padding: .5rem 1rem;
+        }
+        .slds-section-title--divider {
+        background: rgba(21, 137, 238, 0.42);
+        color: #000;
+        }
+        .cuf-content {
+        padding: 1 1rem !important;
+        }
+        .slds-p-around--medium {
+        padding: 1rem !important;
+        }       
+        .slds-modal__content{
+        overflow-y:hidden !important;
+        height:unset !important;
+        max-height:unset !important;
+        }
+    </aura:html>
+    <div aura:id="divContainer" id="divContainer" class="slds-box slds-theme_default">
+        <div class="slds-page-header" role="banner">
+            <h2 class="title slds-text-heading--medium">Confirmation</h2>
+        </div>
+        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+            <ui:outputText value="This action will change the record type. You still want to proceed?" /><br/><br/>
+            <button class="slds-button slds-button--brand" onclick="{!c.ConvertAction}">Confirm</button>
+            <button class="slds-button slds-button--brand" onclick="{!c.closeModal}">Cancel</button>
+        </div>
+    </div>
+</aura:component>

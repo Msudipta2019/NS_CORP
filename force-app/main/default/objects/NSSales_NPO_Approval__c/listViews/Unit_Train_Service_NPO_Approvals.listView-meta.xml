@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unit_Train_Service_NPO_Approvals</fullName>
+    <columns>NAME</columns>
+    <columns>NSSales_Related_Opportunity__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>NSSales_Approval_Type__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>NSSales_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Approved,Rejected,Recalled</value>
+    </filters>
+    <label>Unit Train Service NPO Approvals</label>
+    <queue>NSSales_Unit_Train_Approver</queue>
+</ListView>

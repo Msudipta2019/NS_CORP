@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSSales_609_1_GIS_Application_URL__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&#39;http://maps.nscorp.com/INDDEV?zoom=17&amp;latitude=&#39;&amp;NSSales_609_1_Latitude__c&amp;&#39;&amp;longitude=&#39;&amp;NSSales_609_1_Longitude__c&amp;&#39;&amp;serviceIds=921,23,88,25,83,82&amp;baseMapSelectedId=4&#39;,&#39;GIS Application URL&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>GIS Application URL</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

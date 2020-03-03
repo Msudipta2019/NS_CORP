@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Sales_Industrial_Development</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>NSSales_ACCompactLayout</compactLayoutAssignment>
+    <description>Account classification for Industrial Development Business Unit</description>
+    <label>Industrial Development</label>
+    <picklistValues>
+        <picklist>NSSales_Business_Group__c</picklist>
+        <values>
+            <fullName>Industrial Development</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NS_Account_Type_BU__c</picklist>
+        <values>
+            <fullName>Beneficial Cargo Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broker%2F3PL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drayage Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Economic Development Ally</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering Consultant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Port</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Railroad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receiver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipper%2FReceiver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Selector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>State or Local EDC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NS_Business_Group_BU__c</picklist>
+        <values>
+            <fullName>Merchandise</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NS_Line_of_Business_BU__c</picklist>
+        <values>
+            <fullName>Anthracite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Domestic Met</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Export Met</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Export Steam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hunt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LTL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Petcoke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Triple Crown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Truckload</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unassigned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility North</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility South</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NS_Major_Group_BU__c</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agriculture%2C Forest and Consumer Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intermodal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metals %26 Construction</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NS_Minor_Group_BU__c</picklist>
+        <values>
+            <fullName>Aggregates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agrifuels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aluminum Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aluminum Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beverages%2FCons Prds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canned Goods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corn %26 Other Grains</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crude Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Domestic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Domestic Met Coal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Export Coal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feed %26 Feed Prds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fertilizers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Oils</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Graphic Paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inorganic Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iron %26 Steel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kaolin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lumber %26 Wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Military%2FMisc%2E Trans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misc%2E Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NGLs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Non%2FMet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Petroleum Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plastics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pulp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pulpboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sand - Proppants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scrap Metal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solid Waste And C%26D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soybeans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweeteners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Triple Crown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unassigned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility Coal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicles - Artbilev</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicles - Bilevel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicles - Trilevel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wheat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wood Chips</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NS_Sub_Business_Group_BU__c</picklist>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

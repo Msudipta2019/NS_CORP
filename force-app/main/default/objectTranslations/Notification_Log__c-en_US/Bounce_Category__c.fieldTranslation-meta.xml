@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Tracking of Notification Bounce Category information from Marketing Cloud. If the email server rejects the email, the subscriber&apos;s status changes to Bounced. --></help>
+    <label><!-- Bounce Category --></label>
+    <name>Bounce_Category__c</name>
+</CustomFieldTranslation>

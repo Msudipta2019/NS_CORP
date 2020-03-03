@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Market Intel</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Market Intel</value>
+    </caseValues>
+    <layouts>
+        <layout>Marketing Intelligence Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Intel --></label>
+            <section>Intel</section>
+        </sections>
+        <sections>
+            <label><!-- Name --></label>
+            <section>Name</section>
+        </sections>
+        <sections>
+            <label><!-- Other Information --></label>
+            <section>Other Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Market Intel Name</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Complete this field. --></errorMessage>
+        <name>NSSales_vrRequireAccountForSourceAccount</name>
+    </validationRules>
+</CustomObjectTranslation>

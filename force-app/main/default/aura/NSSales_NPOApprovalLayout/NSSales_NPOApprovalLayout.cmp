@@ -1,0 +1,146 @@
+<aura:component controller="NSSales_NPOApprovalProcessController" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    <aura:attribute name="optyRecordId" type="String" />
+    <aura:attribute name="approvalStatus" type="String" />
+    <aura:attribute name="processInstanceId" type="String" />
+    <aura:attribute name="processInstanceWorkItemId" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="showSpinner" type="Boolean" default="false" />
+    <aura:attribute name="pIDetails" type="List" />
+    <aura:attribute name="isOppPage" type="Boolean" default="false" />
+    
+    
+    <lightning:card class="backcol">
+        <aura:set attribute="title">
+            <lightning:icon iconName="standard:approval" size="medium" aura:id="pending" />
+            Approval Request
+        </aura:set>
+        <span class="slds-text-heading--medium slds-hyphenate cardmargin" ><b>NPO Approval</b>&nbsp;&nbsp;</span>
+        <span class="pending" aura:id="pendingspan">Pending</span>
+        <span class="approved slds-hide" aura:id="approvedspan">Approved</span>
+        <span class="rejected slds-hide" aura:id="rejectedspan">Rejected</span>
+        
+        <div class="bttn" aura:id="approvalbutton">
+            <div class="slds-button-group" role="group">
+                <lightning:button label="Approve" title= "Approve" onclick="{! c.openApprovalModal }" />
+                <lightning:button label="Reject" title= "Reject" onclick="{! c.openRejectionModal }" />
+                <lightning:button label="Reassign" title= "Reject" onclick="{! c.openReassignModal }" />
+            </div>
+            
+        </div>
+    </lightning:card>
+    <div class="slds-box slds-theme_default">
+        
+        <table class="tableWidth">
+            <thead>
+                <tr>
+                    <th scope="col">Submitter</th>
+                    <th scope="col">Date Submitted</th>
+                    <th scope="col">Actual Approver</th>
+                    <th scope="col">Assigned to</th>
+                </tr>
+            </thead> 
+            <tbody>
+                <aura:iteration items="{!v.pIDetails}" var="pIDetail">
+                    <tr>
+                        <td>{!pIDetail.CreatedBy.Name}</td>
+                        <td><lightning:formattedDateTime value="{!pIDetail.CreatedDate}"/></td>
+                        <td>{!pIDetail.Actor.Name}</td>
+                        <td>{!pIDetail.Actor.Name}</td>
+                    </tr>
+                    <lightning:input aura:id="processId" value="{!pIDetail.ProcessInstanceId}" class="slds-hide"/>
+                </aura:iteration>
+            </tbody>
+        </table>
+        
+        <br/>
+        
+    </div>
+    
+    <aura:if isTrue="{!v.showSpinner}">
+        <lightning:spinner />
+    </aura:if>
+    
+    <div aura:id="openApprovalModal" class="slds-modal slds-backdrop slds-hide" aria-hidden="false" role="dialog">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <div class="alignright">		
+                    <lightning:buttonIcon iconName="utility:close" size="large" alternativeText="Close" 
+                                          onclick="{!c.closeModal}" variant="bare-inverse"/>
+                </div>
+                <div class="slds-modal__header">
+                    <span class="slds-text-heading--medium">Approve NPO Approval</span>
+                </div>
+                
+                <div class="slds-modal__content slds-p-around--medium">
+                    <!-- <lightning:textarea aura:id="approve_comments" name="Comments" label="Comments" /> -->
+                    <ui:inputTextArea aura:id="approve_comments" label="Comments" rows="8"/>
+                </div>
+                
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick="{!c.closeModal}">Cancel</button>
+                    <button class="slds-button slds-button_brand" onclick="{!c.handleApprove}">Approve</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+    
+    
+    <div aura:id="openRejectionModal" class="slds-modal slds-backdrop slds-hide" aria-hidden="false" role="dialog">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <div class="alignright">		
+                    <lightning:buttonIcon iconName="utility:close" size="large" alternativeText="Close" 
+                                          onclick="{!c.closeModal}" variant="bare-inverse"/>
+                </div>
+                <div class="slds-modal__header">
+                    <span class="slds-text-heading--medium">Reject NPO Approval</span>
+                </div>
+                
+                <div class="slds-modal__content slds-p-around--medium">
+                    
+                    <!--<lightning:textarea aura:id="reject_comments" name="Comments" label="Comments"/>-->
+                    <ui:inputTextArea aura:id="reject_comments" label="Comments" rows="8"/>
+                </div>
+                
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick="{!c.closeModal}">Cancel</button>
+                    <button class="slds-button slds-button_brand" onclick="{!c.handleReject}">Reject</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+    <div aura:id="openReassignModal" class="slds-modal slds-backdrop slds-hide" aria-hidden="false" role="dialog">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <div class="alignright">		
+                    <lightning:buttonIcon iconName="utility:close" size="large" alternativeText="Close" 
+                                          onclick="{!c.closeModal}" variant="bare-inverse"/>
+                </div>
+                <div class="slds-modal__header">
+                    <span class="slds-text-heading--medium">Reassign NPO Approval</span>
+                </div>
+                
+                <div class="slds-modal__content slds-p-around--medium">
+                    <lightning:recordEditForm objectApiName="Opportunity">
+                        <lightning:inputField
+                                              aura:id="reassign_approver"
+                                              fieldName="NS_SalesNPO_Approvers__c"
+                                              required="true" />
+                    </lightning:recordEditForm>
+                    <!--<lightning:textarea aura:id="reassign_comments" name="Comments" label="Comments" /> -->
+                    <ui:inputTextArea aura:id="reassign_comments" label="Comments" rows="8"/>
+                </div>
+                
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick="{!c.closeModal}">Cancel</button>
+                    <button class="slds-button slds-button_brand" onclick="{!c.handleReassign}">Reassign</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+    
+</aura:component>

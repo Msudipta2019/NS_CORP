@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date and Time and event was sent from Marketing Cloud. --></help>
+    <label><!-- Event Date/Time --></label>
+    <name>Event_Date_Time__c</name>
+</CustomFieldTranslation>

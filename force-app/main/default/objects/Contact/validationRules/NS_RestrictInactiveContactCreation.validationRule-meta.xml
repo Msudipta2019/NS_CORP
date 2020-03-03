@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>NS_RestrictInactiveContactCreation</fullName>
+    <active>true</active>
+    <description>Restrict creation of contacts with status &#39;Inactive&#39; or &#39;Request for Deactivation&#39; .</description>
+    <errorConditionFormula>AND(NOT(ISPICKVAL(NS_ContactStatus__c , &#39;Active&#39;)),ISNEW())</errorConditionFormula>
+    <errorMessage>Inactive Contact cannot be created.</errorMessage>
+</ValidationRule>

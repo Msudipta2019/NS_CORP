@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_TOP21Inquiry_Case</fullName>
+    <columns>NS_Unread_Email_Indicator__c</columns>
+    <columns>NS_StatusIndicator__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>NS_AssignedTo__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.NS_TOP21</value>
+    </filters>
+    <label>Marketing - TOP21 Inquiry</label>
+    <sharedTo>
+        <group>All_Queue_Access</group>
+        <group>gpSalesMkt_TOP21</group>
+        <role>Marketing_Manager</role>
+        <role>Sales_Automotive_Leadership</role>
+        <role>Sales_Automotive_Manager</role>
+        <role>Sales_Coal_Leadership</role>
+        <role>Sales_Coal_Manager</role>
+        <role>Sales_Industrial_Development_Leadership</role>
+        <role>Sales_Industrial_Development_Manager</role>
+        <role>Sales_Industrial_Product_Leadership</role>
+        <role>Sales_Industrial_Product_Manager</role>
+        <role>Sales_Intermodal_Leadership</role>
+        <role>Sales_Intermodal_Manager</role>
+        <role>Sales_Marketing_Research_Forecasting_User</role>
+    </sharedTo>
+</ListView>

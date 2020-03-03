@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_MPU_Contribution__c</fullName>
+    <description>Sales - IM request to capture the Margin Per Unit annually</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Margin Per Unit</inlineHelpText>
+    <label>MPU Contribution</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

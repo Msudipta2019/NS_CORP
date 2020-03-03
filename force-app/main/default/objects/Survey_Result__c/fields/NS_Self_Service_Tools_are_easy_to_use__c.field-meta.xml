@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Self_Service_Tools_are_easy_to_use__c</fullName>
+    <externalId>false</externalId>
+    <label>NS Self-Service Tools are easy to use.</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Strongly Disagree</fullName>
+                <default>false</default>
+                <label>Strongly Disagree</label>
+            </value>
+            <value>
+                <fullName>Somewhat Disagree</fullName>
+                <default>false</default>
+                <label>Somewhat Disagree</label>
+            </value>
+            <value>
+                <fullName>Neither Agree nor Disagree</fullName>
+                <default>false</default>
+                <label>Neither Agree nor Disagree</label>
+            </value>
+            <value>
+                <fullName>Somewhat Agree</fullName>
+                <default>false</default>
+                <label>Somewhat Agree</label>
+            </value>
+            <value>
+                <fullName>Strongly Agree</fullName>
+                <default>false</default>
+                <label>Strongly Agree</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
